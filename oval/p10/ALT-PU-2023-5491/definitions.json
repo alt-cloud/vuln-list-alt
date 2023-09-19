@@ -1,0 +1,264 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235491",
+      "Version": "oval:org.altlinux.errata:def:20235491",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5491: package `libvirt` update to version 9.7.0-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5491",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5491",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-3750",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3750",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libvirt to version 9.7.0-alt2. \nSecurity Fix(es):\n\n * CVE-2023-3750: A flaw was found in libvirt. The virStoragePoolObjListSearch function does not return a locked pool as expected, resulting in a race condition and denial of service when attempting to lock the same object from another thread. This issue could allow clients connecting to the read-only socket to crash the libvirt daemon.\n\n * #47442: После добавления модуля TPM 2.0 (TIS) виртуальная машина не запускается",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-09-19"
+          },
+          "Updated": {
+            "Date": "2023-09-19"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-667",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3750",
+              "Impact": "Low",
+              "Public": "20230724",
+              "CveID": "CVE-2023-3750"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "47442",
+              "Href": "https://bugzilla.altlinux.org/47442",
+              "Data": "После добавления модуля TPM 2.0 (TIS) виртуальная машина не запускается"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491001",
+                "Comment": "libvirt is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491002",
+                "Comment": "libvirt-admin is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491003",
+                "Comment": "libvirt-client is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491004",
+                "Comment": "libvirt-client-qemu is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491005",
+                "Comment": "libvirt-daemon is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491006",
+                "Comment": "libvirt-daemon-config-network is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491007",
+                "Comment": "libvirt-daemon-config-nwfilter is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491008",
+                "Comment": "libvirt-daemon-driver-interface is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491009",
+                "Comment": "libvirt-daemon-driver-lxc is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491010",
+                "Comment": "libvirt-daemon-driver-network is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491011",
+                "Comment": "libvirt-daemon-driver-nodedev is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491012",
+                "Comment": "libvirt-daemon-driver-nwfilter is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491013",
+                "Comment": "libvirt-daemon-driver-qemu is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491014",
+                "Comment": "libvirt-daemon-driver-secret is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491015",
+                "Comment": "libvirt-daemon-driver-storage is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491016",
+                "Comment": "libvirt-daemon-driver-storage-core is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491017",
+                "Comment": "libvirt-daemon-driver-storage-disk is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491018",
+                "Comment": "libvirt-daemon-driver-storage-fs is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491019",
+                "Comment": "libvirt-daemon-driver-storage-gluster is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491020",
+                "Comment": "libvirt-daemon-driver-storage-iscsi is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491021",
+                "Comment": "libvirt-daemon-driver-storage-iscsi-direct is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491022",
+                "Comment": "libvirt-daemon-driver-storage-logical is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491023",
+                "Comment": "libvirt-daemon-driver-storage-mpath is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491024",
+                "Comment": "libvirt-daemon-driver-storage-rbd is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491025",
+                "Comment": "libvirt-daemon-driver-storage-scsi is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491026",
+                "Comment": "libvirt-daemon-driver-storage-zfs is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491027",
+                "Comment": "libvirt-daemon-driver-vbox is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491028",
+                "Comment": "libvirt-devel is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491029",
+                "Comment": "libvirt-docs is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491030",
+                "Comment": "libvirt-kvm is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491031",
+                "Comment": "libvirt-libs is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491032",
+                "Comment": "libvirt-lock-sanlock is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491033",
+                "Comment": "libvirt-login-shell is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491034",
+                "Comment": "libvirt-lxc is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491035",
+                "Comment": "libvirt-qemu is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491036",
+                "Comment": "libvirt-qemu-common is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491037",
+                "Comment": "libvirt-vbox is earlier than 0:9.7.0-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235491038",
+                "Comment": "nss-libvirt is earlier than 0:9.7.0-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

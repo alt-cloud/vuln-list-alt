@@ -1,0 +1,2178 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-audio-alsa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-audio-oss is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-audio-pa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-audio-sdl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-audio-spice is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-aux is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-blkio is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-curl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-dmg is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-gluster is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-iscsi is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-nfs is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-rbd is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-ssh is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-block-vitastor is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-char-spice is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-common is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241019",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-qxl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241019"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241020",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-vhost-user-gpu is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241020"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241021",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-virtio-gpu is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241021"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241022",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-virtio-gpu-ccw is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241022"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241023",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-virtio-gpu-gl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241023"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241024",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-virtio-gpu-pci is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241024"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241025",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-virtio-gpu-pci-gl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241025"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241026",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-virtio-vga is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241026"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241027",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-display-virtio-vga-gl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241027"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241028",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-usb-host is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241028"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241029",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-usb-redirect is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241029"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241030",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-device-usb-smartcard is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241030"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241031",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-doc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241031"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241032",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-guest-agent is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241032"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241033",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-img is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241033"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241034",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-kvm is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241034"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241035",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-kvm-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241035"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241036",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-pr-helper is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241036"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241037",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241037"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241038",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-aarch64 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241038"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241039",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-aarch64-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241039"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241040",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-alpha is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241040"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241041",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-alpha-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241041"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241042",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-arm is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241042"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241043",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-arm-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241043"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241044",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-avr is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241044"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241045",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-avr-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241045"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241046",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-cris is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241046"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241047",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-cris-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241047"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241048",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-hppa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241048"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241049",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-hppa-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241049"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241050",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-loongarch is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241050"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241051",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-loongarch-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241051"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241052",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-m68k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241052"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241053",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-m68k-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241053"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241054",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-microblaze is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241054"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241055",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-microblaze-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241055"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241056",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-mips is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241056"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241057",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-mips-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241057"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241058",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-nios2 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241058"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241059",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-nios2-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241059"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241060",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-or1k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241060"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241061",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-or1k-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241061"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241062",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-ppc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241062"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241063",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-ppc-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241063"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241064",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-riscv is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241064"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241065",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-riscv-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241065"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241066",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-rx is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241066"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241067",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-rx-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241067"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241068",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-s390x is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241068"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241069",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-s390x-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241069"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241070",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-sh4 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241070"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241071",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-sh4-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241071"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241072",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-sparc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241072"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241073",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-sparc-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241073"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241074",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-tricore is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241074"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241075",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-tricore-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241075"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241076",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-x86 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241076"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241077",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-x86-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241077"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241078",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-xtensa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241078"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241079",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-system-xtensa-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241079"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241080",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-tests is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241080"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241081",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-tools is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241081"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241082",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-ui-curses is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241082"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241083",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-ui-egl-headless is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241083"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241084",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-ui-gtk is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241084"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241085",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-ui-opengl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241085"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241086",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-ui-sdl is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241086"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241087",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-ui-spice-app is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241087"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241088",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-ui-spice-core is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241088"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241089",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241089"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241090",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-aarch64 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241090"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241091",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-alpha is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241091"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241092",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-arm is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241092"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241093",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-avr is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241093"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241094",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241094"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241095",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-aarch64 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241095"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241096",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-alpha is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241096"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241097",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-arm is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241097"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241098",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-avr is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241098"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241099",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-cris is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241099"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241100",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-hexagon is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241100"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241101",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-hppa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241101"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241102",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-loongarch is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241102"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241103",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-m68k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241103"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241104",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-microblaze is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241104"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241105",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-mips is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241105"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241106",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-nios2 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241106"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241107",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-or1k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241107"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241108",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-ppc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241108"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241109",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-riscv is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241109"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241110",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-rx is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241110"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241111",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-s390x is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241111"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241112",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-sh4 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241112"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241113",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-sparc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241113"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241114",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-tricore is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241114"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241115",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-x86 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241115"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241116",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-binfmt-xtensa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241116"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241117",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-cris is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241117"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241118",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-hexagon is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241118"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241119",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-hppa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241119"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241120",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-loongarch is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241120"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241121",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-m68k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241121"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241122",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-microblaze is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241122"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241123",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-mips is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241123"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241124",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-nios2 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241124"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241125",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-or1k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241125"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241126",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-ppc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241126"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241127",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-riscv is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241127"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241128",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-rx is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241128"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241129",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-s390x is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241129"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241130",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-sh4 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241130"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241131",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-sparc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241131"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241132",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241132"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241133",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-aarch64 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241133"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241134",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-alpha is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241134"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241135",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-arm is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241135"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241136",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-avr is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241136"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241137",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241137"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241138",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-aarch64 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241138"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241139",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-alpha is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241139"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241140",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-arm is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241140"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241141",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-avr is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241141"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241142",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-cris is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241142"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241143",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-hexagon is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241143"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241144",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-hppa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241144"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241145",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-loongarch is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241145"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241146",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-m68k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241146"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241147",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-microblaze is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241147"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241148",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-mips is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241148"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241149",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-nios2 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241149"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241150",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-or1k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241150"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241151",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-ppc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241151"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241152",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-riscv is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241152"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241153",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-rx is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241153"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241154",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-s390x is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241154"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241155",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-sh4 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241155"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241156",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-sparc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241156"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241157",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-tricore is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241157"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241158",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-x86 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241158"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241159",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-binfmt-xtensa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241159"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241160",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-cris is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241160"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241161",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-hexagon is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241161"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241162",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-hppa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241162"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241163",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-loongarch is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241163"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241164",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-m68k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241164"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241165",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-microblaze is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241165"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241166",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-mips is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241166"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241167",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-nios2 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241167"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241168",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-or1k is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241168"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241169",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-ppc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241169"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241170",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-riscv is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241170"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241171",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-rx is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241171"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241172",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-s390x is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241172"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241173",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-sh4 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241173"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241174",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-sparc is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241174"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241175",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-tricore is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241175"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241176",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-x86 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241176"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241177",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-static-xtensa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241177"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241178",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-tricore is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241178"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241179",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-x86 is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241179"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235241180",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qemu-user-xtensa is earlier than 0:8.0.4-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235241180"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235241001"
+      }
+    }
+  ]
+}
