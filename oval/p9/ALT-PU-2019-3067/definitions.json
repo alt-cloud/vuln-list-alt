@@ -141,7 +141,7 @@
             {
               "Cvss": "AV:N/AC:M/Au:S/C:P/I:P/A:N",
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N",
-              "Cwe": "CWE-305",
+              "Cwe": "CWE-521",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2019-14833",
               "Impact": "Low",
               "Public": "20191106",
