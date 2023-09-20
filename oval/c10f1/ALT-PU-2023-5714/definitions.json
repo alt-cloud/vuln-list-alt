@@ -1,0 +1,114 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235714",
+      "Version": "oval:org.altlinux.errata:def:20235714",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5714: package `php8.0` update to version 8.0.30-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5714",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5714",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-3823",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3823",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3824",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3824",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades php8.0 to version 8.0.30-alt1. \nSecurity Fix(es):\n\n * CVE-2023-3823: In PHP versions 8.0.* before 8.0.30, 8.1.* before 8.1.22, and 8.2.* before 8.2.8 various XML functions rely on libxml global state to track configuration variables, like whether external entities are loaded. This state is assumed to be unchanged unless the user explicitly changes it by calling appropriate function. However, since the state is process-global, other modules - such as ImageMagick - may also use this library within the same process, and change that global state for their internal purposes, and leave it in a state where external entities loading is enabled. This can lead to the situation where external XML is parsed with external entities loaded, which can lead to disclosure of any local files accessible to PHP. This vulnerable state may persist in the same process across many requests, until the process is shut down. \n\n\n\n * CVE-2023-3824: In PHP version 8.0.* before 8.0.30,  8.1.* before 8.1.22, and 8.2.* before 8.2.8, when loading phar file, while reading PHAR directory entries, insufficient length checking may lead to a stack buffer overflow, leading potentially to memory corruption or RCE. \n\n",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-09-20"
+          },
+          "Updated": {
+            "Date": "2023-09-20"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-611",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3823",
+              "Impact": "High",
+              "Public": "20230811",
+              "CveID": "CVE-2023-3823"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3824",
+              "Impact": "Critical",
+              "Public": "20230811",
+              "CveID": "CVE-2023-3824"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235714001",
+                "Comment": "php8.0 is earlier than 0:8.0.30-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235714002",
+                "Comment": "php8.0-devel is earlier than 0:8.0.30-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235714003",
+                "Comment": "php8.0-libs is earlier than 0:8.0.30-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235714004",
+                "Comment": "php8.0-mysqlnd is earlier than 0:8.0.30-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235714005",
+                "Comment": "rpm-build-php8.0-version is earlier than 0:8.0.30-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

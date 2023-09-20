@@ -1,0 +1,136 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:4001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633001",
+      "Version": "1",
+      "comment": "libecpg6 is installed",
+      "Name": "libecpg6"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633002",
+      "Version": "1",
+      "comment": "libecpg6-devel is installed",
+      "Name": "libecpg6-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633003",
+      "Version": "1",
+      "comment": "libecpg6-devel-static is installed",
+      "Name": "libecpg6-devel-static"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633004",
+      "Version": "1",
+      "comment": "libpq5 is installed",
+      "Name": "libpq5"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633005",
+      "Version": "1",
+      "comment": "libpq5-devel is installed",
+      "Name": "libpq5-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633006",
+      "Version": "1",
+      "comment": "libpq5-devel-static is installed",
+      "Name": "libpq5-devel-static"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633007",
+      "Version": "1",
+      "comment": "postgresql-devel is installed",
+      "Name": "postgresql-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633008",
+      "Version": "1",
+      "comment": "postgresql-devel-static is installed",
+      "Name": "postgresql-devel-static"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633009",
+      "Version": "1",
+      "comment": "postgresql15 is installed",
+      "Name": "postgresql15"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633010",
+      "Version": "1",
+      "comment": "postgresql15-contrib is installed",
+      "Name": "postgresql15-contrib"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633011",
+      "Version": "1",
+      "comment": "postgresql15-docs is installed",
+      "Name": "postgresql15-docs"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633012",
+      "Version": "1",
+      "comment": "postgresql15-llvmjit is installed",
+      "Name": "postgresql15-llvmjit"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633013",
+      "Version": "1",
+      "comment": "postgresql15-perl is installed",
+      "Name": "postgresql15-perl"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633014",
+      "Version": "1",
+      "comment": "postgresql15-python is installed",
+      "Name": "postgresql15-python"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633015",
+      "Version": "1",
+      "comment": "postgresql15-server is installed",
+      "Name": "postgresql15-server"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633016",
+      "Version": "1",
+      "comment": "postgresql15-server-devel is installed",
+      "Name": "postgresql15-server-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633017",
+      "Version": "1",
+      "comment": "postgresql15-tcl is installed",
+      "Name": "postgresql15-tcl"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235633018",
+      "Version": "1",
+      "comment": "rpm-macros-postgresql is installed",
+      "Name": "rpm-macros-postgresql"
+    }
+  ]
+}
