@@ -1,0 +1,134 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235717",
+      "Version": "oval:org.altlinux.errata:def:20235717",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5717: package `salt` update to version 3006.3-alt3",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5717",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5717",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-20897",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-20897",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-20898",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-20898",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades salt to version 3006.3-alt3. \nSecurity Fix(es):\n\n * CVE-2023-20897: Salt masters prior to 3005.2 or 3006.2 contain a DOS in minion return. After receiving several bad packets on the request server equal to the number of worker threads, the master will become unresponsive to return requests until restarted.\n\n\n * CVE-2023-20898: Git Providers can read from the wrong environment because they get the same cache directory base name in Salt masters prior to 3005.2 or 3006.2. Anything that uses Git Providers with different environments can get garbage data or the wrong data, which can lead to wrongful data disclosure, wrongful executions, data corruption and/or crash.\n",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-09-21"
+          },
+          "Updated": {
+            "Date": "2023-09-21"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-20897",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-20897"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-20898",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "CVE-2023-20898"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235717001",
+                "Comment": "python3-module-salt is earlier than 0:3006.3-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235717002",
+                "Comment": "salt-api is earlier than 0:3006.3-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235717003",
+                "Comment": "salt-master is earlier than 0:3006.3-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235717004",
+                "Comment": "salt-minion is earlier than 0:3006.3-alt3"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

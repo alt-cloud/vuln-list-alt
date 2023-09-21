@@ -1,0 +1,46 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:2001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:(?!sp)[a-z\\-]+:p?(\\d+)(?:\\.\\d)*"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235602001",
+      "Version": "1",
+      "comment": "mc is installed",
+      "Name": "mc"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235602002",
+      "Version": "1",
+      "comment": "mc-desktop is installed",
+      "Name": "mc-desktop"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235602003",
+      "Version": "1",
+      "comment": "mc-full is installed",
+      "Name": "mc-full"
+    }
+  ]
+}
