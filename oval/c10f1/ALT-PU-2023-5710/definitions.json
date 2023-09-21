@@ -1,0 +1,133 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235710",
+      "Version": "oval:org.altlinux.errata:def:20235710",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5710: package `curl` update to version 8.3.0-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5710",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5710",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-04304",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-04304",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05819",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05819",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-32001",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-32001",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-38039",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-38039",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades curl to version 8.3.0-alt1. \nSecurity Fix(es):\n\n * BDU:2023-04304: Уязвимость функции fopen() библиотеки libcurl, связанная с ошибками управления состоянием, позволяющая нарушителю  создать или перезаписать защищенные файлы\n\n * BDU:2023-05819: Уязвимость интерфейса утилиты командной строки cURL, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-32001: ** REJECT ** We issued this CVE pre-maturely, as we have subsequently realized that this issue points out a problem that there really is no safe measures around or protections for.\n\n * CVE-2023-38039: When curl retrieves an HTTP response, it stores the incoming headers so that\nthey can be accessed later via the libcurl headers API.\n\nHowever, curl did not have a limit in how many or how large headers it would\naccept in a response, allowing a malicious server to stream an endless series\nof headers and eventually cause curl to run out of heap memory.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-09-21"
+          },
+          "Updated": {
+            "Date": "2023-09-21"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-367",
+              "Href": "https://bdu.fstec.ru/vul/2023-04304",
+              "Impact": "Low",
+              "Public": "20230627",
+              "CveID": "BDU:2023-04304"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://bdu.fstec.ru/vul/2023-05819",
+              "Impact": "High",
+              "Public": "20230717",
+              "CveID": "BDU:2023-05819"
+            }
+          ],
+          "Cves": [
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-32001",
+              "Impact": "None",
+              "Public": "20230726",
+              "CveID": "CVE-2023-32001"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-38039",
+              "Impact": "High",
+              "Public": "20230915",
+              "CveID": "CVE-2023-38039"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235710001",
+                "Comment": "curl is earlier than 0:8.3.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235710002",
+                "Comment": "libcurl is earlier than 0:8.3.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235710003",
+                "Comment": "libcurl-devel is earlier than 0:8.3.0-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
