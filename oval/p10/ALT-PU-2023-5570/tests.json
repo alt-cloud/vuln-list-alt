@@ -1,0 +1,114 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt5-pdf is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt5-pdfwidgets is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt5-webengine is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt5-webenginecore is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt5-webenginewidgets is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt5-webengine-common is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt5-webengine-devel is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235570008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt5-webengine-doc is earlier than 0:5.15.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235570008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235570001"
+      }
+    }
+  ]
+}

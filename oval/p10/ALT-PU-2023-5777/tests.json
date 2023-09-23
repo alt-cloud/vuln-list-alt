@@ -1,0 +1,78 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235777001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kde5-dolphin is earlier than 0:23.04.3-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235777001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235777002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kde5-dolphin-common is earlier than 0:23.04.3-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235777002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235777003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kde5-dolphin-devel is earlier than 0:23.04.3-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235777003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235777004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libdolphinprivate5 is earlier than 0:23.04.3-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235777004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235777005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libdolphinvcs5 is earlier than 0:23.04.3-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235777005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235777001"
+      }
+    }
+  ]
+}
