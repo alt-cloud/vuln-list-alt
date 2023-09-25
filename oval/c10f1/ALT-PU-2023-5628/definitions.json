@@ -1,0 +1,112 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235628",
+      "Version": "oval:org.altlinux.errata:def:20235628",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5628: package `pcre2` update to version 10.42-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5628",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5628",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-05302",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05302",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-41409",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-41409",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades pcre2 to version 10.42-alt1. \nSecurity Fix(es):\n\n * BDU:2023-05302: Уязвимость команды pcre2test библиотеки регулярных выражений PCRE2, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2022-41409: Integer overflow vulnerability in pcre2test before 10.41 allows attackers to cause a denial of service or other unspecified impacts via negative input.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-09-25"
+          },
+          "Updated": {
+            "Date": "2023-09-25"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-190, CWE-404",
+              "Href": "https://bdu.fstec.ru/vul/2023-05302",
+              "Impact": "High",
+              "Public": "20220816",
+              "CveID": "BDU:2023-05302"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-41409",
+              "Impact": "High",
+              "Public": "20230718",
+              "CveID": "CVE-2022-41409"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235628001",
+                "Comment": "libpcre2 is earlier than 0:10.42-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235628002",
+                "Comment": "libpcre2-devel is earlier than 0:10.42-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235628003",
+                "Comment": "libpcre2-devel-static is earlier than 0:10.42-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235628004",
+                "Comment": "pcre2-tools is earlier than 0:10.42-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

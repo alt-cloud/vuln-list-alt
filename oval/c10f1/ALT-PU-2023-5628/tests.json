@@ -1,0 +1,66 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235628001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libpcre2 is earlier than 0:10.42-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235628001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235628001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235628002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libpcre2-devel is earlier than 0:10.42-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235628002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235628001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235628003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libpcre2-devel-static is earlier than 0:10.42-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235628003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235628001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235628004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "pcre2-tools is earlier than 0:10.42-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235628004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235628001"
+      }
+    }
+  ]
+}
