@@ -55,7 +55,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades cri-o to version 1.26.2-alt1. \nSecurity Fix(es):\n\n * BDU:2022-03768: Уязвимость программы мониторинга связи между менеджером контейнеров и средой выполнения conmon, связанная с неконтролируемым потреблением ресурсов, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2022-1708: A vulnerability was found in CRI-O that causes memory or disk space exhaustion on the node for anyone with access to the Kube API. The ExecSync request runs commands in a container and logs the output of the command. This output is then read by CRI-O after command execution, and it is read in a manner where the entire file corresponding to the output of the command is read in. Thus, if the output of the command is large it is possible to exhaust the memory or the disk space of the node when CRI-O reads the output of the command. The highest threat from this vulnerability is system availability.\n\n * CVE-2022-27652: A flaw was found in cri-o, where containers were incorrectly started with non-empty default permissions. A vulnerability was found in Moby (Docker Engine) where containers started incorrectly with non-empty inheritable Linux process capabilities. This flaw allows an attacker with access to programs with inheritable file capabilities to elevate those capabilities to the permitted set when execve(2) runs.\n\n * CVE-2022-2995: Incorrect handling of the supplementary groups in the CRI-O container engine might lead to sensitive information disclosure or possible data modification if an attacker has direct access to the affected container where supplementary groups are used to set access permissions and is able to execute a binary code in that container.\n\n * CVE-2022-4318: description unavailable",
+        "Description": "This update upgrades cri-o to version 1.26.2-alt1. \nSecurity Fix(es):\n\n * BDU:2022-03768: Уязвимость программы мониторинга связи между менеджером контейнеров и средой выполнения conmon, связанная с неконтролируемым потреблением ресурсов, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2022-1708: A vulnerability was found in CRI-O that causes memory or disk space exhaustion on the node for anyone with access to the Kube API. The ExecSync request runs commands in a container and logs the output of the command. This output is then read by CRI-O after command execution, and it is read in a manner where the entire file corresponding to the output of the command is read in. Thus, if the output of the command is large it is possible to exhaust the memory or the disk space of the node when CRI-O reads the output of the command. The highest threat from this vulnerability is system availability.\n\n * CVE-2022-27652: A flaw was found in cri-o, where containers were incorrectly started with non-empty default permissions. A vulnerability was found in Moby (Docker Engine) where containers started incorrectly with non-empty inheritable Linux process capabilities. This flaw allows an attacker with access to programs with inheritable file capabilities to elevate those capabilities to the permitted set when execve(2) runs.\n\n * CVE-2022-2995: Incorrect handling of the supplementary groups in the CRI-O container engine might lead to sensitive information disclosure or possible data modification if an attacker has direct access to the affected container where supplementary groups are used to set access permissions and is able to execute a binary code in that container.\n\n * CVE-2022-4318: A vulnerability was found in cri-o. This issue allows the addition of arbitrary lines into /etc/passwd by use of a specially crafted environment variable.",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "High",
@@ -103,6 +103,12 @@
               "Impact": "High",
               "Public": "20220919",
               "CveID": "CVE-2022-2995"
+            },
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-4318",
+              "Impact": "None",
+              "Public": "20230925",
+              "CveID": "CVE-2022-4318"
             }
           ],
           "AffectedCpeList": {
