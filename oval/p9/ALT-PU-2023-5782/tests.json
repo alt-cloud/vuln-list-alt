@@ -1,0 +1,66 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:1001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p9' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:1001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:1001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235782001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-common is earlier than 0:2.02-alt29.qa5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235782001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235782001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235782002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-efi is earlier than 0:2.02-alt29.qa5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235782002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235782001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235782003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-ieee1275 is earlier than 0:2.02-alt29.qa5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235782003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235782001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235782004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-pc is earlier than 0:2.02-alt29.qa5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235782004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235782001"
+      }
+    }
+  ]
+}

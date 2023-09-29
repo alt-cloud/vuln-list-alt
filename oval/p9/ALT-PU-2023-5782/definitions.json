@@ -1,0 +1,143 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235782",
+      "Version": "oval:org.altlinux.errata:def:20235782",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5782: package `grub` update to version 2.02-alt29.qa5",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p9"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5782",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5782",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2022-06820",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-06820",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-3775",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-3775",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades grub to version 2.02-alt29.qa5. \nSecurity Fix(es):\n\n * BDU:2022-06820: Уязвимость загрузчика операционных систем Grub2, связанная с выходом операции за границы буфера, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2022-3775: When rendering certain unicode sequences, grub2's font code doesn't proper validate if the informed glyph's width and height is constrained within bitmap size. As consequence an attacker can craft an input which will lead to a out-of-bounds write into grub2's heap, leading to memory corruption and availability issues. Although complex, arbitrary code execution could not be discarded.\n\n * #45913: CVE-2022-3775 grub",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-09-29"
+          },
+          "Updated": {
+            "Date": "2023-09-29"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:H/Au:S/C:N/I:C/A:C",
+              "Cvss3": "AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2022-06820",
+              "Impact": "Low",
+              "Public": "20221116",
+              "CveID": "BDU:2022-06820"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-3775",
+              "Impact": "High",
+              "Public": "20221219",
+              "CveID": "CVE-2022-3775"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "45913",
+              "Href": "https://bugzilla.altlinux.org/45913",
+              "Data": "CVE-2022-3775 grub"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:9",
+              "cpe:/o:alt:workstation:9",
+              "cpe:/o:alt:server:9",
+              "cpe:/o:alt:server-v:9",
+              "cpe:/o:alt:education:9",
+              "cpe:/o:alt:slinux:9",
+              "cpe:/o:alt:starterkit:p9",
+              "cpe:/o:alt:kworkstation:9.1",
+              "cpe:/o:alt:workstation:9.1",
+              "cpe:/o:alt:server:9.1",
+              "cpe:/o:alt:server-v:9.1",
+              "cpe:/o:alt:education:9.1",
+              "cpe:/o:alt:slinux:9.1",
+              "cpe:/o:alt:starterkit:9.1",
+              "cpe:/o:alt:kworkstation:9.2",
+              "cpe:/o:alt:workstation:9.2",
+              "cpe:/o:alt:server:9.2",
+              "cpe:/o:alt:server-v:9.2",
+              "cpe:/o:alt:education:9.2",
+              "cpe:/o:alt:slinux:9.2",
+              "cpe:/o:alt:starterkit:9.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:1001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235782001",
+                "Comment": "grub-common is earlier than 0:2.02-alt29.qa5"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235782002",
+                "Comment": "grub-efi is earlier than 0:2.02-alt29.qa5"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235782003",
+                "Comment": "grub-ieee1275 is earlier than 0:2.02-alt29.qa5"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235782004",
+                "Comment": "grub-pc is earlier than 0:2.02-alt29.qa5"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
