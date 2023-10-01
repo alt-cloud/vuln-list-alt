@@ -1,0 +1,78 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235885001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "bash-completion-mpv is earlier than 0:0.36.0-alt1.2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235885001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235885001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235885002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmpv-devel is earlier than 0:0.36.0-alt1.2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235885002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235885001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235885003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmpv2 is earlier than 0:0.36.0-alt1.2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235885003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235885001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235885004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mpv is earlier than 0:0.36.0-alt1.2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235885004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235885001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235885005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zsh-completion-mpv is earlier than 0:0.36.0-alt1.2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235885005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235885001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:2001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:(?!sp)[a-z\\-]+:p?(\\d+)(?:\\.\\d)*"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235885001",
+      "Version": "1",
+      "comment": "bash-completion-mpv is installed",
+      "Name": "bash-completion-mpv"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235885002",
+      "Version": "1",
+      "comment": "libmpv-devel is installed",
+      "Name": "libmpv-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235885003",
+      "Version": "1",
+      "comment": "libmpv2 is installed",
+      "Name": "libmpv2"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235885004",
+      "Version": "1",
+      "comment": "mpv is installed",
+      "Name": "mpv"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235885005",
+      "Version": "1",
+      "comment": "zsh-completion-mpv is installed",
+      "Name": "zsh-completion-mpv"
+    }
+  ]
+}
