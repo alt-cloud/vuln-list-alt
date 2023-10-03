@@ -1,0 +1,333 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235879",
+      "Version": "oval:org.altlinux.errata:def:20235879",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5879: package `vim` update to version 9.0.1893-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5879",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5879",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-05534",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05534",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05667",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05667",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05668",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05668",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05669",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05669",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05670",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05670",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05671",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05671",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05672",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05672",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05673",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05673",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-4733",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4733",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4734",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4734",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4735",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4735",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4736",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4736",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4738",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4738",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4750",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4750",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4752",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4752",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4781",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4781",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades vim to version 9.0.1893-alt1. \nSecurity Fix(es):\n\n * BDU:2023-05534: Уязвимость функции vim_regsub_both() текстового редактора Vim, позволяющая нарушителю оказать воздействие на конфиденциальность, целостность и доступность защищаемой информации\n\n * BDU:2023-05667: Уязвимость функции bt_quickfix текстового редактора vim, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-05668: Уязвимость функции buflist_altfpos текстового редактора vim, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-05669: Уязвимость функции ins_compl_get_exp текстового редактора vim, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-05670: Уязвимость текстового редактора vim, связанная с использованием ненадёжного пути поиска, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-05671: Уязвимость функции f_fullcommand текстового редактора vim , вызванная целочисленным переполнением, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-05672: Уязвимость текстового редактора vim, связанная с записью за границами буфера в памяти, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-05673: Уязвимость функции vim_regsub_both текстового редактора vim, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2023-4733: Use After Free in GitHub repository vim/vim prior to 9.0.1840.\n\n * CVE-2023-4734: Integer Overflow or Wraparound in GitHub repository vim/vim prior to 9.0.1846.\n\n * CVE-2023-4735: Out-of-bounds Write in GitHub repository vim/vim prior to 9.0.1847.\n\n * CVE-2023-4736: Untrusted Search Path in GitHub repository vim/vim prior to 9.0.1833.\n\n * CVE-2023-4738: Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1848.\n\n * CVE-2023-4750: Use After Free in GitHub repository vim/vim prior to 9.0.1857.\n\n * CVE-2023-4752: Use After Free in GitHub repository vim/vim prior to 9.0.1858.\n\n * CVE-2023-4781: Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1873.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-03"
+          },
+          "Updated": {
+            "Date": "2023-10-03"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-05534",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05534"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-05667",
+              "Impact": "High",
+              "Public": "20230904",
+              "CveID": "BDU:2023-05667"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-05668",
+              "Impact": "High",
+              "Public": "20230904",
+              "CveID": "BDU:2023-05668"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-05669",
+              "Impact": "High",
+              "Public": "20230904",
+              "CveID": "BDU:2023-05669"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-426",
+              "Href": "https://bdu.fstec.ru/vul/2023-05670",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "BDU:2023-05670"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://bdu.fstec.ru/vul/2023-05671",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "BDU:2023-05671"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-05672",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "BDU:2023-05672"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-05673",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "BDU:2023-05673"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4733",
+              "Impact": "High",
+              "Public": "20230904",
+              "CveID": "CVE-2023-4733"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4734",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "CVE-2023-4734"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4735",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "CVE-2023-4735"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-426",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4736",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "CVE-2023-4736"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4738",
+              "Impact": "High",
+              "Public": "20230902",
+              "CveID": "CVE-2023-4738"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4750",
+              "Impact": "High",
+              "Public": "20230904",
+              "CveID": "CVE-2023-4750"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4752",
+              "Impact": "High",
+              "Public": "20230904",
+              "CveID": "CVE-2023-4752"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4781",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "CVE-2023-4781"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879001",
+                "Comment": "rpm-build-vim is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879002",
+                "Comment": "vim-X11 is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879003",
+                "Comment": "vim-X11-gnome2 is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879004",
+                "Comment": "vim-X11-gtk2 is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879005",
+                "Comment": "vim-X11-gtk3 is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879006",
+                "Comment": "vim-common is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879007",
+                "Comment": "vim-console is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879008",
+                "Comment": "vim-enhanced is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879009",
+                "Comment": "vim-minimal is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879010",
+                "Comment": "vim-spell-source is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879011",
+                "Comment": "vimtutor is earlier than 4:9.0.1893-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235879012",
+                "Comment": "xxd is earlier than 4:9.0.1893-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
