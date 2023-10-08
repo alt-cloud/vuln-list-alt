@@ -65,7 +65,7 @@
             {
               "Cvss": "AV:N/AC:M/Au:S/C:N/I:N/A:P",
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:N/A:L",
-              "Cwe": "CWE-190",
+              "Cwe": "CWE-680",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-15103",
               "Impact": "Low",
               "Public": "20200727",

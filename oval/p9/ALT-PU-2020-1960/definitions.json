@@ -398,7 +398,7 @@
             {
               "Cvss": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
-              "Cwe": "CWE-190",
+              "Cwe": "CWE-680",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-11038",
               "Impact": "Low",
               "Public": "20200529",
