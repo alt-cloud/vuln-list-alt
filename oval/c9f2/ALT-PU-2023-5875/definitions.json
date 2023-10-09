@@ -1,0 +1,106 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235875",
+      "Version": "oval:org.altlinux.errata:def:20235875",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5875: package `R-base` update to version 4.2.2-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5875",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5875",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades R-base to version 4.2.2-alt1. \nSecurity Fix(es):\n\n * #40284: Неправильный путь для открытия справки в браузере\n\n * #45320: Обновите, пожалуйста, R (R-base etc.) до актуальной версии 4.2.2",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-08"
+          },
+          "Updated": {
+            "Date": "2023-10-08"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "40284",
+              "Href": "https://bugzilla.altlinux.org/40284",
+              "Data": "Неправильный путь для открытия справки в браузере"
+            },
+            {
+              "Id": "45320",
+              "Href": "https://bugzilla.altlinux.org/45320",
+              "Data": "Обновите, пожалуйста, R (R-base etc.) до актуальной версии 4.2.2"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235875001",
+                "Comment": "R-base is earlier than 0:4.2.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235875002",
+                "Comment": "R-devel is earlier than 0:4.2.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235875003",
+                "Comment": "R-doc-html is earlier than 0:4.2.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235875004",
+                "Comment": "R-doc-info is earlier than 0:4.2.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235875005",
+                "Comment": "R-doc-pdf is earlier than 0:4.2.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235875006",
+                "Comment": "R-full is earlier than 0:4.2.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235875007",
+                "Comment": "R-tcltk is earlier than 0:4.2.2-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

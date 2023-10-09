@@ -1,0 +1,222 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:3001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c9f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:3001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:3001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-av is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-daemon is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-imagick is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-java is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lang-de is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lang-en is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lang-es is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lang-fr is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lang-he is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lang-pt is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lang-ru is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-lua is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-perl is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-vlc is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "freeswitch-webui is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libfreeswitch is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235726017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libfreeswitch-devel is earlier than 1:1.10.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235726017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235726001"
+      }
+    }
+  ]
+}

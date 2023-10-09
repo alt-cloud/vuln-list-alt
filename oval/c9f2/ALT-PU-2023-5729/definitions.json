@@ -1,0 +1,106 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235729",
+      "Version": "oval:org.altlinux.errata:def:20235729",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5729: package `sofia-sip` update to version 1.13.16-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5729",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5729",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2022-31001",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-31001",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades sofia-sip to version 1.13.16-alt1. \nSecurity Fix(es):\n\n * CVE-2022-31001: Sofia-SIP is an open-source Session Initiation Protocol (SIP) User-Agent library. Prior to version 1.13.8, an attacker can send a message with evil sdp to FreeSWITCH, which may cause crash. This type of crash may be caused by `#define MATCH(s, m) (strncmp(s, m, n = sizeof(m) - 1) == 0)`, which will make `n` bigger and trigger out-of-bound access when `IS_NON_WS(s[n])`. Version 1.13.8 contains a patch for this issue.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-08"
+          },
+          "Updated": {
+            "Date": "2023-10-08"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-31001",
+              "Impact": "High",
+              "Public": "20220531",
+              "CveID": "CVE-2022-31001"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235729001",
+                "Comment": "libsofia-sip is earlier than 0:1.13.16-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235729002",
+                "Comment": "libsofia-sip-devel is earlier than 0:1.13.16-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235729003",
+                "Comment": "libsofia-sip-glib is earlier than 0:1.13.16-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235729004",
+                "Comment": "libsofia-sip-glib-devel is earlier than 0:1.13.16-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235729005",
+                "Comment": "sofia-sip-docs is earlier than 0:1.13.16-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235729006",
+                "Comment": "sofia-sip-utils is earlier than 0:1.13.16-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

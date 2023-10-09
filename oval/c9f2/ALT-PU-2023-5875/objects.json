@@ -1,0 +1,70 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:3001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d\\.\\d)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235875001",
+      "Version": "1",
+      "comment": "R-base is installed",
+      "Name": "R-base"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235875002",
+      "Version": "1",
+      "comment": "R-devel is installed",
+      "Name": "R-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235875003",
+      "Version": "1",
+      "comment": "R-doc-html is installed",
+      "Name": "R-doc-html"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235875004",
+      "Version": "1",
+      "comment": "R-doc-info is installed",
+      "Name": "R-doc-info"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235875005",
+      "Version": "1",
+      "comment": "R-doc-pdf is installed",
+      "Name": "R-doc-pdf"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235875006",
+      "Version": "1",
+      "comment": "R-full is installed",
+      "Name": "R-full"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235875007",
+      "Version": "1",
+      "comment": "R-tcltk is installed",
+      "Name": "R-tcltk"
+    }
+  ]
+}

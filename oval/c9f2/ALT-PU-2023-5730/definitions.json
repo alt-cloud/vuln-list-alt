@@ -1,0 +1,82 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235730",
+      "Version": "oval:org.altlinux.errata:def:20235730",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5730: package `python-module-pycurl` update to version 7.43.0.6-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5730",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5730",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades python-module-pycurl to version 7.43.0.6-alt2. \nSecurity Fix(es):\n\n * #25431: libcurl link-time version is older than compile-time version\n\n * #39027: undefined symbol: PyUnicode_DecodeLocale",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-08"
+          },
+          "Updated": {
+            "Date": "2023-10-08"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "25431",
+              "Href": "https://bugzilla.altlinux.org/25431",
+              "Data": "libcurl link-time version is older than compile-time version"
+            },
+            {
+              "Id": "39027",
+              "Href": "https://bugzilla.altlinux.org/39027",
+              "Data": "undefined symbol: PyUnicode_DecodeLocale"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235730001",
+                "Comment": "python-module-pycurl is earlier than 0:7.43.0.6-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

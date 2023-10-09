@@ -1,0 +1,90 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:3001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c9f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:3001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:3001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235729001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsofia-sip is earlier than 0:1.13.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235729001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235729001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235729002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsofia-sip-devel is earlier than 0:1.13.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235729002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235729001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235729003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsofia-sip-glib is earlier than 0:1.13.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235729003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235729001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235729004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsofia-sip-glib-devel is earlier than 0:1.13.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235729004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235729001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235729005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sofia-sip-docs is earlier than 0:1.13.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235729005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235729001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235729006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sofia-sip-utils is earlier than 0:1.13.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235729006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235729001"
+      }
+    }
+  ]
+}

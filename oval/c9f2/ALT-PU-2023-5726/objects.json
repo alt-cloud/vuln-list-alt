@@ -1,0 +1,130 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:3001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d\\.\\d)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726001",
+      "Version": "1",
+      "comment": "freeswitch-av is installed",
+      "Name": "freeswitch-av"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726002",
+      "Version": "1",
+      "comment": "freeswitch-daemon is installed",
+      "Name": "freeswitch-daemon"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726003",
+      "Version": "1",
+      "comment": "freeswitch-imagick is installed",
+      "Name": "freeswitch-imagick"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726004",
+      "Version": "1",
+      "comment": "freeswitch-java is installed",
+      "Name": "freeswitch-java"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726005",
+      "Version": "1",
+      "comment": "freeswitch-lang-de is installed",
+      "Name": "freeswitch-lang-de"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726006",
+      "Version": "1",
+      "comment": "freeswitch-lang-en is installed",
+      "Name": "freeswitch-lang-en"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726007",
+      "Version": "1",
+      "comment": "freeswitch-lang-es is installed",
+      "Name": "freeswitch-lang-es"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726008",
+      "Version": "1",
+      "comment": "freeswitch-lang-fr is installed",
+      "Name": "freeswitch-lang-fr"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726009",
+      "Version": "1",
+      "comment": "freeswitch-lang-he is installed",
+      "Name": "freeswitch-lang-he"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726010",
+      "Version": "1",
+      "comment": "freeswitch-lang-pt is installed",
+      "Name": "freeswitch-lang-pt"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726011",
+      "Version": "1",
+      "comment": "freeswitch-lang-ru is installed",
+      "Name": "freeswitch-lang-ru"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726012",
+      "Version": "1",
+      "comment": "freeswitch-lua is installed",
+      "Name": "freeswitch-lua"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726013",
+      "Version": "1",
+      "comment": "freeswitch-perl is installed",
+      "Name": "freeswitch-perl"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726014",
+      "Version": "1",
+      "comment": "freeswitch-vlc is installed",
+      "Name": "freeswitch-vlc"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726015",
+      "Version": "1",
+      "comment": "freeswitch-webui is installed",
+      "Name": "freeswitch-webui"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726016",
+      "Version": "1",
+      "comment": "libfreeswitch is installed",
+      "Name": "libfreeswitch"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235726017",
+      "Version": "1",
+      "comment": "libfreeswitch-devel is installed",
+      "Name": "libfreeswitch-devel"
+    }
+  ]
+}
