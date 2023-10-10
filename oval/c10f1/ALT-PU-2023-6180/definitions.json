@@ -1,0 +1,168 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236180",
+      "Version": "oval:org.altlinux.errata:def:20236180",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6180: package `glibc` update to version 2.32-alt5.p10.2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6180",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6180",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-06269",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06269",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-4911",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4911",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades glibc to version 2.32-alt5.p10.2. \nSecurity Fix(es):\n\n * BDU:2023-06269: Уязвимость динамического загрузчика ld.so библиотеки glibc, позволяющая нарушителю выполнить произвольный код c повышенными привилегиями\n\n * CVE-2023-4911: A buffer overflow was discovered in the GNU C Library's dynamic loader ld.so while processing the GLIBC_TUNABLES environment variable. This issue could allow a local attacker to use maliciously crafted GLIBC_TUNABLES environment variables when launching binaries with SUID permission to execute code with elevated privileges.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-10"
+          },
+          "Updated": {
+            "Date": "2023-10-10"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-06269",
+              "Impact": "High",
+              "Public": "20231003",
+              "CveID": "BDU:2023-06269"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4911",
+              "Impact": "High",
+              "Public": "20231003",
+              "CveID": "CVE-2023-4911"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180001",
+                "Comment": "glibc is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180002",
+                "Comment": "glibc-core is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180003",
+                "Comment": "glibc-debug is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180004",
+                "Comment": "glibc-devel is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180005",
+                "Comment": "glibc-devel-static is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180006",
+                "Comment": "glibc-doc is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180007",
+                "Comment": "glibc-gconv-modules is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180008",
+                "Comment": "glibc-i18ndata is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180009",
+                "Comment": "glibc-locales is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180010",
+                "Comment": "glibc-nss is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180011",
+                "Comment": "glibc-preinstall is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180012",
+                "Comment": "glibc-pthread is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180013",
+                "Comment": "glibc-source is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180014",
+                "Comment": "glibc-timezones is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180015",
+                "Comment": "glibc-utils is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180016",
+                "Comment": "iconv is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180017",
+                "Comment": "libnsl1 is earlier than 6:2.32-alt5.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236180018",
+                "Comment": "nscd is earlier than 6:2.32-alt5.p10.2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

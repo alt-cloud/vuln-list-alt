@@ -1,0 +1,135 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235876",
+      "Version": "oval:org.altlinux.errata:def:20235876",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5876: package `libwebp` update to version 1.3.2-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5876",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5876",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-02923",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-02923",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05510",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05510",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-1999",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-1999",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4863",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4863",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libwebp to version 1.3.2-alt1. \nSecurity Fix(es):\n\n * BDU:2023-02923: Уязвимость функции EncodeAlphaInternal() библиотеки libwebp для кодирования и декодирования изображений в формате WebP браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05510: Уязвимость библиотеки libwebp для кодирования и декодирования изображений в формате WebP, связанная с чтением за границами буфера в памяти, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2023-1999: There exists a use after free/double free in libwebp. An attacker can use the ApplyFiltersAndEncode() function and loop through to free best.bw and assign best = trial pointer. The second loop will then return 0 because of an Out of memory error in VP8 encoder, the pointer is still assigned to trial and the AddressSanitizer will attempt a double free. \n\n\n * CVE-2023-4863: Heap buffer overflow in libwebp in Google Chrome prior to 116.0.5845.187 and libwebp 1.3.2 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-10"
+          },
+          "Updated": {
+            "Date": "2023-10-10"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119, CWE-415",
+              "Href": "https://bdu.fstec.ru/vul/2023-02923",
+              "Impact": "High",
+              "Public": "20230223",
+              "CveID": "BDU:2023-02923"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://bdu.fstec.ru/vul/2023-05510",
+              "Impact": "High",
+              "Public": "20230911",
+              "CveID": "BDU:2023-05510"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-415",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-1999",
+              "Impact": "High",
+              "Public": "20230620",
+              "CveID": "CVE-2023-1999"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4863",
+              "Impact": "High",
+              "Public": "20230912",
+              "CveID": "CVE-2023-4863"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235876001",
+                "Comment": "libwebp-devel is earlier than 0:1.3.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235876002",
+                "Comment": "libwebp-tools is earlier than 0:1.3.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235876003",
+                "Comment": "libwebp7 is earlier than 0:1.3.2-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

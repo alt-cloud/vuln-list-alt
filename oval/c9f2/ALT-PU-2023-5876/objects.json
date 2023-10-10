@@ -1,0 +1,46 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:3001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d\\.\\d)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235876001",
+      "Version": "1",
+      "comment": "libwebp-devel is installed",
+      "Name": "libwebp-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235876002",
+      "Version": "1",
+      "comment": "libwebp-tools is installed",
+      "Name": "libwebp-tools"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20235876003",
+      "Version": "1",
+      "comment": "libwebp7 is installed",
+      "Name": "libwebp7"
+    }
+  ]
+}

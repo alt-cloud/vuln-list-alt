@@ -1,0 +1,90 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235884001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsane is earlier than 0:1.2.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235884001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235884001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235884002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsane-devel is earlier than 0:1.2.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235884002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235884001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235884003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsane-gphoto2 is earlier than 0:1.2.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235884003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235884001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235884004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sane is earlier than 0:1.2.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235884004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235884001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235884005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sane-doc is earlier than 0:1.2.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235884005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235884001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235884006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sane-server is earlier than 0:1.2.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235884006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235884001"
+      }
+    }
+  ]
+}
