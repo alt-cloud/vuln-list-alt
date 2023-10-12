@@ -2263,7 +2263,7 @@
             {
               "Cvss": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
-              "Cwe": "CWE-88",
+              "Cwe": "CWE-74",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-24002",
               "Impact": "High",
               "Public": "20210624",
