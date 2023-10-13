@@ -1,0 +1,126 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "clippy is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rust is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rust-analyzer is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rust-cargo is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rust-cargo-doc is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rust-doc is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rust-gdb is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rust-src is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236236009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rustfmt is earlier than 1:1.72.1-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236236009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236236001"
+      }
+    }
+  ]
+}
