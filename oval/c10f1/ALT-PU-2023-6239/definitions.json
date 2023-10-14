@@ -1,0 +1,100 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236239",
+      "Version": "oval:org.altlinux.errata:def:20236239",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6239: package `python3-module-django` update to version 3.2.22-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6239",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6239",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-41164",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-41164",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-43665",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-43665",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades python3-module-django to version 3.2.22-alt1. \nSecurity Fix(es):\n\n * CVE-2023-41164: description unavailable\n\n * CVE-2023-43665: description unavailable",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-14"
+          },
+          "Updated": {
+            "Date": "2023-10-14"
+          },
+          "bdu": null,
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236239001",
+                "Comment": "python3-module-django is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236239002",
+                "Comment": "python3-module-django-dbbackend-mysql is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236239003",
+                "Comment": "python3-module-django-dbbackend-oracle is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236239004",
+                "Comment": "python3-module-django-dbbackend-postgresql is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236239005",
+                "Comment": "python3-module-django-dbbackend-sqlite3 is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236239006",
+                "Comment": "python3-module-django-doc is earlier than 0:3.2.22-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

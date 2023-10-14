@@ -1,0 +1,332 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236268",
+      "Version": "oval:org.altlinux.errata:def:20236268",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6268: package `zabbix` update to version 5.0.38-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6268",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6268",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2022-00879",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-00879",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-01708",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-01708",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-01711",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-01711",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-01712",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-01712",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-01720",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-01720",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2021-46088",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-46088",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-23132",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-23132",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-23133",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-23133",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-35229",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-35229",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-35230",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-35230",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29449",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29449",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29450",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29450",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29458",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29458",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades zabbix to version 5.0.38-alt1. \nSecurity Fix(es):\n\n * BDU:2022-00879: Уязвимость универсальной системы мониторинга Zabbix , связанная с ошибками авторизации, позволяющая нарушителю выполнить произвольный код с root-привилегиями\n\n * BDU:2023-01708: Уязвимость универсальной системы мониторинга Zabbix, связанная с непринятием мер по защите структуры веб-страницы, позволяющая нарушителю оказать воздействие на целостность данных\n\n * BDU:2023-01711: Уязвимость универсальной системы мониторинга Zabbix, связанная с непринятием мер по защите структуры веб-страницы, позволяющая нарушителю оказать воздействие на целостность данных\n\n * BDU:2023-01712: Уязвимость универсальной системы мониторинга Zabbix, связанная с непринятием мер по защите структуры веб-страницы, позволяющая нарушителю оказать воздействие на целостность данных\n\n * BDU:2023-01720: Уязвимость универсальной системы мониторинга Zabbix, связанная с неправильным присвоением разрешений для критичного ресурса, позволяющая нарушителю получить доступ к конфиденциальным данным, нарушить их целостность, а также вызвать отказ в обслуживании\n\n * CVE-2021-46088: Zabbix 4.0 LTS, 4.2, 4.4, and 5.0 LTS is vulnerable to Remote Code Execution (RCE). Any user with the \"Zabbix Admin\" role is able to run custom shell script on the application server in the context of the application user.\n\n * CVE-2022-23132: During Zabbix installation from RPM, DAC_OVERRIDE SELinux capability is in use to access PID files in [/var/run/zabbix] folder. In this case, Zabbix Proxy or Server processes can bypass file read, write and execute permissions check on the file system level\n\n * CVE-2022-23133: An authenticated user can create a hosts group from the configuration with XSS payload, which will be available for other users. When XSS is stored by an authenticated malicious actor and other users try to search for groups during new host creation, the XSS payload will fire and the actor can steal session cookies and perform session hijacking to impersonate users or take over their accounts.\n\n * CVE-2022-35229: An authenticated user can create a link with reflected Javascript code inside it for the discovery page and send it to other users. The payload can be executed only with a known CSRF token value of the victim, which is changed periodically and is difficult to predict.\n\n * CVE-2022-35230: An authenticated user can create a link with reflected Javascript code inside it for the graphs page and send it to other users. The payload can be executed only with a known CSRF token value of the victim, which is changed periodically and is difficult to predict.\n\n * CVE-2023-29449: JavaScript preprocessing, webhooks and global scripts can cause uncontrolled CPU, memory, and disk I/O utilization. Preprocessing/webhook/global script configuration and testing are only available to Administrative roles (Admin and Superadmin). Administrative privileges should be typically granted to users who need to perform tasks that require more control over the system. The security risk is limited because not all users have this level of access. \n\n * CVE-2023-29450: JavaScript pre-processing can be used by the attacker to gain access to the file system (read-only access on behalf of user \"zabbix\") on the Zabbix Server or Zabbix Proxy, potentially leading to unauthorized access to sensitive data.\n\n * CVE-2023-29458: Duktape is an 3rd-party embeddable JavaScript engine, with a focus on portability and compact footprint. When adding too many values in valstack JavaScript will crash. This issue occurs due to bug in Duktape 2.6 which is an 3rd-party solution that we use.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-14"
+          },
+          "Updated": {
+            "Date": "2023-10-14"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-862",
+              "Href": "https://bdu.fstec.ru/vul/2022-00879",
+              "Impact": "High",
+              "Public": "20220127",
+              "CveID": "BDU:2022-00879"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-01708",
+              "Impact": "Low",
+              "Public": "20211208",
+              "CveID": "BDU:2023-01708"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-01711",
+              "Impact": "Low",
+              "Public": "20220509",
+              "CveID": "BDU:2023-01711"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-01712",
+              "Impact": "Low",
+              "Public": "20220510",
+              "CveID": "BDU:2023-01712"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-732",
+              "Href": "https://bdu.fstec.ru/vul/2023-01720",
+              "Impact": "High",
+              "Public": "20211201",
+              "CveID": "BDU:2023-01720"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-46088",
+              "Impact": "High",
+              "Public": "20220127",
+              "CveID": "CVE-2021-46088"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-732",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23132",
+              "Impact": "High",
+              "Public": "20220113",
+              "CveID": "CVE-2022-23132"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23133",
+              "Impact": "Low",
+              "Public": "20220113",
+              "CveID": "CVE-2022-23133"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-35229",
+              "Impact": "Low",
+              "Public": "20220706",
+              "CveID": "CVE-2022-35229"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-35230",
+              "Impact": "Low",
+              "Public": "20220706",
+              "CveID": "CVE-2022-35230"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29449",
+              "Impact": "Low",
+              "Public": "20230713",
+              "CveID": "CVE-2023-29449"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-552",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29450",
+              "Impact": "High",
+              "Public": "20230713",
+              "CveID": "CVE-2023-29450"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-129",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29458",
+              "Impact": "High",
+              "Public": "20230713",
+              "CveID": "CVE-2023-29458"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268001",
+                "Comment": "zabbix-agent is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268002",
+                "Comment": "zabbix-agent-sudo is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268003",
+                "Comment": "zabbix-agent2 is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268004",
+                "Comment": "zabbix-common is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268005",
+                "Comment": "zabbix-common-database-mysql is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268006",
+                "Comment": "zabbix-common-database-pgsql is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268007",
+                "Comment": "zabbix-common-database-sqlite3 is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268008",
+                "Comment": "zabbix-contrib is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268009",
+                "Comment": "zabbix-doc is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268010",
+                "Comment": "zabbix-java-gateway is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268011",
+                "Comment": "zabbix-phpfrontend-apache2 is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268012",
+                "Comment": "zabbix-phpfrontend-apache2-mod_php7 is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268013",
+                "Comment": "zabbix-phpfrontend-engine is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268014",
+                "Comment": "zabbix-phpfrontend-php7 is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268015",
+                "Comment": "zabbix-proxy is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268016",
+                "Comment": "zabbix-proxy-common is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268017",
+                "Comment": "zabbix-proxy-pgsql is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268018",
+                "Comment": "zabbix-server-common is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268019",
+                "Comment": "zabbix-server-mysql is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268020",
+                "Comment": "zabbix-server-pgsql is earlier than 1:5.0.38-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236268021",
+                "Comment": "zabbix-source is earlier than 1:5.0.38-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

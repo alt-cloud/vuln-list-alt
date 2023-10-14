@@ -1,0 +1,90 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236239001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-django is earlier than 0:3.2.22-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236239001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236239001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236239002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-django-dbbackend-mysql is earlier than 0:3.2.22-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236239002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236239001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236239003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-django-dbbackend-oracle is earlier than 0:3.2.22-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236239003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236239001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236239004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-django-dbbackend-postgresql is earlier than 0:3.2.22-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236239004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236239001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236239005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-django-dbbackend-sqlite3 is earlier than 0:3.2.22-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236239005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236239001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236239006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-django-doc is earlier than 0:3.2.22-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236239006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236239001"
+      }
+    }
+  ]
+}
