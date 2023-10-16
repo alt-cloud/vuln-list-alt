@@ -1,0 +1,131 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236262",
+      "Version": "oval:org.altlinux.errata:def:20236262",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6262: package `golang` update to version 1.20.10-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6262",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6262",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-39325",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades golang to version 1.20.10-alt1. \nSecurity Fix(es):\n\n * CVE-2023-39325: A malicious HTTP/2 client which rapidly creates requests and immediately resets them can cause excessive server resource consumption. While the total number of requests is bounded by the http2.Server.MaxConcurrentStreams setting, resetting an in-progress request allows the attacker to create a new request while the existing one is still executing. With the fix applied, HTTP/2 servers now bound the number of simultaneously executing handler goroutines to the stream concurrency limit (MaxConcurrentStreams). New requests arriving when at the limit (which can only happen after the client has reset an existing, in-flight request) will be queued until a handler exits. If the request queue grows too large, the server will terminate the connection. This issue is also fixed in golang.org/x/net/http2 for users manually configuring HTTP/2. The default stream concurrency limit is 250 streams (requests) per HTTP/2 connection. This value may be adjusted using the golang.org/x/net/http2 package; see the Server.MaxConcurrentStreams setting and the ConfigureServer function.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-16"
+          },
+          "Updated": {
+            "Date": "2023-10-16"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
+              "Impact": "None",
+              "Public": "20231011",
+              "CveID": "CVE-2023-39325"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236262001",
+                "Comment": "golang is earlier than 0:1.20.10-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236262002",
+                "Comment": "golang-docs is earlier than 0:1.20.10-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236262003",
+                "Comment": "golang-gdb is earlier than 0:1.20.10-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236262004",
+                "Comment": "golang-misc is earlier than 0:1.20.10-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236262005",
+                "Comment": "golang-shared is earlier than 0:1.20.10-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236262006",
+                "Comment": "golang-src is earlier than 0:1.20.10-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236262007",
+                "Comment": "golang-tests is earlier than 0:1.20.10-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

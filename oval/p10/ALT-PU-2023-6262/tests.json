@@ -1,0 +1,102 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236262001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "golang is earlier than 0:1.20.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236262001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236262001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236262002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "golang-docs is earlier than 0:1.20.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236262002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236262001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236262003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "golang-gdb is earlier than 0:1.20.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236262003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236262001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236262004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "golang-misc is earlier than 0:1.20.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236262004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236262001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236262005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "golang-shared is earlier than 0:1.20.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236262005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236262001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236262006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "golang-src is earlier than 0:1.20.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236262006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236262001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236262007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "golang-tests is earlier than 0:1.20.10-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236262007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236262001"
+      }
+    }
+  ]
+}
