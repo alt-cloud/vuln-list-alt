@@ -1,0 +1,97 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236412",
+      "Version": "oval:org.altlinux.errata:def:20236412",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6412: package `libmaxminddb` update to version 1.7.1-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6412",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6412",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2020-28241",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-28241",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libmaxminddb to version 1.7.1-alt1. \nSecurity Fix(es):\n\n * CVE-2020-28241: libmaxminddb before 1.4.3 has a heap-based buffer over-read in dump_entry_data_list in maxminddb.c.\n\n * #37582: Добавление тестов",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-17"
+          },
+          "Updated": {
+            "Date": "2023-10-17"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-28241",
+              "Impact": "Low",
+              "Public": "20201106",
+              "CveID": "CVE-2020-28241"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "37582",
+              "Href": "https://bugzilla.altlinux.org/37582",
+              "Data": "Добавление тестов"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236412001",
+                "Comment": "libmaxminddb is earlier than 0:1.7.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236412002",
+                "Comment": "libmaxminddb-devel is earlier than 0:1.7.1-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

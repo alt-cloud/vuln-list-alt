@@ -1,0 +1,78 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236074001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-common is earlier than 0:2.06-alt16",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236074001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236074002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-efi is earlier than 0:2.06-alt16",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236074002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236074003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-efi-checkinstall is earlier than 0:2.06-alt16",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236074003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236074004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-ieee1275 is earlier than 0:2.06-alt16",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236074004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236074005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "grub-pc is earlier than 0:2.06-alt16",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236074005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236074001"
+      }
+    }
+  ]
+}
