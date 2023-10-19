@@ -1,0 +1,182 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236410",
+      "Version": "oval:org.altlinux.errata:def:20236410",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6410: package `openssl1.1` update to version 1.1.1w-alt0.p10.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6410",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6410",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-04957",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-04957",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-04960",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-04960",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05872",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05872",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-3446",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3446",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3817",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3817",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4807",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4807",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades openssl1.1 to version 1.1.1w-alt0.p10.1. \nSecurity Fix(es):\n\n * BDU:2023-04957: Уязвимость функций DH_check(), DH_check_ex() или EVP_PKEY_param_check() библиотеки OpenSSL, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-04960: Уязвимость функций DH_check(), DH_check_ex(), EVP_PKEY_param_check() библиотеки OpenSSL, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05872: Уязвимость криптографической библиотеки OpenSSL, связанная с неправильной проверкой ввода, позволяющая нарушителю выполнить атаку типа «отказ в обслуживании»\n\n * CVE-2023-3446: Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. One of those\nchecks confirms that the modulus ('p' parameter) is not too large. Trying to use\na very large modulus is slow and OpenSSL will not normally use a modulus which\nis over 10,000 bits in length.\n\nHowever the DH_check() function checks numerous aspects of the key or parameters\nthat have been supplied. Some of those checks use the supplied modulus value\neven if it has already been found to be too large.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulernable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the '-check' option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n * CVE-2023-3817: Issue summary: Checking excessively long DH keys or parameters may be very slow.\n\nImpact summary: Applications that use the functions DH_check(), DH_check_ex()\nor EVP_PKEY_param_check() to check a DH key or DH parameters may experience long\ndelays. Where the key or parameters that are being checked have been obtained\nfrom an untrusted source this may lead to a Denial of Service.\n\nThe function DH_check() performs various checks on DH parameters. After fixing\nCVE-2023-3446 it was discovered that a large q parameter value can also trigger\nan overly long computation during some of these checks. A correct q value,\nif present, cannot be larger than the modulus p parameter, thus it is\nunnecessary to perform these checks if q is larger than p.\n\nAn application that calls DH_check() and supplies a key or parameters obtained\nfrom an untrusted source could be vulnerable to a Denial of Service attack.\n\nThe function DH_check() is itself called by a number of other OpenSSL functions.\nAn application calling any of those other functions may similarly be affected.\nThe other functions affected by this are DH_check_ex() and\nEVP_PKEY_param_check().\n\nAlso vulnerable are the OpenSSL dhparam and pkeyparam command line applications\nwhen using the \"-check\" option.\n\nThe OpenSSL SSL/TLS implementation is not affected by this issue.\n\nThe OpenSSL 3.0 and 3.1 FIPS providers are not affected by this issue.\n\n * CVE-2023-4807: Issue summary: The POLY1305 MAC (message authentication code) implementation\ncontains a bug that might corrupt the internal state of applications on the\nWindows 64 platform when running on newer X86_64 processors supporting the\nAVX512-IFMA instructions.\n\nImpact summary: If in an application that uses the OpenSSL library an attacker\ncan influence whether the POLY1305 MAC algorithm is used, the application\nstate might be corrupted with various application dependent consequences.\n\nThe POLY1305 MAC (message authentication code) implementation in OpenSSL does\nnot save the contents of non-volatile XMM registers on Windows 64 platform\nwhen calculating the MAC of data larger than 64 bytes. Before returning to\nthe caller all the XMM registers are set to zero rather than restoring their\nprevious content. The vulnerable code is used only on newer x86_64 processors\nsupporting the AVX512-IFMA instructions.\n\nThe consequences of this kind of internal application state corruption can\nbe various - from no consequences, if the calling application does not\ndepend on the contents of non-volatile XMM registers at all, to the worst\nconsequences, where the attacker could get complete control of the application\nprocess. However given the contents of the registers are just zeroized so\nthe attacker cannot put arbitrary values inside, the most likely consequence,\nif any, would be an incorrect result of some application dependent\ncalculations or a crash leading to a denial of service.\n\nThe POLY1305 MAC algorithm is most frequently used as part of the\nCHACHA20-POLY1305 AEAD (authenticated encryption with associated data)\nalgorithm. The most common usage of this AEAD cipher is with TLS protocol\nversions 1.2 and 1.3 and a malicious client can influence whether this AEAD\ncipher is used by the server. This implies that server applications using\nOpenSSL can be potentially impacted. However we are currently not aware of\nany concrete application that would be affected by this issue therefore we\nconsider this a Low severity security issue.\n\nAs a workaround the AVX512-IFMA instructions support can be disabled at\nruntime by setting the environment variable OPENSSL_ia32cap:\n\n   OPENSSL_ia32cap=:~0x200000\n\nThe FIPS provider is not affected by this issue.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-19"
+          },
+          "Updated": {
+            "Date": "2023-10-19"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-1333",
+              "Href": "https://bdu.fstec.ru/vul/2023-04957",
+              "Impact": "Low",
+              "Public": "20230719",
+              "CveID": "BDU:2023-04957"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-834",
+              "Href": "https://bdu.fstec.ru/vul/2023-04960",
+              "Impact": "Low",
+              "Public": "20230731",
+              "CveID": "BDU:2023-04960"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-20",
+              "Href": "https://bdu.fstec.ru/vul/2023-05872",
+              "Impact": "High",
+              "Public": "20230908",
+              "CveID": "BDU:2023-05872"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-1333",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3446",
+              "Impact": "Low",
+              "Public": "20230719",
+              "CveID": "CVE-2023-3446"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-834",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3817",
+              "Impact": "Low",
+              "Public": "20230731",
+              "CveID": "CVE-2023-3817"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4807",
+              "Impact": "High",
+              "Public": "20230908",
+              "CveID": "CVE-2023-4807"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410001",
+                "Comment": "libcrypto1.1 is earlier than 0:1.1.1w-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410002",
+                "Comment": "libssl-devel is earlier than 0:1.1.1w-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410003",
+                "Comment": "libssl-devel-static is earlier than 0:1.1.1w-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410004",
+                "Comment": "libssl1.1 is earlier than 0:1.1.1w-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410005",
+                "Comment": "openssl is earlier than 0:1.1.1w-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410006",
+                "Comment": "openssl-doc is earlier than 0:1.1.1w-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410007",
+                "Comment": "openssl-engines is earlier than 0:1.1.1w-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236410008",
+                "Comment": "tsget is earlier than 0:1.1.1w-alt0.p10.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

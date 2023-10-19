@@ -1,0 +1,114 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libcrypto1.1 is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libssl-devel is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libssl-devel-static is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libssl1.1 is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssl is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssl-doc is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssl-engines is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236410008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "tsget is earlier than 0:1.1.1w-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236410008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236410001"
+      }
+    }
+  ]
+}

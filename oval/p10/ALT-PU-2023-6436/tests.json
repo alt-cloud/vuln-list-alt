@@ -1,0 +1,54 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236436001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "firefox-esr is earlier than 0:115.3.1-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236436001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236436001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236436002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "firefox-esr-config-privacy is earlier than 0:115.3.1-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236436002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236436001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236436003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "firefox-esr-wayland is earlier than 0:115.3.1-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236436003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236436001"
+      }
+    }
+  ]
+}
