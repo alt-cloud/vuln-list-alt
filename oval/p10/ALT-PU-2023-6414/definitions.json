@@ -70,7 +70,7 @@
           "Cves": [
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "Cwe": "CWE-122",
+              "Cwe": "CWE-787",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5344",
               "Impact": "High",
               "Public": "20231002",
