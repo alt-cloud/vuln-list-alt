@@ -1,0 +1,136 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236353",
+      "Version": "oval:org.altlinux.errata:def:20236353",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6353: package `scala` update to version 2.13.9-alt0.p10.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6353",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6353",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-00169",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-00169",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-36944",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-36944",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades scala to version 2.13.9-alt0.p10.1. \nSecurity Fix(es):\n\n * BDU:2023-00169: Уязвимость интерпретатора языка программирования Scala, связанная с ошибками при десериализации данных, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2022-36944: Scala 2.13.x before 2.13.9 has a Java deserialization chain in its JAR file. On its own, it cannot be exploited. There is only a risk in conjunction with Java object deserialization within an application. In such situations, it allows attackers to erase contents of arbitrary files, make network connections, or possibly run arbitrary code (specifically, Function0 functions) via a gadget chain.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-22"
+          },
+          "Updated": {
+            "Date": "2023-10-22"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-502",
+              "Href": "https://bdu.fstec.ru/vul/2023-00169",
+              "Impact": "Critical",
+              "Public": "20220923",
+              "CveID": "BDU:2023-00169"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-502",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-36944",
+              "Impact": "Critical",
+              "Public": "20220923",
+              "CveID": "CVE-2022-36944"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236353001",
+                "Comment": "scala is earlier than 0:2.13.9-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236353002",
+                "Comment": "scala-apidoc is earlier than 0:2.13.9-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236353003",
+                "Comment": "scala-library is earlier than 0:2.13.9-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236353004",
+                "Comment": "scala-reflect is earlier than 0:2.13.9-alt0.p10.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
