@@ -1,0 +1,119 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236474",
+      "Version": "oval:org.altlinux.errata:def:20236474",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6474: package `python3-module-lxml` update to version 4.9.3-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6474",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6474",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2022-00756",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-00756",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2021-43818",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-43818",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-2309",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-2309",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades python3-module-lxml to version 4.9.3-alt1. \nSecurity Fix(es):\n\n * BDU:2022-00756: Уязвимость реализации модуля Class Cleaner библиотеки для обработки разметки XML и HTML Lxml, позволяющая нарушителю осуществлять межсайтовые сценарные атаки\n\n * CVE-2021-43818: lxml is a library for processing XML and HTML in the Python language. Prior to version 4.6.5, the HTML Cleaner in lxml.html lets certain crafted script content pass through, as well as script content in SVG files embedded using data URIs. Users that employ the HTML cleaner in a security relevant context should upgrade to lxml 4.6.5 to receive a patch. There are no known workarounds available.\n\n * CVE-2022-2309: NULL Pointer Dereference allows attackers to cause a denial of service (or application crash). This only applies when lxml is used together with libxml2 2.9.10 through 2.9.14. libxml2 2.9.9 and earlier are not affected. It allows triggering crashes through forged input data, given a vulnerable code sequence in the application. The vulnerability is caused by the iterwalk function (also used by the canonicalize function). Such code shouldn't be in wide-spread use, given that parsing + iterwalk would usually be replaced with the more efficient iterparse function. However, an XML converter that serialises to C14N would also be vulnerable, for example, and there are legitimate use cases for this code sequence. If untrusted input is received (also remotely) and processed via iterwalk function, a crash can be triggered.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-24"
+          },
+          "Updated": {
+            "Date": "2023-10-24"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:N",
+              "Cwe": "CWE-77, CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2022-00756",
+              "Impact": "High",
+              "Public": "20211212",
+              "CveID": "BDU:2022-00756"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:L",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-43818",
+              "Impact": "High",
+              "Public": "20211213",
+              "CveID": "CVE-2021-43818"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-476",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-2309",
+              "Impact": "High",
+              "Public": "20220705",
+              "CveID": "CVE-2022-2309"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236474001",
+                "Comment": "python3-module-lxml is earlier than 0:4.9.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236474002",
+                "Comment": "python3-module-lxml-doc is earlier than 0:4.9.3-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

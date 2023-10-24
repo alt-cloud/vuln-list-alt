@@ -1,11 +1,11 @@
 {
   "Definition": [
     {
-      "ID": "oval:org.altlinux.errata:def:20236511",
-      "Version": "oval:org.altlinux.errata:def:20236511",
+      "ID": "oval:org.altlinux.errata:def:20236473",
+      "Version": "oval:org.altlinux.errata:def:20236473",
       "Class": "patch",
       "Metadata": {
-        "Title": "ALT-PU-2023-6511: package `apache2-mod_http2` update to version 2.0.25-alt1",
+        "Title": "ALT-PU-2023-6473: package `alterator-auth` update to version 0.44.6-alt1",
         "AffectedList": [
           {
             "Family": "unix",
@@ -25,35 +25,28 @@
         ],
         "References": [
           {
-            "RefID": "ALT-PU-2023-6511",
-            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6511",
+            "RefID": "ALT-PU-2023-6473",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6473",
             "Source": "ALTPU"
-          },
-          {
-            "RefID": "CVE-2023-45802",
-            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45802",
-            "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades apache2-mod_http2 to version 2.0.25-alt1. \nSecurity Fix(es):\n\n * CVE-2023-45802: When a HTTP/2 stream was reset (RST frame) by a client, there was a time window were the request's memory resources were not reclaimed immediately. Instead, de-allocation was deferred to connection close. A client could send new requests and resets, keeping the connection busy and open and causing the memory footprint to keep on growing. On connection close, all resources were reclaimed, but the process might run out of memory before that.\n\nThis was found by the reporter during testing of CVE-2023-44487 (HTTP/2 Rapid Reset Exploit) with their own test client. During \"normal\" HTTP/2 use, the probability to hit this bug is very low. The kept memory would not become noticeable before the connection closes or times out.\n\nUsers are recommended to upgrade to version 2.4.58, which fixes the issue.\n",
+        "Description": "This update upgrades alterator-auth to version 0.44.6-alt1. \nSecurity Fix(es):\n\n * #44924: Не работает добавления компьютера в дочернем OU (sub OU)",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "Low",
           "Rights": "Copyright 2023 BaseALT Ltd.",
           "Issued": {
-            "Date": "2023-10-22"
+            "Date": "2023-10-24"
           },
           "Updated": {
-            "Date": "2023-10-22"
+            "Date": "2023-10-24"
           },
           "bdu": null,
-          "Cves": [
+          "Bugzilla": [
             {
-              "Cwe": "CWE-400",
-              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45802",
-              "Impact": "None",
-              "Public": "20231023",
-              "CveID": "CVE-2023-45802"
+              "Id": "44924",
+              "Href": "https://bugzilla.altlinux.org/44924",
+              "Data": "Не работает добавления компьютера в дочернем OU (sub OU)"
             }
           ],
           "AffectedCpeList": {
@@ -96,8 +89,28 @@
             "Operator": "OR",
             "Criterions": [
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20236511001",
-                "Comment": "apache2-mod_http2 is earlier than 0:2.0.25-alt1"
+                "TestRef": "oval:org.altlinux.errata:tst:20236473001",
+                "Comment": "alterator-auth is earlier than 0:0.44.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236473002",
+                "Comment": "alterator-roles-common is earlier than 0:0.44.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236473003",
+                "Comment": "task-auth-ad-sssd is earlier than 0:0.44.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236473004",
+                "Comment": "task-auth-ad-winbind is earlier than 0:0.44.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236473005",
+                "Comment": "task-auth-freeipa is earlier than 0:0.44.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236473006",
+                "Comment": "task-auth-ldap-sssd is earlier than 0:0.44.6-alt1"
               }
             ]
           }
