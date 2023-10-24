@@ -1,0 +1,66 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236559001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "gimagereader is earlier than 0:3.4.1-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236559001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236559001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236559002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "gimagereader-common is earlier than 0:3.4.1-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236559002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236559001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236559003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "gimagereader-gtk is earlier than 0:3.4.1-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236559003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236559001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236559004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "gimagereader-qt5 is earlier than 0:3.4.1-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236559004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236559001"
+      }
+    }
+  ]
+}

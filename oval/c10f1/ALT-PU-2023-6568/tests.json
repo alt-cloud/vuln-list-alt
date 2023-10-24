@@ -1,0 +1,54 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236568001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-sqlparse is earlier than 0:0.4.4-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236568001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236568001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236568002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-sqlparse-docs is earlier than 0:0.4.4-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236568002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236568001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236568003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-sqlparse-pickles is earlier than 0:0.4.4-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236568003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236568001"
+      }
+    }
+  ]
+}
