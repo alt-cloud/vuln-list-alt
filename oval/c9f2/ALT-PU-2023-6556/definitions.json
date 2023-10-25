@@ -1,0 +1,548 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236556",
+      "Version": "oval:org.altlinux.errata:def:20236556",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6556: package `wireshark` update to version 4.0.8-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6556",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6556",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-03347",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03347",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-03609",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03609",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05022",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05022",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05695",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05695",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05696",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05696",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05711",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05711",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05712",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05712",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05713",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05713",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-0411",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0411",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0412",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0412",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0413",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0413",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0414",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0414",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0415",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0415",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0416",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0416",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0417",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0417",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0666",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0666",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0667",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0667",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0668",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0668",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-1161",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-1161",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-1992",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-1992",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-1993",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-1993",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-1994",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-1994",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2854",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2854",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2855",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2855",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2856",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2856",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2857",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2857",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2858",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2858",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2879",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2879",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2906",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2906",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-2952",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2952",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3648",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3648",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3649",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3649",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4511",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4511",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4512",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4512",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4513",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4513",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades wireshark to version 4.0.8-alt1. \nSecurity Fix(es):\n\n * BDU:2023-03347: Уязвимость диссектора RPCoRDMA анализатора трафика компьютерных сетей Wireshark, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-03609: Уязвимость диссектора LISP анализатора трафика компьютерных сетей Wireshark, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05022: Уязвимость компонента CP2179 анализатора трафика компьютерных сетей Wireshark, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05695: Уязвимость анализатора трафика компьютерных сетей Wireshark , связанная с несогласованным управлением памятью, , позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05696: Уязвимость анализатора трафика компьютерных сетей Wireshark, связанная с чтением за границами буфера в памяти, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05711: Уязвимость анализатора трафика компьютерных сетей Wireshark, связанная с выполнением цикла с недоступным условием выхода, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05712: Уязвимость анализатора трафика компьютерных сетей Wireshark , связанная с ошибкой освобождения памяти, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-05713: Уязвимость анализатора трафика компьютерных сетей Wireshark, вызванная неконтролируемой рекурсией, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-0411: Excessive loops in multiple dissectors in Wireshark 4.0.0 to 4.0.2 and 3.6.0 to 3.6.10 and allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-0412: TIPC dissector crash in Wireshark 4.0.0 to 4.0.2 and 3.6.0 to 3.6.10 and allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-0413: Dissection engine bug in Wireshark 4.0.0 to 4.0.2 and 3.6.0 to 3.6.10 and allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-0414: Crash in the EAP dissector in Wireshark 4.0.0 to 4.0.2 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-0415: iSCSI dissector crash in Wireshark 4.0.0 to 4.0.2 and 3.6.0 to 3.6.10 and allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-0416: GNW dissector crash in Wireshark 4.0.0 to 4.0.2 and 3.6.0 to 3.6.10 and allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-0417: Memory leak in the NFS dissector in Wireshark 4.0.0 to 4.0.2 and 3.6.0 to 3.6.10 and allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-0666: Due to failure in validating the length provided by an attacker-crafted RTPS packet, Wireshark version 4.0.5 and prior, by default, is susceptible to a heap-based buffer overflow, and possibly code execution in the context of the process running Wireshark.\n\n * CVE-2023-0667: Due to failure in validating the length provided by an attacker-crafted MSMMS packet, Wireshark version 4.0.5 and prior, in an unusual configuration, is susceptible to a heap-based buffer overflow, and possibly code execution in the context of the process running Wireshark\n\n * CVE-2023-0668: Due to failure in validating the length provided by an attacker-crafted IEEE-C37.118 packet, Wireshark version 4.0.5 and prior, by default, is susceptible to a heap-based buffer overflow, and possibly code execution in the context of the process running Wireshark.\n\n * CVE-2023-1161: ISO 15765 and ISO 10681 dissector crash in Wireshark 4.0.0 to 4.0.3 and 3.6.0 to 3.6.11 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-1992: RPCoRDMA dissector crash in Wireshark 4.0.0 to 4.0.4 and 3.6.0 to 3.6.12 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-1993: LISP dissector large loop in Wireshark 4.0.0 to 4.0.4 and 3.6.0 to 3.6.12 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-1994: GQUIC dissector crash in Wireshark 4.0.0 to 4.0.4 and 3.6.0 to 3.6.12 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-2854: BLF file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file\n\n * CVE-2023-2855: Candump log parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file\n\n * CVE-2023-2856: VMS TCPIPtrace file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file\n\n * CVE-2023-2857: BLF file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file\n\n * CVE-2023-2858: NetScaler file parser crash in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via crafted capture file\n\n * CVE-2023-2879: GDSDB infinite loop in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-2906: Due to a failure in validating the length provided by an attacker-crafted CP2179 packet, Wireshark versions 2.0.0 through 4.0.7 is susceptible to a divide by zero allowing for a denial of service attack.\n\n\n * CVE-2023-2952: XRA dissector infinite loop in Wireshark 4.0.0 to 4.0.5 and 3.6.0 to 3.6.13 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-3648: Kafka dissector crash in Wireshark 4.0.0 to 4.0.6 and 3.6.0 to 3.6.14 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-3649: iSCSI dissector crash in Wireshark 4.0.0 to 4.0.6 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-4511: BT SDP dissector infinite loop in Wireshark 4.0.0 to 4.0.7 and 3.6.0 to 3.6.15 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-4512: CBOR dissector crash in Wireshark 4.0.0 to 4.0.6 allows denial of service via packet injection or crafted capture file\n\n * CVE-2023-4513: BT SDP dissector memory leak in Wireshark 4.0.0 to 4.0.7 and 3.6.0 to 3.6.15 allows denial of service via packet injection or crafted capture file",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-24"
+          },
+          "Updated": {
+            "Date": "2023-10-24"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-20, CWE-400",
+              "Href": "https://bdu.fstec.ru/vul/2023-03347",
+              "Impact": "High",
+              "Public": "20230412",
+              "CveID": "BDU:2023-03347"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400, CWE-834",
+              "Href": "https://bdu.fstec.ru/vul/2023-03609",
+              "Impact": "Low",
+              "Public": "20230412",
+              "CveID": "BDU:2023-03609"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-369",
+              "Href": "https://bdu.fstec.ru/vul/2023-05022",
+              "Impact": "High",
+              "Public": "20230824",
+              "CveID": "BDU:2023-05022"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-762",
+              "Href": "https://bdu.fstec.ru/vul/2023-05695",
+              "Impact": "Low",
+              "Public": "20230714",
+              "CveID": "BDU:2023-05695"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://bdu.fstec.ru/vul/2023-05696",
+              "Impact": "Low",
+              "Public": "20230714",
+              "CveID": "BDU:2023-05696"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://bdu.fstec.ru/vul/2023-05711",
+              "Impact": "High",
+              "Public": "20230824",
+              "CveID": "BDU:2023-05711"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-401",
+              "Href": "https://bdu.fstec.ru/vul/2023-05712",
+              "Impact": "High",
+              "Public": "20230824",
+              "CveID": "BDU:2023-05712"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-674",
+              "Href": "https://bdu.fstec.ru/vul/2023-05713",
+              "Impact": "High",
+              "Public": "20230824",
+              "CveID": "BDU:2023-05713"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-834",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0411",
+              "Impact": "Low",
+              "Public": "20230126",
+              "CveID": "CVE-2023-0411"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0412",
+              "Impact": "High",
+              "Public": "20230126",
+              "CveID": "CVE-2023-0412"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0413",
+              "Impact": "Low",
+              "Public": "20230126",
+              "CveID": "CVE-2023-0413"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0414",
+              "Impact": "Low",
+              "Public": "20230126",
+              "CveID": "CVE-2023-0414"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0415",
+              "Impact": "Low",
+              "Public": "20230126",
+              "CveID": "CVE-2023-0415"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0416",
+              "Impact": "Low",
+              "Public": "20230126",
+              "CveID": "CVE-2023-0416"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0417",
+              "Impact": "Low",
+              "Public": "20230126",
+              "CveID": "CVE-2023-0417"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0666",
+              "Impact": "Low",
+              "Public": "20230607",
+              "CveID": "CVE-2023-0666"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0667",
+              "Impact": "Low",
+              "Public": "20230607",
+              "CveID": "CVE-2023-0667"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0668",
+              "Impact": "Low",
+              "Public": "20230607",
+              "CveID": "CVE-2023-0668"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-1161",
+              "Impact": "High",
+              "Public": "20230306",
+              "CveID": "CVE-2023-1161"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-1992",
+              "Impact": "High",
+              "Public": "20230412",
+              "CveID": "CVE-2023-1992"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-834",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-1993",
+              "Impact": "Low",
+              "Public": "20230412",
+              "CveID": "CVE-2023-1993"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-1994",
+              "Impact": "Low",
+              "Public": "20230412",
+              "CveID": "CVE-2023-1994"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2854",
+              "Impact": "Low",
+              "Public": "20230526",
+              "CveID": "CVE-2023-2854"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2855",
+              "Impact": "Low",
+              "Public": "20230526",
+              "CveID": "CVE-2023-2855"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2856",
+              "Impact": "Low",
+              "Public": "20230526",
+              "CveID": "CVE-2023-2856"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2857",
+              "Impact": "Low",
+              "Public": "20230526",
+              "CveID": "CVE-2023-2857"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2858",
+              "Impact": "Low",
+              "Public": "20230526",
+              "CveID": "CVE-2023-2858"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2879",
+              "Impact": "High",
+              "Public": "20230526",
+              "CveID": "CVE-2023-2879"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-369",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2906",
+              "Impact": "Low",
+              "Public": "20230825",
+              "CveID": "CVE-2023-2906"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2952",
+              "Impact": "Low",
+              "Public": "20230530",
+              "CveID": "CVE-2023-2952"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3648",
+              "Impact": "Low",
+              "Public": "20230714",
+              "CveID": "CVE-2023-3648"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3649",
+              "Impact": "Low",
+              "Public": "20230714",
+              "CveID": "CVE-2023-3649"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4511",
+              "Impact": "High",
+              "Public": "20230824",
+              "CveID": "CVE-2023-4511"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-674",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4512",
+              "Impact": "High",
+              "Public": "20230824",
+              "CveID": "CVE-2023-4512"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-401",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4513",
+              "Impact": "High",
+              "Public": "20230824",
+              "CveID": "CVE-2023-4513"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236556001",
+                "Comment": "tshark is earlier than 0:4.0.8-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236556002",
+                "Comment": "wireshark-base is earlier than 0:4.0.8-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236556003",
+                "Comment": "wireshark-devel is earlier than 0:4.0.8-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236556004",
+                "Comment": "wireshark-qt5 is earlier than 0:4.0.8-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
