@@ -1,0 +1,54 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236438001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "desktop-file-utils is earlier than 0:0.26-alt6",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236438001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236438001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236438002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "emacs-mode-desktop-entry is earlier than 0:0.26-alt6",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236438002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236438001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236438003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "emacs-mode-desktop-entry-el is earlier than 0:0.26-alt6",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236438003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236438001"
+      }
+    }
+  ]
+}
