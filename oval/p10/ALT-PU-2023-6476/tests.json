@@ -1,0 +1,90 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236476001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libxfconf is earlier than 0:4.18.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236476001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236476001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236476002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libxfconf-devel is earlier than 0:4.18.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236476002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236476001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236476003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libxfconf-gir is earlier than 0:4.18.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236476003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236476001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236476004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libxfconf-gir-devel is earlier than 0:4.18.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236476004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236476001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236476005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libxfconf-vala is earlier than 0:4.18.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236476005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236476001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236476006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xfconf-utils is earlier than 0:4.18.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236476006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236476001"
+      }
+    }
+  ]
+}
