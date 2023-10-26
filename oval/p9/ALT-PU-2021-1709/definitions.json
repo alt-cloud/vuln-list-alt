@@ -66,6 +66,7 @@
             {
               "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-287",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-20288",
               "Impact": "High",
               "Public": "20210415",

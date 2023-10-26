@@ -1,0 +1,99 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236594",
+      "Version": "oval:org.altlinux.errata:def:20236594",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6594: package `apache2-mod_http2` update to version 2.0.25-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6594",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6594",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07003",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07003",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-45802",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45802",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades apache2-mod_http2 to version 2.0.25-alt1. \nSecurity Fix(es):\n\n * BDU:2023-07003: Уязвимость компонента обработчика HTTP2 веб-сервера Apache HTTP Server, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-45802: When a HTTP/2 stream was reset (RST frame) by a client, there was a time window were the request's memory resources were not reclaimed immediately. Instead, de-allocation was deferred to connection close. A client could send new requests and resets, keeping the connection busy and open and causing the memory footprint to keep on growing. On connection close, all resources were reclaimed, but the process might run out of memory before that.\n\nThis was found by the reporter during testing of CVE-2023-44487 (HTTP/2 Rapid Reset Exploit) with their own test client. During \"normal\" HTTP/2 use, the probability to hit this bug is very low. The kept memory would not become noticeable before the connection closes or times out.\n\nUsers are recommended to upgrade to version 2.4.58, which fixes the issue.\n",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-26"
+          },
+          "Updated": {
+            "Date": "2023-10-26"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://bdu.fstec.ru/vul/2023-07003",
+              "Impact": "High",
+              "Public": "20231012",
+              "CveID": "BDU:2023-07003"
+            }
+          ],
+          "Cves": [
+            {
+              "Cwe": "CWE-400",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45802",
+              "Impact": "None",
+              "Public": "20231023",
+              "CveID": "CVE-2023-45802"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236594001",
+                "Comment": "apache2-mod_http2 is earlier than 0:2.0.25-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
