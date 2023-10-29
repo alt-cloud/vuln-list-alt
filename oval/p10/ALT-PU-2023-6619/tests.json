@@ -1,0 +1,90 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236619001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "icon-theme-Papirus is earlier than 0:20230901-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236619001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236619001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236619002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "icon-theme-Papirus-Dark is earlier than 0:20230901-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236619002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236619001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236619003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "icon-theme-Papirus-Education is earlier than 0:20230901-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236619003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236619001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236619004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "icon-theme-Papirus-Light is earlier than 0:20230901-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236619004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236619001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236619005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "icon-theme-ePapirus is earlier than 0:20230901-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236619005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236619001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236619006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "papirus-icon-theme is earlier than 0:20230901-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236619006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236619001"
+      }
+    }
+  ]
+}
