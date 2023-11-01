@@ -1,0 +1,137 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236631",
+      "Version": "oval:org.altlinux.errata:def:20236631",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6631: package `postgresql10` update to version 10.23-alt0.M90P.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6631",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6631",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2022-04971",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-04971",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-1552",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-1552",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-2625",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-2625",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades postgresql10 to version 10.23-alt0.M90P.1. \nSecurity Fix(es):\n\n * BDU:2022-04971: Уязвимость системы управления базами данных PostgreSQL, связанная с ошибками при использовании команд OR расширениями, позволяющая нарушителю повысить свои привилегии и заменить произвольные объекты в базе данных\n\n * CVE-2022-1552: A flaw was found in PostgreSQL. There is an issue with incomplete efforts to operate safely when a privileged user is maintaining another user's objects. The Autovacuum, REINDEX, CREATE INDEX, REFRESH MATERIALIZED VIEW, CLUSTER, and pg_amcheck commands activated relevant protections too late or not at all during the process. This flaw allows an attacker with permission to create non-temporary objects in at least one schema to execute arbitrary SQL functions under a superuser identity.\n\n * CVE-2022-2625: A vulnerability was found in PostgreSQL. This attack requires permission to create non-temporary objects in at least one schema, the ability to lure or wait for an administrator to create or update an affected extension in that schema, and the ability to lure or wait for a victim to use the object targeted in CREATE OR REPLACE or CREATE IF NOT EXISTS. Given all three prerequisites, this flaw allows an attacker to run arbitrary code as the victim role, which may be a superuser.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-01"
+          },
+          "Updated": {
+            "Date": "2023-11-01"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-264",
+              "Href": "https://bdu.fstec.ru/vul/2022-04971",
+              "Impact": "High",
+              "Public": "20220811",
+              "CveID": "BDU:2022-04971"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-1552",
+              "Impact": "High",
+              "Public": "20220831",
+              "CveID": "CVE-2022-1552"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-1321",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-2625",
+              "Impact": "High",
+              "Public": "20220818",
+              "CveID": "CVE-2022-2625"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236631001",
+                "Comment": "postgresql10 is earlier than 0:10.23-alt0.M90P.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236631002",
+                "Comment": "postgresql10-contrib is earlier than 0:10.23-alt0.M90P.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236631003",
+                "Comment": "postgresql10-docs is earlier than 0:10.23-alt0.M90P.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236631004",
+                "Comment": "postgresql10-perl is earlier than 0:10.23-alt0.M90P.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236631005",
+                "Comment": "postgresql10-python is earlier than 0:10.23-alt0.M90P.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236631006",
+                "Comment": "postgresql10-server is earlier than 0:10.23-alt0.M90P.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236631007",
+                "Comment": "postgresql10-tcl is earlier than 0:10.23-alt0.M90P.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
