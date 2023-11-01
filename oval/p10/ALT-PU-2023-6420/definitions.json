@@ -50,7 +50,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades kubernetes to version 1.26.9-alt1. \nSecurity Fix(es):\n\n * BDU:2023-04982: Уязвимость модуля pod программного средства управления кластерами виртуальных машин Kubernetes, позволяющая нарушителю повысить свои привилегии\n\n * BDU:2023-04983: Уязвимость модуля pod программного средства управления кластерами виртуальных машин Kubernetes, позволяющая нарушителю повысить свои привилегии\n\n * CVE-2023-3676: description unavailable\n\n * CVE-2023-3955: description unavailable",
+        "Description": "This update upgrades kubernetes to version 1.26.9-alt1. \nSecurity Fix(es):\n\n * BDU:2023-04982: Уязвимость модуля pod программного средства управления кластерами виртуальных машин Kubernetes, позволяющая нарушителю повысить свои привилегии\n\n * BDU:2023-04983: Уязвимость модуля pod программного средства управления кластерами виртуальных машин Kubernetes, позволяющая нарушителю повысить свои привилегии\n\n * CVE-2023-3676: A security issue was discovered in Kubernetes where a user\n that can create pods on Windows nodes may be able to escalate to admin \nprivileges on those nodes. Kubernetes clusters are only affected if they\n include Windows nodes.\n\n\n * CVE-2023-3955: A security issue was discovered in Kubernetes where a user\n that can create pods on Windows nodes may be able to escalate to admin \nprivileges on those nodes. Kubernetes clusters are only affected if they\n include Windows nodes.\n",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "High",
@@ -79,6 +79,20 @@
               "Impact": "High",
               "Public": "20230823",
               "CveID": "BDU:2023-04983"
+            }
+          ],
+          "Cves": [
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3676",
+              "Impact": "None",
+              "Public": "20231031",
+              "CveID": "CVE-2023-3676"
+            },
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3955",
+              "Impact": "None",
+              "Public": "20231031",
+              "CveID": "CVE-2023-3955"
             }
           ],
           "AffectedCpeList": {

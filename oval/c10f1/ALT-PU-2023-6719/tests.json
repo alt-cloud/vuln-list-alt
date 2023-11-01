@@ -1,0 +1,66 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236719001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libopeniscsiusr is earlier than 0:2.1.9-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236719001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236719001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236719002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libopeniscsiusr-devel is earlier than 0:2.1.9-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236719002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236719001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236719003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "open-iscsi is earlier than 0:2.1.9-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236719003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236719001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236719004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "open-iscsi-iscsiuio is earlier than 0:2.1.9-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236719004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236719001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236607001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-sdk is earlier than 2:1.20.14-alt9",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236607001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236607001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236607002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-server is earlier than 2:1.20.14-alt9",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236607002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236607001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236607003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-server-common is earlier than 2:1.20.14-alt9",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236607003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236607001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236607004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xdmx is earlier than 2:1.20.14-alt9",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236607004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236607001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236607005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xephyr is earlier than 2:1.20.14-alt9",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236607005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236607001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236607006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xnest is earlier than 2:1.20.14-alt9",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236607006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236607001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236607007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xvfb is earlier than 2:1.20.14-alt9",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236607007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236607001"
+      }
+    }
+  ]
+}
