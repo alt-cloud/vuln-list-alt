@@ -80,7 +80,6 @@
           "Cves": [
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "Cwe": "CWE-755",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23121",
               "Impact": "Critical",
               "Public": "20230328",
@@ -88,7 +87,6 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "Cwe": "CWE-125",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23123",
               "Impact": "Critical",
               "Public": "20230328",

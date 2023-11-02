@@ -47971,7 +47971,7 @@
             },
             {
               "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
-              "Cvss3": "CVSS:3.0/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cvss3": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "NVD-CWE-Other",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2015-8816",
               "Impact": "Low",
