@@ -1,0 +1,197 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236850",
+      "Version": "oval:org.altlinux.errata:def:20236850",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6850: package `moodle` update to version 3.11.17-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6850",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6850",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2021-41182",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-41182",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-41183",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-41183",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-41184",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-41184",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-31160",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-31160",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-39369",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-39369",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40316",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40316",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40317",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40317",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40318",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40318",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40319",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40319",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40320",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40320",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40322",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40322",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40323",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40323",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40324",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40324",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40325",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40325",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades moodle to version 3.11.17-alt1. \nSecurity Fix(es):\n\n * CVE-2021-41182: jQuery-UI is the official jQuery user interface library. Prior to version 1.13.0, accepting the value of the `altField` option of the Datepicker widget from untrusted sources may execute untrusted code. The issue is fixed in jQuery UI 1.13.0. Any string value passed to the `altField` option is now treated as a CSS selector. A workaround is to not accept the value of the `altField` option from untrusted sources.\n\n * CVE-2021-41183: jQuery-UI is the official jQuery user interface library. Prior to version 1.13.0, accepting the value of various `*Text` options of the Datepicker widget from untrusted sources may execute untrusted code. The issue is fixed in jQuery UI 1.13.0. The values passed to various `*Text` options are now always treated as pure text, not HTML. A workaround is to not accept the value of the `*Text` options from untrusted sources.\n\n * CVE-2021-41184: jQuery-UI is the official jQuery user interface library. Prior to version 1.13.0, accepting the value of the `of` option of the `.position()` util from untrusted sources may execute untrusted code. The issue is fixed in jQuery UI 1.13.0. Any string value passed to the `of` option is now treated as a CSS selector. A workaround is to not accept the value of the `of` option from untrusted sources.\n\n * CVE-2022-31160: jQuery UI is a curated set of user interface interactions, effects, widgets, and themes built on top of jQuery. Versions prior to 1.13.2 are potentially vulnerable to cross-site scripting. Initializing a checkboxradio widget on an input enclosed within a label makes that parent label contents considered as the input label. Calling `.checkboxradio( \"refresh\" )` on such a widget and the initial HTML contained encoded HTML entities will make them erroneously get decoded. This can lead to potentially executing JavaScript code. The bug has been patched in jQuery UI 1.13.2. To remediate the issue, someone who can change the initial HTML can wrap all the non-input contents of the `label` in a `span`.\n\n * CVE-2022-39369: phpCAS is an authentication library that allows PHP applications to easily authenticate users via a Central Authentication Service (CAS) server. The phpCAS library uses HTTP headers to determine the service URL used to validate tickets. This allows an attacker to control the host header and use a valid ticket granted for any authorized service in the same SSO realm (CAS server) to authenticate to the service protected by phpCAS. Depending on the settings of the CAS server service registry in worst case this may be any other service URL (if the allowed URLs are configured to \"^(https)://.*\") or may be strictly limited to known and authorized services in the same SSO federation if proper URL service validation is applied. This vulnerability may allow an attacker to gain access to a victim's account on a vulnerable CASified service without victim's knowledge, when the victim visits attacker's website while being logged in to the same CAS server. phpCAS 1.6.0 is a major version upgrade that starts enforcing service URL discovery validation, because there is unfortunately no 100% safe default config to use in PHP. Starting this version, it is required to pass in an additional service base URL argument when constructing the client class. For more information, please refer to the upgrading doc. This vulnerability only impacts the CAS client that the phpCAS library protects against. The problematic service URL discovery behavior in phpCAS \u003c 1.6.0 will only be disabled, and thus you are not impacted from it, if the phpCAS configuration has the following setup: 1. `phpCAS::setUrl()` is called (a reminder that you have to pass in the full URL of the current page, rather than your service base URL), and 2. `phpCAS::setCallbackURL()` is called, only when the proxy mode is enabled. 3. If your PHP's HTTP header input `X-Forwarded-Host`, `X-Forwarded-Server`, `Host`, `X-Forwarded-Proto`, `X-Forwarded-Protocol` is sanitized before reaching PHP (by a reverse proxy, for example), you will not be impacted by this vulnerability either. If your CAS server service registry is configured to only allow known and trusted service URLs the severity of the vulnerability is reduced substantially in its severity since an attacker must be in control of another authorized service. Otherwise, you should upgrade the library to get the safe service discovery behavior.\n\n * CVE-2023-40316: description unavailable\n\n * CVE-2023-40317: description unavailable\n\n * CVE-2023-40318: description unavailable\n\n * CVE-2023-40319: description unavailable\n\n * CVE-2023-40320: description unavailable\n\n * CVE-2023-40322: description unavailable\n\n * CVE-2023-40323: description unavailable\n\n * CVE-2023-40324: description unavailable\n\n * CVE-2023-40325: description unavailable",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-03"
+          },
+          "Updated": {
+            "Date": "2023-11-03"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-41182",
+              "Impact": "Low",
+              "Public": "20211026",
+              "CveID": "CVE-2021-41182"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-41183",
+              "Impact": "Low",
+              "Public": "20211026",
+              "CveID": "CVE-2021-41183"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-41184",
+              "Impact": "Low",
+              "Public": "20211026",
+              "CveID": "CVE-2021-41184"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-31160",
+              "Impact": "Low",
+              "Public": "20220720",
+              "CveID": "CVE-2022-31160"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-99",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-39369",
+              "Impact": "High",
+              "Public": "20221101",
+              "CveID": "CVE-2022-39369"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236850001",
+                "Comment": "moodle is earlier than 0:3.11.17-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236850002",
+                "Comment": "moodle-apache2 is earlier than 0:3.11.17-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236850003",
+                "Comment": "moodle-base is earlier than 0:3.11.17-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236850004",
+                "Comment": "moodle-local-mysql is earlier than 0:3.11.17-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
