@@ -55,7 +55,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades kubernetes to version 1.26.3-alt1. \nSecurity Fix(es):\n\n * BDU:2022-06756: Уязвимость Kube API-сервера программного средства управления кластерами виртуальных машин Kubernetes, позволяющая нарушителю выполнить произвольные запросы\n\n * BDU:2022-06757: Уязвимость программного средства управления кластерами виртуальных машин Kubernetes, связанная с недостатками контроля доступа, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * CVE-2022-3162: Users authorized to list or watch one type of namespaced custom resource cluster-wide can read custom resources of a different type in the same API group without authorization. Clusters are impacted by this vulnerability if all of the following are true: 1. There are 2+ CustomResourceDefinitions sharing the same API group 2. Users have cluster-wide list or watch authorization on one of those custom resources. 3. The same users are not authorized to read another custom resource in the same API group.\n\n * CVE-2022-3172: description unavailable\n\n * CVE-2022-3294: Users may have access to secure endpoints in the control plane network. Kubernetes clusters are only affected if an untrusted user can modify Node objects and send proxy requests to them. Kubernetes supports node proxying, which allows clients of kube-apiserver to access endpoints of a Kubelet to establish connections to Pods, retrieve container logs, and more. While Kubernetes already validates the proxying address for Nodes, a bug in kube-apiserver made it possible to bypass this validation. Bypassing this validation could allow authenticated requests destined for Nodes to to the API server's private network.",
+        "Description": "This update upgrades kubernetes to version 1.26.3-alt1. \nSecurity Fix(es):\n\n * BDU:2022-06756: Уязвимость Kube API-сервера программного средства управления кластерами виртуальных машин Kubernetes, позволяющая нарушителю выполнить произвольные запросы\n\n * BDU:2022-06757: Уязвимость программного средства управления кластерами виртуальных машин Kubernetes, связанная с недостатками контроля доступа, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * CVE-2022-3162: Users authorized to list or watch one type of namespaced custom resource cluster-wide can read custom resources of a different type in the same API group without authorization. Clusters are impacted by this vulnerability if all of the following are true: 1. There are 2+ CustomResourceDefinitions sharing the same API group 2. Users have cluster-wide list or watch authorization on one of those custom resources. 3. The same users are not authorized to read another custom resource in the same API group.\n\n * CVE-2022-3172: A security issue was discovered in kube-apiserver that allows an \naggregated API server to redirect client traffic to any URL.  This could\n lead to the client performing unexpected actions as well as forwarding \nthe client's API server credentials to third parties.\n\n\n * CVE-2022-3294: Users may have access to secure endpoints in the control plane network. Kubernetes clusters are only affected if an untrusted user can modify Node objects and send proxy requests to them. Kubernetes supports node proxying, which allows clients of kube-apiserver to access endpoints of a Kubelet to establish connections to Pods, retrieve container logs, and more. While Kubernetes already validates the proxying address for Nodes, a bug in kube-apiserver made it possible to bypass this validation. Bypassing this validation could allow authenticated requests destined for Nodes to to the API server's private network.",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "High",
@@ -94,6 +94,12 @@
               "Impact": "Low",
               "Public": "20230301",
               "CveID": "CVE-2022-3162"
+            },
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-3172",
+              "Impact": "None",
+              "Public": "20231103",
+              "CveID": "CVE-2022-3172"
             },
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
