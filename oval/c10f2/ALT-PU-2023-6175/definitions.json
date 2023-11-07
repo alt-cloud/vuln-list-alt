@@ -1,0 +1,81 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236175",
+      "Version": "oval:org.altlinux.errata:def:20236175",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6175: package `docker-engine` update to version 24.0.6-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6175",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6175",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades docker-engine to version 24.0.6-alt1. \nSecurity Fix(es):\n\n * #45878: Не использует опции Docker: DOCKER_NETWORK_OPTIONS → OPTIONS",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-24"
+          },
+          "Updated": {
+            "Date": "2023-10-24"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "45878",
+              "Href": "https://bugzilla.altlinux.org/45878",
+              "Data": "Не использует опции Docker: DOCKER_NETWORK_OPTIONS → OPTIONS"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236175001",
+                "Comment": "docker-engine is earlier than 0:24.0.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236175002",
+                "Comment": "docker-engine-rootless is earlier than 0:24.0.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236175003",
+                "Comment": "docker-proxy is earlier than 0:24.0.6-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236504",
+      "Version": "oval:org.altlinux.errata:def:20236504",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6504: package `alterator-vm` update to version 0.4.34-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6504",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6504",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades alterator-vm to version 0.4.34-alt1. \nSecurity Fix(es):\n\n * #47701: Падение инсталлятора при создании LUKS раздела на NVME диске",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-03"
+          },
+          "Updated": {
+            "Date": "2023-11-03"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "47701",
+              "Href": "https://bugzilla.altlinux.org/47701",
+              "Data": "Падение инсталлятора при создании LUKS раздела на NVME диске"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236504001",
+                "Comment": "alterator-vm is earlier than 0:0.4.34-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

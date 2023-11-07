@@ -1,0 +1,100 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236480",
+      "Version": "oval:org.altlinux.errata:def:20236480",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6480: package `json-c` update to version 0.17-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6480",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6480",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-05198",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05198",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2021-32292",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-32292",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades json-c to version 0.17-alt1. \nSecurity Fix(es):\n\n * BDU:2023-05198: Уязвимость функции parseit библиотеки для обработки JSON файлов JSON-C, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2021-32292: An issue was discovered in json-c from 20200420 (post 0.14 unreleased code) through 0.15-20200726. A stack-buffer-overflow exists in the auxiliary sample program json_parse which is located in the function parseit.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-20"
+          },
+          "Updated": {
+            "Date": "2023-10-20"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-05198",
+              "Impact": "Critical",
+              "Public": "20230822",
+              "CveID": "BDU:2023-05198"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-32292",
+              "Impact": "Critical",
+              "Public": "20230822",
+              "CveID": "CVE-2021-32292"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236480001",
+                "Comment": "libjson-c-devel is earlier than 0:0.17-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236480002",
+                "Comment": "libjson-c5 is earlier than 0:0.17-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

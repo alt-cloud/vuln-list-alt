@@ -1,0 +1,165 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236899",
+      "Version": "oval:org.altlinux.errata:def:20236899",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6899: package `subversion` update to version 1.14.2-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6899",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6899",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2022-05773",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-05773",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-05791",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-05791",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2021-28544",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-28544",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-24070",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-24070",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades subversion to version 1.14.2-alt1. \nSecurity Fix(es):\n\n * BDU:2022-05773: Уязвимость централизованной системы управления версиями Subversion, связанная с неправильной авторизацией, позволяющая нарушителю получить доступ к конфиденциальным данным\n\n * BDU:2022-05791: Уязвимость модуля mod_dav_svn централизованной системы управления версиями Subversion, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2021-28544: Apache Subversion SVN authz protected copyfrom paths regression Subversion servers reveal 'copyfrom' paths that should be hidden according to configured path-based authorization (authz) rules. When a node has been copied from a protected location, users with access to the copy can see the 'copyfrom' path of the original. This also reveals the fact that the node was copied. Only the 'copyfrom' path is revealed; not its contents. Both httpd and svnserve servers are vulnerable.\n\n * CVE-2022-24070: Subversion's mod_dav_svn is vulnerable to memory corruption. While looking up path-based authorization rules, mod_dav_svn servers may attempt to use memory which has already been freed. Affected Subversion mod_dav_svn servers 1.10.0 through 1.14.1 (inclusive). Servers that do not use mod_dav_svn are not affected.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-07"
+          },
+          "Updated": {
+            "Date": "2023-11-07"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-863",
+              "Href": "https://bdu.fstec.ru/vul/2022-05773",
+              "Impact": "Low",
+              "Public": "20220412",
+              "CveID": "BDU:2022-05773"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2022-05791",
+              "Impact": "High",
+              "Public": "20220412",
+              "CveID": "BDU:2022-05791"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-28544",
+              "Impact": "Low",
+              "Public": "20220412",
+              "CveID": "CVE-2021-28544"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-24070",
+              "Impact": "High",
+              "Public": "20220412",
+              "CveID": "CVE-2022-24070"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899001",
+                "Comment": "libsubversion is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899002",
+                "Comment": "libsubversion-auth-gnome-keyring is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899003",
+                "Comment": "libsubversion-auth-kwallet is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899004",
+                "Comment": "libsubversion-devel is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899005",
+                "Comment": "subversion is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899006",
+                "Comment": "subversion-javahl is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899007",
+                "Comment": "subversion-perl is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899008",
+                "Comment": "subversion-python3 is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899009",
+                "Comment": "subversion-server-common is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899010",
+                "Comment": "subversion-server-dav is earlier than 0:1.14.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236899011",
+                "Comment": "subversion-server-standalone is earlier than 0:1.14.2-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236182",
+      "Version": "oval:org.altlinux.errata:def:20236182",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6182: package `helm` update to version 3.12.0-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6182",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6182",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2022-23524",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-23524",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-23525",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-23525",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-23526",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-23526",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-25165",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-25165",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades helm to version 3.12.0-alt1. \nSecurity Fix(es):\n\n * CVE-2022-23524: Helm is a tool for managing Charts, pre-configured Kubernetes resources. Versions prior to 3.10.3 are subject to Uncontrolled Resource Consumption, resulting in Denial of Service. Input to functions in the _strvals_ package can cause a stack overflow. In Go, a stack overflow cannot be recovered from. Applications that use functions from the _strvals_ package in the Helm SDK can have a Denial of Service attack when they use this package and it panics. This issue has been patched in 3.10.3. SDK users can validate strings supplied by users won't create large arrays causing significant memory usage before passing them to the _strvals_ functions.\n\n * CVE-2022-23525: Helm is a tool for managing Charts, pre-configured Kubernetes resources. Versions prior to 3.10.3 are subject to NULL Pointer Dereference in the _repo_package. The _repo_ package contains a handler that processes the index file of a repository. For example, the Helm client adds references to chart repositories where charts are managed. The _repo_ package parses the index file of the repository and loads it into structures Go can work with. Some index files can cause array data structures to be created causing a memory violation. Applications that use the _repo_ package in the Helm SDK to parse an index file can suffer a Denial of Service when that input causes a panic that cannot be recovered from. The Helm Client will panic with an index file that causes a memory violation panic. Helm is not a long running service so the panic will not affect future uses of the Helm client. This issue has been patched in 3.10.3. SDK users can validate index files that are correctly formatted before passing them to the _repo_ functions.\n\n * CVE-2022-23526: Helm is a tool for managing Charts, pre-configured Kubernetes resources. Versions prior to 3.10.3 are subject to NULL Pointer Dereference in the_chartutil_ package that can cause a segmentation violation. The _chartutil_ package contains a parser that loads a JSON Schema validation file. For example, the Helm client when rendering a chart will validate its values with the schema file. The _chartutil_ package parses the schema file and loads it into structures Go can work with. Some schema files can cause array data structures to be created causing a memory violation. Applications that use the _chartutil_ package in the Helm SDK to parse a schema file can suffer a Denial of Service when that input causes a panic that cannot be recovered from. Helm is not a long running service so the panic will not affect future uses of the Helm client. This issue has been patched in 3.10.3. SDK users can validate schema files that are correctly formatted before passing them to the _chartutil_ functions.\n\n * CVE-2023-25165: Helm is a tool that streamlines installing and managing Kubernetes applications.`getHostByName` is a Helm template function introduced in Helm v3. The function is able to accept a hostname and return an IP address for that hostname. To get the IP address the function performs a DNS lookup. The DNS lookup happens when used with `helm install|upgrade|template` or when the Helm SDK is used to render a chart. Information passed into the chart can be disclosed to the DNS servers used to lookup the IP address. For example, a malicious chart could inject `getHostByName` into a chart in order to disclose values to a malicious DNS server. The issue has been fixed in Helm 3.11.1. Prior to using a chart with Helm verify the `getHostByName` function is not being used in a template to disclose any information you do not want passed to DNS servers.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-24"
+          },
+          "Updated": {
+            "Date": "2023-10-24"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23524",
+              "Impact": "High",
+              "Public": "20221215",
+              "CveID": "CVE-2022-23524"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-476",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23525",
+              "Impact": "High",
+              "Public": "20221215",
+              "CveID": "CVE-2022-23525"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-476",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23526",
+              "Impact": "High",
+              "Public": "20221215",
+              "CveID": "CVE-2022-23526"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-25165",
+              "Impact": "Low",
+              "Public": "20230208",
+              "CveID": "CVE-2023-25165"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236182001",
+                "Comment": "helm is earlier than 0:3.12.0-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

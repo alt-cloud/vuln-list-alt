@@ -1,0 +1,179 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236085",
+      "Version": "oval:org.altlinux.errata:def:20236085",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6085: package `golang` update to version 1.21.1-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6085",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6085",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-05718",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05718",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-39318",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39318",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39319",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39319",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39320",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39320",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39321",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39321",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39322",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39322",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades golang to version 1.21.1-alt2. \nSecurity Fix(es):\n\n * BDU:2023-05718: Уязвимость файла go.mod языка программирования Go, позволяющая нарушителю повысить свои привилегии и выполнить произвольный код\n\n * CVE-2023-39318: The html/template package does not properly handle HTML-like \"\" comment tokens, nor hashbang \"#!\" comment tokens, in \u003cscript\u003e contexts. This may cause the template parser to improperly interpret the contents of \u003cscript\u003e contexts, causing actions to be improperly escaped. This may be leveraged to perform an XSS attack.\n\n * CVE-2023-39319: The html/template package does not apply the proper rules for handling occurrences of \"\u003cscript\", \"\u003c!--\", and \"\u003c/script\" within JS literals in \u003cscript\u003e contexts. This may cause the template parser to improperly consider script contexts to be terminated early, causing actions to be improperly escaped. This could be leveraged to perform an XSS attack.\n\n * CVE-2023-39320: The go.mod toolchain directive, introduced in Go 1.21, can be leveraged to execute scripts and binaries relative to the root of the module when the \"go\" command was executed within the module. This applies to modules downloaded using the \"go\" command from the module proxy, as well as modules downloaded directly using VCS software.\n\n * CVE-2023-39321: Processing an incomplete post-handshake message for a QUIC connection can cause a panic.\n\n * CVE-2023-39322: QUIC connections do not set an upper bound on the amount of data buffered when reading post-handshake messages, allowing a malicious QUIC connection to cause unbounded memory growth. With fix, connections now consistently reject messages larger than 65KiB in size.\n\n * #47559: golang: -buildmode=shared не поддерживается на riscv64 и loongarch64",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-05"
+          },
+          "Updated": {
+            "Date": "2023-10-05"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-94",
+              "Href": "https://bdu.fstec.ru/vul/2023-05718",
+              "Impact": "Critical",
+              "Public": "20230727",
+              "CveID": "BDU:2023-05718"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39318",
+              "Impact": "Low",
+              "Public": "20230908",
+              "CveID": "CVE-2023-39318"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39319",
+              "Impact": "Low",
+              "Public": "20230908",
+              "CveID": "CVE-2023-39319"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-94",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39320",
+              "Impact": "Critical",
+              "Public": "20230908",
+              "CveID": "CVE-2023-39320"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39321",
+              "Impact": "High",
+              "Public": "20230908",
+              "CveID": "CVE-2023-39321"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39322",
+              "Impact": "High",
+              "Public": "20230908",
+              "CveID": "CVE-2023-39322"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "47559",
+              "Href": "https://bugzilla.altlinux.org/47559",
+              "Data": "golang: -buildmode=shared не поддерживается на riscv64 и loongarch64"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236085001",
+                "Comment": "golang is earlier than 0:1.21.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236085002",
+                "Comment": "golang-docs is earlier than 0:1.21.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236085003",
+                "Comment": "golang-gdb is earlier than 0:1.21.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236085004",
+                "Comment": "golang-misc is earlier than 0:1.21.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236085005",
+                "Comment": "golang-shared is earlier than 0:1.21.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236085006",
+                "Comment": "golang-src is earlier than 0:1.21.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236085007",
+                "Comment": "golang-tests is earlier than 0:1.21.1-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

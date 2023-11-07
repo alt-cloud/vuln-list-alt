@@ -1,0 +1,97 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236726",
+      "Version": "oval:org.altlinux.errata:def:20236726",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6726: package `wine` update to version 8.14.1-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6726",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6726",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades wine to version 8.14.1-alt2. \nSecurity Fix(es):\n\n * #39800: Некорректная локализация (русификация)",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-07"
+          },
+          "Updated": {
+            "Date": "2023-11-07"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "39800",
+              "Href": "https://bugzilla.altlinux.org/39800",
+              "Data": "Некорректная локализация (русификация)"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236726001",
+                "Comment": "wine is earlier than 1:8.14.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236726002",
+                "Comment": "wine-common is earlier than 1:8.14.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236726003",
+                "Comment": "wine-devel is earlier than 1:8.14.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236726004",
+                "Comment": "wine-devel-tools is earlier than 1:8.14.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236726005",
+                "Comment": "wine-full is earlier than 1:8.14.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236726006",
+                "Comment": "wine-ping is earlier than 1:8.14.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236726007",
+                "Comment": "wine-programs is earlier than 1:8.14.1-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236898",
+      "Version": "oval:org.altlinux.errata:def:20236898",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6898: package `mariadb` update to version 10.6.15-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6898",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6898",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-03856",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03856",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-47015",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-47015",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades mariadb to version 10.6.15-alt1. \nSecurity Fix(es):\n\n * BDU:2023-03856: Уязвимость функции spider_db_mbase::print_warnings() СУБД MariaDB, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2022-47015: MariaDB Server before 10.3.34 thru 10.9.3 is vulnerable to Denial of Service. It is possible for function spider_db_mbase::print_warnings to dereference a null pointer.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-05"
+          },
+          "Updated": {
+            "Date": "2023-11-05"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-476",
+              "Href": "https://bdu.fstec.ru/vul/2023-03856",
+              "Impact": "Low",
+              "Public": "20220928",
+              "CveID": "BDU:2023-03856"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-476",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-47015",
+              "Impact": "Low",
+              "Public": "20230120",
+              "CveID": "CVE-2022-47015"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898001",
+                "Comment": "libmariadb-devel is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898002",
+                "Comment": "libmariadb3 is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898003",
+                "Comment": "libmariadbd-devel is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898004",
+                "Comment": "libmariadbd19 is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898005",
+                "Comment": "mariadb is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898006",
+                "Comment": "mariadb-backup is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898007",
+                "Comment": "mariadb-bench is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898008",
+                "Comment": "mariadb-client is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898009",
+                "Comment": "mariadb-common is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898010",
+                "Comment": "mariadb-connect-engine is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898011",
+                "Comment": "mariadb-cracklib-password-check is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898012",
+                "Comment": "mariadb-gssapi-server is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898013",
+                "Comment": "mariadb-oqgraph-engine is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898014",
+                "Comment": "mariadb-rocksdb-engine is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898015",
+                "Comment": "mariadb-s3-engine is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898016",
+                "Comment": "mariadb-server is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898017",
+                "Comment": "mariadb-server-control is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898018",
+                "Comment": "mariadb-server-galera is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898019",
+                "Comment": "mariadb-server-perl is earlier than 0:10.6.15-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236898020",
+                "Comment": "mariadb-sphinx-engine is earlier than 0:10.6.15-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

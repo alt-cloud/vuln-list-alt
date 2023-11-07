@@ -1,0 +1,100 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236527",
+      "Version": "oval:org.altlinux.errata:def:20236527",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6527: package `libcue2` update to version 2.3.0-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6527",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6527",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-06566",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06566",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-43641",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-43641",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libcue2 to version 2.3.0-alt1. \nSecurity Fix(es):\n\n * BDU:2023-06566: Уязвимость прикладного программного интерфейса библиотеки libcue, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2023-43641: libcue provides an API for parsing and extracting data from CUE sheets. Versions 2.2.1 and prior are vulnerable to out-of-bounds array access. A user of the GNOME desktop environment can be exploited by downloading a cue sheet from a malicious webpage. Because the file is saved to `~/Downloads`, it is then automatically scanned by tracker-miners. And because it has a .cue filename extension, tracker-miners use libcue to parse the file. The file exploits the vulnerability in libcue to gain code execution. This issue is patched in version 2.3.0.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-25"
+          },
+          "Updated": {
+            "Date": "2023-10-25"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-06566",
+              "Impact": "High",
+              "Public": "20231009",
+              "CveID": "BDU:2023-06566"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-43641",
+              "Impact": "High",
+              "Public": "20231009",
+              "CveID": "CVE-2023-43641"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236527001",
+                "Comment": "libcue-devel is earlier than 0:2.3.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236527002",
+                "Comment": "libcue2 is earlier than 0:2.3.0-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

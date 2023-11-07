@@ -1,0 +1,150 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-duo is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-header is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-jdbc-mysql is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-jdbc-postgresql is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-jdbc-sqlserver is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-json is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-ldap is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-quickconnect is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-sso is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-auth-totp is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236728011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "guacamole-client is earlier than 0:1.5.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236728011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236728001"
+      }
+    }
+  ]
+}

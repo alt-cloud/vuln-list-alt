@@ -1,0 +1,46 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:5001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236174001",
+      "Version": "1",
+      "comment": "crun is installed",
+      "Name": "crun"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236174002",
+      "Version": "1",
+      "comment": "libcrun is installed",
+      "Name": "libcrun"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236174003",
+      "Version": "1",
+      "comment": "python3-module-crun is installed",
+      "Name": "python3-module-crun"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:5001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236463001",
+      "Version": "1",
+      "comment": "python3-module-sqlparse is installed",
+      "Name": "python3-module-sqlparse"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236463002",
+      "Version": "1",
+      "comment": "python3-module-sqlparse-docs is installed",
+      "Name": "python3-module-sqlparse-docs"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236463003",
+      "Version": "1",
+      "comment": "python3-module-sqlparse-pickles is installed",
+      "Name": "python3-module-sqlparse-pickles"
+    }
+  ]
+}

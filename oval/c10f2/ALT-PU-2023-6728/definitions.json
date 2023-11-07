@@ -1,0 +1,134 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236728",
+      "Version": "oval:org.altlinux.errata:def:20236728",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6728: package `guacamole` update to version 1.5.3-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6728",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6728",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-30575",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-30575",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-30576",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-30576",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades guacamole to version 1.5.3-alt1. \nSecurity Fix(es):\n\n * CVE-2023-30575: Apache Guacamole 1.5.1 and older may incorrectly calculate the lengths of instruction elements sent during the Guacamole protocol handshake, potentially allowing an attacker to inject Guacamole instructions during the handshake through specially-crafted data.\n\n\n\n * CVE-2023-30576: Apache Guacamole 0.9.10 through 1.5.1 may continue to reference a freed RDP audio input buffer. Depending on timing, this may allow an attacker to execute arbitrary code with the privileges of the guacd process.\n\n",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-02"
+          },
+          "Updated": {
+            "Date": "2023-11-02"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-131",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-30575",
+              "Impact": "High",
+              "Public": "20230607",
+              "CveID": "CVE-2023-30575"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-30576",
+              "Impact": "High",
+              "Public": "20230607",
+              "CveID": "CVE-2023-30576"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728001",
+                "Comment": "guacamole-auth-duo is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728002",
+                "Comment": "guacamole-auth-header is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728003",
+                "Comment": "guacamole-auth-jdbc-mysql is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728004",
+                "Comment": "guacamole-auth-jdbc-postgresql is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728005",
+                "Comment": "guacamole-auth-jdbc-sqlserver is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728006",
+                "Comment": "guacamole-auth-json is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728007",
+                "Comment": "guacamole-auth-ldap is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728008",
+                "Comment": "guacamole-auth-quickconnect is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728009",
+                "Comment": "guacamole-auth-sso is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728010",
+                "Comment": "guacamole-auth-totp is earlier than 0:1.5.3-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236728011",
+                "Comment": "guacamole-client is earlier than 0:1.5.3-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:5001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236408001",
+      "Version": "1",
+      "comment": "emacs-mode-lilypond is installed",
+      "Name": "emacs-mode-lilypond"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236408002",
+      "Version": "1",
+      "comment": "emacs-mode-lilypond-el is installed",
+      "Name": "emacs-mode-lilypond-el"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236408003",
+      "Version": "1",
+      "comment": "lilypond is installed",
+      "Name": "lilypond"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20236408004",
+      "Version": "1",
+      "comment": "vim-plugin-lilypond is installed",
+      "Name": "vim-plugin-lilypond"
+    }
+  ]
+}

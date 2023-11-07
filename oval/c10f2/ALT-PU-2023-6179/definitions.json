@@ -1,0 +1,110 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236179",
+      "Version": "oval:org.altlinux.errata:def:20236179",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6179: package `python3-module-django` update to version 3.2.22-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6179",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6179",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-41164",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-41164",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-43665",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-43665",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades python3-module-django to version 3.2.22-alt1. \nSecurity Fix(es):\n\n * CVE-2023-41164: In Django 3.2 before 3.2.21, 4.1 before 4.1.11, and 4.2 before 4.2.5, django.utils.encoding.uri_to_iri() is subject to a potential DoS (denial of service) attack via certain inputs with a very large number of Unicode characters.\n\n * CVE-2023-43665: In Django 3.2 before 3.2.22, 4.1 before 4.1.12, and 4.2 before 4.2.6, the django.utils.text.Truncator chars() and words() methods (when used with html=True) are subject to a potential DoS (denial of service) attack via certain inputs with very long, potentially malformed HTML text. The chars() and words() methods are used to implement the truncatechars_html and truncatewords_html template filters, which are thus also vulnerable. NOTE: this issue exists because of an incomplete fix for CVE-2019-14232.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-10"
+          },
+          "Updated": {
+            "Date": "2023-10-10"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-41164",
+              "Impact": "None",
+              "Public": "20231103",
+              "CveID": "CVE-2023-41164"
+            },
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-43665",
+              "Impact": "None",
+              "Public": "20231103",
+              "CveID": "CVE-2023-43665"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236179001",
+                "Comment": "python3-module-django is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236179002",
+                "Comment": "python3-module-django-dbbackend-mysql is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236179003",
+                "Comment": "python3-module-django-dbbackend-oracle is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236179004",
+                "Comment": "python3-module-django-dbbackend-postgresql is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236179005",
+                "Comment": "python3-module-django-dbbackend-sqlite3 is earlier than 0:3.2.22-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236179006",
+                "Comment": "python3-module-django-doc is earlier than 0:3.2.22-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

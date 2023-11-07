@@ -1,0 +1,78 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235984001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "dconf is earlier than 0:0.40.0-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235984001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235984001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235984002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libdconf is earlier than 0:0.40.0-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235984002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235984001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235984003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libdconf-devel is earlier than 0:0.40.0-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235984003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235984001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235984004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libdconf-devel-doc is earlier than 0:0.40.0-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235984004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235984001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20235984005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libdconf-vala is earlier than 0:0.40.0-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20235984005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20235984001"
+      }
+    }
+  ]
+}

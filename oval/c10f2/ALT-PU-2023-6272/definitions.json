@@ -1,0 +1,104 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236272",
+      "Version": "oval:org.altlinux.errata:def:20236272",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6272: package `libnghttp2` update to version 1.57.0-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6272",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6272",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-06559",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06559",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-44487",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libnghttp2 to version 1.57.0-alt1. \nSecurity Fix(es):\n\n * BDU:2023-06559: Уязвимость реализации протокола HTTP/2, связанная с возможностью формирования потока запросов в рамках уже установленного сетевого соединения, без открытия новых сетевых соединений и без подтверждения получения пакетов, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-44487: The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly, as exploited in the wild in August through October 2023.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-12"
+          },
+          "Updated": {
+            "Date": "2023-10-12"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://bdu.fstec.ru/vul/2023-06559",
+              "Impact": "High",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06559"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
+              "Impact": "High",
+              "Public": "20231010",
+              "CveID": "CVE-2023-44487"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236272001",
+                "Comment": "libnghttp2 is earlier than 0:1.57.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236272002",
+                "Comment": "libnghttp2-devel is earlier than 0:1.57.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236272003",
+                "Comment": "libnghttp2-tools is earlier than 0:1.57.0-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

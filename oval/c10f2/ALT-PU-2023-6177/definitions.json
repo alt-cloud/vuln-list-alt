@@ -1,0 +1,73 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236177",
+      "Version": "oval:org.altlinux.errata:def:20236177",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6177: package `docker-buildx` update to version 0.11.2-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6177",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6177",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades docker-buildx to version 0.11.2-alt2. \nSecurity Fix(es):\n\n * #47052: не корректная информация о версии",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-24"
+          },
+          "Updated": {
+            "Date": "2023-10-24"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "47052",
+              "Href": "https://bugzilla.altlinux.org/47052",
+              "Data": "не корректная информация о версии"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236177001",
+                "Comment": "docker-buildx is earlier than 0:0.11.2-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

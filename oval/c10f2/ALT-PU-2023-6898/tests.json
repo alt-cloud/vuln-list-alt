@@ -1,0 +1,258 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmariadb-devel is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmariadb3 is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmariadbd-devel is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmariadbd19 is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-backup is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-bench is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-client is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-common is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-connect-engine is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-cracklib-password-check is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-gssapi-server is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-oqgraph-engine is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-rocksdb-engine is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-s3-engine is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-server is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-server-control is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-server-galera is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898019",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-server-perl is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898019"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236898020",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "mariadb-sphinx-engine is earlier than 0:10.6.15-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236898020"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236898001"
+      }
+    }
+  ]
+}

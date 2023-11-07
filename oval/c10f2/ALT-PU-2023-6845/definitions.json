@@ -1,0 +1,147 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236845",
+      "Version": "oval:org.altlinux.errata:def:20236845",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6845: package `xorg-server` update to version 1.20.14-alt9",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6845",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6845",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07145",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07145",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07412",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07412",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5367",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5367",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5380",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5380",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades xorg-server to version 1.20.14-alt9. \nSecurity Fix(es):\n\n * BDU:2023-07145: Уязвимость функций XIChangeDeviceProperty (Xi/xiproperty.c) и RRChangeOutputProperty (randr/rrproperty.c) сервера X Window System Xorg-server, позволяющая нарушителю вызвать отказ в обслуживании или повысить свои привилегии\n\n * BDU:2023-07412: Уязвимость функции DestroyWindow пакета xorg-x11-server позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-5367: A out-of-bounds write flaw was found in the xorg-x11-server. This issue occurs due to an incorrect calculation of a buffer offset when copying data stored in the heap in the XIChangeDeviceProperty function in Xi/xiproperty.c and in RRChangeOutputProperty function in randr/rrproperty.c, allowing for possible escalation of privileges or denial of service.\n\n * CVE-2023-5380: A use-after-free flaw was found in the xorg-x11-server. An X server crash may occur in a very specific and legacy configuration (a multi-screen setup with multiple protocol screens, also known as Zaphod mode) if the pointer is warped from within a window on one screen to the root window of the other screen and if the original window is destroyed followed by another window being destroyed.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-05"
+          },
+          "Updated": {
+            "Date": "2023-11-05"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-07145",
+              "Impact": "High",
+              "Public": "20231025",
+              "CveID": "BDU:2023-07145"
+            },
+            {
+              "Cvss": "AV:L/AC:H/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-07412",
+              "Impact": "Low",
+              "Public": "20231025",
+              "CveID": "BDU:2023-07412"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5367",
+              "Impact": "High",
+              "Public": "20231025",
+              "CveID": "CVE-2023-5367"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5380",
+              "Impact": "Low",
+              "Public": "20231025",
+              "CveID": "CVE-2023-5380"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236845001",
+                "Comment": "xorg-sdk is earlier than 2:1.20.14-alt9"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236845002",
+                "Comment": "xorg-server is earlier than 2:1.20.14-alt9"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236845003",
+                "Comment": "xorg-server-common is earlier than 2:1.20.14-alt9"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236845004",
+                "Comment": "xorg-xdmx is earlier than 2:1.20.14-alt9"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236845005",
+                "Comment": "xorg-xephyr is earlier than 2:1.20.14-alt9"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236845006",
+                "Comment": "xorg-xnest is earlier than 2:1.20.14-alt9"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236845007",
+                "Comment": "xorg-xvfb is earlier than 2:1.20.14-alt9"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

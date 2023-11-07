@@ -1,0 +1,89 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20235984",
+      "Version": "oval:org.altlinux.errata:def:20235984",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-5984: package `dconf` update to version 0.40.0-alt3",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-5984",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-5984",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades dconf to version 0.40.0-alt3. \nSecurity Fix(es):\n\n * #47036: Опакетить /etc/dconf/profile/user",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-07"
+          },
+          "Updated": {
+            "Date": "2023-11-07"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "47036",
+              "Href": "https://bugzilla.altlinux.org/47036",
+              "Data": "Опакетить /etc/dconf/profile/user"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235984001",
+                "Comment": "dconf is earlier than 0:0.40.0-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235984002",
+                "Comment": "libdconf is earlier than 0:0.40.0-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235984003",
+                "Comment": "libdconf-devel is earlier than 0:0.40.0-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235984004",
+                "Comment": "libdconf-devel-doc is earlier than 0:0.40.0-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20235984005",
+                "Comment": "libdconf-vala is earlier than 0:0.40.0-alt3"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

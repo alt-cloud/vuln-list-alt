@@ -1,0 +1,100 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236846",
+      "Version": "oval:org.altlinux.errata:def:20236846",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6846: package `xorg-xwayland` update to version 23.1.1-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6846",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6846",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07145",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07145",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5367",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5367",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades xorg-xwayland to version 23.1.1-alt2. \nSecurity Fix(es):\n\n * BDU:2023-07145: Уязвимость функций XIChangeDeviceProperty (Xi/xiproperty.c) и RRChangeOutputProperty (randr/rrproperty.c) сервера X Window System Xorg-server, позволяющая нарушителю вызвать отказ в обслуживании или повысить свои привилегии\n\n * CVE-2023-5367: A out-of-bounds write flaw was found in the xorg-x11-server. This issue occurs due to an incorrect calculation of a buffer offset when copying data stored in the heap in the XIChangeDeviceProperty function in Xi/xiproperty.c and in RRChangeOutputProperty function in randr/rrproperty.c, allowing for possible escalation of privileges or denial of service.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-05"
+          },
+          "Updated": {
+            "Date": "2023-11-05"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-07145",
+              "Impact": "High",
+              "Public": "20231025",
+              "CveID": "BDU:2023-07145"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5367",
+              "Impact": "High",
+              "Public": "20231025",
+              "CveID": "CVE-2023-5367"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236846001",
+                "Comment": "xorg-xwayland is earlier than 2:23.1.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236846002",
+                "Comment": "xorg-xwayland-devel is earlier than 2:23.1.1-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

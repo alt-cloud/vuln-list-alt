@@ -1,0 +1,153 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236413",
+      "Version": "oval:org.altlinux.errata:def:20236413",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6413: package `vim` update to version 9.0.2009-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6413",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6413",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-06596",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06596",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5344",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5344",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5441",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5441",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades vim to version 9.0.2009-alt1. \nSecurity Fix(es):\n\n * BDU:2023-06596: Уязвимость функции trunc_string() текстового редактора Vim, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-5344: Heap-based Buffer Overflow in GitHub repository vim/vim prior to 9.0.1969.\n\n * CVE-2023-5441: NULL Pointer Dereference in GitHub repository vim/vim prior to 20d161ace307e28690229b68584f2d84556f8960.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-10-22"
+          },
+          "Updated": {
+            "Date": "2023-10-22"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-119, CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-06596",
+              "Impact": "High",
+              "Public": "20231002",
+              "CveID": "BDU:2023-06596"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5344",
+              "Impact": "High",
+              "Public": "20231002",
+              "CveID": "CVE-2023-5344"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-476",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5441",
+              "Impact": "Low",
+              "Public": "20231005",
+              "CveID": "CVE-2023-5441"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413001",
+                "Comment": "rpm-build-vim is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413002",
+                "Comment": "vim-X11 is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413003",
+                "Comment": "vim-X11-gnome2 is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413004",
+                "Comment": "vim-X11-gtk2 is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413005",
+                "Comment": "vim-X11-gtk3 is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413006",
+                "Comment": "vim-common is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413007",
+                "Comment": "vim-console is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413008",
+                "Comment": "vim-enhanced is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413009",
+                "Comment": "vim-minimal is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413010",
+                "Comment": "vim-spell-source is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413011",
+                "Comment": "vimtutor is earlier than 4:9.0.2009-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236413012",
+                "Comment": "xxd is earlier than 4:9.0.2009-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

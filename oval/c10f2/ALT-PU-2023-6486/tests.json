@@ -1,0 +1,66 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236486001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "moodle is earlier than 0:3.11.17-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236486001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236486001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236486002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "moodle-apache2 is earlier than 0:3.11.17-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236486002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236486001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236486003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "moodle-base is earlier than 0:3.11.17-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236486003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236486001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20236486004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "moodle-local-mysql is earlier than 0:3.11.17-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20236486004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20236486001"
+      }
+    }
+  ]
+}

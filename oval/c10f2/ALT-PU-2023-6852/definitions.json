@@ -1,0 +1,166 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236852",
+      "Version": "oval:org.altlinux.errata:def:20236852",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6852: package `php8.2` update to version 8.2.12-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6852",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6852",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-05887",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05887",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06656",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06656",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06657",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06657",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-3247",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3247",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3823",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3823",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3824",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3824",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades php8.2 to version 8.2.12-alt1. \nSecurity Fix(es):\n\n * BDU:2023-05887: Уязвимость языка программирования PHP, связанная с использованием недостаточно случайных значений, позволяющая нарушителю получить доступ к конфиденциальным данным\n\n * BDU:2023-06656: Уязвимость интерпретатора языка программирования PHP, связанная с неверным ограничением XML-ссылок на внешний объект, позволяющая нарушителю вызвать отказ в обслуживании или получить несанкционированный доступ к конфиденциальным данным\n\n * BDU:2023-06657: Уязвимость функции phar_dir_read() интерпретатора PHP, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2023-3247: In PHP versions 8.0.* before 8.0.29, 8.1.* before 8.1.20, 8.2.* before 8.2.7 when using SOAP HTTP Digest Authentication, random value generator was not checked for failure, and was using narrower range of values than it should have. In case of random generator failure, it could lead to a disclosure of 31 bits of uninitialized memory from the client to the server, and it also made easier to a malicious server to guess the client's nonce. \n\n\n\n * CVE-2023-3823: In PHP versions 8.0.* before 8.0.30, 8.1.* before 8.1.22, and 8.2.* before 8.2.8 various XML functions rely on libxml global state to track configuration variables, like whether external entities are loaded. This state is assumed to be unchanged unless the user explicitly changes it by calling appropriate function. However, since the state is process-global, other modules - such as ImageMagick - may also use this library within the same process, and change that global state for their internal purposes, and leave it in a state where external entities loading is enabled. This can lead to the situation where external XML is parsed with external entities loaded, which can lead to disclosure of any local files accessible to PHP. This vulnerable state may persist in the same process across many requests, until the process is shut down. \n\n\n\n * CVE-2023-3824: In PHP version 8.0.* before 8.0.30,  8.1.* before 8.1.22, and 8.2.* before 8.2.8, when loading phar file, while reading PHAR directory entries, insufficient length checking may lead to a stack buffer overflow, leading potentially to memory corruption or RCE. \n\n",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-07"
+          },
+          "Updated": {
+            "Date": "2023-11-07"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-330",
+              "Href": "https://bdu.fstec.ru/vul/2023-05887",
+              "Impact": "Low",
+              "Public": "20230607",
+              "CveID": "BDU:2023-05887"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L",
+              "Cwe": "CWE-611",
+              "Href": "https://bdu.fstec.ru/vul/2023-06656",
+              "Impact": "High",
+              "Public": "20230811",
+              "CveID": "BDU:2023-06656"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119, CWE-120",
+              "Href": "https://bdu.fstec.ru/vul/2023-06657",
+              "Impact": "Critical",
+              "Public": "20230811",
+              "CveID": "BDU:2023-06657"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-330",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3247",
+              "Impact": "Low",
+              "Public": "20230722",
+              "CveID": "CVE-2023-3247"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-611",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3823",
+              "Impact": "High",
+              "Public": "20230811",
+              "CveID": "CVE-2023-3823"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3824",
+              "Impact": "Critical",
+              "Public": "20230811",
+              "CveID": "CVE-2023-3824"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236852001",
+                "Comment": "php8.2 is earlier than 0:8.2.12-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236852002",
+                "Comment": "php8.2-devel is earlier than 0:8.2.12-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236852003",
+                "Comment": "php8.2-libs is earlier than 0:8.2.12-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236852004",
+                "Comment": "php8.2-mysqlnd is earlier than 0:8.2.12-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236852005",
+                "Comment": "rpm-build-php8.2-version is earlier than 0:8.2.12-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
