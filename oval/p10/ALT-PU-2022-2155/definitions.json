@@ -2295,7 +2295,7 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "Cwe": "CWE-476",
+              "Cwe": "CWE-416",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-1199",
               "Impact": "High",
               "Public": "20220829",

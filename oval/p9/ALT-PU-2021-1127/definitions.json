@@ -40,7 +40,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades kernel-image-un-def to version 5.10.9-alt2. \nSecurity Fix(es):\n\n * BDU:2021-02592: Уязвимость компонента fs/nfsd/nfs3xdr.c ядра операционной системы Linux, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2021-3178: ** DISPUTED ** fs/nfsd/nfs3xdr.c in the Linux kernel through 5.10.8, when there is an NFS export of a subdirectory of a filesystem, allows remote attackers to traverse to other parts of the filesystem via READDIRPLUS. NOTE: some parties argue that such a subdirectory export is not intended to prevent this attack; see also the exports(5) no_subtree_check default behavior.",
+        "Description": "This update upgrades kernel-image-un-def to version 5.10.9-alt2. \nSecurity Fix(es):\n\n * BDU:2021-02592: Уязвимость компонента fs/nfsd/nfs3xdr.c ядра операционной системы Linux, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2021-3178: fs/nfsd/nfs3xdr.c in the Linux kernel through 5.10.8, when there is an NFS export of a subdirectory of a filesystem, allows remote attackers to traverse to other parts of the filesystem via READDIRPLUS. NOTE: some parties argue that such a subdirectory export is not intended to prevent this attack; see also the exports(5) no_subtree_check default behavior",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "Low",

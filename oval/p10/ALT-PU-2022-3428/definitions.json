@@ -371,7 +371,7 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-              "Cwe": "CWE-125",
+              "Cwe": "CWE-191",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-2867",
               "Impact": "Low",
               "Public": "20220817",
@@ -387,7 +387,7 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
-              "Cwe": "CWE-125",
+              "Cwe": "CWE-191",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-2869",
               "Impact": "Low",
               "Public": "20220817",

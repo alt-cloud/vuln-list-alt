@@ -30,7 +30,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades prometheus-blackbox_exporter to version 0.18.0-alt1. \nSecurity Fix(es):\n\n * CVE-2020-16248: ** DISPUTED ** Prometheus Blackbox Exporter through 0.17.0 allows /probe?target= SSRF. NOTE: follow-on discussion suggests that this might plausibly be interpreted as both intended functionality and also a vulnerability.",
+        "Description": "This update upgrades prometheus-blackbox_exporter to version 0.18.0-alt1. \nSecurity Fix(es):\n\n * CVE-2020-16248: Prometheus Blackbox Exporter through 0.17.0 allows /probe?target= SSRF. NOTE: follow-on discussion suggests that this might plausibly be interpreted as both intended functionality and also a vulnerability",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "Low",

@@ -202,7 +202,7 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
-              "Cwe": "CWE-787",
+              "Cwe": "CWE-122",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-2601",
               "Impact": "High",
               "Public": "20221214",

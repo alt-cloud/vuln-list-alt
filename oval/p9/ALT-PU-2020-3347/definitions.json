@@ -35,7 +35,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades influxdb to version 1.8.3-alt1. \nSecurity Fix(es):\n\n * CVE-2022-36640: ** DISPUTED ** influxData influxDB before v1.8.10 contains no authentication mechanism or controls, allowing unauthenticated attackers to execute arbitrary commands. NOTE: the CVE ID assignment is disputed because the vendor's documentation states \"If InfluxDB is being deployed on a publicly accessible endpoint, we strongly recommend authentication be enabled. Otherwise the data will be publicly available to any unauthenticated user. The default settings do NOT enable authentication and authorization.\"",
+        "Description": "This update upgrades influxdb to version 1.8.3-alt1. \nSecurity Fix(es):\n\n * CVE-2022-36640: influxData influxDB before v1.8.10 contains no authentication mechanism or controls, allowing unauthenticated attackers to execute arbitrary commands. NOTE: the CVE ID assignment is disputed because the vendor's documentation states \"If InfluxDB is being deployed on a publicly accessible endpoint, we strongly recommend authentication be enabled. Otherwise the data will be publicly available to any unauthenticated user. The default settings do NOT enable authentication and authorization.",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "Critical",

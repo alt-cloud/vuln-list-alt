@@ -1,0 +1,113 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236896",
+      "Version": "oval:org.altlinux.errata:def:20236896",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6896: package `hunspell` update to version 1.7.2-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6896",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6896",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2021-03393",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-03393",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2019-16707",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2019-16707",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades hunspell to version 1.7.2-alt1. \nSecurity Fix(es):\n\n * BDU:2021-03393: Уязвимость функции SuggestMgr::leftcommonsubstring компонента suggestmgr.cxx программы для проверки правописания Hunspell, связанная с выходом операции за допустимые границы буфера данных, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2019-16707: Hunspell 1.7.0 has an invalid read operation in SuggestMgr::leftcommonsubstring in suggestmgr.cxx.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-07"
+          },
+          "Updated": {
+            "Date": "2023-11-07"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-119",
+              "Href": "https://bdu.fstec.ru/vul/2021-03393",
+              "Impact": "Low",
+              "Public": "20190314",
+              "CveID": "BDU:2021-03393"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-119",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2019-16707",
+              "Impact": "Low",
+              "Public": "20190923",
+              "CveID": "CVE-2019-16707"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236896001",
+                "Comment": "hunspell is earlier than 0:1.7.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236896002",
+                "Comment": "hunspell-utils is earlier than 0:1.7.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236896003",
+                "Comment": "libhunspell is earlier than 0:1.7.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236896004",
+                "Comment": "libhunspell-devel is earlier than 0:1.7.2-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

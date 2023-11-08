@@ -35,7 +35,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades libevt to version 20140411-alt2. \nSecurity Fix(es):\n\n * CVE-2018-8754: ** DISPUTED ** The libevt_record_values_read_event() function in libevt_record_values.c in libevt before 2018-03-17 does not properly check for out-of-bounds values of user SID data size, strings size, or data size. NOTE: the vendor has disputed this as described in libyal/libevt issue 5 on GitHub.",
+        "Description": "This update upgrades libevt to version 20140411-alt2. \nSecurity Fix(es):\n\n * CVE-2018-8754: The libevt_record_values_read_event() function in libevt_record_values.c in libevt before 2018-03-17 does not properly check for out-of-bounds values of user SID data size, strings size, or data size. NOTE: the vendor has disputed this as described in libyal/libevt issue 5 on GitHub",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "Low",
