@@ -1,0 +1,102 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236723",
+      "Version": "oval:org.altlinux.errata:def:20236723",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6723: package `libjpeg-turbo` update to version 2.1.2-alt1.2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6723",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6723",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2021-46822",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-46822",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libjpeg-turbo to version 2.1.2-alt1.2. \nSecurity Fix(es):\n\n * CVE-2021-46822: The PPM reader in libjpeg-turbo through 2.0.90 mishandles use of tjLoadImage for loading a 16-bit binary PPM file into a grayscale buffer and loading a 16-bit binary PGM file into an RGB buffer. This is related to a heap-based buffer overflow in the get_word_rgb_row function in rdppm.c.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-09"
+          },
+          "Updated": {
+            "Date": "2023-11-09"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-46822",
+              "Impact": "Low",
+              "Public": "20220618",
+              "CveID": "CVE-2021-46822"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236723001",
+                "Comment": "libjpeg is earlier than 2:2.1.2-alt1.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236723002",
+                "Comment": "libjpeg-devel is earlier than 2:2.1.2-alt1.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236723003",
+                "Comment": "libjpeg-devel-static is earlier than 2:2.1.2-alt1.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236723004",
+                "Comment": "libjpeg-utils is earlier than 2:2.1.2-alt1.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236723005",
+                "Comment": "libturbojpeg is earlier than 2:2.1.2-alt1.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236723006",
+                "Comment": "libturbojpeg-devel is earlier than 2:2.1.2-alt1.2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
