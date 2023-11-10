@@ -410,6 +410,7 @@
             {
               "Cvss": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-24489",
               "Impact": "Low",
               "Public": "20211025",
