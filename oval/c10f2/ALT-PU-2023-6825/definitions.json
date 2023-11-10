@@ -1,0 +1,178 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20236825",
+      "Version": "oval:org.altlinux.errata:def:20236825",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-6825: package `cups` update to version 2.4.7-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-6825",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-6825",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-03719",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03719",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-03873",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03873",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06408",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06408",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-32324",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-32324",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-34241",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-34241",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4504",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4504",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades cups to version 2.4.7-alt2. \nSecurity Fix(es):\n\n * BDU:2023-03719: Уязвимость функции httpClose(con-\u0026gt;http) сервера печати CUPS, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-03873: Уязвимость функции format_log_line() сервера печати CUPS, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-06408: Уязвимость функции scan_ps() библиотеки libppd сервера печати CUPS, позволяющая нарушителю повысить свои привилегии и выполнить произвольный код\n\n * CVE-2023-32324: OpenPrinting CUPS is an open source printing system. In versions 2.4.2 and prior, a heap buffer overflow vulnerability would allow a remote attacker to launch a denial of service (DoS) attack. A buffer overflow vulnerability in the function `format_log_line` could allow remote attackers to cause a DoS on the affected system. Exploitation of the vulnerability can be triggered when the configuration file `cupsd.conf` sets the value of `loglevel `to `DEBUG`. No known patches or workarounds exist at time of publication.\n\n * CVE-2023-34241: OpenPrinting CUPS is a standards-based, open source printing system for Linux and other Unix-like operating systems. Starting in version 2.0.0 and prior to version 2.4.6, CUPS logs data of free memory to the logging service AFTER the connection has been closed, when it should have logged the data right before. This is a use-after-free bug that impacts the entire cupsd process.\n\nThe exact cause of this issue is the function `httpClose(con-\u003ehttp)` being called in `scheduler/client.c`. The problem is that httpClose always, provided its argument is not null, frees the pointer at the end of the call, only for cupsdLogClient to pass the pointer to httpGetHostname. This issue happens in function `cupsdAcceptClient` if LogLevel is warn or higher and in two scenarios: there is a double-lookup for the IP Address (HostNameLookups Double is set in `cupsd.conf`) which fails to resolve, or if CUPS is compiled with TCP wrappers and the connection is refused by rules from `/etc/hosts.allow` and `/etc/hosts.deny`.\n\nVersion 2.4.6 has a patch for this issue.\n\n * CVE-2023-4504: Due to failure in validating the length provided by an attacker-crafted PPD PostScript document, CUPS and libppd are susceptible to a heap-based buffer overflow and possibly code execution. This issue has been fixed in CUPS version 2.4.7, released in September of 2023.\n\n\n * #38564: dpkg-architecture: command not found\n\n * #48114: [PATCH] поддержка бездрайверного режима печати на Pantum BM5100ADW",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-10"
+          },
+          "Updated": {
+            "Date": "2023-11-10"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:N/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-03719",
+              "Impact": "High",
+              "Public": "20230622",
+              "CveID": "BDU:2023-03719"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-119, CWE-122, CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-03873",
+              "Impact": "High",
+              "Public": "20230601",
+              "CveID": "BDU:2023-03873"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122, CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-06408",
+              "Impact": "High",
+              "Public": "20230727",
+              "CveID": "BDU:2023-06408"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-32324",
+              "Impact": "Low",
+              "Public": "20230601",
+              "CveID": "CVE-2023-32324"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-34241",
+              "Impact": "High",
+              "Public": "20230622",
+              "CveID": "CVE-2023-34241"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4504",
+              "Impact": "High",
+              "Public": "20230921",
+              "CveID": "CVE-2023-4504"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "38564",
+              "Href": "https://bugzilla.altlinux.org/38564",
+              "Data": "dpkg-architecture: command not found"
+            },
+            {
+              "Id": "48114",
+              "Href": "https://bugzilla.altlinux.org/48114",
+              "Data": "[PATCH] поддержка бездрайверного режима печати на Pantum BM5100ADW"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236825001",
+                "Comment": "cups is earlier than 0:2.4.7-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236825002",
+                "Comment": "cups-ipptool is earlier than 0:2.4.7-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236825003",
+                "Comment": "cups-xinetd is earlier than 0:2.4.7-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236825004",
+                "Comment": "libcups is earlier than 0:2.4.7-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20236825005",
+                "Comment": "libcups-devel is earlier than 0:2.4.7-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
