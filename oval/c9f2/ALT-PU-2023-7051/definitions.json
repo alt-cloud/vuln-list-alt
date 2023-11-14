@@ -1,0 +1,103 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237051",
+      "Version": "oval:org.altlinux.errata:def:20237051",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7051: package `libetpan` update to version 1.9.4-alt4",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7051",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7051",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2020-15953",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-15953",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-4121",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-4121",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libetpan to version 1.9.4-alt4. \nSecurity Fix(es):\n\n * CVE-2020-15953: LibEtPan through 1.9.4, as used in MailCore 2 through 0.6.3 and other products, has a STARTTLS buffering issue that affects IMAP, SMTP, and POP3. When a server sends a \"begin TLS\" response, the client reads additional data (e.g., from a meddler-in-the-middle attacker) and evaluates it in a TLS context, aka \"response injection.\"\n\n * CVE-2022-4121: In libetpan a null pointer dereference in mailimap_mailbox_data_status_free in low-level/imap/mailimap_types.c was found that could lead to a remote denial of service or other potential consequences.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-14"
+          },
+          "Updated": {
+            "Date": "2023-11-14"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:P/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-74",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-15953",
+              "Impact": "High",
+              "Public": "20200727",
+              "CveID": "CVE-2020-15953"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-476",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-4121",
+              "Impact": "Low",
+              "Public": "20230117",
+              "CveID": "CVE-2022-4121"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237051001",
+                "Comment": "libetpan is earlier than 0:1.9.4-alt4"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237051002",
+                "Comment": "libetpan-devel is earlier than 0:1.9.4-alt4"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
