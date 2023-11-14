@@ -1912,7 +1912,7 @@
             {
               "Cvss": "AV:L/AC:L/Au:S/C:C/I:N/A:N",
               "Cvss3": "AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
-              "Cwe": "CWE-200",
+              "Cwe": "CWE-200, CWE-908",
               "Href": "https://bdu.fstec.ru/vul/2022-03400",
               "Impact": "Low",
               "Public": "20220111",
@@ -2648,7 +2648,7 @@
               "CveID": "BDU:2023-00646"
             },
             {
-              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss": "AV:L/AC:H/Au:S/C:C/I:C/A:C",
               "Cvss3": "AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "CWE-362, CWE-416",
               "Href": "https://bdu.fstec.ru/vul/2023-00647",

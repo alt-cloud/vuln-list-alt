@@ -2679,11 +2679,11 @@
               "CveID": "BDU:2022-03138"
             },
             {
-              "Cvss": "AV:N/AC:L/Au:S/C:N/I:N/A:C",
-              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "Cwe": "CWE-401, CWE-911",
               "Href": "https://bdu.fstec.ru/vul/2022-03207",
-              "Impact": "Low",
+              "Impact": "High",
               "Public": "20211210",
               "CveID": "BDU:2022-03207"
             },

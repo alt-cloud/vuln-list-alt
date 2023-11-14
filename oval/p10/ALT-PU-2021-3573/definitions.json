@@ -985,7 +985,7 @@
               "CveID": "BDU:2021-05673"
             },
             {
-              "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
               "Cvss3": "AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "Cwe": "CWE-404",
               "Href": "https://bdu.fstec.ru/vul/2021-06349",
