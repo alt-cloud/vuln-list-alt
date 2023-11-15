@@ -1,0 +1,114 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx-accept_language is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx-geoip is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx-image_filter is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx-pam is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx-perl is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx-spnego is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237119008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "nginx-xslt is earlier than 0:1.24.0-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237119008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237119001"
+      }
+    }
+  ]
+}
