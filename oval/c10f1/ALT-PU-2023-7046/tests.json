@@ -1,0 +1,102 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237046001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "wine is earlier than 1:8.14.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237046001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237046001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237046002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "wine-common is earlier than 1:8.14.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237046002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237046001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237046003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "wine-devel is earlier than 1:8.14.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237046003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237046001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237046004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "wine-devel-tools is earlier than 1:8.14.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237046004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237046001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237046005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "wine-full is earlier than 1:8.14.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237046005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237046001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237046006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "wine-ping is earlier than 1:8.14.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237046006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237046001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237046007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "wine-programs is earlier than 1:8.14.1-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237046007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237046001"
+      }
+    }
+  ]
+}
