@@ -1,0 +1,85 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237045",
+      "Version": "oval:org.altlinux.errata:def:20237045",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7045: package `parted` update to version 3.4-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7045",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7045",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades parted to version 3.4-alt1. \nSecurity Fix(es):\n\n * #40175: Обновить parted",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-16"
+          },
+          "Updated": {
+            "Date": "2023-11-16"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "40175",
+              "Href": "https://bugzilla.altlinux.org/40175",
+              "Data": "Обновить parted"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237045001",
+                "Comment": "libparted is earlier than 0:3.4-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237045002",
+                "Comment": "libparted-devel is earlier than 0:3.4-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237045003",
+                "Comment": "libparted-devel-static is earlier than 0:3.4-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237045004",
+                "Comment": "parted is earlier than 0:3.4-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
