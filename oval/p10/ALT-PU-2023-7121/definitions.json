@@ -1,0 +1,880 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237121",
+      "Version": "oval:org.altlinux.errata:def:20237121",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7121: package `chromium` update to version 119.0.6045.105-alt0.p10.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7121",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7121",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-06341",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06341",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06604",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06604",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06605",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06605",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06606",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06606",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06607",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06607",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06608",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06608",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06611",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06611",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06669",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06669",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06670",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06670",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06671",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06671",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06780",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06780",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06823",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06823",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06824",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06824",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06825",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06825",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06826",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06826",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07287",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07287",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07401",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07401",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07402",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07402",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07403",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07403",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07404",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07404",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07405",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07405",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07413",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07413",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07414",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07414",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07415",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07415",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07429",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07429",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07430",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07430",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07431",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07431",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07432",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07432",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07433",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07433",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5218",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5218",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5346",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5346",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5472",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5472",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5473",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5473",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5474",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5474",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5475",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5475",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5476",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5476",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5477",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5477",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5478",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5478",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5479",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5479",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5480",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5480",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5481",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5481",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5482",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5482",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5483",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5483",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5484",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5484",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5485",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5485",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5486",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5486",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5487",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5487",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5849",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5849",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5850",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5850",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5851",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5851",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5852",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5852",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5853",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5853",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5854",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5854",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5855",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5855",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5856",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5856",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5857",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5857",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5858",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5858",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5859",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5859",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades chromium to version 119.0.6045.105-alt0.p10.1. \nSecurity Fix(es):\n\n * BDU:2023-06341: Уязвимость обработчика JavaScript-сценариев V8 браузера Google Chrome, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-06604: Уязвимость компонента Site Isolation браузера Google Chrome, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-06605: Уязвимость функции автозаполнения Autofill браузера Google Chrome, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2023-06606: Уязвимость компонента Navigation браузера Google Chrome, позволяющая нарушителю проводить спуфинг-атаки\n\n * BDU:2023-06607: Уязвимость компонента Installer браузера Google Chrome, позволяющая нарушителю обойти существующие ограничения безопасности\n\n * BDU:2023-06608: Уязвимость компонента Input браузера Google Chrome, позволяющая нарушителю проводить спуфинг-атаки\n\n * BDU:2023-06611: Уязвимость компонента Cast браузера Google Chrome, позволяющая нарушителю скомпрометировать процесс рендеринга\n\n * BDU:2023-06669: Уязвимость функции автозаполнения Autofill браузера Google Chrome, позволяющая нарушителю оказать влияние на целостность защищаемой информации\n\n * BDU:2023-06670: Уязвимость компонента Downloads (Загрузки) браузера Google Chrome, позволяющая нарушителю проводить спуфинг атаки\n\n * BDU:2023-06671: Уязвимость реализации полноэкранного режима браузера Google Chrome, позволяющая нарушителю оказать влияние на целостность защищаемой информации\n\n * BDU:2023-06780: Уязвимость компонента PDFium браузера Google Chrome, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-06823: Уязвимость компонента Blink History браузера Google Chrome, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-06824: Уязвимость набора инструментов для веб-разработки DevTools браузеров Microsoft Edge и Google Chrome, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-06825: Уязвимость компонента Extensions API браузеров Microsoft Edge и Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-06826: Уязвимость функции Intents браузера Google Chrome, позволяющая нарушителю обойти существующие ограничения доступа\n\n * BDU:2023-07287: Уязвимость компонента Profiles браузеров Google Chrome и Microsoft Edge, позволяющая нарушителю выполнить произвольный код или вызвать отказ в обслуживании\n\n * BDU:2023-07401: Уязвимость компонента Profiles браузера Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07402: Уязвимость компонента Printing браузера Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07403: Уязвимость компонента Downloads (Загрузки) браузера Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07404: Уязвимость компонента Downloads (Загрузки) браузера Google Chrome, позволяющая нарушителю проводить спуфинг-атаки\n\n * BDU:2023-07405: Уязвимость компонента Downloads (Загрузки) браузера Google Chrome, позволяющая нарушителю проводить спуфинг-атаки\n\n * BDU:2023-07413: Уязвимость интерфейса для подключения периферийных устройств USB браузера Google Chrome, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-07414: Уязвимость режима чтения (Reading Mode) браузера Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07415: Уязвимость интерфейса для подключения периферийных устройств USB браузера Google Chrome, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-07429: Уязвимость компонента Downloads (Загрузки) браузера Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07430: Уязвимость компонента WebApp Provider браузера Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07431: Уязвимость элемента управления «Боковая панель» («Side Panel») браузера Google Chrome, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07432: Уязвимость технологии Picture-in-Picture (PiP) браузера Google Chrome, позволяющая нарушителю проводить спуфинг-атаки\n\n * BDU:2023-07433: Уязвимость компонента Payments браузера Google Chrome, позволяющая нарушителю обойти ограничения безопасности и получить несанкционированный доступ к защищаемой информации\n\n * CVE-2023-5218: Use after free in Site Isolation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)\n\n * CVE-2023-5346: Type confusion in V8 in Google Chrome prior to 117.0.5938.149 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)\n\n * CVE-2023-5472: Use after free in Profiles in Google Chrome prior to 118.0.5993.117 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)\n\n * CVE-2023-5473: Use after free in Cast in Google Chrome prior to 118.0.5993.70 allowed a remote attacker who had compromised the renderer process to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Low)\n\n * CVE-2023-5474: Heap buffer overflow in PDF in Google Chrome prior to 118.0.5993.70 allowed a remote attacker who convinced a user to engage in specific user interactions to potentially exploit heap corruption via a crafted PDF file. (Chromium security severity: Medium)\n\n * CVE-2023-5475: Inappropriate implementation in DevTools in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass discretionary access control via a crafted Chrome Extension. (Chromium security severity: Medium)\n\n * CVE-2023-5476: Use after free in Blink History in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5477: Inappropriate implementation in Installer in Google Chrome prior to 118.0.5993.70 allowed a local attacker to bypass discretionary access control via a crafted command. (Chromium security severity: Low)\n\n * CVE-2023-5478: Inappropriate implementation in Autofill in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)\n\n * CVE-2023-5479: Inappropriate implementation in Extensions API in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass an enterprise policy via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5480: Inappropriate implementation in Payments in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to bypass XSS preventions via a malicious file. (Chromium security severity: High)\n\n * CVE-2023-5481: Inappropriate implementation in Downloads in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5482: Insufficient data validation in USB in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)\n\n * CVE-2023-5483: Inappropriate implementation in Intents in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5484: Inappropriate implementation in Navigation in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5485: Inappropriate implementation in Autofill in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to bypass autofill restrictions via a crafted HTML page. (Chromium security severity: Low)\n\n * CVE-2023-5486: Inappropriate implementation in Input in Google Chrome prior to 118.0.5993.70 allowed a remote attacker to spoof security UI via a crafted HTML page. (Chromium security severity: Low)\n\n * CVE-2023-5487: Inappropriate implementation in Fullscreen in Google Chrome prior to 118.0.5993.70 allowed an attacker who convinced a user to install a malicious extension to bypass navigation restrictions via a crafted Chrome Extension. (Chromium security severity: Medium)\n\n * CVE-2023-5849: Integer overflow in USB in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)\n\n * CVE-2023-5850: Incorrect security UI in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform domain spoofing via a crafted domain name. (Chromium security severity: Medium)\n\n * CVE-2023-5851: Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5852: Use after free in Printing in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)\n\n * CVE-2023-5853: Incorrect security UI in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5854: Use after free in Profiles in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)\n\n * CVE-2023-5855: Use after free in Reading Mode in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via specific UI gestures. (Chromium security severity: Medium)\n\n * CVE-2023-5856: Use after free in Side Panel in Google Chrome prior to 119.0.6045.105 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Medium)\n\n * CVE-2023-5857: Inappropriate implementation in Downloads in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to potentially execute arbitrary code via a malicious file. (Chromium security severity: Medium)\n\n * CVE-2023-5858: Inappropriate implementation in WebApp Provider in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to obfuscate security UI via a crafted HTML page. (Chromium security severity: Low)\n\n * CVE-2023-5859: Incorrect security UI in Picture In Picture in Google Chrome prior to 119.0.6045.105 allowed a remote attacker to perform domain spoofing via a crafted local HTML page. (Chromium security severity: Low)",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-17"
+          },
+          "Updated": {
+            "Date": "2023-11-17"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-843",
+              "Href": "https://bdu.fstec.ru/vul/2023-06341",
+              "Impact": "High",
+              "Public": "20231003",
+              "CveID": "BDU:2023-06341"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-06604",
+              "Impact": "High",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06604"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06605",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06605"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-451",
+              "Href": "https://bdu.fstec.ru/vul/2023-06606",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06606"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06607",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06607"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06608",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06608"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-06611",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06611"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06669",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06669"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06670",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06670"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06671",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06671"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:M/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119, CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-06780",
+              "Impact": "High",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06780"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-06823",
+              "Impact": "High",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06823"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06824",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06824"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06825",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06825"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-06826",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06826"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-07287",
+              "Impact": "High",
+              "Public": "20231010",
+              "CveID": "BDU:2023-07287"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-07401",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07401"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-07402",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07402"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-07403",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07403"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-451",
+              "Href": "https://bdu.fstec.ru/vul/2023-07404",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07404"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-451",
+              "Href": "https://bdu.fstec.ru/vul/2023-07405",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07405"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://bdu.fstec.ru/vul/2023-07413",
+              "Impact": "High",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07413"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-07414",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07414"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-20",
+              "Href": "https://bdu.fstec.ru/vul/2023-07415",
+              "Impact": "High",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07415"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-07429",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07429"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-07430",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07430"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-07431",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07431"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-451",
+              "Href": "https://bdu.fstec.ru/vul/2023-07432",
+              "Impact": "Low",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07432"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:P/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:H",
+              "Cwe": "CWE-358",
+              "Href": "https://bdu.fstec.ru/vul/2023-07433",
+              "Impact": "High",
+              "Public": "20231031",
+              "CveID": "BDU:2023-07433"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5218",
+              "Impact": "High",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5218"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-843",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5346",
+              "Impact": "High",
+              "Public": "20231005",
+              "CveID": "CVE-2023-5346"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5472",
+              "Impact": "High",
+              "Public": "20231025",
+              "CveID": "CVE-2023-5472"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5473",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5473"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5474",
+              "Impact": "High",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5474"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5475",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5475"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5476",
+              "Impact": "High",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5476"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5477",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5477"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5478",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5478"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5479",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5479"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5480",
+              "Impact": "Low",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5480"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5481",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5481"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-345",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5482",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5482"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5483",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5483"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5484",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5484"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5485",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5485"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5486",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5486"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5487",
+              "Impact": "Low",
+              "Public": "20231011",
+              "CveID": "CVE-2023-5487"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5849",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5849"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5850",
+              "Impact": "Low",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5850"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-346",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5851",
+              "Impact": "Low",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5851"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5852",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5852"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-346",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5853",
+              "Impact": "Low",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5853"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5854",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5854"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5855",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5855"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5856",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5856"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5857",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5857"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-346",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5858",
+              "Impact": "Low",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5858"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-346",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5859",
+              "Impact": "Low",
+              "Public": "20231101",
+              "CveID": "CVE-2023-5859"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237121001",
+                "Comment": "chromium is earlier than 0:119.0.6045.105-alt0.p10.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
