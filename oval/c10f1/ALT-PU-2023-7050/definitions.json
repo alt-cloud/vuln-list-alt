@@ -131,14 +131,18 @@
               "CveID": "CVE-2023-44487"
             },
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-22",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45283",
-              "Impact": "None",
+              "Impact": "High",
               "Public": "20231109",
               "CveID": "CVE-2023-45283"
             },
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45284",
-              "Impact": "None",
+              "Impact": "Low",
               "Public": "20231109",
               "CveID": "CVE-2023-45284"
             }
