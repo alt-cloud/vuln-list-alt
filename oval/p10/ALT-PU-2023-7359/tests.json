@@ -1,0 +1,102 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237359001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "transmission is earlier than 0:4.0.4-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237359001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237359001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237359002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "transmission-cli is earlier than 0:4.0.4-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237359002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237359001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237359003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "transmission-common is earlier than 0:4.0.4-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237359003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237359001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237359004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "transmission-daemon is earlier than 0:4.0.4-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237359004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237359001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237359005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "transmission-gtk is earlier than 0:4.0.4-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237359005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237359001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237359006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "transmission-qt is earlier than 0:4.0.4-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237359006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237359001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237359007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "transmission-remote is earlier than 0:4.0.4-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237359007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237359001"
+      }
+    }
+  ]
+}
