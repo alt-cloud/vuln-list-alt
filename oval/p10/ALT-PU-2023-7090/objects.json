@@ -1,0 +1,82 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:2001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:(?!sp)[a-z\\-]+:p?(\\d+)(?:\\.\\d)*"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090001",
+      "Version": "1",
+      "comment": "postgresql15 is installed",
+      "Name": "postgresql15"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090002",
+      "Version": "1",
+      "comment": "postgresql15-contrib is installed",
+      "Name": "postgresql15-contrib"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090003",
+      "Version": "1",
+      "comment": "postgresql15-docs is installed",
+      "Name": "postgresql15-docs"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090004",
+      "Version": "1",
+      "comment": "postgresql15-llvmjit is installed",
+      "Name": "postgresql15-llvmjit"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090005",
+      "Version": "1",
+      "comment": "postgresql15-perl is installed",
+      "Name": "postgresql15-perl"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090006",
+      "Version": "1",
+      "comment": "postgresql15-python is installed",
+      "Name": "postgresql15-python"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090007",
+      "Version": "1",
+      "comment": "postgresql15-server is installed",
+      "Name": "postgresql15-server"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090008",
+      "Version": "1",
+      "comment": "postgresql15-server-devel is installed",
+      "Name": "postgresql15-server-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237090009",
+      "Version": "1",
+      "comment": "postgresql15-tcl is installed",
+      "Name": "postgresql15-tcl"
+    }
+  ]
+}
