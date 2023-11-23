@@ -1,0 +1,52 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:3001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d\\.\\d)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237205001",
+      "Version": "1",
+      "comment": "libunbound is installed",
+      "Name": "libunbound"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237205002",
+      "Version": "1",
+      "comment": "libunbound-devel is installed",
+      "Name": "libunbound-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237205003",
+      "Version": "1",
+      "comment": "unbound is installed",
+      "Name": "unbound"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237205004",
+      "Version": "1",
+      "comment": "unbound-control is installed",
+      "Name": "unbound-control"
+    }
+  ]
+}

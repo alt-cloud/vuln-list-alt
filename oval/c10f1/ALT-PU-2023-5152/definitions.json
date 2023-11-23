@@ -76,7 +76,7 @@
             {
               "Cvss": "AV:A/AC:L/Au:N/C:P/I:P/A:P",
               "Cvss3": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "Cwe": "CWE-122",
+              "Cwe": "CWE-787",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-31439",
               "Impact": "High",
               "Public": "20210521",
@@ -84,7 +84,7 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "Cwe": "CWE-121",
+              "Cwe": "CWE-787",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-0194",
               "Impact": "Critical",
               "Public": "20230328",
@@ -100,7 +100,7 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
-              "Cwe": "CWE-121",
+              "Cwe": "CWE-787",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-23122",
               "Impact": "Critical",
               "Public": "20230328",
