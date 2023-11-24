@@ -1,0 +1,198 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libcolorcorrect5 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libkfontinst5 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libkfontinstui5 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libkrdb5 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libkworkspace55 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libnotificationmanager1 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libplasma-geolocation-interface5 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libtaskmanager6 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libweather_ion7 is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "plasma5-workspace is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "plasma5-workspace-common is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "plasma5-workspace-devel is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "plasma5-workspace-qml is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "polkit-kde-plasma-workspace is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237212015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sddm-theme-breeze is earlier than 1:5.27.9-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237212015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237212001"
+      }
+    }
+  ]
+}
