@@ -1,0 +1,82 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237470",
+      "Version": "oval:org.altlinux.errata:def:20237470",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7470: package `atop` update to version 2.9.0-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7470",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7470",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades atop to version 2.9.0-alt2. \nSecurity Fix(es):\n\n * #37288: [FR] Обновить версию\n\n * #48545: Несовпадающие версии при использовании команд atop -V и rpm -q atop",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-24"
+          },
+          "Updated": {
+            "Date": "2023-11-24"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "37288",
+              "Href": "https://bugzilla.altlinux.org/37288",
+              "Data": "[FR] Обновить версию"
+            },
+            {
+              "Id": "48545",
+              "Href": "https://bugzilla.altlinux.org/48545",
+              "Data": "Несовпадающие версии при использовании команд atop -V и rpm -q atop"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237470001",
+                "Comment": "atop is earlier than 0:2.9.0-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
