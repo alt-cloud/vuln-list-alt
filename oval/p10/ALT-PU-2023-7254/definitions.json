@@ -1,0 +1,240 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237254",
+      "Version": "oval:org.altlinux.errata:def:20237254",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7254: package `squid` update to version 6.5-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7254",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7254",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07699",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07699",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07920",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07920",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08061",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08061",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08062",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08062",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08063",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08063",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-46724",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-46724",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-46846",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-46846",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-46847",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-46847",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-46848",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-46848",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5824",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5824",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades squid to version 6.5-alt1. \nSecurity Fix(es):\n\n * BDU:2023-07699: Уязвимость прокси-сервера Squid, связанная с ошибками при проверке сертификата SSL/TLS, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-07920: Уязвимость обработчика аутентификации HTTP Digest Authentication прокси-сервера Squid, позволяющая нарушителю вызвать отказ в обслуживании или оказать иное воздействие\n\n * BDU:2023-08061: Уязвимость прокси-сервера Squid, связана с неправильным обращением с исключительными условиями и неконтролируемым потреблением ресурсов, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-08062: Уязвимость прокси-сервера Squid, связана с неправильным преобразованием между числовыми типами и неконтролируемым потреблением ресурсов, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-08063: Уязвимость декодера chunked прокси-сервера Squid, \nпозволяющая нарушителю взаимодействовать с сервером напрямую\n\n * CVE-2023-46724:  Squid is a caching proxy for the Web. Due to an Improper Validation of Specified Index bug, Squid versions 3.3.0.1 through 5.9 and 6.0 prior to 6.4 compiled using `--with-openssl` are vulnerable to a Denial of Service attack against SSL Certificate validation. This problem allows a remote server to perform Denial of Service against Squid Proxy by initiating a TLS Handshake with a specially crafted SSL Certificate in a server certificate chain. This attack is limited to HTTPS and SSL-Bump. This bug is fixed in Squid version 6.4. In addition, patches addressing this problem for the stable releases can be found in Squid's patch archives. Those who you use a prepackaged version of Squid should refer to the package vendor for availability information on updated packages.\n\n * CVE-2023-46846: SQUID is vulnerable to HTTP request smuggling, caused by chunked decoder lenience, allows a remote attacker to perform Request/Response smuggling past firewall and frontend security systems.\n\n * CVE-2023-46847: Squid is vulnerable to a Denial of Service,  where a remote attacker can perform buffer overflow attack by writing up to 2 MB of arbitrary data to heap memory when Squid is configured to accept HTTP Digest Authentication.\n\n * CVE-2023-46848: Squid is vulnerable to Denial of Service,  where a remote attacker can perform DoS by sending ftp:// URLs in HTTP Request messages or constructing ftp:// URLs from FTP Native input.\n\n * CVE-2023-5824: Squid is vulnerable to Denial of Service attack against HTTP and HTTPS clients due to an Improper Handling of Structural Elements bug.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-24"
+          },
+          "Updated": {
+            "Date": "2023-11-24"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:N/A:H",
+              "Cwe": "CWE-125, CWE-129, CWE-295, CWE-786, CWE-823, CWE-1285",
+              "Href": "https://bdu.fstec.ru/vul/2023-07699",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "BDU:2023-07699"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://bdu.fstec.ru/vul/2023-07920",
+              "Impact": "Critical",
+              "Public": "20231103",
+              "CveID": "BDU:2023-07920"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-755",
+              "Href": "https://bdu.fstec.ru/vul/2023-08061",
+              "Impact": "High",
+              "Public": "20231103",
+              "CveID": "BDU:2023-08061"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-681",
+              "Href": "https://bdu.fstec.ru/vul/2023-08062",
+              "Impact": "High",
+              "Public": "20231103",
+              "CveID": "BDU:2023-08062"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-444",
+              "Href": "https://bdu.fstec.ru/vul/2023-08063",
+              "Impact": "Low",
+              "Public": "20231103",
+              "CveID": "BDU:2023-08063"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-295",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46724",
+              "Impact": "High",
+              "Public": "20231101",
+              "CveID": "CVE-2023-46724"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-444",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46846",
+              "Impact": "Low",
+              "Public": "20231103",
+              "CveID": "CVE-2023-46846"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-120",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46847",
+              "Impact": "High",
+              "Public": "20231103",
+              "CveID": "CVE-2023-46847"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-681",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46848",
+              "Impact": "High",
+              "Public": "20231103",
+              "CveID": "CVE-2023-46848"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-755",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5824",
+              "Impact": "High",
+              "Public": "20231103",
+              "CveID": "CVE-2023-5824"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237254001",
+                "Comment": "squid is earlier than 0:6.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237254002",
+                "Comment": "squid-doc is earlier than 0:6.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237254003",
+                "Comment": "squid-helpers is earlier than 0:6.5-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

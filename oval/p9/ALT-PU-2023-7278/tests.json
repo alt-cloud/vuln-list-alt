@@ -1,0 +1,114 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:1001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p9' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:1001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:1001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-sdk is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-server is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-server-common is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xdmx is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xephyr is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xnest is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xvfb is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237278008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xorg-xwayland is earlier than 2:1.20.8-alt10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237278008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237278001"
+      }
+    }
+  ]
+}
