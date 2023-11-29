@@ -1,0 +1,162 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-cinnamon is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-common is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-enlightenment is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-generic is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-gnome3 is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-kde4 is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-lxde is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-mate is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-mate-like-menu is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-nested-menu is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-shallow-menu is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237280012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "altlinux-freedesktop-menu-xfce is earlier than 0:0.69-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237280012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237280001"
+      }
+    }
+  ]
+}

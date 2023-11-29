@@ -1,0 +1,152 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237618",
+      "Version": "oval:org.altlinux.errata:def:20237618",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7618: package `libtar` update to version 1.2.20-alt4.git.6d0ab4c",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7618",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7618",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2021-33643",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-33643",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-33644",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-33644",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-33645",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-33645",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-33646",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-33646",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libtar to version 1.2.20-alt4.git.6d0ab4c. \nSecurity Fix(es):\n\n * CVE-2021-33643: An attacker who submits a crafted tar file with size in header struct being 0 may be able to trigger an calling of malloc(0) for a variable gnu_longlink, causing an out-of-bounds read.\n\n * CVE-2021-33644: An attacker who submits a crafted tar file with size in header struct being 0 may be able to trigger an calling of malloc(0) for a variable gnu_longname, causing an out-of-bounds read.\n\n * CVE-2021-33645: The th_read() function doesn’t free a variable t-\u003eth_buf.gnu_longlink after allocating memory, which may cause a memory leak.\n\n * CVE-2021-33646: The th_read() function doesn’t free a variable t-\u003eth_buf.gnu_longname after allocating memory, which may cause a memory leak.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-29"
+          },
+          "Updated": {
+            "Date": "2023-11-29"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-33643",
+              "Impact": "Critical",
+              "Public": "20220810",
+              "CveID": "CVE-2021-33643"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-33644",
+              "Impact": "High",
+              "Public": "20220810",
+              "CveID": "CVE-2021-33644"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-401",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-33645",
+              "Impact": "High",
+              "Public": "20220810",
+              "CveID": "CVE-2021-33645"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-401",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-33646",
+              "Impact": "High",
+              "Public": "20220810",
+              "CveID": "CVE-2021-33646"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237618001",
+                "Comment": "libtar is earlier than 0:1.2.20-alt4.git.6d0ab4c"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237618002",
+                "Comment": "libtar-devel is earlier than 0:1.2.20-alt4.git.6d0ab4c"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
