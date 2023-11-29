@@ -1,0 +1,177 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237282",
+      "Version": "oval:org.altlinux.errata:def:20237282",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7282: package `firmware-intel-ucode` update to version 23-alt1.20231114",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7282",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7282",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-04663",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-04663",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07325",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07325",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07603",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07603",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07639",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07639",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-40982",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-40982",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-41804",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-41804",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-23583",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-23583",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-23908",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-23908",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades firmware-intel-ucode to version 23-alt1.20231114. \nSecurity Fix(es):\n\n * BDU:2023-04663: Уязвимость микропрограммного обеспечения процессоров Intel, связанная с утечкой информации из векторных регистров, позволяющая нарушителю получить доступ к защищаемой информации\n\n * BDU:2023-07325: Уязвимость микропрограммного обеспечения процессоров Intel, позволяющая нарушителю повысить свои привилегии (с третьего до нулевого кольца защиты (CPL0)), получить доступ к конфиденциальной информации или вызвать отказ в обслуживании\n\n * BDU:2023-07603: Уязвимость микрокода процессоров Intel Microcode, связанная с возможностью авария резервного оборудования путём несанкционированного внедрения ошибок, позволяющая нарушителю получить доступ к конфиденциальным данным, нарушить их целостность, а также вызвать отказ в обслуживании\n\n * BDU:2023-07639: Уязвимость микрокода процессоров Intel Microcode, связанная с раскрытием информации, позволяющая нарушителю получить доступ к конфиденциальным данным\n\n * CVE-2022-40982: Information exposure through microarchitectural state after transient execution in certain vector execution units for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2022-41804: Unauthorized error injection in Intel(R) SGX or Intel(R) TDX for some Intel(R) Xeon(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access.\n\n * CVE-2023-23583: Sequence of processor instructions leads to unexpected behavior for some Intel(R) Processors may allow an authenticated user to potentially enable escalation of privilege and/or information disclosure and/or denial of service via local access.\n\n * CVE-2023-23908: Improper access control in some 3rd Generation Intel(R) Xeon(R) Scalable processors may allow a privileged user to potentially enable information disclosure via local access.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-11-29"
+          },
+          "Updated": {
+            "Date": "2023-11-29"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-203, CWE-1342",
+              "Href": "https://bdu.fstec.ru/vul/2023-04663",
+              "Impact": "Low",
+              "Public": "20230808",
+              "CveID": "BDU:2023-04663"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "Cwe": "CWE-264, CWE-1281",
+              "Href": "https://bdu.fstec.ru/vul/2023-07325",
+              "Impact": "High",
+              "Public": "20231024",
+              "CveID": "BDU:2023-07325"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:M/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-1334",
+              "Href": "https://bdu.fstec.ru/vul/2023-07603",
+              "Impact": "Low",
+              "Public": "20230808",
+              "CveID": "BDU:2023-07603"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:M/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2023-07639",
+              "Impact": "Low",
+              "Public": "20230808",
+              "CveID": "BDU:2023-07639"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-203",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-40982",
+              "Impact": "Low",
+              "Public": "20230811",
+              "CveID": "CVE-2022-40982"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-41804",
+              "Impact": "Low",
+              "Public": "20230811",
+              "CveID": "CVE-2022-41804"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-23583",
+              "Impact": "High",
+              "Public": "20231114",
+              "CveID": "CVE-2023-23583"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-23908",
+              "Impact": "Low",
+              "Public": "20230811",
+              "CveID": "CVE-2023-23908"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237282001",
+                "Comment": "firmware-intel-ucode is earlier than 2:23-alt1.20231114"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
