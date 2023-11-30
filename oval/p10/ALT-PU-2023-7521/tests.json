@@ -1,0 +1,90 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237521001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "evms is earlier than 0:2.5.5-alt73",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237521001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237521001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237521002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "evms-cli is earlier than 0:2.5.5-alt73",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237521002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237521001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237521003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "evms-ncurses is earlier than 0:2.5.5-alt73",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237521003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237521001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237521004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "evms-test is earlier than 0:2.5.5-alt73",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237521004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237521001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237521005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libevms is earlier than 0:2.5.5-alt73",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237521005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237521001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237521006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libevms-devel is earlier than 0:2.5.5-alt73",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237521006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237521001"
+      }
+    }
+  ]
+}
