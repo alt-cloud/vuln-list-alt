@@ -1,0 +1,104 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237563",
+      "Version": "oval:org.altlinux.errata:def:20237563",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7563: package `apache2-mod_wsgi` update to version 4.9.4-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7563",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7563",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2022-05209",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-05209",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-2255",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-2255",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades apache2-mod_wsgi to version 4.9.4-alt1. \nSecurity Fix(es):\n\n * BDU:2022-05209: Уязвимость модуля mod_wsgi веб-сервера Apache, связанная с ошибками при обработке заголовока X-Client-IP, позволяющая нарушителю получить несанкционированный доступ к сетевым службам\n\n * CVE-2022-2255: A vulnerability was found in mod_wsgi. The X-Client-IP header is not removed from a request from an untrusted proxy, allowing an attacker to pass the X-Client-IP header to the target WSGI application because the condition to remove it is missing.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-03"
+          },
+          "Updated": {
+            "Date": "2023-12-03"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:P/I:P/A:P",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-348",
+              "Href": "https://bdu.fstec.ru/vul/2022-05209",
+              "Impact": "Low",
+              "Public": "20220718",
+              "CveID": "BDU:2022-05209"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-345",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-2255",
+              "Impact": "High",
+              "Public": "20220825",
+              "CveID": "CVE-2022-2255"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237563001",
+                "Comment": "apache2-mod_wsgi is earlier than 0:4.9.4-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237563002",
+                "Comment": "apache2-mod_wsgi-py3 is earlier than 0:4.9.4-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
