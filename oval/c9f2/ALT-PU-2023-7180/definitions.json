@@ -1,0 +1,133 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237180",
+      "Version": "oval:org.altlinux.errata:def:20237180",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7180: package `python-module-urllib3` update to version 1.25.11-alt0.c9.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7180",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7180",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2020-05736",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-05736",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-05230",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-05230",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2020-26137",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-26137",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-7212",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-7212",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades python-module-urllib3 to version 1.25.11-alt0.c9.1. \nSecurity Fix(es):\n\n * BDU:2020-05736: Уязвимость модуля urllib3 интерпретатора языка программирования Python, связанная с неконтролируемым расходом ресурса, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2021-05230: Уязвимость модуля urllib3 интерпретатора языка программирования Python, связанная с недостаточной нейтрализацией специальных элементов в запросе, позволяющая нарушителю получить доступ к конфиденциальным данным и нарушить их целостность\n\n * CVE-2020-26137: urllib3 before 1.25.9 allows CRLF injection if the attacker controls the HTTP request method, as demonstrated by inserting CR and LF control characters in the first argument of putrequest(). NOTE: this is similar to CVE-2020-26116.\n\n * CVE-2020-7212: The _encode_invalid_chars function in util/url.py in the urllib3 library 1.25.2 through 1.25.7 for Python allows a denial of service (CPU consumption) because of an inefficient algorithm. The percent_encodings array contains all matches of percent encodings. It is not deduplicated. For a URL of length N, the size of percent_encodings may be up to O(N). The next step (normalize existing percent-encoded bytes) also takes up to O(N) for each step, so the total time is O(N^2). If percent_encodings were deduplicated, the time to compute _encode_invalid_chars would be O(kN), where k is at most 484 ((10+6*2)^2).",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-04"
+          },
+          "Updated": {
+            "Date": "2023-12-04"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://bdu.fstec.ru/vul/2020-05736",
+              "Impact": "High",
+              "Public": "20200306",
+              "CveID": "BDU:2020-05736"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "Cwe": "CWE-74",
+              "Href": "https://bdu.fstec.ru/vul/2021-05230",
+              "Impact": "Low",
+              "Public": "20200930",
+              "CveID": "BDU:2021-05230"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "Cwe": "CWE-74",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-26137",
+              "Impact": "Low",
+              "Public": "20200930",
+              "CveID": "CVE-2020-26137"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-7212",
+              "Impact": "High",
+              "Public": "20200306",
+              "CveID": "CVE-2020-7212"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237180001",
+                "Comment": "python-module-urllib3 is earlier than 2:1.25.11-alt0.c9.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237180002",
+                "Comment": "python3-module-urllib3 is earlier than 2:1.25.11-alt0.c9.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
