@@ -1,0 +1,102 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:1001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p9' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:1001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:1001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237479001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-1C is earlier than 0:12.17-alt0.M90P.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237479001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237479001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237479002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-1C-contrib is earlier than 0:12.17-alt0.M90P.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237479002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237479001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237479003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-1C-docs is earlier than 0:12.17-alt0.M90P.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237479003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237479001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237479004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-1C-perl is earlier than 0:12.17-alt0.M90P.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237479004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237479001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237479005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-1C-python is earlier than 0:12.17-alt0.M90P.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237479005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237479001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237479006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-1C-server is earlier than 0:12.17-alt0.M90P.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237479006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237479001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237479007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-1C-tcl is earlier than 0:12.17-alt0.M90P.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237479007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237479001"
+      }
+    }
+  ]
+}

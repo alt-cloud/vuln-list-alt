@@ -1,0 +1,54 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237516001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "librabbitmq-c-devel is earlier than 0:0.13.0-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237516001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237516001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237516002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "librabbitmq-c4 is earlier than 0:0.13.0-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237516002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237516001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237516003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rabbitmq-c is earlier than 0:0.13.0-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237516003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237516001"
+      }
+    }
+  ]
+}
