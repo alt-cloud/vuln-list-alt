@@ -1,0 +1,560 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237621",
+      "Version": "oval:org.altlinux.errata:def:20237621",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7621: package `cacti` update to version 1.2.25-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7621",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7621",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-05447",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05447",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05448",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05448",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05449",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05449",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05453",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05453",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05454",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05454",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05455",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05455",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05456",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05456",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05530",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05530",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05531",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05531",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05532",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05532",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06051",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06051",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06052",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06052",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06054",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06054",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06055",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06055",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06056",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06056",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06057",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06057",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06058",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06058",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-30534",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-30534",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39357",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39357",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39358",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39358",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39359",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39359",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39360",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39360",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39361",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39361",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39362",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39362",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39364",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39364",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39365",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39365",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39366",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39366",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39510",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39510",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39511",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39511",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39512",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39512",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39513",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39513",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39514",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39514",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39515",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39515",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39516",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39516",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades cacti to version 1.2.25-alt1. \nSecurity Fix(es):\n\n * BDU:2023-05447: Уязвимость сценария data_sources.php программного средства мониторинга сети Cacti, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-05448: Уязвимость сценария reports_admin.php программного средства мониторинга сети Cacti, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-05449: Уязвимость сценария host.php программного средства мониторинга сети Cacti, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-05453: Уязвимость сценария data_debug.php программного средства мониторинга сети Cacti, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-05454: Уязвимость сценария graphs.php программного средства мониторинга сети Cacti, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-05455: Уязвимость функции host_new_graphs_save() (graphs_new.php) программного средства мониторинга сети Cacti, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-05456: Уязвимость сценария graphs_new.php программного средства мониторинга сети Cacti, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-05530: Уязвимость функций ajax_hosts() и ajax_hosts_noany() (graphs.php) программного средства мониторинга сети Cacti, позволяющая нарушителю выполнить произвольные SQL-запросы\n\n * BDU:2023-05531: Уязвимость сценария data_sources.php программного средства мониторинга сети Cacti, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-05532: Уязвимость функции grow_right_pane_tree() (graph_view.php) программного средства мониторинга сети Cacti, позволяющая нарушителю выполнить произвольные SQL-запросы\n\n * BDU:2023-06051: Уязвимость компонента reports_admin.php программного средства мониторинга сети Cacti, позволяющая нарушителю действующему удаленно, провести атаку межсайтового скриптинга (XSS)\n\n * BDU:2023-06052: Уязвимость компонента snmp.php программного средства мониторинга сети Cacti , передаваемых в команду, позволяющая нарушителю выполнить произвольную команду\n\n * BDU:2023-06054: Уязвимость функции sql_save программного средства мониторинга сети Cacti существует из-за недостаточной проверки входных данных, позволяющая нарушителю проводить атаки основанные на SQL-инъекии\n\n * BDU:2023-06055: Уязвимость компонента reports_user.php программного средства мониторинга сети Cacti , позволяющая нарушителю повысить свои привилегии и выполнить произвольный код\n\n * BDU:2023-06056: Уязвимость компонента data_sources.php программного средства мониторинга сети Cacti, связанная с непринятием мер по защите структуры веб-страницы, позволяющая нарушителю провести атаку межсайтового скриптинга (XSS)\n\n * BDU:2023-06057: Уязвимость компонента auth_changepassword.php программного средства мониторинга сети Cacti, позволяющая нарушителю перенаправить пользователя на произвольный URL-адрес\n\n * BDU:2023-06058: Уязвимость функции links программного средства мониторинга сети Cacti, позволяющая нарушителю выполнять произвольные SQL-запросы\n\n * CVE-2023-30534: Cacti is an open source operational monitoring and fault management framework. There are two instances of insecure deserialization in Cacti version 1.2.24. While a viable gadget chain exists in Cacti’s vendor directory (phpseclib), the necessary gadgets are not included, making them inaccessible and the insecure deserializations not exploitable. Each instance of insecure deserialization is due to using the unserialize function without sanitizing the user input. Cacti has a “safe” deserialization that attempts to sanitize the content and check for specific values before calling unserialize, but it isn’t used in these instances. The vulnerable code lies in graphs_new.php, specifically within the host_new_graphs_save function. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n\n * CVE-2023-39357: Cacti is an open source operational monitoring and fault management framework. A defect in the sql_save function was discovered. When the column type is numeric, the sql_save function directly utilizes user input. Many files and functions calling the sql_save function do not perform prior validation of user input, leading to the existence of multiple SQL injection vulnerabilities in Cacti. This allows authenticated users to exploit these SQL injection vulnerabilities to perform privilege escalation and remote code execution. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-39358: Cacti is an open source operational monitoring and fault management framework. An authenticated SQL injection vulnerability was discovered which allows authenticated users to perform privilege escalation and remote code execution. The vulnerability resides in the `reports_user.php` file. In `ajax_get_branches`, the `tree_id` parameter is passed to the `reports_get_branch_select` function without any validation. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-39359: Cacti is an open source operational monitoring and fault management framework. An authenticated SQL injection vulnerability was discovered which allows authenticated users to perform privilege escalation and remote code execution. The vulnerability resides in the `graphs.php` file. When dealing with the cases of ajax_hosts and ajax_hosts_noany, if the `site_id` parameter is greater than 0, it is directly reflected in the WHERE clause of the SQL statement. This creates an SQL injection vulnerability. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-39360: Cacti is an open source operational monitoring and fault management framework.Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability allows an authenticated user to poison data. The vulnerability is found in `graphs_new.php`. Several validations are performed, but the `returnto` parameter is directly passed to `form_save_button`. In order to bypass this validation, returnto must contain `host.php`. This vulnerability has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to update should manually filter HTML output.\n\n * CVE-2023-39361: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a SQL injection discovered in graph_view.php. Since guest users can access graph_view.php without authentication by default, if guest users are being utilized in an enabled state, there could be the potential for significant damage. Attackers may exploit this vulnerability, and there may be possibilities for actions such as the usurpation of administrative privileges or remote code execution. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-39362: Cacti is an open source operational monitoring and fault management framework. In Cacti 1.2.24, under certain conditions, an authenticated privileged user, can use a malicious string in the SNMP options of a Device, performing command injection and obtaining remote code execution on the underlying server. The `lib/snmp.php` file has a set of functions, with similar behavior, that accept in input some variables and place them into an `exec` call without a proper escape or validation. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-39364: Cacti is an open source operational monitoring and fault management framework. In Cacti 1.2.24, users with console access can be redirected to an arbitrary website after a change password performed via a specifically crafted URL. The `auth_changepassword.php` file accepts `ref` as a URL parameter and reflects it in the form used to perform the change password. It's value is used to perform a redirect via `header` PHP function. A user can be tricked in performing the change password operation, e.g., via a phishing message, and then interacting with the malicious website where the redirection has been performed, e.g., downloading malwares, providing credentials, etc. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-39365: Cacti is an open source operational monitoring and fault management framework. Issues with Cacti Regular Expression validation combined with the external links feature can lead to limited SQL Injections and subsequent data leakage. This issue has been addressed in version 1.2.25. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n\n\n * CVE-2023-39366: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability allows an authenticated user to poison data stored in the _cacti_'s database. These data will be viewed by administrative _cacti_ accounts and execute JavaScript code in the victim's browser at view-time. The `data_sources.php` script displays the data source management information (e.g. data source path, polling configuration etc.) for different data visualizations of the _cacti_ app. \nCENSUS found that an adversary that is able to configure a malicious Device name, can deploy a stored XSS attack against any user of the same (or broader) privileges. A user that possesses the _General Administration\u003eSites/Devices/Data_ permissions can configure the device names in _cacti_. This configuration occurs through `http://\u003cHOST\u003e/cacti/host.php`, while the rendered malicious payload is exhibited at `http://\u003cHOST\u003e/cacti/data_sources.php`. This vulnerability has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to update should manually filter HTML output.\n\n * CVE-2023-39510: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability allows an authenticated user to poison data stored in the _cacti_'s database. These data will be viewed by administrative _cacti_ accounts and execute JavaScript code in the victim's browser at view-time. The`reports_admin.php` script displays reporting information about graphs, devices, data sources etc.\nCENSUS found that an adversary that is able to configure a malicious Device name, can deploy a stored XSS attack against any user of the same (or broader) privileges. A user that possesses the _General Administration\u003eSites/Devices/Data_ permissions can configure the device names in _cacti_. This configuration occurs through `http://\u003cHOST\u003e/cacti/host.php`, while the rendered malicious payload is exhibited at `http://\u003cHOST\u003e/cacti/reports_admin.php` when the a graph with the maliciously altered device name is linked to the report. This vulnerability has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to update should manually filter HTML output.\n\n * CVE-2023-39511: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability which allows an authenticated user to poison data stored in the _cacti_'s database. These data will be viewed by administrative _cacti_ accounts and execute JavaScript code in the victim's browser at view-time. The script under `reports_admin.php` displays reporting information about graphs, devices, data sources etc. _CENSUS_ found that an adversary that is able to configure a malicious device name, related to a graph attached to a report, can deploy a stored XSS attack against any super user who has privileges of viewing the `reports_admin.php` page, such as administrative accounts. A user that possesses the _General Administration\u003eSites/Devices/Data_ permissions can configure the device names in _cacti_. This configuration occurs through `http://\u003cHOST\u003e/cacti/host.php`, while the rendered malicious payload is exhibited at `http://\u003cHOST\u003e/cacti/reports_admin.php` when the a graph with the maliciously altered device name is linked to the report. This issue has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to upgrade should manually filter HTML output.\n\n\n * CVE-2023-39512: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability which allows an authenticated user to poison data stored in the _cacti_'s database. These data will be viewed by administrative _cacti_ accounts and execute JavaScript code in the victim's browser at view-time. The script under `data_sources.php` displays the data source management information (e.g. data source path, polling configuration, device name related to the datasource etc.) for different data visualizations of the _cacti_ app. _CENSUS_ found that an adversary that is able to configure a malicious device name, can deploy a stored XSS attack against any user of the same (or broader) privileges. A user that possesses the _General Administration\u003eSites/Devices/Data_ permissions can configure the device names in _cacti_. This configuration occurs through `http://\u003cHOST\u003e/cacti/host.php`, while the rendered malicious payload is exhibited at `http://\u003cHOST\u003e/cacti/data_sources.php`. This vulnerability has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to update should manually filter HTML output.\n\n * CVE-2023-39513: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability which allows an authenticated user to poison data stored in the _cacti_'s database. These data will be viewed by administrative _cacti_ accounts and execute JavaScript code in the victim's browser at view-time. The script under `host.php` is used to monitor and manage hosts in the _cacti_ app, hence displays useful information such as data queries and verbose logs. _CENSUS_ found that an adversary that is able to configure a data-query template with malicious code appended in the template path, in order to deploy a stored XSS attack against any user with the _General Administration\u003eSites/Devices/Data_ privileges. A user that possesses the _Template Editor\u003eData Queries_ permissions can configure the data query template path in _cacti_. Please note that such a user may be a low privileged user. This configuration occurs through `http://\u003cHOST\u003e/cacti/data_queries.php` by editing an existing or adding a new data query template. If a template is linked to a device then the formatted template path will be rendered in the device's management page, when a _verbose data query_ is requested. This vulnerability has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to update should manually filter HTML output.\n\n * CVE-2023-39514: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability which allows an authenticated user to poison data stored in the _cacti_'s database. These data will be viewed by administrative _cacti_ accounts and execute JavaScript code in the victim's browser at view-time. The script under `graphs.php` displays graph details such as data-source paths, data template information and graph related fields. _CENSUS_ found that an adversary that is able to configure either a data-source template with malicious code appended in the data-source name or a device with a malicious payload injected in the device name, may deploy a stored XSS attack against any user with _General Administration\u003eGraphs_ privileges. A user that possesses the _Template Editor\u003eData Templates_ permissions can configure the data-source name in _cacti_. Please note that this may be a _low privileged_ user. This configuration occurs through `http://\u003cHOST\u003e/cacti/data_templates.php` by editing an existing or adding a new data template. If a template is linked to a graph then the formatted template name will be rendered in the graph's management page. A user that possesses the _General Administration\u003eSites/Devices/Data_ permissions can configure the device name in _cacti_. This vulnerability has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to upgrade should add manual HTML escaping.\n\n\n * CVE-2023-39515: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability allows an authenticated user to poison data stored in the cacti's database. These data will be viewed by administrative cacti accounts and execute JavaScript code in the victim's browser at view-time. The script under `data_debug.php` displays data source related debugging information such as _data source paths, polling settings, meta-data on the data source_. _CENSUS_ found that an adversary that is able to configure a malicious data-source path, can deploy a stored XSS attack against any user that has privileges related to viewing the `data_debug.php` information. A user that possesses the _General Administration\u003eSites/Devices/Data_ permissions can configure the data source path in _cacti_. This configuration occurs through `http://\u003cHOST\u003e/cacti/data_sources.php`. This vulnerability has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to update should manually filter HTML output.\n\n * CVE-2023-39516: Cacti is an open source operational monitoring and fault management framework. Affected versions are subject to a Stored Cross-Site-Scripting (XSS) Vulnerability which allows an authenticated user to poison data stored in the _cacti_'s database. These data will be viewed by administrative _cacti_ accounts and execute JavaScript code in the victim's browser at view-time. The script under `data_sources.php` displays the data source management information (e.g. data source path, polling configuration etc.) for different data visualizations of the _cacti_ app. CENSUS found that an adversary that is able to configure a malicious data-source path, can deploy a stored XSS attack against any user of the same (or broader) privileges. A user that possesses the 'General Administration\u003eSites/Devices/Data' permissions can configure the data source path in Cacti. This configuration occurs through `http://\u003cHOST\u003e/cacti/data_sources.php`. The same page can be used for previewing the data source path. This issue has been addressed in version 1.2.25. Users are advised to upgrade. Users unable to upgrade should manually escape HTML output.\n",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-05"
+          },
+          "Updated": {
+            "Date": "2023-12-05"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-05447",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05447"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-05448",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05448"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-05449",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05449"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-05453",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05453"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-05454",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05454"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:N/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-502",
+              "Href": "https://bdu.fstec.ru/vul/2023-05455",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05455"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-05456",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05456"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://bdu.fstec.ru/vul/2023-05530",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05530"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:M/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-05531",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05531"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://bdu.fstec.ru/vul/2023-05532",
+              "Impact": "Critical",
+              "Public": "20230905",
+              "CveID": "BDU:2023-05532"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-06051",
+              "Impact": "Low",
+              "Public": "20230906",
+              "CveID": "BDU:2023-06051"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-78",
+              "Href": "https://bdu.fstec.ru/vul/2023-06052",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "BDU:2023-06052"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-20",
+              "Href": "https://bdu.fstec.ru/vul/2023-06054",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "BDU:2023-06054"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://bdu.fstec.ru/vul/2023-06055",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "BDU:2023-06055"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-06056",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-06056"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-601",
+              "Href": "https://bdu.fstec.ru/vul/2023-06057",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-06057"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-89",
+              "Href": "https://bdu.fstec.ru/vul/2023-06058",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "BDU:2023-06058"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-502",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-30534",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-30534"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-20",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39357",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39357"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39358",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39358"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39359",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39359"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39360",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39360"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39361",
+              "Impact": "Critical",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39361"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-78",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39362",
+              "Impact": "High",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39362"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-601",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39364",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39364"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-89",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39365",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39365"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39366",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39366"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39510",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39510"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39511",
+              "Impact": "Low",
+              "Public": "20230906",
+              "CveID": "CVE-2023-39511"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39512",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39512"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39513",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39513"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39514",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39514"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39515",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39515"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39516",
+              "Impact": "Low",
+              "Public": "20230905",
+              "CveID": "CVE-2023-39516"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237621001",
+                "Comment": "cacti is earlier than 0:1.2.25-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237621002",
+                "Comment": "cacti-setup is earlier than 0:1.2.25-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

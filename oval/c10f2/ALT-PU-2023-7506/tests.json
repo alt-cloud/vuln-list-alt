@@ -1,0 +1,126 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12 is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-contrib is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-docs is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-llvmjit is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-perl is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-python is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-server is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-server-devel is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237506009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql12-tcl is earlier than 0:12.17-alt0.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237506009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237506001"
+      }
+    }
+  ]
+}

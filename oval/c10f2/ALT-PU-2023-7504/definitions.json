@@ -1,0 +1,156 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237504",
+      "Version": "oval:org.altlinux.errata:def:20237504",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7504: package `postgresql14` update to version 14.10-alt0.p10.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7504",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7504",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07840",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07840",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07904",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07904",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07905",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07905",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5868",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5868",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5869",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5869",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5870",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5870",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades postgresql14 to version 14.10-alt0.p10.1. \nSecurity Fix(es):\n\n * BDU:2023-07840: Уязвимость функций array_append, array_prepend, array_subscript_handler системы управления базами данных PostgreSQL, связанная с целочисленным переполнением при модификации массивов, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-07904: Уязвимость системы управления базами данных PostgreSQL, связанная с возможностью рассылки сигналов процессам суперпользователей с помощью роли pg_signal_backend, позволяющая нарушителю вызвать отказ в обслуживании определенного фонового процесса\n\n * BDU:2023-07905: Уязвимость системы управления базами данных PostgreSQL, связанная с отсутствием защиты служебных данных в вызовах функций с агрегацией, позволяющая нарушителю раскрыть защищаемую информацию\n\n * CVE-2023-5868: description unavailable\n\n * CVE-2023-5869: description unavailable\n\n * CVE-2023-5870: description unavailable",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-05"
+          },
+          "Updated": {
+            "Date": "2023-12-05"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://bdu.fstec.ru/vul/2023-07840",
+              "Impact": "High",
+              "Public": "20230911",
+              "CveID": "BDU:2023-07840"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:M/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-264",
+              "Href": "https://bdu.fstec.ru/vul/2023-07904",
+              "Impact": "Low",
+              "Public": "20231109",
+              "CveID": "BDU:2023-07904"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2023-07905",
+              "Impact": "Low",
+              "Public": "20231109",
+              "CveID": "BDU:2023-07905"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504001",
+                "Comment": "postgresql14 is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504002",
+                "Comment": "postgresql14-contrib is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504003",
+                "Comment": "postgresql14-docs is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504004",
+                "Comment": "postgresql14-llvmjit is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504005",
+                "Comment": "postgresql14-perl is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504006",
+                "Comment": "postgresql14-python is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504007",
+                "Comment": "postgresql14-server is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504008",
+                "Comment": "postgresql14-server-devel is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237504009",
+                "Comment": "postgresql14-tcl is earlier than 0:14.10-alt0.p10.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

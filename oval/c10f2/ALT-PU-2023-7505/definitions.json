@@ -1,0 +1,156 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237505",
+      "Version": "oval:org.altlinux.errata:def:20237505",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7505: package `postgresql15-1C` update to version 15.5-alt0.p10.2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7505",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7505",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07840",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07840",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07904",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07904",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07905",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07905",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5868",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5868",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5869",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5869",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5870",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5870",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades postgresql15-1C to version 15.5-alt0.p10.2. \nSecurity Fix(es):\n\n * BDU:2023-07840: Уязвимость функций array_append, array_prepend, array_subscript_handler системы управления базами данных PostgreSQL, связанная с целочисленным переполнением при модификации массивов, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-07904: Уязвимость системы управления базами данных PostgreSQL, связанная с возможностью рассылки сигналов процессам суперпользователей с помощью роли pg_signal_backend, позволяющая нарушителю вызвать отказ в обслуживании определенного фонового процесса\n\n * BDU:2023-07905: Уязвимость системы управления базами данных PostgreSQL, связанная с отсутствием защиты служебных данных в вызовах функций с агрегацией, позволяющая нарушителю раскрыть защищаемую информацию\n\n * CVE-2023-5868: description unavailable\n\n * CVE-2023-5869: description unavailable\n\n * CVE-2023-5870: description unavailable",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-05"
+          },
+          "Updated": {
+            "Date": "2023-12-05"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://bdu.fstec.ru/vul/2023-07840",
+              "Impact": "High",
+              "Public": "20230911",
+              "CveID": "BDU:2023-07840"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:M/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-264",
+              "Href": "https://bdu.fstec.ru/vul/2023-07904",
+              "Impact": "Low",
+              "Public": "20231109",
+              "CveID": "BDU:2023-07904"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2023-07905",
+              "Impact": "Low",
+              "Public": "20231109",
+              "CveID": "BDU:2023-07905"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505001",
+                "Comment": "postgresql15-1C is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505002",
+                "Comment": "postgresql15-1C-contrib is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505003",
+                "Comment": "postgresql15-1C-docs is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505004",
+                "Comment": "postgresql15-1C-llvmjit is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505005",
+                "Comment": "postgresql15-1C-perl is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505006",
+                "Comment": "postgresql15-1C-python is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505007",
+                "Comment": "postgresql15-1C-server is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505008",
+                "Comment": "postgresql15-1C-server-devel is earlier than 0:15.5-alt0.p10.2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237505009",
+                "Comment": "postgresql15-1C-tcl is earlier than 0:15.5-alt0.p10.2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
