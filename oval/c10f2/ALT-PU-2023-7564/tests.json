@@ -1,0 +1,54 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237564001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "alterator is earlier than 0:5.4.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237564001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237564001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237564002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "alterator-doc is earlier than 0:5.4.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237564002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237564001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237564003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rpm-macros-alterator is earlier than 0:5.4.3-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237564003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237564001"
+      }
+    }
+  ]
+}
