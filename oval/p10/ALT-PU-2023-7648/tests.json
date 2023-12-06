@@ -1,0 +1,66 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237648001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sudo is earlier than 1:1.9.15p1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237648001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237648001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237648002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sudo-devel is earlier than 1:1.9.15p1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237648002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237648001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237648003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sudo-logsrvd is earlier than 1:1.9.15p1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237648003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237648001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237648004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sudo-python is earlier than 1:1.9.15p1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237648004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237648001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237648",
+      "Version": "oval:org.altlinux.errata:def:20237648",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7648: package `sudo` update to version 1.9.15p1-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7648",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7648",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07551",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07551",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-42456",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-42456",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-42465",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-42465",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades sudo to version 1.9.15p1-alt1. \nSecurity Fix(es):\n\n * BDU:2023-07551: Уязвимость программ системного администрирования Sudo-rs, связанная с недостаточной проверкой введенных пользователем командных аргументов, позволяющая нарушителю повысить свои привилегии путём создания специально сформированного имени пользователя\n\n * CVE-2023-42456: Sudo-rs, a memory safe implementation of sudo and su, allows users to not have to enter authentication at every sudo attempt, but instead only requiring authentication every once in a while in every terminal or process group. Only once a configurable timeout has passed will the user have to re-authenticate themselves. Supporting this functionality is a set of session files (timestamps) for each user, stored in `/var/run/sudo-rs/ts`. These files are named according to the username from which the sudo attempt is made (the origin user).\n\nAn issue was discovered in versions prior to 0.2.1 where usernames containing the `.` and `/` characters could result in the corruption of specific files on the filesystem. As usernames are generally not limited by the characters they can contain, a username appearing to be a relative path can be constructed. For example we could add a user to the system containing the username `../../../../bin/cp`. When logged in as a user with that name, that user could run `sudo -K` to clear their session record file. The session code then constructs the path to the session file by concatenating the username to the session file storage directory, resulting in a resolved path of `/bin/cp`. The code then clears that file, resulting in the `cp` binary effectively being removed from the system.\n\nAn attacker needs to be able to login as a user with a constructed username. Given that such a username is unlikely to exist on an existing system, they will also need to be able to create the users with the constructed usernames.\n\nThe issue is patched in version 0.2.1 of sudo-rs. Sudo-rs now uses the uid for the user instead of their username for determining the filename. Note that an upgrade to this version will result in existing session files being ignored and users will be forced to re-authenticate. It also fully eliminates any possibility of path traversal, given that uids are always integer values.\n\nThe `sudo -K` and `sudo -k` commands can run, even if a user has no sudo access. As a workaround, make sure that one's system does not contain any users with a specially crafted username. While this is the case and while untrusted users do not have the ability to create arbitrary users on the system, one should not be able to exploit this issue.\n\n * CVE-2023-42465: description unavailable",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-06"
+          },
+          "Updated": {
+            "Date": "2023-12-06"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "CWE-22, CWE-23",
+              "Href": "https://bdu.fstec.ru/vul/2023-07551",
+              "Impact": "High",
+              "Public": "20230921",
+              "CveID": "BDU:2023-07551"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "CWE-22",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-42456",
+              "Impact": "High",
+              "Public": "20230921",
+              "CveID": "CVE-2023-42456"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237648001",
+                "Comment": "sudo is earlier than 1:1.9.15p1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237648002",
+                "Comment": "sudo-devel is earlier than 1:1.9.15p1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237648003",
+                "Comment": "sudo-logsrvd is earlier than 1:1.9.15p1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237648004",
+                "Comment": "sudo-python is earlier than 1:1.9.15p1-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
