@@ -1,0 +1,196 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:2001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:(?!sp)[a-z\\-]+:p?(\\d+)(?:\\.\\d)*"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645001",
+      "Version": "1",
+      "comment": "libqt6-concurrent is installed",
+      "Name": "libqt6-concurrent"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645002",
+      "Version": "1",
+      "comment": "libqt6-core is installed",
+      "Name": "libqt6-core"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645003",
+      "Version": "1",
+      "comment": "libqt6-dbus is installed",
+      "Name": "libqt6-dbus"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645004",
+      "Version": "1",
+      "comment": "libqt6-eglfsdeviceintegration is installed",
+      "Name": "libqt6-eglfsdeviceintegration"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645005",
+      "Version": "1",
+      "comment": "libqt6-eglfskmsgbmsupport is installed",
+      "Name": "libqt6-eglfskmsgbmsupport"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645006",
+      "Version": "1",
+      "comment": "libqt6-eglfskmssupport is installed",
+      "Name": "libqt6-eglfskmssupport"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645007",
+      "Version": "1",
+      "comment": "libqt6-gui is installed",
+      "Name": "libqt6-gui"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645008",
+      "Version": "1",
+      "comment": "libqt6-network is installed",
+      "Name": "libqt6-network"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645009",
+      "Version": "1",
+      "comment": "libqt6-opengl is installed",
+      "Name": "libqt6-opengl"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645010",
+      "Version": "1",
+      "comment": "libqt6-openglwidgets is installed",
+      "Name": "libqt6-openglwidgets"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645011",
+      "Version": "1",
+      "comment": "libqt6-printsupport is installed",
+      "Name": "libqt6-printsupport"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645012",
+      "Version": "1",
+      "comment": "libqt6-sql is installed",
+      "Name": "libqt6-sql"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645013",
+      "Version": "1",
+      "comment": "libqt6-test is installed",
+      "Name": "libqt6-test"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645014",
+      "Version": "1",
+      "comment": "libqt6-widgets is installed",
+      "Name": "libqt6-widgets"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645015",
+      "Version": "1",
+      "comment": "libqt6-xcbqpa is installed",
+      "Name": "libqt6-xcbqpa"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645016",
+      "Version": "1",
+      "comment": "libqt6-xml is installed",
+      "Name": "libqt6-xml"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645017",
+      "Version": "1",
+      "comment": "qt6-base-common is installed",
+      "Name": "qt6-base-common"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645018",
+      "Version": "1",
+      "comment": "qt6-base-devel is installed",
+      "Name": "qt6-base-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645019",
+      "Version": "1",
+      "comment": "qt6-base-devel-static is installed",
+      "Name": "qt6-base-devel-static"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645020",
+      "Version": "1",
+      "comment": "qt6-base-doc is installed",
+      "Name": "qt6-base-doc"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645021",
+      "Version": "1",
+      "comment": "qt6-qtbase is installed",
+      "Name": "qt6-qtbase"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645022",
+      "Version": "1",
+      "comment": "qt6-qtbase-gui is installed",
+      "Name": "qt6-qtbase-gui"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645023",
+      "Version": "1",
+      "comment": "qt6-sql is installed",
+      "Name": "qt6-sql"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645024",
+      "Version": "1",
+      "comment": "qt6-sql-interbase is installed",
+      "Name": "qt6-sql-interbase"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645025",
+      "Version": "1",
+      "comment": "qt6-sql-mysql is installed",
+      "Name": "qt6-sql-mysql"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645026",
+      "Version": "1",
+      "comment": "qt6-sql-odbc is installed",
+      "Name": "qt6-sql-odbc"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645027",
+      "Version": "1",
+      "comment": "qt6-sql-postgresql is installed",
+      "Name": "qt6-sql-postgresql"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237645028",
+      "Version": "1",
+      "comment": "rpm-macros-qt6 is installed",
+      "Name": "rpm-macros-qt6"
+    }
+  ]
+}

@@ -1,0 +1,354 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-concurrent is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-core is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-dbus is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-eglfsdeviceintegration is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-eglfskmsgbmsupport is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-eglfskmssupport is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-gui is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-network is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-opengl is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-openglwidgets is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-printsupport is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-sql is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-test is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-widgets is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-xcbqpa is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-xml is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-base-common is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-base-devel is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645019",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-base-devel-static is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645019"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645020",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-base-doc is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645020"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645021",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-qtbase is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645021"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645022",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-qtbase-gui is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645022"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645023",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-sql is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645023"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645024",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-sql-interbase is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645024"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645025",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-sql-mysql is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645025"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645026",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-sql-odbc is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645026"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645027",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-sql-postgresql is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645027"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237645028",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rpm-macros-qt6 is earlier than 0:6.4.2-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237645028"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237645001"
+      }
+    }
+  ]
+}
