@@ -1,0 +1,78 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237701",
+      "Version": "oval:org.altlinux.errata:def:20237701",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7701: package `alterator-vm` update to version 0.4.38-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7701",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7701",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades alterator-vm to version 0.4.38-alt1. \nSecurity Fix(es):\n\n * #28830: Не хватает кнопки \"Создать шифруемый раздел\" (если нет таблицы разделов)\n\n * #45310: Две одинаковые кнопки \"Создать том\" и \"Создать шифруемый том\"",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-06"
+          },
+          "Updated": {
+            "Date": "2023-12-06"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "28830",
+              "Href": "https://bugzilla.altlinux.org/28830",
+              "Data": "Не хватает кнопки \"Создать шифруемый раздел\" (если нет таблицы разделов)"
+            },
+            {
+              "Id": "45310",
+              "Href": "https://bugzilla.altlinux.org/45310",
+              "Data": "Две одинаковые кнопки \"Создать том\" и \"Создать шифруемый том\""
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237701001",
+                "Comment": "alterator-vm is earlier than 0:0.4.38-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

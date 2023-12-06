@@ -1,0 +1,103 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237702",
+      "Version": "oval:org.altlinux.errata:def:20237702",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7702: package `evms` update to version 2.5.5-alt73",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7702",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7702",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades evms to version 2.5.5-alt73. \nSecurity Fix(es):\n\n * #42029: Невозможно задать смещение (offset) раздела\n\n * #46843: UUID for swap space после установки отличается от заданного в альтераторе\n\n * #47037: После появления ошибки о слишком длинном имени lvm ведет себя некорректно",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-06"
+          },
+          "Updated": {
+            "Date": "2023-12-06"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "42029",
+              "Href": "https://bugzilla.altlinux.org/42029",
+              "Data": "Невозможно задать смещение (offset) раздела"
+            },
+            {
+              "Id": "46843",
+              "Href": "https://bugzilla.altlinux.org/46843",
+              "Data": "UUID for swap space после установки отличается от заданного в альтераторе"
+            },
+            {
+              "Id": "47037",
+              "Href": "https://bugzilla.altlinux.org/47037",
+              "Data": "После появления ошибки о слишком длинном имени lvm ведет себя некорректно"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237702001",
+                "Comment": "evms is earlier than 0:2.5.5-alt73"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237702002",
+                "Comment": "evms-cli is earlier than 0:2.5.5-alt73"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237702003",
+                "Comment": "evms-ncurses is earlier than 0:2.5.5-alt73"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237702004",
+                "Comment": "evms-test is earlier than 0:2.5.5-alt73"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237702005",
+                "Comment": "libevms is earlier than 0:2.5.5-alt73"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237702006",
+                "Comment": "libevms-devel is earlier than 0:2.5.5-alt73"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

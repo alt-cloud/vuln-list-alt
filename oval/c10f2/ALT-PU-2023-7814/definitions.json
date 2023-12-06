@@ -1,0 +1,128 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237814",
+      "Version": "oval:org.altlinux.errata:def:20237814",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7814: package `golang` update to version 1.21.5-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7814",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7814",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-39326",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39326",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45283",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45283",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45284",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45284",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45285",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45285",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades golang to version 1.21.5-alt1. \nSecurity Fix(es):\n\n * CVE-2023-39326: description unavailable\n\n * CVE-2023-45283: The filepath package does not recognize paths with a \\??\\ prefix as special. On Windows, a path beginning with \\??\\ is a Root Local Device path equivalent to a path beginning with \\\\?\\. Paths with a \\??\\ prefix may be used to access arbitrary locations on the system. For example, the path \\??\\c:\\x is equivalent to the more common path c:\\x. Before fix, Clean could convert a rooted path such as \\a\\..\\??\\b into the root local device path \\??\\b. Clean will now convert this to .\\??\\b. Similarly, Join(\\, ??, b) could convert a seemingly innocent sequence of path elements into the root local device path \\??\\b. Join will now convert this to \\.\\??\\b. In addition, with fix, IsAbs now correctly reports paths beginning with \\??\\ as absolute, and VolumeName correctly reports the \\??\\ prefix as a volume name.\n\n * CVE-2023-45284: On Windows, The IsLocal function does not correctly detect reserved device names in some cases. Reserved names followed by spaces, such as \"COM1 \", and reserved names \"COM\" and \"LPT\" followed by superscript 1, 2, or 3, are incorrectly reported as local. With fix, IsLocal now correctly reports these names as non-local.\n\n * CVE-2023-45285: description unavailable",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-06"
+          },
+          "Updated": {
+            "Date": "2023-12-06"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-22",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45283",
+              "Impact": "High",
+              "Public": "20231109",
+              "CveID": "CVE-2023-45283"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45284",
+              "Impact": "Low",
+              "Public": "20231109",
+              "CveID": "CVE-2023-45284"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237814001",
+                "Comment": "golang is earlier than 0:1.21.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237814002",
+                "Comment": "golang-docs is earlier than 0:1.21.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237814003",
+                "Comment": "golang-gdb is earlier than 0:1.21.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237814004",
+                "Comment": "golang-misc is earlier than 0:1.21.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237814005",
+                "Comment": "golang-shared is earlier than 0:1.21.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237814006",
+                "Comment": "golang-src is earlier than 0:1.21.5-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237814007",
+                "Comment": "golang-tests is earlier than 0:1.21.5-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
