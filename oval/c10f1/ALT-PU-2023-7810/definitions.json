@@ -1,32 +1,27 @@
 {
   "Definition": [
     {
-      "ID": "oval:org.altlinux.errata:def:20237811",
-      "Version": "oval:org.altlinux.errata:def:20237811",
+      "ID": "oval:org.altlinux.errata:def:20237810",
+      "Version": "oval:org.altlinux.errata:def:20237810",
       "Class": "patch",
       "Metadata": {
-        "Title": "ALT-PU-2023-7811: package `golang` update to version 1.20.12-alt1",
+        "Title": "ALT-PU-2023-7810: package `golang` update to version 1.20.12-alt1",
         "AffectedList": [
           {
             "Family": "unix",
             "Platforms": [
-              "ALT Linux branch p10"
+              "ALT Linux branch c10f1"
             ],
             "Products": [
-              "ALT Server",
-              "ALT Virtualization Server",
-              "ALT Workstation",
-              "ALT Workstation K",
-              "ALT Education",
-              "Simply Linux",
-              "Starterkit"
+              "ALT SP Workstation",
+              "ALT SP Server"
             ]
           }
         ],
         "References": [
           {
-            "RefID": "ALT-PU-2023-7811",
-            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7811",
+            "RefID": "ALT-PU-2023-7810",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7810",
             "Source": "ALTPU"
           },
           {
@@ -51,10 +46,10 @@
           "Severity": "High",
           "Rights": "Copyright 2023 BaseALT Ltd.",
           "Issued": {
-            "Date": "2023-12-06"
+            "Date": "2023-12-07"
           },
           "Updated": {
-            "Date": "2023-12-06"
+            "Date": "2023-12-07"
           },
           "bdu": null,
           "Cves": [
@@ -81,27 +76,8 @@
           ],
           "AffectedCpeList": {
             "Cpe": [
-              "cpe:/o:alt:kworkstation:10",
-              "cpe:/o:alt:workstation:10",
-              "cpe:/o:alt:server:10",
-              "cpe:/o:alt:server-v:10",
-              "cpe:/o:alt:education:10",
-              "cpe:/o:alt:slinux:10",
-              "cpe:/o:alt:starterkit:p10",
-              "cpe:/o:alt:kworkstation:10.1",
-              "cpe:/o:alt:workstation:10.1",
-              "cpe:/o:alt:server:10.1",
-              "cpe:/o:alt:server-v:10.1",
-              "cpe:/o:alt:education:10.1",
-              "cpe:/o:alt:slinux:10.1",
-              "cpe:/o:alt:starterkit:10.1",
-              "cpe:/o:alt:kworkstation:10.2",
-              "cpe:/o:alt:workstation:10.2",
-              "cpe:/o:alt:server:10.2",
-              "cpe:/o:alt:server-v:10.2",
-              "cpe:/o:alt:education:10.2",
-              "cpe:/o:alt:slinux:10.2",
-              "cpe:/o:alt:starterkit:10.2"
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
             ]
           }
         }
@@ -110,7 +86,7 @@
         "Operator": "AND",
         "Criterions": [
           {
-            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
             "Comment": "ALT Linux must be installed"
           }
         ],
@@ -119,31 +95,31 @@
             "Operator": "OR",
             "Criterions": [
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20237811001",
+                "TestRef": "oval:org.altlinux.errata:tst:20237810001",
                 "Comment": "golang is earlier than 0:1.20.12-alt1"
               },
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20237811002",
+                "TestRef": "oval:org.altlinux.errata:tst:20237810002",
                 "Comment": "golang-docs is earlier than 0:1.20.12-alt1"
               },
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20237811003",
+                "TestRef": "oval:org.altlinux.errata:tst:20237810003",
                 "Comment": "golang-gdb is earlier than 0:1.20.12-alt1"
               },
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20237811004",
+                "TestRef": "oval:org.altlinux.errata:tst:20237810004",
                 "Comment": "golang-misc is earlier than 0:1.20.12-alt1"
               },
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20237811005",
+                "TestRef": "oval:org.altlinux.errata:tst:20237810005",
                 "Comment": "golang-shared is earlier than 0:1.20.12-alt1"
               },
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20237811006",
+                "TestRef": "oval:org.altlinux.errata:tst:20237810006",
                 "Comment": "golang-src is earlier than 0:1.20.12-alt1"
               },
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20237811007",
+                "TestRef": "oval:org.altlinux.errata:tst:20237810007",
                 "Comment": "golang-tests is earlier than 0:1.20.12-alt1"
               }
             ]
