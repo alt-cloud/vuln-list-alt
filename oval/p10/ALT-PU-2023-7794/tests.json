@@ -1,0 +1,498 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "admx-samba is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libldb-modules-ldap is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsmbclient is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libsmbclient-devel is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libwbclient is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libwbclient-devel is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-samba is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-samba-devel is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-client is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-common is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-common-client is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-common-libs is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-common-tools is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-ctdb is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-dc is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-dc-client is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-dc-common is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794019",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-dc-libs is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794019"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794020",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-dc-mitkrb5 is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794020"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794021",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-dcerpc is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794021"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794022",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-devel is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794022"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794023",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-doc is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794023"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794024",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-gpupdate is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794024"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794025",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-krb5-printing is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794025"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794026",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-libs is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794026"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794027",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-pidl is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794027"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794028",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-test is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794028"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794029",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-usershares is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794029"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794030",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-util-private-headers is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794030"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794031",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-vfs-cephfs is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794031"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794032",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-vfs-glusterfs is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794032"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794033",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-vfs-snapper is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794033"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794034",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-winbind is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794034"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794035",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-winbind-clients is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794035"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794036",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-winbind-common is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794036"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794037",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-winbind-krb5-localauth is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794037"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794038",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "samba-winbind-krb5-locator is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794038"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794039",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "task-samba-dc is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794039"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237794040",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "task-samba-dc-mitkrb5 is earlier than 0:4.17.12-alt3",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237794040"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237794001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,615 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237794",
+      "Version": "oval:org.altlinux.errata:def:20237794",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7794: package `samba` update to version 4.17.12-alt3",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7794",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7794",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2020-00692",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-00692",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-02011",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-02011",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-02012",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-02012",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-02013",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-02013",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-03963",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03963",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-04385",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-04385",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06939",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06939",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06940",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06940",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06941",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06941",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06942",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06942",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07174",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07174",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2018-10919",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2018-10919",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2018-14628",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2018-14628",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-25720",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-25720",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-2127",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-2127",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0225",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0225",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0614",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0614",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-0922",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-0922",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3347",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3347",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-34966",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-34966",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-34967",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-34967",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-34968",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-34968",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3961",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3961",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4091",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4091",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4154",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4154",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-42669",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-42669",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-42670",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-42670",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades samba to version 4.17.12-alt3. \nSecurity Fix(es):\n\n * BDU:2020-00692: Уязвимость компонента Active Directory LDAP-сервера программ сетевого взаимодействия Samba, позволяющая нарушителю получить несанкционированный доступ к конфиденциальным данным\n\n * BDU:2023-02011: Уязвимость утилиты samba-tool пакета программ сетевого взаимодействия Samba, позволяющая нарушителю получить несанкционированный доступ к устройству\n\n * BDU:2023-02012: Уязвимость пакета программ сетевого взаимодействия Samba, связанная с отсутствием защиты служебных данных, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2023-02013: Уязвимость LDAP-сервера пакета программ сетевого взаимодействия Samba, позволяющая нарушителю удалить атрибут DNS-Host-Name из любого объекта в каталоге\n\n * BDU:2023-03963: Уязвимость компонента winbindd_pam_auth_crap.c пакета программ сетевого взаимодействия Samba, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-04385: Уязвимость функции sl_unpack_loop() службы mdssvc RPC пакета программ сетевого взаимодействия Samba, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-06939: Уязвимость RPC-сервера пакета программ сетевого взаимодействия Samba, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-06940: Уязвимость функции dcesrv_echo_TestSleep() RPC-сервера rpcecho пакета программ сетевого взаимодействия Samba, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-06941: Уязвимость модуля VFS пакета программ сетевого взаимодействия Samba, позволяющая нарушителю получить доступ на чтение, изменение или удаление файлов\n\n * BDU:2023-06942: Уязвимость механизма синхронизации катологов DirSync пакета программ сетевого взаимодействия Samba, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации и повысить свои привилегии\n\n * BDU:2023-07174: Уязвимость библиотеки smbd пакета программ сетевого взаимодействия Samba, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2018-10919: The Samba Active Directory LDAP server was vulnerable to an information disclosure flaw because of missing access control checks. An authenticated attacker could use this flaw to extract confidential attribute values using LDAP search expressions. Samba versions before 4.6.16, 4.7.9 and 4.8.4 are vulnerable.\n\n * CVE-2018-14628: An information leak vulnerability was discovered in Samba's LDAP server. Due to missing access control checks, an authenticated but unprivileged attacker could discover the names and preserved attributes of deleted objects in the LDAP store.\n\n * CVE-2020-25720: description unavailable\n\n * CVE-2022-2127: An out-of-bounds read vulnerability was found in Samba due to insufficient length checks in winbindd_pam_auth_crap.c. When performing NTLM authentication, the client replies to cryptographic challenges back to the server. These replies have variable lengths, and Winbind fails to check the lan manager response length. When Winbind is used for NTLM authentication, a maliciously crafted request can trigger an out-of-bounds read in Winbind, possibly resulting in a crash.\n\n * CVE-2023-0225: A flaw was found in Samba. An incomplete access check on dnsHostName allows authenticated but otherwise unprivileged users to delete this attribute from any object in the directory.\n\n * CVE-2023-0614: The fix in 4.6.16, 4.7.9, 4.8.4 and 4.9.7 for CVE-2018-10919 Confidential attribute disclosure vi LDAP filters was insufficient and an attacker may be able to obtain confidential BitLocker recovery keys from a Samba AD DC.\n\n * CVE-2023-0922: The Samba AD DC administration tool, when operating against a remote LDAP server, will by default send new or reset passwords over a signed-only connection.\n\n * CVE-2023-3347: A vulnerability was found in Samba's SMB2 packet signing mechanism. The SMB2 packet signing is not enforced if an admin configured \"server signing = required\" or for SMB2 connections to Domain Controllers where SMB2 packet signing is mandatory. This flaw allows an attacker to perform attacks, such as a man-in-the-middle attack, by intercepting the network traffic and modifying the SMB2 messages between client and server, affecting the integrity of the data.\n\n * CVE-2023-34966: An infinite loop vulnerability was found in Samba's mdssvc RPC service for Spotlight. When parsing Spotlight mdssvc RPC packets sent by the client, the core unmarshalling function sl_unpack_loop() did not validate a field in the network packet that contains the count of elements in an array-like structure. By passing 0 as the count value, the attacked function will run in an endless loop consuming 100% CPU. This flaw allows an attacker to issue a malformed RPC request, triggering an infinite loop, resulting in a denial of service condition.\n\n * CVE-2023-34967: A Type Confusion vulnerability was found in Samba's mdssvc RPC service for Spotlight. When parsing Spotlight mdssvc RPC packets, one encoded data structure is a key-value style dictionary where the keys are character strings, and the values can be any of the supported types in the mdssvc protocol. Due to a lack of type checking in callers of the dalloc_value_for_key() function, which returns the object associated with a key, a caller may trigger a crash in talloc_get_size() when talloc detects that the passed-in pointer is not a valid talloc pointer. With an RPC worker process shared among multiple client connections, a malicious client or attacker can trigger a process crash in a shared RPC mdssvc worker process, affecting all other clients this worker serves.\n\n * CVE-2023-34968: A path disclosure vulnerability was found in Samba. As part of the Spotlight protocol, Samba discloses the server-side absolute path of shares, files, and directories in the results for search queries. This flaw allows a malicious client or an attacker with a targeted RPC request to view the information that is part of the disclosed path.\n\n * CVE-2023-3961: A path traversal vulnerability was identified in Samba when processing client pipe names connecting to Unix domain sockets within a private directory. Samba typically uses this mechanism to connect SMB clients to remote procedure call (RPC) services like SAMR LSA or SPOOLSS, which Samba initiates on demand. However, due to inadequate sanitization of incoming client pipe names, allowing a client to send a pipe name containing Unix directory traversal characters (../). This could result in SMB clients connecting as root to Unix domain sockets outside the private directory. If an attacker or client managed to send a pipe name resolving to an external service using an existing Unix domain socket, it could potentially lead to unauthorized access to the service and consequential adverse events, including compromise or service crashes.\n\n * CVE-2023-4091: A vulnerability was discovered in Samba, where the flaw allows SMB clients to truncate files, even with read-only permissions when the Samba VFS module \"acl_xattr\" is configured with \"acl_xattr:ignore system acls = yes\". The SMB protocol allows opening files when the client requests read-only access but then implicitly truncates the opened file to 0 bytes if the client specifies a separate OVERWRITE create disposition request. The issue arises in configurations that bypass kernel file system permissions checks, relying solely on Samba's permissions.\n\n * CVE-2023-4154: A design flaw was found in Samba's DirSync control implementation, which exposes passwords and secrets in Active Directory to privileged users and Read-Only Domain Controllers (RODCs). This flaw allows RODCs and users possessing the GET_CHANGES right to access all attributes, including sensitive secrets and passwords. Even in a default setup, RODC DC accounts, which should only replicate some passwords, can gain access to all domain secrets, including the vital krbtgt, effectively eliminating the RODC / DC distinction. Furthermore, the vulnerability fails to account for error conditions (fail open), like out-of-memory situations, potentially granting access to secret attributes, even under low-privileged attacker influence.\n\n * CVE-2023-42669: A vulnerability was found in Samba's \"rpcecho\" development server, a non-Windows RPC server used to test Samba's DCE/RPC stack elements. This vulnerability stems from an RPC function that can be blocked indefinitely. The issue arises because the \"rpcecho\" service operates with only one worker in the main RPC task, allowing calls to the \"rpcecho\" server to be blocked for a specified time, causing service disruptions. This disruption is triggered by a \"sleep()\" call in the \"dcesrv_echo_TestSleep()\" function under specific conditions. Authenticated users or attackers can exploit this vulnerability to make calls to the \"rpcecho\" server, requesting it to block for a specified duration, effectively disrupting most services and leading to a complete denial of service on the AD DC. The DoS affects all other services as \"rpcecho\" runs in the main RPC task.\n\n * CVE-2023-42670: A flaw was found in Samba. It is susceptible to a vulnerability where multiple incompatible RPC listeners can be initiated, causing disruptions in the AD DC service. When Samba's RPC server experiences a high load or unresponsiveness, servers intended for non-AD DC purposes (for example, NT4-emulation \"classic DCs\") can erroneously start and compete for the same unix domain sockets. This issue leads to partial query responses from the AD DC, causing issues such as \"The procedure number is out of range\" when using tools like Active Directory Users. This flaw allows an attacker to disrupt AD DC services.\n\n * #44214: Missing dependency for include",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-06"
+          },
+          "Updated": {
+            "Date": "2023-12-06"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2020-00692",
+              "Impact": "Low",
+              "Public": "20180822",
+              "CveID": "BDU:2020-00692"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:P/A:N",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:L/A:N",
+              "Cwe": "CWE-319",
+              "Href": "https://bdu.fstec.ru/vul/2023-02011",
+              "Impact": "Low",
+              "Public": "20230329",
+              "CveID": "BDU:2023-02011"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2023-02012",
+              "Impact": "Low",
+              "Public": "20230329",
+              "CveID": "BDU:2023-02012"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:N/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
+              "Cwe": "CWE-732",
+              "Href": "https://bdu.fstec.ru/vul/2023-02013",
+              "Impact": "Low",
+              "Public": "20230329",
+              "CveID": "BDU:2023-02013"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://bdu.fstec.ru/vul/2023-03963",
+              "Impact": "High",
+              "Public": "20230720",
+              "CveID": "BDU:2023-03963"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://bdu.fstec.ru/vul/2023-04385",
+              "Impact": "High",
+              "Public": "20230720",
+              "CveID": "BDU:2023-04385"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://bdu.fstec.ru/vul/2023-06939",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-06939"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-404",
+              "Href": "https://bdu.fstec.ru/vul/2023-06940",
+              "Impact": "Low",
+              "Public": "20230912",
+              "CveID": "BDU:2023-06940"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-264, CWE-275, CWE-284",
+              "Href": "https://bdu.fstec.ru/vul/2023-06941",
+              "Impact": "Low",
+              "Public": "20230802",
+              "CveID": "BDU:2023-06941"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2023-06942",
+              "Impact": "High",
+              "Public": "20231003",
+              "CveID": "BDU:2023-06942"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:N/I:C/A:P",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:L",
+              "Cwe": "CWE-22",
+              "Href": "https://bdu.fstec.ru/vul/2023-07174",
+              "Impact": "Low",
+              "Public": "20231010",
+              "CveID": "BDU:2023-07174"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2018-10919",
+              "Impact": "Low",
+              "Public": "20180822",
+              "CveID": "CVE-2018-10919"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-862",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2018-14628",
+              "Impact": "Low",
+              "Public": "20230117",
+              "CveID": "CVE-2018-14628"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-2127",
+              "Impact": "Low",
+              "Public": "20230720",
+              "CveID": "CVE-2022-2127"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-732",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0225",
+              "Impact": "Low",
+              "Public": "20230403",
+              "CveID": "CVE-2023-0225"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-312",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0614",
+              "Impact": "Low",
+              "Public": "20230403",
+              "CveID": "CVE-2023-0614"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-319",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-0922",
+              "Impact": "Low",
+              "Public": "20230403",
+              "CveID": "CVE-2023-0922"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3347",
+              "Impact": "Low",
+              "Public": "20230720",
+              "CveID": "CVE-2023-3347"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-34966",
+              "Impact": "High",
+              "Public": "20230720",
+              "CveID": "CVE-2023-34966"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-843",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-34967",
+              "Impact": "Low",
+              "Public": "20230720",
+              "CveID": "CVE-2023-34967"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-34968",
+              "Impact": "Low",
+              "Public": "20230720",
+              "CveID": "CVE-2023-34968"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-22",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3961",
+              "Impact": "Critical",
+              "Public": "20231103",
+              "CveID": "CVE-2023-3961"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-276",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4091",
+              "Impact": "Low",
+              "Public": "20231103",
+              "CveID": "CVE-2023-4091"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4154",
+              "Impact": "Low",
+              "Public": "20231107",
+              "CveID": "CVE-2023-4154"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-42669",
+              "Impact": "Low",
+              "Public": "20231106",
+              "CveID": "CVE-2023-42669"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-42670",
+              "Impact": "Low",
+              "Public": "20231103",
+              "CveID": "CVE-2023-42670"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "44214",
+              "Href": "https://bugzilla.altlinux.org/44214",
+              "Data": "Missing dependency for include"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794001",
+                "Comment": "admx-samba is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794002",
+                "Comment": "libldb-modules-ldap is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794003",
+                "Comment": "libsmbclient is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794004",
+                "Comment": "libsmbclient-devel is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794005",
+                "Comment": "libwbclient is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794006",
+                "Comment": "libwbclient-devel is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794007",
+                "Comment": "python3-module-samba is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794008",
+                "Comment": "python3-module-samba-devel is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794009",
+                "Comment": "samba is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794010",
+                "Comment": "samba-client is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794011",
+                "Comment": "samba-common is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794012",
+                "Comment": "samba-common-client is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794013",
+                "Comment": "samba-common-libs is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794014",
+                "Comment": "samba-common-tools is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794015",
+                "Comment": "samba-ctdb is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794016",
+                "Comment": "samba-dc is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794017",
+                "Comment": "samba-dc-client is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794018",
+                "Comment": "samba-dc-common is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794019",
+                "Comment": "samba-dc-libs is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794020",
+                "Comment": "samba-dc-mitkrb5 is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794021",
+                "Comment": "samba-dcerpc is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794022",
+                "Comment": "samba-devel is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794023",
+                "Comment": "samba-doc is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794024",
+                "Comment": "samba-gpupdate is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794025",
+                "Comment": "samba-krb5-printing is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794026",
+                "Comment": "samba-libs is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794027",
+                "Comment": "samba-pidl is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794028",
+                "Comment": "samba-test is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794029",
+                "Comment": "samba-usershares is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794030",
+                "Comment": "samba-util-private-headers is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794031",
+                "Comment": "samba-vfs-cephfs is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794032",
+                "Comment": "samba-vfs-glusterfs is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794033",
+                "Comment": "samba-vfs-snapper is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794034",
+                "Comment": "samba-winbind is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794035",
+                "Comment": "samba-winbind-clients is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794036",
+                "Comment": "samba-winbind-common is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794037",
+                "Comment": "samba-winbind-krb5-localauth is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794038",
+                "Comment": "samba-winbind-krb5-locator is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794039",
+                "Comment": "task-samba-dc is earlier than 0:4.17.12-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237794040",
+                "Comment": "task-samba-dc-mitkrb5 is earlier than 0:4.17.12-alt3"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
