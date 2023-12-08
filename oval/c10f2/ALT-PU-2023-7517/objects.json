@@ -1,0 +1,136 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:5001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517001",
+      "Version": "1",
+      "comment": "libncurses is installed",
+      "Name": "libncurses"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517002",
+      "Version": "1",
+      "comment": "libncurses++ is installed",
+      "Name": "libncurses++"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517003",
+      "Version": "1",
+      "comment": "libncurses++-devel is installed",
+      "Name": "libncurses++-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517004",
+      "Version": "1",
+      "comment": "libncurses++-devel-static is installed",
+      "Name": "libncurses++-devel-static"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517005",
+      "Version": "1",
+      "comment": "libncurses-devel is installed",
+      "Name": "libncurses-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517006",
+      "Version": "1",
+      "comment": "libncurses-devel-static is installed",
+      "Name": "libncurses-devel-static"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517007",
+      "Version": "1",
+      "comment": "libncursesw is installed",
+      "Name": "libncursesw"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517008",
+      "Version": "1",
+      "comment": "libncursesw-devel is installed",
+      "Name": "libncursesw-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517009",
+      "Version": "1",
+      "comment": "libtic is installed",
+      "Name": "libtic"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517010",
+      "Version": "1",
+      "comment": "libtic-devel is installed",
+      "Name": "libtic-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517011",
+      "Version": "1",
+      "comment": "libtinfo is installed",
+      "Name": "libtinfo"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517012",
+      "Version": "1",
+      "comment": "libtinfo-devel is installed",
+      "Name": "libtinfo-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517013",
+      "Version": "1",
+      "comment": "libtinfo-devel-static is installed",
+      "Name": "libtinfo-devel-static"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517014",
+      "Version": "1",
+      "comment": "ncurses is installed",
+      "Name": "ncurses"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517015",
+      "Version": "1",
+      "comment": "terminfo is installed",
+      "Name": "terminfo"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517016",
+      "Version": "1",
+      "comment": "terminfo-extra is installed",
+      "Name": "terminfo-extra"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517017",
+      "Version": "1",
+      "comment": "termutils is installed",
+      "Name": "termutils"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20237517018",
+      "Version": "1",
+      "comment": "termutils-devel is installed",
+      "Name": "termutils-devel"
+    }
+  ]
+}

@@ -1,0 +1,234 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncurses is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncurses++ is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncurses++-devel is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncurses++-devel-static is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncurses-devel is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncurses-devel-static is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncursesw is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libncursesw-devel is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libtic is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libtic-devel is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libtinfo is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libtinfo-devel is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libtinfo-devel-static is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ncurses is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "terminfo is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "terminfo-extra is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "termutils is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237517018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "termutils-devel is earlier than 0:6.3.20220618-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237517018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237517001"
+      }
+    }
+  ]
+}
