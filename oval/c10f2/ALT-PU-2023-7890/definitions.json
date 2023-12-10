@@ -1,0 +1,73 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237890",
+      "Version": "oval:org.altlinux.errata:def:20237890",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7890: package `libjcpkcs11` update to version 2.9.0.806-alt3",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7890",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7890",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades libjcpkcs11 to version 2.9.0.806-alt3. \nSecurity Fix(es):\n\n * #42342: Не работает ГОСТовый слот в токенах Jacarta с p11-kit-proxy",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-09"
+          },
+          "Updated": {
+            "Date": "2023-12-09"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "42342",
+              "Href": "https://bugzilla.altlinux.org/42342",
+              "Data": "Не работает ГОСТовый слот в токенах Jacarta с p11-kit-proxy"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237890001",
+                "Comment": "libjcpkcs11 is earlier than 0:2.9.0.806-alt3"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
