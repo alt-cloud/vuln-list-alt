@@ -1,0 +1,78 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237888001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "MySQL-client is earlier than 0:8.0.35-alt1.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237888001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237888001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237888002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "MySQL-server is earlier than 0:8.0.35-alt1.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237888002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237888001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237888003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "MySQL-server-perl is earlier than 0:8.0.35-alt1.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237888003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237888001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237888004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmysqlclient21 is earlier than 0:8.0.35-alt1.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237888004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237888001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237888005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libmysqlclient21-devel is earlier than 0:8.0.35-alt1.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237888005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237888001"
+      }
+    }
+  ]
+}

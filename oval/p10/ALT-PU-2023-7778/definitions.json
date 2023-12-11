@@ -1,0 +1,259 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237778",
+      "Version": "oval:org.altlinux.errata:def:20237778",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7778: package `vim` update to version 9.0.2136-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7778",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7778",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-08297",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08297",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-48231",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48231",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48232",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48232",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48233",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48233",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48234",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48234",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48235",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48235",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48236",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48236",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48237",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48237",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48706",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48706",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades vim to version 9.0.2136-alt1. \nSecurity Fix(es):\n\n * BDU:2023-08297: Уязвимость текстового редактора vim, связанная с использованием памяти после её освобождения, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2023-48231: Vim is an open source command line text editor. When closing a window, vim may try to access already freed window structure. Exploitation beyond crashing the application has not been shown to be viable. This issue has been addressed in commit `25aabc2b` which has been included in release version 9.0.2106. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48232: Vim is an open source command line text editor. A floating point exception may occur when calculating the line offset for overlong lines and smooth scrolling is enabled and the cpo-settings include the 'n' flag. This may happen when a window border is present and when the wrapped line continues on the next physical line directly in the window border because the 'cpo' setting includes the 'n' flag. Only users with non-default settings are affected and the exception should only result in a crash. This issue has been addressed in commit `cb0b99f0` which has been included in release version 9.0.2107. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48233: Vim is an open source command line text editor. If the count after the :s command is larger than what fits into a (signed) long variable, abort with e_value_too_large. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `ac6378773` which has been included in release version 9.0.2108. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48234: Vim is an open source command line text editor. When getting the count for a normal mode z command, it may overflow for large counts given. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `58f9befca1` which has been included in release version 9.0.2109. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48235: Vim is an open source command line text editor. When parsing relative ex addresses one may unintentionally cause an\noverflow. Ironically this happens in the existing overflow check, because the line number becomes negative and LONG_MAX - lnum will cause the overflow. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `060623e` which has been included in release version 9.0.2110. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48236: Vim is an open source command line text editor. When using the z= command, the user may overflow the count with values larger\nthan MAX_INT. Impact is low, user interaction is required and a crash may not even happen in all situations. This vulnerability has been addressed in commit `73b2d379` which has been included in release version 9.0.2111. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48237: Vim is an open source command line text editor. In affected versions when shifting lines in operator pending mode and using a very large value, it may be possible to overflow the size of integer. Impact is low, user interaction is required and a crash may not even happen in all situations. This issue has been addressed in commit `6bf131888` which has been included in version 9.0.2112. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48706: Vim is a UNIX editor that, prior to version 9.0.2121, has a heap-use-after-free vulnerability. When executing a `:s` command for the very first time and using a sub-replace-special atom inside the substitution part, it is possible that the recursive `:s` call causes free-ing of memory which may later then be accessed by the initial `:s` command. The user must intentionally execute the payload and the whole process is a bit tricky to do since it seems to work only reliably for the very first :s command. It may also cause a crash of Vim. Version 9.0.2121 contains a fix for this issue.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-10"
+          },
+          "Updated": {
+            "Date": "2023-12-10"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:H/Au:N/C:N/I:P/A:P",
+              "Cvss3": "AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:L",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-08297",
+              "Impact": "Low",
+              "Public": "20231122",
+              "CveID": "BDU:2023-08297"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48231",
+              "Impact": "Low",
+              "Public": "20231116",
+              "CveID": "CVE-2023-48231"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-755",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48232",
+              "Impact": "Low",
+              "Public": "20231116",
+              "CveID": "CVE-2023-48232"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48233",
+              "Impact": "Low",
+              "Public": "20231116",
+              "CveID": "CVE-2023-48233"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48234",
+              "Impact": "Low",
+              "Public": "20231116",
+              "CveID": "CVE-2023-48234"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48235",
+              "Impact": "Low",
+              "Public": "20231116",
+              "CveID": "CVE-2023-48235"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48236",
+              "Impact": "Low",
+              "Public": "20231116",
+              "CveID": "CVE-2023-48236"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48237",
+              "Impact": "Low",
+              "Public": "20231116",
+              "CveID": "CVE-2023-48237"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48706",
+              "Impact": "Low",
+              "Public": "20231122",
+              "CveID": "CVE-2023-48706"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778001",
+                "Comment": "rpm-build-vim is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778002",
+                "Comment": "vim-X11 is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778003",
+                "Comment": "vim-X11-gnome2 is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778004",
+                "Comment": "vim-X11-gtk2 is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778005",
+                "Comment": "vim-X11-gtk3 is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778006",
+                "Comment": "vim-common is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778007",
+                "Comment": "vim-console is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778008",
+                "Comment": "vim-enhanced is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778009",
+                "Comment": "vim-minimal is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778010",
+                "Comment": "vim-spell-source is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778011",
+                "Comment": "vimtutor is earlier than 4:9.0.2136-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237778012",
+                "Comment": "xxd is earlier than 4:9.0.2136-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

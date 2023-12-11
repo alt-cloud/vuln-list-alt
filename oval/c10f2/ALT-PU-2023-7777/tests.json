@@ -1,0 +1,162 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rpm-build-vim is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-X11 is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-X11-gnome2 is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-X11-gtk2 is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-X11-gtk3 is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-common is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-console is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-enhanced is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-minimal is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vim-spell-source is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "vimtutor is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237777012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "xxd is earlier than 4:9.0.2136-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237777012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237777001"
+      }
+    }
+  ]
+}
