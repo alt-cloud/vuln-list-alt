@@ -51,7 +51,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades postgresql15 to version 15.5-alt0.c10.1. \nSecurity Fix(es):\n\n * BDU:2023-07840: Уязвимость функций array_append, array_prepend, array_subscript_handler системы управления базами данных PostgreSQL, связанная с целочисленным переполнением при модификации массивов, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-07904: Уязвимость системы управления базами данных PostgreSQL, связанная с возможностью рассылки сигналов процессам суперпользователей с помощью роли pg_signal_backend, позволяющая нарушителю вызвать отказ в обслуживании определенного фонового процесса\n\n * BDU:2023-07905: Уязвимость системы управления базами данных PostgreSQL, связанная с отсутствием защиты служебных данных в вызовах функций с агрегацией, позволяющая нарушителю раскрыть защищаемую информацию\n\n * CVE-2023-5868: description unavailable\n\n * CVE-2023-5869: description unavailable\n\n * CVE-2023-5870: description unavailable",
+        "Description": "This update upgrades postgresql15 to version 15.5-alt0.c10.1. \nSecurity Fix(es):\n\n * BDU:2023-07840: Уязвимость функций array_append, array_prepend, array_subscript_handler системы управления базами данных PostgreSQL, связанная с целочисленным переполнением при модификации массивов, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-07904: Уязвимость системы управления базами данных PostgreSQL, связанная с возможностью рассылки сигналов процессам суперпользователей с помощью роли pg_signal_backend, позволяющая нарушителю вызвать отказ в обслуживании определенного фонового процесса\n\n * BDU:2023-07905: Уязвимость системы управления базами данных PostgreSQL, связанная с отсутствием защиты служебных данных в вызовах функций с агрегацией, позволяющая нарушителю раскрыть защищаемую информацию\n\n * CVE-2023-5868: A memory disclosure vulnerability was found in PostgreSQL that allows remote users to access sensitive information by exploiting certain aggregate function calls with 'unknown'-type arguments. Handling 'unknown'-type values from string literals without type designation can disclose bytes, potentially revealing notable and confidential information. This issue exists due to excessive data output in aggregate function calls, enabling remote users to read some portion of system memory.\n\n * CVE-2023-5869: A flaw was found in PostgreSQL that allows authenticated database users to execute arbitrary code through missing overflow checks during SQL array value modification. This issue exists due to an integer overflow during array modification where a remote user can trigger the overflow by providing specially crafted data. This enables the execution of arbitrary code on the target system, allowing users to write arbitrary bytes to memory and extensively read the server's memory.\n\n * CVE-2023-5870: A flaw was found in PostgreSQL involving the pg_cancel_backend role that signals background workers, including the logical replication launcher, autovacuum workers, and the autovacuum launcher. Successful exploitation requires a non-core extension with a less-resilient background worker and would affect that specific background worker only. This issue may allow a remote high privileged user to launch a denial of service (DoS) attack.",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "High",
@@ -89,6 +89,26 @@
               "Impact": "Low",
               "Public": "20231109",
               "CveID": "BDU:2023-07905"
+            }
+          ],
+          "Cves": [
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5868",
+              "Impact": "None",
+              "Public": "20231210",
+              "CveID": "CVE-2023-5868"
+            },
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5869",
+              "Impact": "None",
+              "Public": "20231210",
+              "CveID": "CVE-2023-5869"
+            },
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5870",
+              "Impact": "None",
+              "Public": "20231210",
+              "CveID": "CVE-2023-5870"
             }
           ],
           "AffectedCpeList": {
