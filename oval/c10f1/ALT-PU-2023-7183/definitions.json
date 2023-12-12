@@ -130,8 +130,10 @@
               "CveID": "CVE-2023-0330"
             },
             {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:N",
+              "Cwe": "NVD-CWE-Other",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2861",
-              "Impact": "None",
+              "Impact": "High",
               "Public": "20231206",
               "CveID": "CVE-2023-2861"
             },
