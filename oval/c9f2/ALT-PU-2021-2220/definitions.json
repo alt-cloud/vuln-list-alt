@@ -35,7 +35,7 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades golang to version 1.15.14-alt1.c9. \nSecurity Fix(es):\n\n * BDU:2022-00715: Уязвимость пакета crypto/tls браузера Go, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2021-34558: The crypto/tls package of Go through 1.16.5 does not properly assert that the type of public key in an X.509 certificate matches the expected type when doing a RSA based key exchange, allowing a malicious TLS server to cause a TLS client to panic.",
+        "Description": "This update upgrades golang to version 1.15.14-alt1.c9. \nSecurity Fix(es):\n\n * BDU:2022-00715: Уязвимость пакета crypto/tls языка программирования Go, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2021-34558: The crypto/tls package of Go through 1.16.5 does not properly assert that the type of public key in an X.509 certificate matches the expected type when doing a RSA based key exchange, allowing a malicious TLS server to cause a TLS client to panic.",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "Low",
