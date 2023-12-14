@@ -1,0 +1,90 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237832001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-svg is earlier than 0:6.4.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237832001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237832001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237832002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libqt6-svgwidgets is earlier than 0:6.4.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237832002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237832001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237832003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-svg is earlier than 0:6.4.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237832003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237832001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237832004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-svg-common is earlier than 0:6.4.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237832004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237832001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237832005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-svg-devel is earlier than 0:6.4.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237832005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237832001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20237832006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "qt6-svg-doc is earlier than 0:6.4.2-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20237832006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20237832001"
+      }
+    }
+  ]
+}
