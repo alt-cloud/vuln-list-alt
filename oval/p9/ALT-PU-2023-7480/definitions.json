@@ -102,20 +102,26 @@
           ],
           "Cves": [
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5868",
-              "Impact": "None",
+              "Impact": "Low",
               "Public": "20231210",
               "CveID": "CVE-2023-5868"
             },
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5869",
-              "Impact": "None",
+              "Impact": "High",
               "Public": "20231210",
               "CveID": "CVE-2023-5869"
             },
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5870",
-              "Impact": "None",
+              "Impact": "Low",
               "Public": "20231210",
               "CveID": "CVE-2023-5870"
             }
