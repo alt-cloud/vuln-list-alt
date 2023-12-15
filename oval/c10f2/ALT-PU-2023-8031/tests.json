@@ -1,0 +1,102 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238031001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kubernetes1.25-client is earlier than 0:1.25.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238031001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238031001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238031002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kubernetes1.25-common is earlier than 0:1.25.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238031002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238031001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238031003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kubernetes1.25-crio is earlier than 0:1.25.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238031003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238031001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238031004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kubernetes1.25-kubeadm is earlier than 0:1.25.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238031004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238031001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238031005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kubernetes1.25-kubelet is earlier than 0:1.25.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238031005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238031001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238031006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kubernetes1.25-master is earlier than 0:1.25.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238031006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238031001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238031007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "kubernetes1.25-node is earlier than 0:1.25.16-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238031007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238031001"
+      }
+    }
+  ]
+}

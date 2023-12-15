@@ -1,0 +1,101 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20237843",
+      "Version": "oval:org.altlinux.errata:def:20237843",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-7843: package `inxi` update to version 3.3.31.2-alt1.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-7843",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7843",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades inxi to version 3.3.31.2-alt1.1. \nSecurity Fix(es):\n\n * #48682: При использовании утилиты, уведомление: Use of uninitialized value $platform in hash element at /usr/bin/inxi line 16284",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-15"
+          },
+          "Updated": {
+            "Date": "2023-12-15"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "48682",
+              "Href": "https://bugzilla.altlinux.org/48682",
+              "Data": "При использовании утилиты, уведомление: Use of uninitialized value $platform in hash element at /usr/bin/inxi line 16284"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20237843001",
+                "Comment": "inxi is earlier than 0:3.3.31.2-alt1.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

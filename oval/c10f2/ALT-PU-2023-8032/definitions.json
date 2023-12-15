@@ -1,0 +1,120 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238032",
+      "Version": "oval:org.altlinux.errata:def:20238032",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8032: package `kubernetes1.26` update to version 1.26.11-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8032",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8032",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07938",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07938",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5528",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5528",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades kubernetes1.26 to version 1.26.11-alt1. \nSecurity Fix(es):\n\n * BDU:2023-07938: Уязвимость утилиты kubelet программного средства управления кластерами виртуальных машин Kubernetes, позволяющая нарушителю повысить свои привилегии до уровня администратора\n\n * CVE-2023-5528: A security issue was discovered in Kubernetes where a user that can create pods and persistent volumes on Windows nodes may be able to escalate to admin privileges on those nodes. Kubernetes clusters are only affected if they are using an in-tree storage plugin for Windows nodes.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-15"
+          },
+          "Updated": {
+            "Date": "2023-12-15"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:M/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-20",
+              "Href": "https://bdu.fstec.ru/vul/2023-07938",
+              "Impact": "High",
+              "Public": "20231114",
+              "CveID": "BDU:2023-07938"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5528",
+              "Impact": "High",
+              "Public": "20231114",
+              "CveID": "CVE-2023-5528"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238032001",
+                "Comment": "kubernetes1.26-client is earlier than 0:1.26.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238032002",
+                "Comment": "kubernetes1.26-common is earlier than 0:1.26.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238032003",
+                "Comment": "kubernetes1.26-crio is earlier than 0:1.26.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238032004",
+                "Comment": "kubernetes1.26-kubeadm is earlier than 0:1.26.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238032005",
+                "Comment": "kubernetes1.26-kubelet is earlier than 0:1.26.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238032006",
+                "Comment": "kubernetes1.26-master is earlier than 0:1.26.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238032007",
+                "Comment": "kubernetes1.26-node is earlier than 0:1.26.11-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
