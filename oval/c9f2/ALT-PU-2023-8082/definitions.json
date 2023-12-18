@@ -1,0 +1,94 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238082",
+      "Version": "oval:org.altlinux.errata:def:20238082",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8082: package `libtomcrypt` update to version 1.18.2-alt4",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8082",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8082",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2019-17362",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2019-17362",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libtomcrypt to version 1.18.2-alt4. \nSecurity Fix(es):\n\n * CVE-2019-17362: In LibTomCrypt through 1.18.2, the der_decode_utf8_string function (in der_decode_utf8_string.c) does not properly detect certain invalid UTF-8 sequences. This allows context-dependent attackers to cause a denial of service (out-of-bounds read and crash) or read information from other memory locations via carefully crafted DER-encoded data.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-18"
+          },
+          "Updated": {
+            "Date": "2023-12-18"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2019-17362",
+              "Impact": "Critical",
+              "Public": "20191009",
+              "CveID": "CVE-2019-17362"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238082001",
+                "Comment": "libtomcrypt is earlier than 0:1.18.2-alt4"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238082002",
+                "Comment": "libtomcrypt-devel is earlier than 0:1.18.2-alt4"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238082003",
+                "Comment": "libtomcrypt-doc is earlier than 0:1.18.2-alt4"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
