@@ -1,0 +1,70 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:4001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20238073001",
+      "Version": "1",
+      "comment": "kubernetes1.25-client is installed",
+      "Name": "kubernetes1.25-client"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20238073002",
+      "Version": "1",
+      "comment": "kubernetes1.25-common is installed",
+      "Name": "kubernetes1.25-common"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20238073003",
+      "Version": "1",
+      "comment": "kubernetes1.25-crio is installed",
+      "Name": "kubernetes1.25-crio"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20238073004",
+      "Version": "1",
+      "comment": "kubernetes1.25-kubeadm is installed",
+      "Name": "kubernetes1.25-kubeadm"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20238073005",
+      "Version": "1",
+      "comment": "kubernetes1.25-kubelet is installed",
+      "Name": "kubernetes1.25-kubelet"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20238073006",
+      "Version": "1",
+      "comment": "kubernetes1.25-master is installed",
+      "Name": "kubernetes1.25-master"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20238073007",
+      "Version": "1",
+      "comment": "kubernetes1.25-node is installed",
+      "Name": "kubernetes1.25-node"
+    }
+  ]
+}

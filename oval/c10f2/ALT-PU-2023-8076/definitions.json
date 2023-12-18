@@ -1,0 +1,128 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238076",
+      "Version": "oval:org.altlinux.errata:def:20238076",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8076: package `opensc` update to version 0.24.0-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8076",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8076",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-2977",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-2977",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40660",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40660",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-40661",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-40661",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-4535",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-4535",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades opensc to version 0.24.0-alt1. \nSecurity Fix(es):\n\n * CVE-2023-2977: A vulnerbility was found in OpenSC. This security flaw cause a buffer overrun vulnerability in pkcs15 cardos_have_verifyrc_package. The attacker can supply a smart card package with malformed ASN1 context. The cardos_have_verifyrc_package function scans the ASN1 buffer for 2 tags, where remaining length is wrongly caculated due to moved starting pointer. This leads to possible heap-based buffer oob read. In cases where ASAN is enabled while compiling this causes a crash. Further info leak or more damage is possible.\n\n * CVE-2023-40660: A flaw was found in OpenSC packages that allow a potential PIN bypass. When a token/card is authenticated by one process, it can perform cryptographic operations in other processes when an empty zero-length pin is passed. This issue poses a security risk, particularly for OS logon/screen unlock and for small, permanently connected tokens to computers. Additionally, the token can internally track login status. This flaw allows an attacker to gain unauthorized access, carry out malicious actions, or compromise the system without the user's awareness.\n\n * CVE-2023-40661: Several memory vulnerabilities were identified within the OpenSC packages, particularly in the card enrollment process using pkcs15-init when a user or administrator enrolls cards. To take advantage of these flaws, an attacker must have physical access to the computer system and employ a custom-crafted USB device or smart card to manipulate responses to APDUs. This manipulation can potentially allow \ncompromise key generation, certificate loading, and other card management operations during enrollment.\n\n * CVE-2023-4535: An out-of-bounds read vulnerability was found in OpenSC packages within the MyEID driver when handling symmetric key encryption. Exploiting this flaw requires an attacker to have physical access to the computer and a specially crafted USB device or smart card. This flaw allows the attacker to manipulate APDU responses and potentially gain unauthorized access to sensitive data, compromising the system's security.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-18"
+          },
+          "Updated": {
+            "Date": "2023-12-18"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-2977",
+              "Impact": "High",
+              "Public": "20230601",
+              "CveID": "CVE-2023-2977"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:P/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-287",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-40660",
+              "Impact": "Low",
+              "Public": "20231106",
+              "CveID": "CVE-2023-40660"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:P/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-40661",
+              "Impact": "Low",
+              "Public": "20231106",
+              "CveID": "CVE-2023-40661"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:P/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-4535",
+              "Impact": "Low",
+              "Public": "20231106",
+              "CveID": "CVE-2023-4535"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238076001",
+                "Comment": "libopensc is earlier than 0:0.24.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238076002",
+                "Comment": "libopensc-devel is earlier than 0:0.24.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238076003",
+                "Comment": "opensc is earlier than 0:0.24.0-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
