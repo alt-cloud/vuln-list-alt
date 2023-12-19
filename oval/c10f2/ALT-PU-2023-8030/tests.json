@@ -1,0 +1,126 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "gnutls-utils is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "gnutls30-devel-doc is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libgnutls-devel is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libgnutls-guile is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libgnutls-openssl-devel is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libgnutls27-openssl is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libgnutls30 is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libgnutlsxx-devel is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238030009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libgnutlsxx28 is earlier than 0:3.6.16-alt4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238030009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238030001"
+      }
+    }
+  ]
+}
