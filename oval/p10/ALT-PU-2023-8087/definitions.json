@@ -48,7 +48,7 @@
         "Description": "This update upgrades glpi to version 10.0.11-alt1. \nSecurity Fix(es):\n\n * CVE-2023-43813: GLPI is a free asset and IT management software package. Starting in version 10.0.0 and prior to version 10.0.11, the saved search feature can be used to perform a SQL injection. Version 10.0.11 contains a patch for the issue.\n\n * CVE-2023-46726: GLPI is a free asset and IT management software package. Starting in version 10.0.0 and prior to version 10.0.11, on PHP 7.4 only, the LDAP server configuration form can be used to execute arbitrary code previously uploaded as a GLPI document. Version 10.0.11 contains a patch for the issue.\n\n * CVE-2023-46727: GLPI is a free asset and IT management software package. Starting in version 10.0.0 and prior to version 10.0.11, GLPI inventory endpoint can be used to drive a SQL injection attack. Version 10.0.11 contains a patch for the issue. As a workaround, disable native inventory.",
         "Advisory": {
           "From": "errata.altlinux.org",
-          "Severity": "Low",
+          "Severity": "Critical",
           "Rights": "Copyright 2023 BaseALT Ltd.",
           "Issued": {
             "Date": "2023-12-18"
@@ -59,23 +59,26 @@
           "bdu": null,
           "Cves": [
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "CWE-89",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-43813",
-              "Impact": "None",
+              "Impact": "High",
               "Public": "20231213",
               "CveID": "CVE-2023-43813"
             },
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "CWE-74",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46726",
-              "Impact": "None",
+              "Impact": "Critical",
               "Public": "20231213",
               "CveID": "CVE-2023-46726"
             },
             {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "CWE-89",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46727",
-              "Impact": "None",
+              "Impact": "Critical",
               "Public": "20231213",
               "CveID": "CVE-2023-46727"
             }
