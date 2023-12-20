@@ -1,0 +1,421 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238182",
+      "Version": "oval:org.altlinux.errata:def:20238182",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8182: package `python3-module-Pillow` update to version 9.4.0-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8182",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8182",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2021-05225",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-05225",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-05238",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-05238",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-05313",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-05313",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-05405",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-05405",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-00581",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-00581",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-00582",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-00582",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-00583",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-00583",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-02242",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-02242",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-01714",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-01714",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-02447",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-02447",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-02448",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-02448",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2021-23437",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-23437",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-25287",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-25287",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-25288",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-25288",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-28675",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-28675",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-28676",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-28676",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-28677",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-28677",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-28678",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-28678",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-34552",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-34552",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-22815",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-22815",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-22816",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-22816",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-22817",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-22817",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-24303",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-24303",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-45198",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-45198",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-45199",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-45199",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades python3-module-Pillow to version 9.4.0-alt2. \nSecurity Fix(es):\n\n * BDU:2021-05225: Уязвимость компонента Convert.c библиотеки для работы с изображениями Pillow, связанная с переполнением буфера в памяти, позволяющая нарушителю получить доступ к конфиденциальным данным, нарушить их целостность, а также вызвать отказ в обслуживании\n\n * BDU:2021-05238: Уязвимость компонента FliDecode библиотеки для работы с изображениями Pillow, связанная с выполнением цикла с недоступным условием выхода, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2021-05313: Уязвимость реализации readline компонента EPSImageFile библиотеки для работы с изображениями Pillow, связанная с недостаточной проверкой входных данных, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2021-05405: Уязвимость реализации функции convert() или ImagingConvertTransparent() библиотек для работы с изображениями Pillow и PIL (Python Imaging Library, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2022-00581: Уязвимость функции path_getbbox (path.c) библиотеки изображений Python Pillow, связанная с неверным ограничением пути к каталогу, позволяющая нарушителю получить доступ к произвольным файлам в системе\n\n * BDU:2022-00582: Уязвимость функции path_getbbox (path.c) библиотеки изображений Python Pillow, связанная с чтением за границами буфера, позволяющая нарушителю получить доступ к конфиденциальной информации\n\n * BDU:2022-00583: Уязвимость компонента PIL.ImageMath.eval библиотеки изображений Python Pillow, связанная с использованием опасных методов или функций, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2022-02242: Уязвимость функции getrgb библиотеки для работы с растровой графикой Pillow, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2023-01714: Уязвимость библиотеки для работы с растровой графикой Pillow, связанная с чтением за допустимыми границами буфера данных, позволяющая нарушителю нарушить целостность данных, а также вызвать отказ в обслуживании\n\n * BDU:2023-02447: Уязвимость библиотеки для работы с изображениями Pillow, связанная с ошибкой управления ресурсами, позволяющая нарушителю выполнить атаку типа «отказ в обслуживании»\n\n * BDU:2023-02448: Уязвимость библиотеки для работы с изображениями Pillow, связанная с неконтролируемым потреблением ресурсов, позволяющая нарушителю выполнить атаку типа «отказ в обслуживании»\n\n * CVE-2021-23437: The package pillow 5.2.0 and before 8.3.2 are vulnerable to Regular Expression Denial of Service (ReDoS) via the getrgb function.\n\n * CVE-2021-25287: An issue was discovered in Pillow before 8.2.0. There is an out-of-bounds read in J2kDecode, in j2ku_graya_la.\n\n * CVE-2021-25288: An issue was discovered in Pillow before 8.2.0. There is an out-of-bounds read in J2kDecode, in j2ku_gray_i.\n\n * CVE-2021-28675: An issue was discovered in Pillow before 8.2.0. PSDImagePlugin.PsdImageFile lacked a sanity check on the number of input layers relative to the size of the data block. This could lead to a DoS on Image.open prior to Image.load.\n\n * CVE-2021-28676: An issue was discovered in Pillow before 8.2.0. For FLI data, FliDecode did not properly check that the block advance was non-zero, potentially leading to an infinite loop on load.\n\n * CVE-2021-28677: An issue was discovered in Pillow before 8.2.0. For EPS data, the readline implementation used in EPSImageFile has to deal with any combination of \\r and \\n as line endings. It used an accidentally quadratic method of accumulating lines while looking for a line ending. A malicious EPS file could use this to perform a DoS of Pillow in the open phase, before an image was accepted for opening.\n\n * CVE-2021-28678: An issue was discovered in Pillow before 8.2.0. For BLP data, BlpImagePlugin did not properly check that reads (after jumping to file offsets) returned data. This could lead to a DoS where the decoder could be run a large number of times on empty data.\n\n * CVE-2021-34552: Pillow through 8.2.0 and PIL (aka Python Imaging Library) through 1.1.7 allow an attacker to pass controlled parameters directly into a convert function to trigger a buffer overflow in Convert.c.\n\n * CVE-2022-22815: path_getbbox in path.c in Pillow before 9.0.0 improperly initializes ImagePath.Path.\n\n * CVE-2022-22816: path_getbbox in path.c in Pillow before 9.0.0 has a buffer over-read during initialization of ImagePath.Path.\n\n * CVE-2022-22817: PIL.ImageMath.eval in Pillow before 9.0.0 allows evaluation of arbitrary expressions, such as ones that use the Python exec method. A lambda expression could also be used.\n\n * CVE-2022-24303: Pillow before 9.0.1 allows attackers to delete files because spaces in temporary pathnames are mishandled.\n\n * CVE-2022-45198: Pillow before 9.2.0 performs Improper Handling of Highly Compressed GIF Data (Data Amplification).\n\n * CVE-2022-45199: Pillow before 9.3.0 allows denial of service via SAMPLESPERPIXEL.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-20"
+          },
+          "Updated": {
+            "Date": "2023-12-20"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-120",
+              "Href": "https://bdu.fstec.ru/vul/2021-05225",
+              "Impact": "Critical",
+              "Public": "20210713",
+              "CveID": "BDU:2021-05225"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://bdu.fstec.ru/vul/2021-05238",
+              "Impact": "High",
+              "Public": "20210318",
+              "CveID": "BDU:2021-05238"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-20",
+              "Href": "https://bdu.fstec.ru/vul/2021-05313",
+              "Impact": "High",
+              "Public": "20210318",
+              "CveID": "BDU:2021-05313"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119, CWE-120",
+              "Href": "https://bdu.fstec.ru/vul/2021-05405",
+              "Impact": "Critical",
+              "Public": "20210714",
+              "CveID": "BDU:2021-05405"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-22",
+              "Href": "https://bdu.fstec.ru/vul/2022-00581",
+              "Impact": "High",
+              "Public": "20220125",
+              "CveID": "BDU:2022-00581"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-125",
+              "Href": "https://bdu.fstec.ru/vul/2022-00582",
+              "Impact": "High",
+              "Public": "20220125",
+              "CveID": "BDU:2022-00582"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-749",
+              "Href": "https://bdu.fstec.ru/vul/2022-00583",
+              "Impact": "Critical",
+              "Public": "20220125",
+              "CveID": "BDU:2022-00583"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125, CWE-400",
+              "Href": "https://bdu.fstec.ru/vul/2022-02242",
+              "Impact": "High",
+              "Public": "20210903",
+              "CveID": "BDU:2022-02242"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://bdu.fstec.ru/vul/2023-01714",
+              "Impact": "Critical",
+              "Public": "20220209",
+              "CveID": "BDU:2023-01714"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-399",
+              "Href": "https://bdu.fstec.ru/vul/2023-02447",
+              "Impact": "High",
+              "Public": "20221114",
+              "CveID": "BDU:2023-02447"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://bdu.fstec.ru/vul/2023-02448",
+              "Impact": "High",
+              "Public": "20221114",
+              "CveID": "BDU:2023-02448"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-23437",
+              "Impact": "High",
+              "Public": "20210903",
+              "CveID": "CVE-2021-23437"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-25287",
+              "Impact": "Critical",
+              "Public": "20210602",
+              "CveID": "CVE-2021-25287"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-25288",
+              "Impact": "Critical",
+              "Public": "20210602",
+              "CveID": "CVE-2021-25288"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-252",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-28675",
+              "Impact": "Low",
+              "Public": "20210602",
+              "CveID": "CVE-2021-28675"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-28676",
+              "Impact": "High",
+              "Public": "20210602",
+              "CveID": "CVE-2021-28676"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-28677",
+              "Impact": "High",
+              "Public": "20210602",
+              "CveID": "CVE-2021-28677"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-345",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-28678",
+              "Impact": "Low",
+              "Public": "20210602",
+              "CveID": "CVE-2021-28678"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-120",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-34552",
+              "Impact": "Critical",
+              "Public": "20210713",
+              "CveID": "CVE-2021-34552"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "Cwe": "CWE-665",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-22815",
+              "Impact": "Low",
+              "Public": "20220110",
+              "CveID": "CVE-2022-22815"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:L",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-22816",
+              "Impact": "Low",
+              "Public": "20220110",
+              "CveID": "CVE-2022-22816"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-22817",
+              "Impact": "Critical",
+              "Public": "20220110",
+              "CveID": "CVE-2022-22817"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-24303",
+              "Impact": "Critical",
+              "Public": "20220328",
+              "CveID": "CVE-2022-24303"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-45198",
+              "Impact": "High",
+              "Public": "20221114",
+              "CveID": "CVE-2022-45198"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-45199",
+              "Impact": "High",
+              "Public": "20221114",
+              "CveID": "CVE-2022-45199"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238182001",
+                "Comment": "python3-module-Pillow is earlier than 0:9.4.0-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
