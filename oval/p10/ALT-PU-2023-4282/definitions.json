@@ -3367,7 +3367,7 @@
             {
               "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
               "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "Cwe": "CWE-476",
+              "Cwe": "CWE-416, CWE-476",
               "Href": "https://bdu.fstec.ru/vul/2022-06398",
               "Impact": "High",
               "Public": "20220829",
@@ -3383,9 +3383,9 @@
               "CveID": "BDU:2022-06399"
             },
             {
-              "Cvss": "AV:L/AC:L/Au:S/C:N/I:N/A:C",
-              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
-              "Cwe": "CWE-416",
+              "Cvss": "AV:L/AC:H/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-416, CWE-476",
               "Href": "https://bdu.fstec.ru/vul/2022-06400",
               "Impact": "Low",
               "Public": "20220829",
@@ -4004,8 +4004,8 @@
               "CveID": "BDU:2023-01273"
             },
             {
-              "Cvss": "AV:N/AC:H/Au:M/C:N/I:N/A:P",
-              "Cvss3": "AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+              "Cvss": "AV:L/AC:L/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
               "Cwe": "CWE-416, CWE-457",
               "Href": "https://bdu.fstec.ru/vul/2023-01274",
               "Impact": "Low",
