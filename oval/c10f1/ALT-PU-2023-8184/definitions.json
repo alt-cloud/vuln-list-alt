@@ -1,0 +1,85 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238184",
+      "Version": "oval:org.altlinux.errata:def:20238184",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8184: package `fish` update to version 3.6.4-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8184",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8184",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-49284",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-49284",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades fish to version 3.6.4-alt1. \nSecurity Fix(es):\n\n * CVE-2023-49284: fish is a smart and user-friendly command line shell for macOS, Linux, and the rest of the family. fish shell uses certain Unicode non-characters internally for marking wildcards and expansions. It will incorrectly allow these markers to be read on command substitution output, rather than transforming them into a safe internal representation. While this may cause unexpected behavior with direct input (for example, echo \\UFDD2HOME has the same output as echo $HOME), this may become a minor security problem if the output is being fed from an external program into a command substitution where this output may not be expected. This design flaw was introduced in very early versions of fish, predating the version control system, and is thought to be present in every version of fish released in the last 15 years or more, although with different characters. Code execution does not appear to be possible, but denial of service (through large brace expansion) or information disclosure (such as variable expansion) is potentially possible under certain circumstances. fish shell 3.6.2 has been released to correct this issue. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-21"
+          },
+          "Updated": {
+            "Date": "2023-12-21"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:H",
+              "Cwe": "CWE-436",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-49284",
+              "Impact": "Low",
+              "Public": "20231205",
+              "CveID": "CVE-2023-49284"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238184001",
+                "Comment": "fish is earlier than 0:3.6.4-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

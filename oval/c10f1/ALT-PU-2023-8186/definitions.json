@@ -1,0 +1,81 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238186",
+      "Version": "oval:org.altlinux.errata:def:20238186",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8186: package `python3-module-Reportlab` update to version 3.6.13-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8186",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8186",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades python3-module-Reportlab to version 3.6.13-alt1. \nSecurity Fix(es):\n\n * #44773: Обновить до 3.6.12",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-21"
+          },
+          "Updated": {
+            "Date": "2023-12-21"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "44773",
+              "Href": "https://bugzilla.altlinux.org/44773",
+              "Data": "Обновить до 3.6.12"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238186001",
+                "Comment": "python3-module-Reportlab is earlier than 0:3.6.13-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238186002",
+                "Comment": "python3-module-Reportlab-docs is earlier than 0:3.6.13-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
