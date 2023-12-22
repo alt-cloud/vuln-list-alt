@@ -1,0 +1,234 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:4001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f1' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:4001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:4001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libecpg6 is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libecpg6-devel is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libecpg6-devel-static is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libpq5 is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libpq5-devel is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libpq5-devel-static is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql-devel is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql-devel-static is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15 is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-contrib is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-docs is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-llvmjit is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-perl is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-python is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-server is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-server-devel is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "postgresql15-tcl is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20238222018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "rpm-macros-postgresql is earlier than 0:15.5-alt0.c10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20238222018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20238222001"
+      }
+    }
+  ]
+}

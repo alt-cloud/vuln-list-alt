@@ -1,0 +1,186 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238225",
+      "Version": "oval:org.altlinux.errata:def:20238225",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8225: package `postgresql14` update to version 14.10-alt0.p10.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8225",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8225",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-07840",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07840",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07904",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07904",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07905",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07905",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-5868",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5868",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5869",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5869",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-5870",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5870",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades postgresql14 to version 14.10-alt0.p10.1. \nSecurity Fix(es):\n\n * BDU:2023-07840: Уязвимость функций array_append, array_prepend, array_subscript_handler системы управления базами данных PostgreSQL, связанная с целочисленным переполнением при модификации массивов, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-07904: Уязвимость системы управления базами данных PostgreSQL, связанная с возможностью рассылки сигналов процессам суперпользователей с помощью роли pg_signal_backend, позволяющая нарушителю вызвать отказ в обслуживании определенного фонового процесса\n\n * BDU:2023-07905: Уязвимость системы управления базами данных PostgreSQL, связанная с отсутствием защиты служебных данных в вызовах функций с агрегацией, позволяющая нарушителю раскрыть защищаемую информацию\n\n * CVE-2023-5868: A memory disclosure vulnerability was found in PostgreSQL that allows remote users to access sensitive information by exploiting certain aggregate function calls with 'unknown'-type arguments. Handling 'unknown'-type values from string literals without type designation can disclose bytes, potentially revealing notable and confidential information. This issue exists due to excessive data output in aggregate function calls, enabling remote users to read some portion of system memory.\n\n * CVE-2023-5869: A flaw was found in PostgreSQL that allows authenticated database users to execute arbitrary code through missing overflow checks during SQL array value modification. This issue exists due to an integer overflow during array modification where a remote user can trigger the overflow by providing specially crafted data. This enables the execution of arbitrary code on the target system, allowing users to write arbitrary bytes to memory and extensively read the server's memory.\n\n * CVE-2023-5870: A flaw was found in PostgreSQL involving the pg_cancel_backend role that signals background workers, including the logical replication launcher, autovacuum workers, and the autovacuum launcher. Successful exploitation requires a non-core extension with a less-resilient background worker and would affect that specific background worker only. This issue may allow a remote high privileged user to launch a denial of service (DoS) attack.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-22"
+          },
+          "Updated": {
+            "Date": "2023-12-22"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://bdu.fstec.ru/vul/2023-07840",
+              "Impact": "High",
+              "Public": "20230911",
+              "CveID": "BDU:2023-07840"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:M/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-264",
+              "Href": "https://bdu.fstec.ru/vul/2023-07904",
+              "Impact": "Low",
+              "Public": "20231109",
+              "CveID": "BDU:2023-07904"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2023-07905",
+              "Impact": "Low",
+              "Public": "20231109",
+              "CveID": "BDU:2023-07905"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5868",
+              "Impact": "Low",
+              "Public": "20231210",
+              "CveID": "CVE-2023-5868"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-190",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5869",
+              "Impact": "High",
+              "Public": "20231210",
+              "CveID": "CVE-2023-5869"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5870",
+              "Impact": "Low",
+              "Public": "20231210",
+              "CveID": "CVE-2023-5870"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225001",
+                "Comment": "postgresql14 is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225002",
+                "Comment": "postgresql14-contrib is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225003",
+                "Comment": "postgresql14-docs is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225004",
+                "Comment": "postgresql14-llvmjit is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225005",
+                "Comment": "postgresql14-perl is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225006",
+                "Comment": "postgresql14-python is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225007",
+                "Comment": "postgresql14-server is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225008",
+                "Comment": "postgresql14-server-devel is earlier than 0:14.10-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238225009",
+                "Comment": "postgresql14-tcl is earlier than 0:14.10-alt0.p10.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
