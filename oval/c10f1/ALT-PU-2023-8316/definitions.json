@@ -1,0 +1,106 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238316",
+      "Version": "oval:org.altlinux.errata:def:20238316",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8316: package `curl` update to version 8.5.0-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f1"
+            ],
+            "Products": [
+              "ALT SP Workstation",
+              "ALT SP Server"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8316",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8316",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-46218",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-46218",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-46219",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-46219",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades curl to version 8.5.0-alt1. \nSecurity Fix(es):\n\n * CVE-2023-46218: This flaw allows a malicious HTTP server to set \"super cookies\" in curl that\nare then passed back to more origins than what is otherwise allowed or\npossible. This allows a site to set cookies that then would get sent to\ndifferent and unrelated sites and domains.\n\nIt could do this by exploiting a mixed case flaw in curl's function that\nverifies a given cookie domain against the Public Suffix List (PSL). For\nexample a cookie could be set with `domain=co.UK` when the URL used a lower\ncase hostname `curl.co.uk`, even though `co.uk` is listed as a PSL domain.\n\n\n * CVE-2023-46219: When saving HSTS data to an excessively long file name, curl could end up\nremoving all contents, making subsequent requests using that file unaware of\nthe HSTS status they should otherwise use.\n",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-27"
+          },
+          "Updated": {
+            "Date": "2023-12-27"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46218",
+              "Impact": "Low",
+              "Public": "20231207",
+              "CveID": "CVE-2023-46218"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-311",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46219",
+              "Impact": "Low",
+              "Public": "20231212",
+              "CveID": "CVE-2023-46219"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:4001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238316001",
+                "Comment": "curl is earlier than 0:8.5.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238316002",
+                "Comment": "libcurl is earlier than 0:8.5.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238316003",
+                "Comment": "libcurl-devel is earlier than 0:8.5.0-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

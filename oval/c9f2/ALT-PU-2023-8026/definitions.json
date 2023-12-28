@@ -1,0 +1,721 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238026",
+      "Version": "oval:org.altlinux.errata:def:20238026",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8026: package `firmware-intel-ucode` update to version 23-alt1.20231114",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8026",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8026",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2019-01957",
+            "RefURL": "https://bdu.fstec.ru/vul/2019-01957",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2019-01958",
+            "RefURL": "https://bdu.fstec.ru/vul/2019-01958",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2019-01959",
+            "RefURL": "https://bdu.fstec.ru/vul/2019-01959",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2019-01960",
+            "RefURL": "https://bdu.fstec.ru/vul/2019-01960",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2020-00306",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-00306",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2020-00307",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-00307",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2020-04459",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-04459",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2020-05478",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-05478",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2020-05479",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-05479",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2020-05481",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-05481",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2020-05482",
+            "RefURL": "https://bdu.fstec.ru/vul/2020-05482",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-03383",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-03383",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-03384",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-03384",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-03385",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-03385",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2021-05803",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-05803",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-03898",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-03898",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-05683",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-05683",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-05690",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-05690",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2022-05788",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-05788",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-04663",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-04663",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07325",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07325",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07603",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07603",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07639",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07639",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2018-12126",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2018-12126",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2018-12127",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2018-12127",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2018-12130",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2018-12130",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2019-11091",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2019-11091",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-0543",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-0543",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-0548",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-0548",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-0549",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-0549",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-24511",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-24511",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-24512",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-24512",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-24513",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-24513",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-8694",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-8694",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-8695",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-8695",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-8696",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-8696",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-8698",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-8698",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-0127",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-0127",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-0145",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-0145",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-0146",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-0146",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-24489",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-24489",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-33120",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-33120",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-21151",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-21151",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-40982",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-40982",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-41804",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-41804",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-23583",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-23583",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-23908",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-23908",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades firmware-intel-ucode to version 23-alt1.20231114. \nSecurity Fix(es):\n\n * BDU:2019-01957: Уязвимость процессоров Intel, связанная с микроархитектурной выборкой данных некэшируемой памяти, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2019-01958: Уязвимость порта загрузки MLPDS микропрограммного обеспечения Intel, связанная с раскрытием информации, позволяющая нарушителю получить доступ к конфиденциальной информации\n\n * BDU:2019-01959: Уязвимость процессоров Intel, связанная с восстановлением содержимого буферов заполнения, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2019-01960: Уязвимость буфера данных MSBDS микропрограммного обеспечения Intel, связанная с раскрытием информации, позволяющая нарушителю получить доступ к конфиденциальной информации\n\n * BDU:2020-00306: Уязвимость процессоров Intel, связанная с утечкой в буфер хранения (Store Buffer) результатов операций чтения из векторных регистров, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2020-00307: Уязвимость процессоров Intel, вызванная утечкой данных из кэша L1D, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2020-04459: Уязвимость микропрограммного обеспечения процессоров Intel, связанная с отсутствием защиты служебных данных, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2020-05478: Уязвимость процессоров Intel, связанная с недостатками разграничения доступа, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2020-05479: Уязвимость процессоров Intel, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2020-05481: Уязвимость драйвера для процессоров Intel(R) ядра операционной системы Linux, связанная с недостатками контроля доступа, позволяющая нарушителю получить доступ к конфиденциальным данным\n\n * BDU:2020-05482: Уязвимость интерфейса RAPL процессоров Intel, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2021-03383: Уязвимость микропрограммного обеспечения процессоров Intel, связанная с раскрытием информации через несоответствие, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2021-03384: Уязвимость микропрограммного обеспечения процессоров Intel, связанная с отсутствием защиты служебных данных, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2021-03385: Уязвимость микропрограммного обеспечения процессоров Intel, связанная с ошибками в настройках безопасности, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2021-05803: Уязвимость микропрограммного обеспечения BIOS/UEFI процессоров Intel, позволяющая нарушителю повысить свои привилегии и получить несанкционированный доступ к защищаемой информации\n\n * BDU:2022-03898: Уязвимость микропрограммного обеспечения процессоров Intel, связанная с неверным управлением генерацией кода, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2022-05683: Уязвимость микрокода процессоров Intel Microcode, связанная с недостаточным использованием потоков, позволяющая нарушителю вызвать отказ в обслуживании\n\n * BDU:2022-05690: Уязвимость микрокода процессоров Intel Intel Microcode, позволяющая нарушителю получить доступ к конфиденциальным данным, а также вызвать отказ в обслуживании\n\n * BDU:2022-05788: Уязвимость микрокода процессоров Intel Microcode, связанная с ошибками инициализации памяти, позволяющая нарушителю получить доступ к конфиденциальным данным\n\n * BDU:2023-04663: Уязвимость микропрограммного обеспечения процессоров Intel, связанная с утечкой информации из векторных регистров, позволяющая нарушителю получить доступ к защищаемой информации\n\n * BDU:2023-07325: Уязвимость микропрограммного обеспечения процессоров Intel, позволяющая нарушителю повысить свои привилегии (с третьего до нулевого кольца защиты (CPL0)), получить доступ к конфиденциальной информации или вызвать отказ в обслуживании\n\n * BDU:2023-07603: Уязвимость микрокода процессоров Intel Microcode, связанная с возможностью авария резервного оборудования путём несанкционированного внедрения ошибок, позволяющая нарушителю получить доступ к конфиденциальным данным, нарушить их целостность, а также вызвать отказ в обслуживании\n\n * BDU:2023-07639: Уязвимость микрокода процессоров Intel Microcode, связанная с раскрытием информации, позволяющая нарушителю получить доступ к конфиденциальным данным\n\n * CVE-2018-12126: Microarchitectural Store Buffer Data Sampling (MSBDS): Store buffers on some microprocessors utilizing speculative execution may allow an authenticated user to potentially enable information disclosure via a side channel with local access. A list of impacted products can be found here: https://www.intel.com/content/dam/www/public/us/en/documents/corporate-information/SA00233-microcode-update-guidance_05132019.pdf\n\n * CVE-2018-12127: Microarchitectural Load Port Data Sampling (MLPDS): Load ports on some microprocessors utilizing speculative execution may allow an authenticated user to potentially enable information disclosure via a side channel with local access. A list of impacted products can be found here: https://www.intel.com/content/dam/www/public/us/en/documents/corporate-information/SA00233-microcode-update-guidance_05132019.pdf\n\n * CVE-2018-12130: Microarchitectural Fill Buffer Data Sampling (MFBDS): Fill buffers on some microprocessors utilizing speculative execution may allow an authenticated user to potentially enable information disclosure via a side channel with local access. A list of impacted products can be found here: https://www.intel.com/content/dam/www/public/us/en/documents/corporate-information/SA00233-microcode-update-guidance_05132019.pdf\n\n * CVE-2019-11091: Microarchitectural Data Sampling Uncacheable Memory (MDSUM): Uncacheable memory on some microprocessors utilizing speculative execution may allow an authenticated user to potentially enable information disclosure via a side channel with local access. A list of impacted products can be found here: https://www.intel.com/content/dam/www/public/us/en/documents/corporate-information/SA00233-microcode-update-guidance_05132019.pdf\n\n * CVE-2020-0543: Incomplete cleanup from specific special register read operations in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-0548: Cleanup errors in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-0549: Cleanup errors in some data cache evictions for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-24511: Improper isolation of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-24512: Observable timing discrepancy in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-24513: Domain-bypass transient execution vulnerability in some Intel Atom(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-8694: Insufficient access control in the Linux kernel driver for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-8695: Observable discrepancy in the RAPL interface for some Intel(R) Processors may allow a privileged user to potentially enable information disclosure via local access.\n\n * CVE-2020-8696: Improper removal of sensitive information before storage or transfer in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2020-8698: Improper isolation of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2021-0127: Insufficient control flow management in some Intel(R) Processors may allow an authenticated user to potentially enable a denial of service via local access.\n\n * CVE-2021-0145: Improper initialization of shared resources in some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2021-0146: Hardware allows activation of test or debug logic at runtime for some Intel(R) processors which may allow an unauthenticated user to potentially enable escalation of privilege via physical access.\n\n * CVE-2021-24489: The Request a Quote WordPress plugin before 2.3.9 does not sanitise, validate or escape some of its settings in the admin dashboard, leading to authenticated Stored Cross-Site Scripting issues even when the unfiltered_html capability is disallowed.\n\n * CVE-2021-33120: Out of bounds read under complex microarchitectural condition in memory subsystem for some Intel Atom(R) Processors may allow authenticated user to potentially enable information disclosure or cause denial of service via network access.\n\n * CVE-2022-21151: Processor optimization removal or modification of security-critical code for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2022-40982: Information exposure through microarchitectural state after transient execution in certain vector execution units for some Intel(R) Processors may allow an authenticated user to potentially enable information disclosure via local access.\n\n * CVE-2022-41804: Unauthorized error injection in Intel(R) SGX or Intel(R) TDX for some Intel(R) Xeon(R) Processors may allow a privileged user to potentially enable escalation of privilege via local access.\n\n * CVE-2023-23583: Sequence of processor instructions leads to unexpected behavior for some Intel(R) Processors may allow an authenticated user to potentially enable escalation of privilege and/or information disclosure and/or denial of service via local access.\n\n * CVE-2023-23908: Improper access control in some 3rd Generation Intel(R) Xeon(R) Scalable processors may allow a privileged user to potentially enable information disclosure via local access.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-25"
+          },
+          "Updated": {
+            "Date": "2023-12-25"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-203, CWE-385",
+              "Href": "https://bdu.fstec.ru/vul/2019-01957",
+              "Impact": "Low",
+              "Public": "20190517",
+              "CveID": "BDU:2019-01957"
+            },
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cwe": "CWE-200, CWE-203, CWE-385",
+              "Href": "https://bdu.fstec.ru/vul/2019-01958",
+              "Impact": "Low",
+              "Public": "20190517",
+              "CveID": "BDU:2019-01958"
+            },
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-200, CWE-203, CWE-385",
+              "Href": "https://bdu.fstec.ru/vul/2019-01959",
+              "Impact": "Low",
+              "Public": "20190517",
+              "CveID": "BDU:2019-01959"
+            },
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-200, CWE-203, CWE-385",
+              "Href": "https://bdu.fstec.ru/vul/2019-01960",
+              "Impact": "Low",
+              "Public": "20190517",
+              "CveID": "BDU:2019-01960"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200, CWE-452",
+              "Href": "https://bdu.fstec.ru/vul/2020-00306",
+              "Impact": "Low",
+              "Public": "20200128",
+              "CveID": "BDU:2020-00306"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cwe": "CWE-200, CWE-452",
+              "Href": "https://bdu.fstec.ru/vul/2020-00307",
+              "Impact": "Low",
+              "Public": "20200128",
+              "CveID": "BDU:2020-00307"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2020-04459",
+              "Impact": "Low",
+              "Public": "20200615",
+              "CveID": "BDU:2020-04459"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cwe": "CWE-264",
+              "Href": "https://bdu.fstec.ru/vul/2020-05478",
+              "Impact": "Low",
+              "Public": "20200701",
+              "CveID": "BDU:2020-05478"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cwe": "CWE-264",
+              "Href": "https://bdu.fstec.ru/vul/2020-05479",
+              "Impact": "Low",
+              "Public": "20201112",
+              "CveID": "BDU:2020-05479"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-284",
+              "Href": "https://bdu.fstec.ru/vul/2020-05481",
+              "Impact": "Low",
+              "Public": "20200424",
+              "CveID": "BDU:2020-05481"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2020-05482",
+              "Impact": "Low",
+              "Public": "20200424",
+              "CveID": "BDU:2020-05482"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-203",
+              "Href": "https://bdu.fstec.ru/vul/2021-03383",
+              "Impact": "Low",
+              "Public": "20210608",
+              "CveID": "BDU:2021-03383"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2021-03384",
+              "Impact": "Low",
+              "Public": "20210608",
+              "CveID": "BDU:2021-03384"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-668",
+              "Href": "https://bdu.fstec.ru/vul/2021-03385",
+              "Impact": "Low",
+              "Public": "20210608",
+              "CveID": "BDU:2021-03385"
+            },
+            {
+              "Cvss": "AV:L/AC:H/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:P/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2021-05803",
+              "Impact": "High",
+              "Public": "20210911",
+              "CveID": "BDU:2021-05803"
+            },
+            {
+              "Cvss": "AV:L/AC:H/Au:S/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:H/PR:H/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-94, CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2022-03898",
+              "Impact": "Low",
+              "Public": "20211115",
+              "CveID": "BDU:2022-03898"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-691",
+              "Href": "https://bdu.fstec.ru/vul/2022-05683",
+              "Impact": "Low",
+              "Public": "20200122",
+              "CveID": "BDU:2022-05683"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L",
+              "Cwe": "CWE-125",
+              "Href": "https://bdu.fstec.ru/vul/2022-05690",
+              "Impact": "Low",
+              "Public": "20220209",
+              "CveID": "BDU:2022-05690"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-665",
+              "Href": "https://bdu.fstec.ru/vul/2022-05788",
+              "Impact": "Low",
+              "Public": "20201022",
+              "CveID": "BDU:2022-05788"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-203, CWE-1342",
+              "Href": "https://bdu.fstec.ru/vul/2023-04663",
+              "Impact": "Low",
+              "Public": "20230808",
+              "CveID": "BDU:2023-04663"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+              "Cwe": "CWE-264, CWE-1281",
+              "Href": "https://bdu.fstec.ru/vul/2023-07325",
+              "Impact": "High",
+              "Public": "20231024",
+              "CveID": "BDU:2023-07325"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:M/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-1334",
+              "Href": "https://bdu.fstec.ru/vul/2023-07603",
+              "Impact": "Low",
+              "Public": "20230808",
+              "CveID": "BDU:2023-07603"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:M/C:C/I:N/A:N",
+              "Cvss3": "AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://bdu.fstec.ru/vul/2023-07639",
+              "Impact": "Low",
+              "Public": "20230808",
+              "CveID": "BDU:2023-07639"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cvss3": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2018-12126",
+              "Impact": "Low",
+              "Public": "20190530",
+              "CveID": "CVE-2018-12126"
+            },
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cvss3": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2018-12127",
+              "Impact": "Low",
+              "Public": "20190530",
+              "CveID": "CVE-2018-12127"
+            },
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cvss3": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2018-12130",
+              "Impact": "Low",
+              "Public": "20190530",
+              "CveID": "CVE-2018-12130"
+            },
+            {
+              "Cvss": "AV:L/AC:M/Au:N/C:C/I:N/A:N",
+              "Cvss3": "CVSS:3.0/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2019-11091",
+              "Impact": "Low",
+              "Public": "20190530",
+              "CveID": "CVE-2019-11091"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-459",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-0543",
+              "Impact": "Low",
+              "Public": "20200615",
+              "CveID": "CVE-2020-0543"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-0548",
+              "Impact": "Low",
+              "Public": "20200128",
+              "CveID": "CVE-2020-0548"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-404",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-0549",
+              "Impact": "Low",
+              "Public": "20200128",
+              "CveID": "CVE-2020-0549"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-668",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-24511",
+              "Impact": "Low",
+              "Public": "20210609",
+              "CveID": "CVE-2020-24511"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-203",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-24512",
+              "Impact": "Low",
+              "Public": "20210609",
+              "CveID": "CVE-2020-24512"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-24513",
+              "Impact": "Low",
+              "Public": "20210609",
+              "CveID": "CVE-2020-24513"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-8694",
+              "Impact": "Low",
+              "Public": "20201112",
+              "CveID": "CVE-2020-8694"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-203",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-8695",
+              "Impact": "Low",
+              "Public": "20201112",
+              "CveID": "CVE-2020-8695"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-212",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-8696",
+              "Impact": "Low",
+              "Public": "20201112",
+              "CveID": "CVE-2020-8696"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-668",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-8698",
+              "Impact": "Low",
+              "Public": "20201112",
+              "CveID": "CVE-2020-8698"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-0127",
+              "Impact": "Low",
+              "Public": "20220209",
+              "CveID": "CVE-2021-0127"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-665",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-0145",
+              "Impact": "Low",
+              "Public": "20220209",
+              "CveID": "CVE-2021-0145"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-0146",
+              "Impact": "Low",
+              "Public": "20211117",
+              "CveID": "CVE-2021-0146"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:S/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-24489",
+              "Impact": "Low",
+              "Public": "20211025",
+              "CveID": "CVE-2021-24489"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:L",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-33120",
+              "Impact": "Low",
+              "Public": "20220209",
+              "CveID": "CVE-2021-33120"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-21151",
+              "Impact": "Low",
+              "Public": "20220512",
+              "CveID": "CVE-2022-21151"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:N/A:N",
+              "Cwe": "CWE-203",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-40982",
+              "Impact": "Low",
+              "Public": "20230811",
+              "CveID": "CVE-2022-40982"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-41804",
+              "Impact": "Low",
+              "Public": "20230811",
+              "CveID": "CVE-2022-41804"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-23583",
+              "Impact": "High",
+              "Public": "20231114",
+              "CveID": "CVE-2023-23583"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-23908",
+              "Impact": "Low",
+              "Public": "20230811",
+              "CveID": "CVE-2023-23908"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238026001",
+                "Comment": "firmware-intel-ucode is earlier than 2:23-alt1.20231114"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

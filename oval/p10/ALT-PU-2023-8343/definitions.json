@@ -1,0 +1,144 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238343",
+      "Version": "oval:org.altlinux.errata:def:20238343",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8343: package `python3-module-django` update to version 3.2.23-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8343",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8343",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-08741",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08741",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-46695",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-46695",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades python3-module-django to version 3.2.23-alt1. \nSecurity Fix(es):\n\n * BDU:2023-08741: Уязвимость программной платформы для веб-приложений Django, связанная c неограниченным распределением ресурсов, позволяющая нарушителю вызвать отказ в обслуживании (DoS)\n\n * CVE-2023-46695: An issue was discovered in Django 3.2 before 3.2.23, 4.1 before 4.1.13, and 4.2 before 4.2.7. The NFKC normalization is slow on Windows. As a consequence, django.contrib.auth.forms.UsernameField is subject to a potential DoS (denial of service) attack via certain inputs with a very large number of Unicode characters.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-27"
+          },
+          "Updated": {
+            "Date": "2023-12-27"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://bdu.fstec.ru/vul/2023-08741",
+              "Impact": "High",
+              "Public": "20231102",
+              "CveID": "BDU:2023-08741"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-46695",
+              "Impact": "High",
+              "Public": "20231102",
+              "CveID": "CVE-2023-46695"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238343001",
+                "Comment": "python3-module-django is earlier than 0:3.2.23-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238343002",
+                "Comment": "python3-module-django-dbbackend-mysql is earlier than 0:3.2.23-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238343003",
+                "Comment": "python3-module-django-dbbackend-oracle is earlier than 0:3.2.23-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238343004",
+                "Comment": "python3-module-django-dbbackend-postgresql is earlier than 0:3.2.23-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238343005",
+                "Comment": "python3-module-django-dbbackend-sqlite3 is earlier than 0:3.2.23-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238343006",
+                "Comment": "python3-module-django-doc is earlier than 0:3.2.23-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

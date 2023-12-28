@@ -1,11 +1,11 @@
 {
   "Definition": [
     {
-      "ID": "oval:org.altlinux.errata:def:20221356",
-      "Version": "oval:org.altlinux.errata:def:20221356",
+      "ID": "oval:org.altlinux.errata:def:20238148",
+      "Version": "oval:org.altlinux.errata:def:20238148",
       "Class": "patch",
       "Metadata": {
-        "Title": "ALT-PU-2022-1356: package `dotnet-aspnetcore-3.1` update to version 3.1.22-alt1",
+        "Title": "ALT-PU-2023-8148: package `gst-plugins-bad1.0` update to version 1.20.6-alt3",
         "AffectedList": [
           {
             "Family": "unix",
@@ -25,51 +25,41 @@
         ],
         "References": [
           {
-            "RefID": "ALT-PU-2022-1356",
-            "RefURL": "https://errata.altlinux.org/ALT-PU-2022-1356",
+            "RefID": "ALT-PU-2023-8148",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8148",
             "Source": "ALTPU"
           },
           {
-            "RefID": "CVE-2021-34532",
-            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-34532",
-            "Source": "CVE"
+            "RefID": "BDU:2023-08257",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08257",
+            "Source": "BDU"
           },
           {
-            "RefID": "CVE-2021-43877",
-            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-43877",
+            "RefID": "CVE-2023-44446",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-44446",
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades dotnet-aspnetcore-3.1 to version 3.1.22-alt1. \nSecurity Fix(es):\n\n * CVE-2021-34532: ASP.NET Core and Visual Studio Information Disclosure Vulnerability\n\n * CVE-2021-43877: ASP.NET Core and Visual Studio Elevation of Privilege Vulnerability",
+        "Description": "This update upgrades gst-plugins-bad1.0 to version 1.20.6-alt3. \nSecurity Fix(es):\n\n * BDU:2023-08257: Уязвимость парсера MXF-файлов мультимедийного фреймворка Gstreamer, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2023-44446: description unavailable",
         "Advisory": {
           "From": "errata.altlinux.org",
           "Severity": "High",
           "Rights": "Copyright 2023 BaseALT Ltd.",
           "Issued": {
-            "Date": "2022-02-21"
+            "Date": "2023-12-26"
           },
           "Updated": {
-            "Date": "2022-02-21"
+            "Date": "2023-12-26"
           },
-          "bdu": null,
-          "Cves": [
+          "bdu": [
             {
-              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
-              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-              "Cwe": "NVD-CWE-noinfo",
-              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-34532",
-              "Impact": "Low",
-              "Public": "20210812",
-              "CveID": "CVE-2021-34532"
-            },
-            {
-              "Cvss": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-              "Cwe": "NVD-CWE-noinfo",
-              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-43877",
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119, CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-08257",
               "Impact": "High",
-              "Public": "20211215",
-              "CveID": "CVE-2021-43877"
+              "Public": "20231019",
+              "CveID": "BDU:2023-08257"
             }
           ],
           "AffectedCpeList": {
@@ -112,8 +102,12 @@
             "Operator": "OR",
             "Criterions": [
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20221356001",
-                "Comment": "dotnet-aspnetcore-3.1 is earlier than 0:3.1.22-alt1"
+                "TestRef": "oval:org.altlinux.errata:tst:20238148001",
+                "Comment": "gst-plugins-bad1.0 is earlier than 0:1.20.6-alt3"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238148002",
+                "Comment": "gst-plugins-bad1.0-devel is earlier than 0:1.20.6-alt3"
               }
             ]
           }

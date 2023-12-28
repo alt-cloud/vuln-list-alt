@@ -1,11 +1,11 @@
 {
   "Definition": [
     {
-      "ID": "oval:org.altlinux.errata:def:20221356",
-      "Version": "oval:org.altlinux.errata:def:20221356",
+      "ID": "oval:org.altlinux.errata:def:20237959",
+      "Version": "oval:org.altlinux.errata:def:20237959",
       "Class": "patch",
       "Metadata": {
-        "Title": "ALT-PU-2022-1356: package `dotnet-aspnetcore-3.1` update to version 3.1.22-alt1",
+        "Title": "ALT-PU-2023-7959: package `python3-module-eventlet` update to version 0.33.3-alt2.p10",
         "AffectedList": [
           {
             "Family": "unix",
@@ -25,51 +25,28 @@
         ],
         "References": [
           {
-            "RefID": "ALT-PU-2022-1356",
-            "RefURL": "https://errata.altlinux.org/ALT-PU-2022-1356",
+            "RefID": "ALT-PU-2023-7959",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-7959",
             "Source": "ALTPU"
-          },
-          {
-            "RefID": "CVE-2021-34532",
-            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-34532",
-            "Source": "CVE"
-          },
-          {
-            "RefID": "CVE-2021-43877",
-            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-43877",
-            "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades dotnet-aspnetcore-3.1 to version 3.1.22-alt1. \nSecurity Fix(es):\n\n * CVE-2021-34532: ASP.NET Core and Visual Studio Information Disclosure Vulnerability\n\n * CVE-2021-43877: ASP.NET Core and Visual Studio Elevation of Privilege Vulnerability",
+        "Description": "This update upgrades python3-module-eventlet to version 0.33.3-alt2.p10. \nSecurity Fix(es):\n\n * #45443: Приобретает анметы при пересборке",
         "Advisory": {
           "From": "errata.altlinux.org",
-          "Severity": "High",
+          "Severity": "Low",
           "Rights": "Copyright 2023 BaseALT Ltd.",
           "Issued": {
-            "Date": "2022-02-21"
+            "Date": "2023-12-28"
           },
           "Updated": {
-            "Date": "2022-02-21"
+            "Date": "2023-12-28"
           },
           "bdu": null,
-          "Cves": [
+          "Bugzilla": [
             {
-              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
-              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
-              "Cwe": "NVD-CWE-noinfo",
-              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-34532",
-              "Impact": "Low",
-              "Public": "20210812",
-              "CveID": "CVE-2021-34532"
-            },
-            {
-              "Cvss": "AV:L/AC:L/Au:N/C:P/I:P/A:P",
-              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
-              "Cwe": "NVD-CWE-noinfo",
-              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-43877",
-              "Impact": "High",
-              "Public": "20211215",
-              "CveID": "CVE-2021-43877"
+              "Id": "45443",
+              "Href": "https://bugzilla.altlinux.org/45443",
+              "Data": "Приобретает анметы при пересборке"
             }
           ],
           "AffectedCpeList": {
@@ -112,8 +89,8 @@
             "Operator": "OR",
             "Criterions": [
               {
-                "TestRef": "oval:org.altlinux.errata:tst:20221356001",
-                "Comment": "dotnet-aspnetcore-3.1 is earlier than 0:3.1.22-alt1"
+                "TestRef": "oval:org.altlinux.errata:tst:20237959001",
+                "Comment": "python3-module-eventlet is earlier than 0:0.33.3-alt2.p10"
               }
             ]
           }
