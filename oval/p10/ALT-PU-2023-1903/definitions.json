@@ -42002,6 +42002,7 @@
             },
             {
               "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "CWE-476",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2009-2698",
               "Impact": "High",
@@ -42384,6 +42385,7 @@
             },
             {
               "Cvss": "AV:L/AC:M/Au:N/C:N/I:N/A:C",
+              "Cvss3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H",
               "Cwe": "CWE-362",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2009-4895",
               "Impact": "Low",
