@@ -1,0 +1,591 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238227",
+      "Version": "oval:org.altlinux.errata:def:20238227",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8227: package `firefox-esr` update to version 115.6.0-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8227",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8227",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-08086",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08086",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08087",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08087",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08088",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08088",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08115",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08115",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08116",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08116",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08322",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08322",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08332",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08332",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09018",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09018",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09031",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09031",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09055",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09055",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09058",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09058",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09059",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09059",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09062",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09062",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09115",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09115",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09116",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09116",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09117",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09117",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09118",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09118",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-09119",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-09119",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-6204",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6204",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6205",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6205",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6206",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6206",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6207",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6207",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6208",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6208",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6209",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6209",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6212",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6212",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6856",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6856",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6857",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6857",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6858",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6858",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6859",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6859",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6860",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6860",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6861",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6861",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6862",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6862",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6863",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6863",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6864",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6864",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6865",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6865",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6867",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6867",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades firefox-esr to version 115.6.0-alt1. \nSecurity Fix(es):\n\n * BDU:2023-08086: Уязвимость метода WebGL2RenderingContext.blitFramebuffer() интерфейса WebGL2 браузеров Firefox и Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-08087: Уязвимость полноэкранного режима браузеров Firefox и Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю провести атаку типа clickjacking («захват клика»)\n\n * BDU:2023-08088: Уязвимость системы графического отображения X11 браузеров Firefox и Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю оказать воздействие на конфиденциальность и целостность защищаемой информации\n\n * BDU:2023-08115: Уязвимость браузеров Firefox и Firefox ESR и почтового клиента Thunderbird, связанная с выходом операции за границы буфера в памяти, позволяющая нарушителю выполнить произвольный код или вызвать отказ в обслуживании\n\n * BDU:2023-08116: Уязвимость функции MessagePort::Entangled() браузеров Firefox и Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю вызвать отказ в обслуживании или оказать иное воздействие\n\n * BDU:2023-08322: Уязвимость браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, связанная с неверным ограничением имени пути с символами \u0026quot;/.. /\u0026quot;, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-08332: Уязвимость функции ReadableByteStreams браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-09018: Уязвимость браузеров Firefox, Firefox ESR, связанная с ошибками представления информации пользовательским интерфейсом, позволяющая нарушителю провести атаку типа clickjacking («захват клика»)\n\n * BDU:2023-09031: Уязвимость браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, связанная с нарушением начальной границы буфера, позволяющая нарушителю оказать воздействие на конфиденциальность и целостность данных\n\n * BDU:2023-09055: Уязвимость браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, связанная с выходом операции за границы буфера в памяти, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-09058: Уязвимость компонента VideoBridge браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю обойти защитный механизм защиты изолированной программной среды\n\n * BDU:2023-09059: Уязвимость режима инкогнито браузеров Mozilla Firefox, Firefox ESR, связанная с использованием неинициализированных, позволяющая нарушителю раскрыть защищаемую информацию\n\n * BDU:2023-09062: Уязвимость файла nsDNSService::Init браузера Mozilla Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю оказать воздействие на конфиденциальность, целостность и доступность защищаемой информации\n\n * BDU:2023-09115: Уязвимость функции nsTextFragment браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю оказать воздействие на конфиденциальность, целостность и доступность защищаемой информации\n\n * BDU:2023-09116: Уязвимость браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, связанная с использованием памяти после её освобождения, позволяющая нарушителю оказать воздействие на конфиденциальность, целостность и доступность защищаемой информации\n\n * BDU:2023-09117: Уязвимость метода nsWindow::PickerOpen(void) браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю оказать воздействие на конфиденциальность, целостность и доступность защищаемой информации\n\n * BDU:2023-09118: Уязвимость функции ShutdownObserver() браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю оказать воздействие на конфиденциальность, целостность и доступность защищаемой информации\n\n * BDU:2023-09119: Уязвимость метода WebGL DrawElementsInstanced браузеров Mozilla Firefox, Firefox ESR и почтового клиента Thunderbird, позволяющая нарушителю оказать воздействие на конфиденциальность, целостность и доступность защищаемой информации\n\n * CVE-2023-6204: On some systems—depending on the graphics settings and drivers—it was possible to force an out-of-bounds read and leak memory data into the images created on the canvas element. This vulnerability affects Firefox \u003c 120, Firefox ESR \u003c 115.5.0, and Thunderbird \u003c 115.5.\n\n * CVE-2023-6205: It was possible to cause the use of a MessagePort after it had already been freed, which could potentially have led to an exploitable crash. This vulnerability affects Firefox \u003c 120, Firefox ESR \u003c 115.5.0, and Thunderbird \u003c 115.5.\n\n * CVE-2023-6206: The black fade animation when exiting fullscreen is roughly the length of the anti-clickjacking delay on permission prompts. It was possible to use this fact to surprise users by luring them to click where the permission grant button would be about to appear. This vulnerability affects Firefox \u003c 120, Firefox ESR \u003c 115.5.0, and Thunderbird \u003c 115.5.\n\n * CVE-2023-6207: Ownership mismanagement led to a use-after-free in ReadableByteStreams This vulnerability affects Firefox \u003c 120, Firefox ESR \u003c 115.5.0, and Thunderbird \u003c 115.5.\n\n * CVE-2023-6208: When using X11, text selected by the page using the Selection API was erroneously copied into the primary selection, a temporary storage not unlike the clipboard.\n*This bug only affects Firefox on X11. Other systems are unaffected.* This vulnerability affects Firefox \u003c 120, Firefox ESR \u003c 115.5.0, and Thunderbird \u003c 115.5.\n\n * CVE-2023-6209: Relative URLs starting with three slashes were incorrectly parsed, and a path-traversal \"/../\" part in the path could be used to override the specified host. This could contribute to security problems in web sites. This vulnerability affects Firefox \u003c 120, Firefox ESR \u003c 115.5.0, and Thunderbird \u003c 115.5.\n\n * CVE-2023-6212: Memory safety bugs present in Firefox 119, Firefox ESR 115.4, and Thunderbird 115.4. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox \u003c 120, Firefox ESR \u003c 115.5.0, and Thunderbird \u003c 115.5.\n\n * CVE-2023-6856: The WebGL `DrawElementsInstanced` method was susceptible to a heap buffer overflow when used on systems with the Mesa VM driver.  This issue could allow an attacker to perform remote code execution and sandbox escape. This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6857: When resolving a symlink, a race may occur where the buffer passed to `readlink` may actually be smaller than necessary. \n*This bug only affects Firefox on Unix-based operating systems (Android, Linux, MacOS). Windows is unaffected.* This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6858: Firefox was susceptible to a heap buffer overflow in `nsTextFragment` due to insufficient OOM handling. This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6859: A use-after-free condition affected TLS socket creation when under memory pressure. This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6860: The `VideoBridge` allowed any content process to use textures produced by remote decoders.  This could be abused to escape the sandbox. This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6861: The `nsWindow::PickerOpen(void)` method was susceptible to a heap buffer overflow when running in headless mode. This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6862: A use-after-free was identified in the `nsDNSService::Init`.  This issue appears to manifest rarely during start-up. This vulnerability affects Firefox ESR \u003c 115.6 and Thunderbird \u003c 115.6.\n\n * CVE-2023-6863: The `ShutdownObserver()` was susceptible to potentially undefined behavior due to its reliance on a dynamic type that lacked a virtual destructor. This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6864: Memory safety bugs present in Firefox 120, Firefox ESR 115.5, and Thunderbird 115.5. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox ESR \u003c 115.6, Thunderbird \u003c 115.6, and Firefox \u003c 121.\n\n * CVE-2023-6865: `EncryptingOutputStream` was susceptible to exposing uninitialized data.  This issue could only be abused in order to write data to a local disk which may have implications for private browsing mode. This vulnerability affects Firefox ESR \u003c 115.6 and Firefox \u003c 121.\n\n * CVE-2023-6867: The timing of a button click causing a popup to disappear was approximately the same length as the anti-clickjacking delay on permission prompts. It was possible to use this fact to surprise users by luring them to click where the permission grant button would be about to appear. This vulnerability affects Firefox ESR \u003c 115.6 and Firefox \u003c 121.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2023-12-28"
+          },
+          "Updated": {
+            "Date": "2023-12-28"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-125",
+              "Href": "https://bdu.fstec.ru/vul/2023-08086",
+              "Impact": "High",
+              "Public": "20231120",
+              "CveID": "BDU:2023-08086"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-451, CWE-1021",
+              "Href": "https://bdu.fstec.ru/vul/2023-08087",
+              "Impact": "High",
+              "Public": "20231120",
+              "CveID": "BDU:2023-08087"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-1021",
+              "Href": "https://bdu.fstec.ru/vul/2023-08088",
+              "Impact": "Low",
+              "Public": "20231120",
+              "CveID": "BDU:2023-08088"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119, CWE-120",
+              "Href": "https://bdu.fstec.ru/vul/2023-08115",
+              "Impact": "High",
+              "Public": "20231120",
+              "CveID": "BDU:2023-08115"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-08116",
+              "Impact": "High",
+              "Public": "20231120",
+              "CveID": "BDU:2023-08116"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-22",
+              "Href": "https://bdu.fstec.ru/vul/2023-08322",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "BDU:2023-08322"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119, CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-08332",
+              "Impact": "High",
+              "Public": "20231121",
+              "CveID": "BDU:2023-08332"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-450",
+              "Href": "https://bdu.fstec.ru/vul/2023-09018",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09018"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-124",
+              "Href": "https://bdu.fstec.ru/vul/2023-09031",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09031"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119",
+              "Href": "https://bdu.fstec.ru/vul/2023-09055",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09055"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-254",
+              "Href": "https://bdu.fstec.ru/vul/2023-09058",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09058"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-457",
+              "Href": "https://bdu.fstec.ru/vul/2023-09059",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09059"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-09062",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09062"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-09115",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09115"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://bdu.fstec.ru/vul/2023-09116",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09116"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-09117",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09117"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-758",
+              "Href": "https://bdu.fstec.ru/vul/2023-09118",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09118"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-122",
+              "Href": "https://bdu.fstec.ru/vul/2023-09119",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "BDU:2023-09119"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-125",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6204",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-6204"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6205",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-6205"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+              "Cwe": "CWE-1021",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6206",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-6206"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6207",
+              "Impact": "High",
+              "Public": "20231121",
+              "CveID": "CVE-2023-6207"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6208",
+              "Impact": "High",
+              "Public": "20231121",
+              "CveID": "CVE-2023-6208"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-22",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6209",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-6209"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6212",
+              "Impact": "High",
+              "Public": "20231121",
+              "CveID": "CVE-2023-6212"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6856",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6856"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-362",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6857",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6857"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6858",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6858"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6859",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6859"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6860",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6860"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6861",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6861"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-416",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6862",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6862"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6863",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6863"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6864",
+              "Impact": "High",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6864"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6865",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6865"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-1021",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6867",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6867"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238227001",
+                "Comment": "firefox-esr is earlier than 0:115.6.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238227002",
+                "Comment": "firefox-esr-config-privacy is earlier than 0:115.6.0-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238227003",
+                "Comment": "firefox-esr-wayland is earlier than 0:115.6.0-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
