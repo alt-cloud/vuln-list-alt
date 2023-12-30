@@ -55,10 +55,10 @@
             "Source": "CVE"
           }
         ],
-        "Description": "This update upgrades dotnet-aspnetcore-5.0 to version 5.0.14-alt1. \nSecurity Fix(es):\n\n * BDU:2021-00931: Уязвимость программной платформы .NET Core, связанная с недостаточной проверкой вводимых даных, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2021-26701: .NET Core Remote Code Execution Vulnerability This CVE ID is unique from CVE-2021-24112.\n\n * CVE-2021-31957: ASP.NET Denial of Service Vulnerability\n\n * CVE-2021-34532: ASP.NET Core and Visual Studio Information Disclosure Vulnerability\n\n * CVE-2021-43877: ASP.NET Core and Visual Studio Elevation of Privilege Vulnerability",
+        "Description": "This update upgrades dotnet-aspnetcore-5.0 to version 5.0.14-alt1. \nSecurity Fix(es):\n\n * BDU:2021-00931: Уязвимость программной платформы .NET Core, связанная с недостаточной проверкой вводимых даных, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2021-26701: .NET Core Remote Code Execution Vulnerability\n\n * CVE-2021-31957: ASP.NET Denial of Service Vulnerability\n\n * CVE-2021-34532: ASP.NET Core and Visual Studio Information Disclosure Vulnerability\n\n * CVE-2021-43877: ASP.NET Core and Visual Studio Elevation of Privilege Vulnerability",
         "Advisory": {
           "From": "errata.altlinux.org",
-          "Severity": "Critical",
+          "Severity": "High",
           "Rights": "Copyright 2023 BaseALT Ltd.",
           "Issued": {
             "Date": "2022-03-22"
@@ -80,10 +80,10 @@
           "Cves": [
             {
               "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
-              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "NVD-CWE-noinfo",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-26701",
-              "Impact": "Critical",
+              "Impact": "High",
               "Public": "20210225",
               "CveID": "CVE-2021-26701"
             },
