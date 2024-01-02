@@ -1,0 +1,146 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20238177",
+      "Version": "oval:org.altlinux.errata:def:20238177",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2023-8177: package `admx-basealt` update to version 0.1.13.4-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2023-8177",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2023-8177",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades admx-basealt to version 0.1.13.4-alt1. \nSecurity Fix(es):\n\n * #47743: Опечатки в описании политик KDE\n\n * #47818: Неверно указан список допустимых значений для политики «Тема курсора»\n\n * #47973: Опечатка: backgroung to background в названии политики\n\n * #47985: Опечатка: граффические -\u003e графические\n\n * #47987: Опечатка: отрисови -\u003e отрисовки\n\n * #47990: Настройка подключаемых устройств: бесполезный чекбокс Блокировать\n\n * #47996: Тема курсора: задаёт курсор по неверному пути\n\n * #47998: Цвета: задаёт курсор по неверному пути\n\n * #48002: Группа политик Управление электропитанием: неверно формирует ini-файл\n\n * #48833: Региональные и языковые параметры: бесполезный чекбокс Блокировать настройку языка системы",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-02"
+          },
+          "Updated": {
+            "Date": "2024-01-02"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "47743",
+              "Href": "https://bugzilla.altlinux.org/47743",
+              "Data": "Опечатки в описании политик KDE"
+            },
+            {
+              "Id": "47818",
+              "Href": "https://bugzilla.altlinux.org/47818",
+              "Data": "Неверно указан список допустимых значений для политики «Тема курсора»"
+            },
+            {
+              "Id": "47973",
+              "Href": "https://bugzilla.altlinux.org/47973",
+              "Data": "Опечатка: backgroung to background в названии политики"
+            },
+            {
+              "Id": "47985",
+              "Href": "https://bugzilla.altlinux.org/47985",
+              "Data": "Опечатка: граффические -\u003e графические"
+            },
+            {
+              "Id": "47987",
+              "Href": "https://bugzilla.altlinux.org/47987",
+              "Data": "Опечатка: отрисови -\u003e отрисовки"
+            },
+            {
+              "Id": "47990",
+              "Href": "https://bugzilla.altlinux.org/47990",
+              "Data": "Настройка подключаемых устройств: бесполезный чекбокс Блокировать"
+            },
+            {
+              "Id": "47996",
+              "Href": "https://bugzilla.altlinux.org/47996",
+              "Data": "Тема курсора: задаёт курсор по неверному пути"
+            },
+            {
+              "Id": "47998",
+              "Href": "https://bugzilla.altlinux.org/47998",
+              "Data": "Цвета: задаёт курсор по неверному пути"
+            },
+            {
+              "Id": "48002",
+              "Href": "https://bugzilla.altlinux.org/48002",
+              "Data": "Группа политик Управление электропитанием: неверно формирует ini-файл"
+            },
+            {
+              "Id": "48833",
+              "Href": "https://bugzilla.altlinux.org/48833",
+              "Data": "Региональные и языковые параметры: бесполезный чекбокс Блокировать настройку языка системы"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20238177001",
+                "Comment": "admx-basealt is earlier than 0:0.1.13.4-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
