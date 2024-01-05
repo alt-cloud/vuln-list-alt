@@ -1,0 +1,121 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241020",
+      "Version": "oval:org.altlinux.errata:def:20241020",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1020: package `docs-alt-server` update to version 10.2-alt6",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1020",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1020",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades docs-alt-server to version 10.2-alt6. \nSecurity Fix(es):\n\n * #48988: Опечатка в главе 13.1. Дополнительные приложения\n\n * #48990: Нет изображения в главе 37. Удостоверяющий центр\n\n * #48993: Лишняя запятая в главе 29.1. NetworkManager\n\n * #48995: Ошибка в конфигурационном файле в главе 66.4. Настройка парольных ограничений\n\n * #48997: Отсутствует команда в главе ⁠72.8.1. Установка правил с помощью auditctl",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-05"
+          },
+          "Updated": {
+            "Date": "2024-01-05"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "48988",
+              "Href": "https://bugzilla.altlinux.org/48988",
+              "Data": "Опечатка в главе 13.1. Дополнительные приложения"
+            },
+            {
+              "Id": "48990",
+              "Href": "https://bugzilla.altlinux.org/48990",
+              "Data": "Нет изображения в главе 37. Удостоверяющий центр"
+            },
+            {
+              "Id": "48993",
+              "Href": "https://bugzilla.altlinux.org/48993",
+              "Data": "Лишняя запятая в главе 29.1. NetworkManager"
+            },
+            {
+              "Id": "48995",
+              "Href": "https://bugzilla.altlinux.org/48995",
+              "Data": "Ошибка в конфигурационном файле в главе 66.4. Настройка парольных ограничений"
+            },
+            {
+              "Id": "48997",
+              "Href": "https://bugzilla.altlinux.org/48997",
+              "Data": "Отсутствует команда в главе ⁠72.8.1. Установка правил с помощью auditctl"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241020001",
+                "Comment": "docs-alt-server is earlier than 0:10.2-alt6"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
