@@ -1,0 +1,114 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-alterator is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-bootloader is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-bootsplash is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-graphics is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-indexhtml is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-notes is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-release is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241122008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "branding-alt-starterkit-xfce-settings is earlier than 1:10-alt5",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241122008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241122001"
+      }
+    }
+  ]
+}
