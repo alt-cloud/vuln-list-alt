@@ -1,0 +1,218 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241044",
+      "Version": "oval:org.altlinux.errata:def:20241044",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1044: package `LibreOffice-still` update to version 7.5.9.2-alt1.p10.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1044",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1044",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-08655",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08655",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08957",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08957",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-6185",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6185",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6186",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6186",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades LibreOffice-still to version 7.5.9.2-alt1.p10.1. \nSecurity Fix(es):\n\n * BDU:2023-08655: Уязвимость пакета офисных программ LibreOffice, связанная с возможностью внедрения кода или данных, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2023-08957: Уязвимость модуля Gstreamer пакета офисных программ LibreOffice, позволяющая нарушителю запускать произвольные плагины Gstreamer\n\n * CVE-2023-6185: Improper Input Validation vulnerability in GStreamer integration of The Document Foundation LibreOffice allows an attacker to execute arbitrary GStreamer plugins.\n\nIn affected versions the filename of the embedded video is not sufficiently escaped when passed to GStreamer enabling an attacker to run arbitrary gstreamer plugins depending on what plugins are installed on the target system.\n\n\n\n * CVE-2023-6186: Insufficient macro permission validation of The Document Foundation LibreOffice allows an attacker to execute built-in macros without warning.\n\nIn affected versions LibreOffice supports hyperlinks with macro or similar built-in command targets that can be executed when activated without warning the user.\n\n\n\n\n * #48841: Сломалась сборка Libreoffice-still",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-15"
+          },
+          "Updated": {
+            "Date": "2024-01-15"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:A/AC:L/Au:S/C:P/I:C/A:C",
+              "Cvss3": "AV:A/AC:L/PR:L/UI:R/S:C/C:L/I:H/A:H",
+              "Cwe": "CWE-601",
+              "Href": "https://bdu.fstec.ru/vul/2023-08655",
+              "Impact": "High",
+              "Public": "20231211",
+              "CveID": "BDU:2023-08655"
+            },
+            {
+              "Cvss": "AV:A/AC:L/Au:S/C:P/I:C/A:C",
+              "Cvss3": "AV:A/AC:L/PR:L/UI:R/S:C/C:L/I:H/A:H",
+              "Cwe": "CWE-78",
+              "Href": "https://bdu.fstec.ru/vul/2023-08957",
+              "Impact": "High",
+              "Public": "20231211",
+              "CveID": "BDU:2023-08957"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6185",
+              "Impact": "High",
+              "Public": "20231211",
+              "CveID": "CVE-2023-6185"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-281",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6186",
+              "Impact": "High",
+              "Public": "20231211",
+              "CveID": "CVE-2023-6186"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "48841",
+              "Href": "https://bugzilla.altlinux.org/48841",
+              "Data": "Сломалась сборка Libreoffice-still"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044001",
+                "Comment": "LibreOffice-still is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044002",
+                "Comment": "LibreOffice-still-common is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044003",
+                "Comment": "LibreOffice-still-extensions is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044004",
+                "Comment": "LibreOffice-still-gtk3 is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044005",
+                "Comment": "LibreOffice-still-integrated is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044006",
+                "Comment": "LibreOffice-still-kde5 is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044007",
+                "Comment": "LibreOffice-still-langpack-be is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044008",
+                "Comment": "LibreOffice-still-langpack-de is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044009",
+                "Comment": "LibreOffice-still-langpack-el is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044010",
+                "Comment": "LibreOffice-still-langpack-es is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044011",
+                "Comment": "LibreOffice-still-langpack-fr is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044012",
+                "Comment": "LibreOffice-still-langpack-kk is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044013",
+                "Comment": "LibreOffice-still-langpack-ky is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044014",
+                "Comment": "LibreOffice-still-langpack-pt-BR is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044015",
+                "Comment": "LibreOffice-still-langpack-ru is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044016",
+                "Comment": "LibreOffice-still-langpack-tt is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044017",
+                "Comment": "LibreOffice-still-langpack-uk is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044018",
+                "Comment": "LibreOffice-still-langpack-uz is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044019",
+                "Comment": "LibreOffice-still-mimetypes is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044020",
+                "Comment": "LibreOffice-still-qt5 is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044021",
+                "Comment": "LibreOffice-still-sdk is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044022",
+                "Comment": "libreofficekit-still is earlier than 0:7.5.9.2-alt1.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241044023",
+                "Comment": "libreofficekit-still-devel is earlier than 0:7.5.9.2-alt1.p10.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

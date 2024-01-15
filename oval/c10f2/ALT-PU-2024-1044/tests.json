@@ -1,0 +1,294 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-common is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-extensions is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-gtk3 is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-integrated is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-kde5 is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-be is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-de is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-el is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-es is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-fr is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-kk is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-ky is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-pt-BR is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-ru is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-tt is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-uk is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-langpack-uz is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044019",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-mimetypes is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044019"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044020",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-qt5 is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044020"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044021",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "LibreOffice-still-sdk is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044021"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044022",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libreofficekit-still is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044022"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241044023",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "libreofficekit-still-devel is earlier than 0:7.5.9.2-alt1.p10.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241044023"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241044001"
+      }
+    }
+  ]
+}
