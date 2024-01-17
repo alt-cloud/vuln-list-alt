@@ -1,0 +1,77 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241162",
+      "Version": "oval:org.altlinux.errata:def:20241162",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1162: package `alterator-mirror` update to version 0.5.0-alt0.c10f2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1162",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1162",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades alterator-mirror to version 0.5.0-alt0.c10f2. \nSecurity Fix(es):\n\n * #43503: Ошибка в регулярке для проверки rsync url",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-17"
+          },
+          "Updated": {
+            "Date": "2024-01-17"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "43503",
+              "Href": "https://bugzilla.altlinux.org/43503",
+              "Data": "Ошибка в регулярке для проверки rsync url"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241162001",
+                "Comment": "alterator-mirror is earlier than 0:0.5.0-alt0.c10f2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241162002",
+                "Comment": "alterator-mirror-allowed is earlier than 0:0.5.0-alt0.c10f2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
