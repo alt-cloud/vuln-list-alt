@@ -1,0 +1,137 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241215",
+      "Version": "oval:org.altlinux.errata:def:20241215",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1215: package `libspf2` update to version 1.2.11-alt1.git.4915c30",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c9f2"
+            ],
+            "Products": [
+              "ALT SPWorkstation",
+              "ALT SPServer"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1215",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1215",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2021-04420",
+            "RefURL": "https://bdu.fstec.ru/vul/2021-04420",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2021-20314",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-20314",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-33912",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-33912",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-33913",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-33913",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libspf2 to version 1.2.11-alt1.git.4915c30. \nSecurity Fix(es):\n\n * BDU:2021-04420: Уязвимость библиотеки протоколов SPF libspf2, связанная с выходом операции за границы буфера в памяти, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2021-20314: Stack buffer overflow in libspf2 versions below 1.2.11 when processing certain SPF macros can lead to Denial of service and potentially code execution via malicious crafted SPF explanation messages.\n\n * CVE-2021-33912: libspf2 before 1.2.11 has a four-byte heap-based buffer overflow that might allow remote attackers to execute arbitrary code (via an unauthenticated e-mail message from anywhere on the Internet) with a crafted SPF DNS record, because of incorrect sprintf usage in SPF_record_expand_data in spf_expand.c. The vulnerable code may be part of the supply chain of a site's e-mail infrastructure (e.g., with additional configuration, Exim can use libspf2; the Postfix web site links to unofficial patches for use of libspf2 with Postfix; older versions of spfquery relied on libspf2) but most often is not.\n\n * CVE-2021-33913: libspf2 before 1.2.11 has a heap-based buffer overflow that might allow remote attackers to execute arbitrary code (via an unauthenticated e-mail message from anywhere on the Internet) with a crafted SPF DNS record, because of SPF_record_expand_data in spf_expand.c. The amount of overflowed data depends on the relationship between the length of an entire domain name and the length of its leftmost label. The vulnerable code may be part of the supply chain of a site's e-mail infrastructure (e.g., with additional configuration, Exim can use libspf2; the Postfix web site links to unofficial patches for use of libspf2 with Postfix; older versions of spfquery relied on libspf2) but most often is not.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-19"
+          },
+          "Updated": {
+            "Date": "2024-01-19"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-121",
+              "Href": "https://bdu.fstec.ru/vul/2021-04420",
+              "Impact": "High",
+              "Public": "20210817",
+              "CveID": "BDU:2021-04420"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-20314",
+              "Impact": "Critical",
+              "Public": "20210812",
+              "CveID": "CVE-2021-20314"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-33912",
+              "Impact": "Critical",
+              "Public": "20220119",
+              "CveID": "CVE-2021-33912"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-33913",
+              "Impact": "Critical",
+              "Public": "20220119",
+              "CveID": "CVE-2021-33913"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:8.4",
+              "cpe:/o:alt:spserver:8.4"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:3001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241215001",
+                "Comment": "libspf2 is earlier than 0:1.2.11-alt1.git.4915c30"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241215002",
+                "Comment": "libspf2-devel is earlier than 0:1.2.11-alt1.git.4915c30"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241215003",
+                "Comment": "libspf2-tools is earlier than 0:1.2.11-alt1.git.4915c30"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

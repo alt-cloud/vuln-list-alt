@@ -1,0 +1,46 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:3001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d\\.\\d)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241215001",
+      "Version": "1",
+      "comment": "libspf2 is installed",
+      "Name": "libspf2"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241215002",
+      "Version": "1",
+      "comment": "libspf2-devel is installed",
+      "Name": "libspf2-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241215003",
+      "Version": "1",
+      "comment": "libspf2-tools is installed",
+      "Name": "libspf2-tools"
+    }
+  ]
+}
