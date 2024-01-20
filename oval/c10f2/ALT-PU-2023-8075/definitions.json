@@ -159,7 +159,7 @@
           },
           "bdu": [
             {
-              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
               "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
               "Cwe": "CWE-120",
               "Href": "https://bdu.fstec.ru/vul/2021-05225",
@@ -177,7 +177,7 @@
               "CveID": "BDU:2021-05238"
             },
             {
-              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:C",
               "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
               "Cwe": "CWE-20",
               "Href": "https://bdu.fstec.ru/vul/2021-05313",
