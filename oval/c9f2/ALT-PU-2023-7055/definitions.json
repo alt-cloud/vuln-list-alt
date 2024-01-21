@@ -476,7 +476,7 @@
             },
             {
               "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
-              "Cwe": "CWE-400",
+              "Cwe": "CWE-770",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39325",
               "Impact": "High",
               "Public": "20231011",
