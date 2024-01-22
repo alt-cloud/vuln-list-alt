@@ -1,0 +1,173 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241184",
+      "Version": "oval:org.altlinux.errata:def:20241184",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1184: package `freeswitch` update to version 1.10.11-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1184",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1184",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-51443",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-51443",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades freeswitch to version 1.10.11-alt1. \nSecurity Fix(es):\n\n * CVE-2023-51443: FreeSWITCH is a Software Defined Telecom Stack enabling the digital transformation from proprietary telecom switches to a software implementation that runs on any commodity hardware. Prior to version 1.10.11, when handling DTLS-SRTP for media setup, FreeSWITCH is susceptible to Denial of Service due to a race condition in the hello handshake phase of the DTLS protocol. This attack can be done continuously, thus denying new DTLS-SRTP encrypted calls during the attack. If an attacker manages to send a ClientHello DTLS message with an invalid CipherSuite (such as `TLS_NULL_WITH_NULL_NULL`) to the port on the FreeSWITCH server that is expecting packets from the caller, a DTLS error is generated. This results in the media session being torn down, which is followed by teardown at signaling (SIP) level too. Abuse of this vulnerability may lead to a massive Denial of Service on vulnerable FreeSWITCH servers for calls that rely on DTLS-SRTP. To address this vulnerability, upgrade FreeSWITCH to 1.10.11 which includes the security fix. The solution implemented is to drop all packets from addresses that have not been validated by an ICE check.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-22"
+          },
+          "Updated": {
+            "Date": "2024-01-22"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-703",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-51443",
+              "Impact": "High",
+              "Public": "20231227",
+              "CveID": "CVE-2023-51443"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184001",
+                "Comment": "freeswitch-av is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184002",
+                "Comment": "freeswitch-daemon is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184003",
+                "Comment": "freeswitch-imagick is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184004",
+                "Comment": "freeswitch-java is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184005",
+                "Comment": "freeswitch-lang-de is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184006",
+                "Comment": "freeswitch-lang-en is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184007",
+                "Comment": "freeswitch-lang-es is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184008",
+                "Comment": "freeswitch-lang-fr is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184009",
+                "Comment": "freeswitch-lang-he is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184010",
+                "Comment": "freeswitch-lang-pt is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184011",
+                "Comment": "freeswitch-lang-ru is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184012",
+                "Comment": "freeswitch-lua is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184013",
+                "Comment": "freeswitch-perl is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184014",
+                "Comment": "freeswitch-vlc is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184015",
+                "Comment": "freeswitch-webui is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184016",
+                "Comment": "libfreeswitch is earlier than 1:1.10.11-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241184017",
+                "Comment": "libfreeswitch-devel is earlier than 1:1.10.11-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

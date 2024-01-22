@@ -1,0 +1,73 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241151",
+      "Version": "oval:org.altlinux.errata:def:20241151",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1151: package `alterator-net-iptables` update to version 4.19.11-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1151",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1151",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades alterator-net-iptables to version 4.19.11-alt1. \nSecurity Fix(es):\n\n * #37437: Ошибка при добавлении клиента на внутреннем интерфейсе",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-22"
+          },
+          "Updated": {
+            "Date": "2024-01-22"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "37437",
+              "Href": "https://bugzilla.altlinux.org/37437",
+              "Data": "Ошибка при добавлении клиента на внутреннем интерфейсе"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241151001",
+                "Comment": "alterator-net-iptables is earlier than 0:4.19.11-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
