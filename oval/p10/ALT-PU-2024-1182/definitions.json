@@ -1,0 +1,152 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241182",
+      "Version": "oval:org.altlinux.errata:def:20241182",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1182: package `xorg-xwayland` update to version 23.1.1-alt4",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1182",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1182",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2024-00405",
+            "RefURL": "https://bdu.fstec.ru/vul/2024-00405",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-6816",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6816",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2024-0229",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2024-0229",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2024-0408",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2024-0408",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2024-21885",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2024-21885",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2024-21886",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2024-21886",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades xorg-xwayland to version 23.1.1-alt4. \nSecurity Fix(es):\n\n * BDU:2024-00405: Уязвимость функций DeviceFocusEvent и XIQueryPointer реализации сервера X Window System X.Org Server, позволяющая нарушителю получить доступ к конфиденциальным данным, нарушить их целостность, а также вызвать отказ в обслуживании\n\n * CVE-2023-6816: A flaw was found in X.Org server. Both DeviceFocusEvent and the XIQueryPointer reply contain a bit for each logical button currently down. Buttons can be arbitrarily mapped to any value up to 255, but the X.Org Server was only allocating space for the device's particular number of buttons, leading to a heap overflow if a bigger value was used.\n\n * CVE-2024-0229: description unavailable\n\n * CVE-2024-0408: A flaw was found in the X.Org server. The GLX PBuffer code does not call the XACE hook when creating the buffer, leaving it unlabeled. When the client issues another request to access that resource (as with a GetGeometry) or when it creates another resource that needs to access that buffer, such as a GC, the XSELINUX code will try to use an object that was never labeled and crash because the SID is NULL.\n\n * CVE-2024-21885: description unavailable\n\n * CVE-2024-21886: description unavailable",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-21"
+          },
+          "Updated": {
+            "Date": "2024-01-21"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-119",
+              "Href": "https://bdu.fstec.ru/vul/2024-00405",
+              "Impact": "High",
+              "Public": "20240116",
+              "CveID": "BDU:2024-00405"
+            }
+          ],
+          "Cves": [
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6816",
+              "Impact": "None",
+              "Public": "20240118",
+              "CveID": "CVE-2023-6816"
+            },
+            {
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2024-0408",
+              "Impact": "None",
+              "Public": "20240118",
+              "CveID": "CVE-2024-0408"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241182001",
+                "Comment": "xorg-xwayland is earlier than 2:23.1.1-alt4"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241182002",
+                "Comment": "xorg-xwayland-devel is earlier than 2:23.1.1-alt4"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
