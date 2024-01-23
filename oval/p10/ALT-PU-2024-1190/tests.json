@@ -1,0 +1,102 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241190001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssh is earlier than 0:7.9p1-alt4.p10.4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241190001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241190001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241190002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssh-askpass-common is earlier than 0:7.9p1-alt4.p10.4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241190002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241190001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241190003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssh-clients is earlier than 0:7.9p1-alt4.p10.4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241190003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241190001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241190004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssh-common is earlier than 0:7.9p1-alt4.p10.4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241190004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241190001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241190005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssh-keysign is earlier than 0:7.9p1-alt4.p10.4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241190005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241190001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241190006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssh-server is earlier than 0:7.9p1-alt4.p10.4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241190006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241190001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241190007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openssh-server-control is earlier than 0:7.9p1-alt4.p10.4",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241190007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241190001"
+      }
+    }
+  ]
+}
