@@ -1,0 +1,107 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241262",
+      "Version": "oval:org.altlinux.errata:def:20241262",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1262: package `traefik` update to version 2.10.7-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1262",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1262",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-47106",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-47106",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-47124",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-47124",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-47633",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-47633",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades traefik to version 2.10.7-alt1. \nSecurity Fix(es):\n\n * CVE-2023-47106: Traefik is an open source HTTP reverse proxy and load balancer. When a request is sent to Traefik with a URL fragment, Traefik automatically URL encodes and forwards the fragment to the backend server. This violates RFC 7230 because in the origin-form the URL should only contain the absolute path and the query. When this is combined with another frontend proxy like Nginx, it can be used to bypass frontend proxy URI-based access control restrictions. This vulnerability has been addressed in versions 2.10.6 and 3.0.0-beta5. Users are advised to upgrade. There are no known workarounds for this vulnerability.\n\n * CVE-2023-47124: Traefik is an open source HTTP reverse proxy and load balancer. When Traefik is configured to use the `HTTPChallenge` to generate and renew the Let's Encrypt TLS certificates, the delay authorized to solve the challenge (50 seconds) can be exploited by attackers to achieve a `slowloris attack`. This vulnerability has been patch in version 2.10.6 and 3.0.0-beta5. Users are advised to upgrade. Users unable to upgrade should replace the `HTTPChallenge` with the `TLSChallenge` or the `DNSChallenge`.\n\n * CVE-2023-47633: Traefik is an open source HTTP reverse proxy and load balancer. The traefik docker container uses 100% CPU when it serves as its own backend, which is an automatically generated route resulting from the Docker integration in the default configuration. This issue has been addressed in versions 2.10.6 and 3.0.0-beta5. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-23"
+          },
+          "Updated": {
+            "Date": "2024-01-23"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-47106",
+              "Impact": "Low",
+              "Public": "20231204",
+              "CveID": "CVE-2023-47106"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-772",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-47124",
+              "Impact": "Low",
+              "Public": "20231204",
+              "CveID": "CVE-2023-47124"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-47633",
+              "Impact": "High",
+              "Public": "20231204",
+              "CveID": "CVE-2023-47633"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241262001",
+                "Comment": "traefik is earlier than 0:2.10.7-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
