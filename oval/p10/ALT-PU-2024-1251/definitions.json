@@ -1,0 +1,189 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241251",
+      "Version": "oval:org.altlinux.errata:def:20241251",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1251: package `libssh` update to version 0.10.6-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1251",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1251",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-08853",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08853",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2024-00199",
+            "RefURL": "https://bdu.fstec.ru/vul/2024-00199",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2024-00200",
+            "RefURL": "https://bdu.fstec.ru/vul/2024-00200",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-48795",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48795",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6004",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6004",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-6918",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-6918",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades libssh to version 0.10.6-alt1. \nSecurity Fix(es):\n\n * BDU:2023-08853: Уязвимость реализации протокола SSH, связанная с возможностью откорректировать порядковые номера пакетов в процессе согласования соединения и добиться удаления произвольного числа служебных SSH-сообщений, позволяющая нарушителю обойти проверки целостности, отключить существующие функции безопасности, получить несанкционированный доступ к защищаемой информации\n\n * BDU:2024-00199: Уязвимость компонента ProxyCommand/ProxyJump библиотеки libssh, позволяющая нарушителю выполнить произвольный код\n\n * BDU:2024-00200: Уязвимость библиотеки libssh, связанная с разыменованием указателя NULL, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-48795: The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, aka a Terrapin attack. This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and mishandles use of sequence numbers. For example, there is an effective attack against SSH's use of ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC). The bypass occurs in chacha20-poly1305@openssh.com and (if CBC is used) the -etm@openssh.com MAC algorithms. This also affects Maverick Synergy Java SSH API before 3.1.0-SNAPSHOT, Dropbear through 2022.83, Ssh before 5.1.1 in Erlang/OTP, PuTTY before 0.80, AsyncSSH before 2.14.2, golang.org/x/crypto before 0.17.0, libssh before 0.10.6, libssh2 through 1.11.0, Thorn Tech SFTP Gateway before 3.4.6, Tera Term before 5.1, Paramiko before 3.4.0, jsch before 0.2.15, SFTPGo before 2.5.6, Netgate pfSense Plus through 23.09.1, Netgate pfSense CE through 2.7.2, HPN-SSH through 18.2.0, ProFTPD before 1.3.8b (and before 1.3.9rc2), ORYX CycloneSSH before 2.3.4, NetSarang XShell 7 before Build 0144, CrushFTP before 10.6.0, ConnectBot SSH library before 2.2.22, Apache MINA sshd through 2.11.0, sshj through 0.37.0, TinySSH through 20230101, trilead-ssh2 6401, LANCOM LCOS and LANconfig, FileZilla before 3.66.4, Nova before 11.8, PKIX-SSH before 14.4, SecureCRT before 9.4.3, Transmit5 before 5.10.4, Win32-OpenSSH before 9.5.0.0p1-Beta, WinSCP before 6.2.2, Bitvise SSH Server before 9.32, Bitvise SSH Client before 9.33, KiTTY through 0.76.1.13, the net-ssh gem 7.2.0 for Ruby, the mscdex ssh2 module before 1.15.0 for Node.js, the thrussh library before 0.35.1 for Rust, and the Russh crate before 0.40.2 for Rust.\n\n * CVE-2023-6004: A flaw was found in libssh. By utilizing the ProxyCommand or ProxyJump feature, users can exploit unchecked hostname syntax on the client. This issue may allow an attacker to inject malicious code into the command of the features mentioned through the hostname parameter.\n\n * CVE-2023-6918: A flaw was found in the libssh implements abstract layer for message digest (MD) operations implemented by different supported crypto backends. The return values from these were not properly checked, which could cause low-memory situations failures, NULL dereferences, crashes, or usage of the uninitialized memory as an input for the KDF. In this case, non-matching keys will result in decryption/integrity failures, terminating the connection.\n\n * #49050: CVE-2023-48795 для закрытия необходимо обновление до версии 0.10.6",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-24"
+          },
+          "Updated": {
+            "Date": "2024-01-24"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-222",
+              "Href": "https://bdu.fstec.ru/vul/2023-08853",
+              "Impact": "High",
+              "Public": "20231218",
+              "CveID": "BDU:2023-08853"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:S/C:P/I:P/A:N",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N",
+              "Cwe": "CWE-74, CWE-94, CWE-707",
+              "Href": "https://bdu.fstec.ru/vul/2024-00199",
+              "Impact": "Low",
+              "Public": "20231218",
+              "CveID": "BDU:2024-00199"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-252",
+              "Href": "https://bdu.fstec.ru/vul/2024-00200",
+              "Impact": "Low",
+              "Public": "20231218",
+              "CveID": "BDU:2024-00200"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-354",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48795",
+              "Impact": "Low",
+              "Public": "20231218",
+              "CveID": "CVE-2023-48795"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:L",
+              "Cwe": "CWE-74",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6004",
+              "Impact": "Low",
+              "Public": "20240103",
+              "CveID": "CVE-2023-6004"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-252",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-6918",
+              "Impact": "Low",
+              "Public": "20231219",
+              "CveID": "CVE-2023-6918"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "49050",
+              "Href": "https://bugzilla.altlinux.org/49050",
+              "Data": "CVE-2023-48795 для закрытия необходимо обновление до версии 0.10.6"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241251001",
+                "Comment": "libssh is earlier than 0:0.10.6-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241251002",
+                "Comment": "libssh-devel is earlier than 0:0.10.6-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:3001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c9f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:3001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:3001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241233001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "open-vm-tools is earlier than 0:12.3.5-alt0.c9.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241233001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241233001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241233002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "open-vm-tools-desktop is earlier than 0:12.3.5-alt0.c9.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241233002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241233001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241233003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "open-vm-tools-devel is earlier than 0:12.3.5-alt0.c9.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241233003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241233001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241233004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "open-vm-tools-salt-minion is earlier than 0:12.3.5-alt0.c9.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241233004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241233001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241233005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "open-vm-tools-test is earlier than 0:12.3.5-alt0.c9.1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241233005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241233001"
+      }
+    }
+  ]
+}
