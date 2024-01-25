@@ -1,0 +1,138 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:2001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'p10' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:2001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:2001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-api is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-common is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-compute is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-conductor is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-novncproxy is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-scheduler is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-serialproxy is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "openstack-nova-spicehtml5proxy is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241074010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "python3-module-nova is earlier than 1:27.1.0-alt1.p10",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241074010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241074001"
+      }
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:2001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:(?!sp)[a-z\\-]+:p?(\\d+)(?:\\.\\d)*"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074001",
+      "Version": "1",
+      "comment": "openstack-nova is installed",
+      "Name": "openstack-nova"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074002",
+      "Version": "1",
+      "comment": "openstack-nova-api is installed",
+      "Name": "openstack-nova-api"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074003",
+      "Version": "1",
+      "comment": "openstack-nova-common is installed",
+      "Name": "openstack-nova-common"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074004",
+      "Version": "1",
+      "comment": "openstack-nova-compute is installed",
+      "Name": "openstack-nova-compute"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074005",
+      "Version": "1",
+      "comment": "openstack-nova-conductor is installed",
+      "Name": "openstack-nova-conductor"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074006",
+      "Version": "1",
+      "comment": "openstack-nova-novncproxy is installed",
+      "Name": "openstack-nova-novncproxy"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074007",
+      "Version": "1",
+      "comment": "openstack-nova-scheduler is installed",
+      "Name": "openstack-nova-scheduler"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074008",
+      "Version": "1",
+      "comment": "openstack-nova-serialproxy is installed",
+      "Name": "openstack-nova-serialproxy"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074009",
+      "Version": "1",
+      "comment": "openstack-nova-spicehtml5proxy is installed",
+      "Name": "openstack-nova-spicehtml5proxy"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241074010",
+      "Version": "1",
+      "comment": "python3-module-nova is installed",
+      "Name": "python3-module-nova"
+    }
+  ]
+}

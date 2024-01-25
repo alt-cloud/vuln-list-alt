@@ -1,0 +1,215 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241074",
+      "Version": "oval:org.altlinux.errata:def:20241074",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1074: package `openstack-nova` update to version 27.1.0-alt1.p10",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1074",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1074",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-00689",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-00689",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2015-9543",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2015-9543",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2020-17376",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2020-17376",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2021-3654",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2021-3654",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-37394",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-37394",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-47951",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-47951",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades openstack-nova to version 27.1.0-alt1.p10. \nSecurity Fix(es):\n\n * BDU:2023-00689: Уязвимость сервиса блочного хранения данных Openstack Cinder, связанная с использованием файлов и каталогов, доступных внешним сторонам, позволяющая нарушителю раскрыть защищаемую информацию\n\n * CVE-2015-9543: An issue was discovered in OpenStack Nova before 18.2.4, 19.x before 19.1.0, and 20.x before 20.1.0. It can leak consoleauth tokens into log files. An attacker with read access to the service's logs may obtain tokens used for console access. All Nova setups using novncproxy are affected. This is related to NovaProxyRequestHandlerBase.new_websocket_client in console/websocketproxy.py.\n\n * CVE-2020-17376: An issue was discovered in Guest.migrate in virt/libvirt/guest.py in OpenStack Nova before 19.3.1, 20.x before 20.3.1, and 21.0.0. By performing a soft reboot of an instance that has previously undergone live migration, a user may gain access to destination host devices that share the same paths as host devices previously referenced by the virtual machine on the source host. This can include block devices that map to different Cinder volumes at the destination than at the source. Only deployments allowing host-based connections (for instance, root and ephemeral devices) are affected.\n\n * CVE-2021-3654: A vulnerability was found in openstack-nova's console proxy, noVNC. By crafting a malicious URL, noVNC could be made to redirect to any desired URL.\n\n * CVE-2022-37394: An issue was discovered in OpenStack Nova before 23.2.2, 24.x before 24.1.2, and 25.x before 25.0.2. By creating a neutron port with the direct vnic_type, creating an instance bound to that port, and then changing the vnic_type of the bound port to macvtap, an authenticated user may cause the compute service to fail to restart, resulting in a possible denial of service. Only Nova deployments configured with SR-IOV are affected.\n\n * CVE-2022-47951: An issue was discovered in OpenStack Cinder before 19.1.2, 20.x before 20.0.2, and 21.0.0; Glance before 23.0.1, 24.x before 24.1.1, and 25.0.0; and Nova before 24.1.2, 25.x before 25.0.2, and 26.0.0. By supplying a specially created VMDK flat image that references a specific backing file path, an authenticated user may convince systems to return a copy of that file's contents from the server, resulting in unauthorized access to potentially sensitive data.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-25"
+          },
+          "Updated": {
+            "Date": "2024-01-25"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:P/A:P",
+              "Cvss3": "AV:N/AC:H/PR:L/UI:N/S:C/C:H/I:L/A:L",
+              "Cwe": "CWE-552",
+              "Href": "https://bdu.fstec.ru/vul/2023-00689",
+              "Impact": "High",
+              "Public": "20230124",
+              "CveID": "BDU:2023-00689"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2015-9543",
+              "Impact": "Low",
+              "Public": "20200219",
+              "CveID": "CVE-2015-9543"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+              "Cwe": "CWE-611",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2020-17376",
+              "Impact": "High",
+              "Public": "20200826",
+              "CveID": "CVE-2020-17376"
+            },
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:P/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-601",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2021-3654",
+              "Impact": "Low",
+              "Public": "20220302",
+              "CveID": "CVE-2021-3654"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-37394",
+              "Impact": "Low",
+              "Public": "20220803",
+              "CveID": "CVE-2022-37394"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-22",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-47951",
+              "Impact": "Low",
+              "Public": "20230126",
+              "CveID": "CVE-2022-47951"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074001",
+                "Comment": "openstack-nova is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074002",
+                "Comment": "openstack-nova-api is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074003",
+                "Comment": "openstack-nova-common is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074004",
+                "Comment": "openstack-nova-compute is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074005",
+                "Comment": "openstack-nova-conductor is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074006",
+                "Comment": "openstack-nova-novncproxy is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074007",
+                "Comment": "openstack-nova-scheduler is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074008",
+                "Comment": "openstack-nova-serialproxy is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074009",
+                "Comment": "openstack-nova-spicehtml5proxy is earlier than 1:27.1.0-alt1.p10"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241074010",
+                "Comment": "python3-module-nova is earlier than 1:27.1.0-alt1.p10"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
