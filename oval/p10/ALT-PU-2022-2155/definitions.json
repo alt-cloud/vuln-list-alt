@@ -1931,11 +1931,11 @@
               "CveID": "BDU:2023-01210"
             },
             {
-              "Cvss": "AV:L/AC:L/Au:S/C:C/I:C/A:C",
-              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cvss": "AV:L/AC:L/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
               "Cwe": "CWE-253, CWE-476",
               "Href": "https://bdu.fstec.ru/vul/2023-01211",
-              "Impact": "High",
+              "Impact": "Low",
               "Public": "20211214",
               "CveID": "BDU:2023-01211"
             },

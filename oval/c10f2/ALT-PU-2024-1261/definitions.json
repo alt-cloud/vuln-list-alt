@@ -1,0 +1,73 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241261",
+      "Version": "oval:org.altlinux.errata:def:20241261",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1261: package `motion` update to version 4.5.1-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1261",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1261",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades motion to version 4.5.1-alt1. \nSecurity Fix(es):\n\n * #41020: /etc/motion/motion.conf в spec-файле без noreplace",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-25"
+          },
+          "Updated": {
+            "Date": "2024-01-25"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "41020",
+              "Href": "https://bugzilla.altlinux.org/41020",
+              "Data": "/etc/motion/motion.conf в spec-файле без noreplace"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241261001",
+                "Comment": "motion is earlier than 0:4.5.1-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
