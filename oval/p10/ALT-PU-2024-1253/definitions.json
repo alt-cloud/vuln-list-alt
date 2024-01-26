@@ -1,0 +1,161 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241253",
+      "Version": "oval:org.altlinux.errata:def:20241253",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1253: package `freeipa` update to version 4.9.14-alt0.p10.1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1253",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1253",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-5455",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-5455",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades freeipa to version 4.9.14-alt0.p10.1. \nSecurity Fix(es):\n\n * CVE-2023-5455: A Cross-site request forgery vulnerability exists in ipa/session/login_password in all supported versions of IPA. This flaw allows an attacker to trick the user into submitting a request that could perform actions as the user, resulting in a loss of confidentiality and system integrity. During community penetration testing it was found that for certain HTTP end-points FreeIPA does not ensure CSRF protection. Due to implementation details one cannot use this flaw for reflection of a cookie representing already logged-in user. An attacker would always have to go through a new authentication attempt.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "High",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-352",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-5455",
+              "Impact": "High",
+              "Public": "20240110",
+              "CveID": "CVE-2023-5455"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253001",
+                "Comment": "freeipa-client is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253002",
+                "Comment": "freeipa-client-automount is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253003",
+                "Comment": "freeipa-client-common is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253004",
+                "Comment": "freeipa-client-epn is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253005",
+                "Comment": "freeipa-client-samba is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253006",
+                "Comment": "freeipa-common is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253007",
+                "Comment": "freeipa-server is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253008",
+                "Comment": "freeipa-server-common is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253009",
+                "Comment": "freeipa-server-dns is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253010",
+                "Comment": "freeipa-server-trust-ad is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253011",
+                "Comment": "python3-module-freeipa is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253012",
+                "Comment": "python3-module-ipaclient is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253013",
+                "Comment": "python3-module-ipaserver is earlier than 0:4.9.14-alt0.p10.1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241253014",
+                "Comment": "python3-module-ipatests is earlier than 0:4.9.14-alt0.p10.1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

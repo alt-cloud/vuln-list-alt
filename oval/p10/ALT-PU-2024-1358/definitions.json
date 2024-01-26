@@ -1,0 +1,130 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241358",
+      "Version": "oval:org.altlinux.errata:def:20241358",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1358: package `faad` update to version 2.11.1-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch p10"
+            ],
+            "Products": [
+              "ALT Server",
+              "ALT Virtualization Server",
+              "ALT Workstation",
+              "ALT Workstation K",
+              "ALT Education",
+              "Simply Linux",
+              "Starterkit"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1358",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1358",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-38857",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-38857",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-38858",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-38858",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades faad to version 2.11.1-alt1. \nSecurity Fix(es):\n\n * CVE-2023-38857: Buffer Overflow vulnerability infaad2 v.2.10.1 allows a remote attacker to execute arbitrary code and cause a denial of service via the stcoin function in mp4read.c.\n\n * CVE-2023-38858: Buffer Overflow vulnerability infaad2 v.2.10.1 allows a remote attacker to execute arbitrary code and cause a denial of service via the mp4info function in mp4read.c:1039.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-38857",
+              "Impact": "Low",
+              "Public": "20230815",
+              "CveID": "CVE-2023-38857"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-38858",
+              "Impact": "Low",
+              "Public": "20230815",
+              "CveID": "CVE-2023-38858"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:kworkstation:10",
+              "cpe:/o:alt:workstation:10",
+              "cpe:/o:alt:server:10",
+              "cpe:/o:alt:server-v:10",
+              "cpe:/o:alt:education:10",
+              "cpe:/o:alt:slinux:10",
+              "cpe:/o:alt:starterkit:p10",
+              "cpe:/o:alt:kworkstation:10.1",
+              "cpe:/o:alt:workstation:10.1",
+              "cpe:/o:alt:server:10.1",
+              "cpe:/o:alt:server-v:10.1",
+              "cpe:/o:alt:education:10.1",
+              "cpe:/o:alt:slinux:10.1",
+              "cpe:/o:alt:starterkit:10.1",
+              "cpe:/o:alt:kworkstation:10.2",
+              "cpe:/o:alt:workstation:10.2",
+              "cpe:/o:alt:server:10.2",
+              "cpe:/o:alt:server-v:10.2",
+              "cpe:/o:alt:education:10.2",
+              "cpe:/o:alt:slinux:10.2",
+              "cpe:/o:alt:starterkit:10.2"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:2001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241358001",
+                "Comment": "faad is earlier than 0:2.11.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241358002",
+                "Comment": "libfaad-devel is earlier than 0:2.11.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241358003",
+                "Comment": "libfaad2 is earlier than 0:2.11.1-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

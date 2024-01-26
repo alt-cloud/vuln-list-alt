@@ -1,0 +1,73 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241318",
+      "Version": "oval:org.altlinux.errata:def:20241318",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1318: package `php8.3-swoole` update to version 5.1.1-alt2.2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1318",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1318",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades php8.3-swoole to version 5.1.1-alt2.2. \nSecurity Fix(es):\n\n * #49116: Ошибка сегментирования в php8.3, при наличии php8.3-swoole и php8.3-mysqlnd",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "49116",
+              "Href": "https://bugzilla.altlinux.org/49116",
+              "Data": "Ошибка сегментирования в php8.3, при наличии php8.3-swoole и php8.3-mysqlnd"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241318001",
+                "Comment": "php8.3-swoole is earlier than 0:5.1.1-alt2.2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
