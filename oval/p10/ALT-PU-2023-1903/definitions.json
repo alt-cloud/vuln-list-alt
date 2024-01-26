@@ -42247,9 +42247,10 @@
             },
             {
               "Cvss": "AV:L/AC:L/Au:N/C:N/I:C/A:C",
-              "Cwe": "CWE-264",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "CWE-732",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2009-3939",
-              "Impact": "Low",
+              "Impact": "High",
               "Public": "20091116",
               "CveID": "CVE-2009-3939"
             },
@@ -49189,7 +49190,7 @@
             },
             {
               "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:C",
-              "Cvss3": "CVSS:3.0/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H",
               "Cwe": "CWE-617",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2017-12168",
               "Impact": "Low",
