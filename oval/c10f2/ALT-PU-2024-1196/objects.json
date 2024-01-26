@@ -1,0 +1,46 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:5001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241196001",
+      "Version": "1",
+      "comment": "nextcloud is installed",
+      "Name": "nextcloud"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241196002",
+      "Version": "1",
+      "comment": "nextcloud-apache2 is installed",
+      "Name": "nextcloud-apache2"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241196003",
+      "Version": "1",
+      "comment": "nextcloud-nginx is installed",
+      "Name": "nextcloud-nginx"
+    }
+  ]
+}

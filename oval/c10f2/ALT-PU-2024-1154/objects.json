@@ -1,0 +1,82 @@
+{
+  "TextFileContent54Objects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:5001",
+      "Version": "1",
+      "comment": "Evaluate `/etc/os-release` file content",
+      "Path": {
+        "dataType": "string",
+        "Text": "/etc"
+      },
+      "Filepath": {
+        "Datatype": "string",
+        "Text": "os-release"
+      },
+      "Pattern": {
+        "Datatype": "string",
+        "Operation": "pattern match",
+        "Text": "cpe:\\/o:alt:sp(?:server|workstation):(\\d+)"
+      },
+      "Instance": {
+        "Datatype": "int",
+        "Text": "1"
+      }
+    }
+  ],
+  "RpmInfoObjects": [
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154001",
+      "Version": "1",
+      "comment": "libmate-document-viewer is installed",
+      "Name": "libmate-document-viewer"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154002",
+      "Version": "1",
+      "comment": "mate-document-viewer is installed",
+      "Name": "mate-document-viewer"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154003",
+      "Version": "1",
+      "comment": "mate-document-viewer-caja is installed",
+      "Name": "mate-document-viewer-caja"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154004",
+      "Version": "1",
+      "comment": "mate-document-viewer-devel is installed",
+      "Name": "mate-document-viewer-devel"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154005",
+      "Version": "1",
+      "comment": "mate-document-viewer-djvu is installed",
+      "Name": "mate-document-viewer-djvu"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154006",
+      "Version": "1",
+      "comment": "mate-document-viewer-dvi is installed",
+      "Name": "mate-document-viewer-dvi"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154007",
+      "Version": "1",
+      "comment": "mate-document-viewer-pixbuf is installed",
+      "Name": "mate-document-viewer-pixbuf"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154008",
+      "Version": "1",
+      "comment": "mate-document-viewer-thumbnailer is installed",
+      "Name": "mate-document-viewer-thumbnailer"
+    },
+    {
+      "ID": "oval:org.altlinux.errata:obj:20241154009",
+      "Version": "1",
+      "comment": "mate-document-viewer-xps is installed",
+      "Name": "mate-document-viewer-xps"
+    }
+  ]
+}

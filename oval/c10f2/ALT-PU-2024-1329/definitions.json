@@ -1,0 +1,125 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241329",
+      "Version": "oval:org.altlinux.errata:def:20241329",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1329: package `sogo` update to version 5.9.1-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1329",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1329",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "CVE-2023-48104",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48104",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades sogo to version 5.9.1-alt1. \nSecurity Fix(es):\n\n * CVE-2023-48104: Alinto SOGo before 5.9.1 is vulnerable to HTML Injection.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": null,
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48104",
+              "Impact": "Low",
+              "Public": "20240116",
+              "CveID": "CVE-2023-48104"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329001",
+                "Comment": "sogo is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329002",
+                "Comment": "sogo-activesync is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329003",
+                "Comment": "sogo-apache2 is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329004",
+                "Comment": "sogo-devel is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329005",
+                "Comment": "sogo-ealarms-notify is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329006",
+                "Comment": "sogo-slapd-sockd is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329007",
+                "Comment": "sogo-tool is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329008",
+                "Comment": "sope-cards is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329009",
+                "Comment": "sope-cards-devel is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329010",
+                "Comment": "sope-gdl1-contentstore is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329011",
+                "Comment": "sope-gdl1-contentstore-devel is earlier than 0:5.9.1-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241329012",
+                "Comment": "task-sogo is earlier than 0:5.9.1-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

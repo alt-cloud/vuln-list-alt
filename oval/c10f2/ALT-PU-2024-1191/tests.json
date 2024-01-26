@@ -1,0 +1,306 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-agent is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-agent-sudo is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-agent2 is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-common is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-common-database-mysql is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-common-database-pgsql is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-common-database-sqlite3 is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-contrib is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-doc is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-java-gateway is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-phpfrontend-apache2 is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-phpfrontend-apache2-mod_php8.1 is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191013",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-phpfrontend-apache2-mod_php8.2 is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191013"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191014",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-phpfrontend-engine is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191014"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191015",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-phpfrontend-php8.1 is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191015"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191016",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-phpfrontend-php8.2 is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191016"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191017",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-proxy is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191017"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191018",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-proxy-common is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191018"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191019",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-proxy-pgsql is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191019"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191020",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-server-common is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191020"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191021",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-server-mysql is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191021"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191022",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-server-pgsql is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191022"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191023",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-source is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191023"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241191024",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "zabbix-web-service is earlier than 1:6.0.25-alt2",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241191024"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241191001"
+      }
+    }
+  ]
+}

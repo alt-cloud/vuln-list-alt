@@ -1,0 +1,228 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241191",
+      "Version": "oval:org.altlinux.errata:def:20241191",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1191: package `zabbix` update to version 6.0.25-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1191",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1191",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-06803",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06803",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-08246",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-08246",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-32721",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-32721",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-32722",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-32722",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-32724",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-32724",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades zabbix to version 6.0.25-alt2. \nSecurity Fix(es):\n\n * BDU:2023-06803: Уязвимость интерфейса универсальной системы мониторинга Zabbix, позволяющая нарушителю проводить межсайтовые сценарные атаки\n\n * BDU:2023-08246: Уязвимость модуля zabbix/src/libs/zbxjson универсальной системы мониторинга Zabbix, позволяющая нарушителю выполнить произвольный код\n\n * CVE-2023-32721: A stored XSS has been found in the Zabbix web application in the Maps element if a URL field is set with spaces before URL.\n\n * CVE-2023-32722: The zabbix/src/libs/zbxjson module is vulnerable to a buffer overflow when parsing JSON files via zbx_json_open.\n\n * CVE-2023-32724: Memory pointer is in a property of the Ducktape object. This leads to multiple vulnerabilities related to direct memory access and manipulation.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:C/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:H/A:N",
+              "Cwe": "CWE-20, CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-06803",
+              "Impact": "High",
+              "Public": "20230511",
+              "CveID": "BDU:2023-06803"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+              "Cwe": "CWE-120, CWE-787",
+              "Href": "https://bdu.fstec.ru/vul/2023-08246",
+              "Impact": "Critical",
+              "Public": "20230911",
+              "CveID": "BDU:2023-08246"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-32721",
+              "Impact": "Low",
+              "Public": "20231012",
+              "CveID": "CVE-2023-32721"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-787",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-32722",
+              "Impact": "High",
+              "Public": "20231012",
+              "CveID": "CVE-2023-32722"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-732",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-32724",
+              "Impact": "High",
+              "Public": "20231012",
+              "CveID": "CVE-2023-32724"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191001",
+                "Comment": "zabbix-agent is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191002",
+                "Comment": "zabbix-agent-sudo is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191003",
+                "Comment": "zabbix-agent2 is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191004",
+                "Comment": "zabbix-common is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191005",
+                "Comment": "zabbix-common-database-mysql is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191006",
+                "Comment": "zabbix-common-database-pgsql is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191007",
+                "Comment": "zabbix-common-database-sqlite3 is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191008",
+                "Comment": "zabbix-contrib is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191009",
+                "Comment": "zabbix-doc is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191010",
+                "Comment": "zabbix-java-gateway is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191011",
+                "Comment": "zabbix-phpfrontend-apache2 is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191012",
+                "Comment": "zabbix-phpfrontend-apache2-mod_php8.1 is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191013",
+                "Comment": "zabbix-phpfrontend-apache2-mod_php8.2 is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191014",
+                "Comment": "zabbix-phpfrontend-engine is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191015",
+                "Comment": "zabbix-phpfrontend-php8.1 is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191016",
+                "Comment": "zabbix-phpfrontend-php8.2 is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191017",
+                "Comment": "zabbix-proxy is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191018",
+                "Comment": "zabbix-proxy-common is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191019",
+                "Comment": "zabbix-proxy-pgsql is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191020",
+                "Comment": "zabbix-server-common is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191021",
+                "Comment": "zabbix-server-mysql is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191022",
+                "Comment": "zabbix-server-pgsql is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191023",
+                "Comment": "zabbix-source is earlier than 1:6.0.25-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241191024",
+                "Comment": "zabbix-web-service is earlier than 1:6.0.25-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

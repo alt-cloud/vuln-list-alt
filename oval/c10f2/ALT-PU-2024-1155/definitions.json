@@ -1,0 +1,77 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241155",
+      "Version": "oval:org.altlinux.errata:def:20241155",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1155: package `mate-screensaver` update to version 1.26.2-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1155",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1155",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades mate-screensaver to version 1.26.2-alt1. \nSecurity Fix(es):\n\n * #45817: В MATE alt-customize-branding не изменяет оформление экрана блокировки",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "45817",
+              "Href": "https://bugzilla.altlinux.org/45817",
+              "Data": "В MATE alt-customize-branding не изменяет оформление экрана блокировки"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241155001",
+                "Comment": "mate-screensaver is earlier than 2:1.26.2-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241155002",
+                "Comment": "mate-screensaver-devel is earlier than 2:1.26.2-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241370",
+      "Version": "oval:org.altlinux.errata:def:20241370",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1370: package `mediawiki-extensions-Math` update to version 3.0.0.1.40-alt1.4cf19b0",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1370",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1370",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades mediawiki-extensions-Math to version 3.0.0.1.40-alt1.4cf19b0. \nSecurity Fix(es):\n\n * #46923: Собрать с php8",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "46923",
+              "Href": "https://bugzilla.altlinux.org/46923",
+              "Data": "Собрать с php8"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241370001",
+                "Comment": "mediawiki-extensions-Math is earlier than 0:3.0.0.1.40-alt1.4cf19b0"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

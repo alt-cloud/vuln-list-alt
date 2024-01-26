@@ -1,0 +1,105 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241154",
+      "Version": "oval:org.altlinux.errata:def:20241154",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1154: package `mate-document-viewer` update to version 1.26.1-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1154",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1154",
+            "Source": "ALTPU"
+          }
+        ],
+        "Description": "This update upgrades mate-document-viewer to version 1.26.1-alt2. \nSecurity Fix(es):\n\n * #48498: mate-document-viewer-thumbnailer тянет лишние зависимости",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Low",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": null,
+          "Bugzilla": [
+            {
+              "Id": "48498",
+              "Href": "https://bugzilla.altlinux.org/48498",
+              "Data": "mate-document-viewer-thumbnailer тянет лишние зависимости"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154001",
+                "Comment": "libmate-document-viewer is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154002",
+                "Comment": "mate-document-viewer is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154003",
+                "Comment": "mate-document-viewer-caja is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154004",
+                "Comment": "mate-document-viewer-devel is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154005",
+                "Comment": "mate-document-viewer-djvu is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154006",
+                "Comment": "mate-document-viewer-dvi is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154007",
+                "Comment": "mate-document-viewer-pixbuf is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154008",
+                "Comment": "mate-document-viewer-thumbnailer is earlier than 1:1.26.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241154009",
+                "Comment": "mate-document-viewer-xps is earlier than 1:1.26.1-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

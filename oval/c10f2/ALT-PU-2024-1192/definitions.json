@@ -1,0 +1,816 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241192",
+      "Version": "oval:org.altlinux.errata:def:20241192",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1192: package `mediawiki` update to version 1.40.1-alt2",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1192",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1192",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2022-03040",
+            "RefURL": "https://bdu.fstec.ru/vul/2022-03040",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07040",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07040",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07505",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07505",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2022-27776",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-27776",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-28323",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-28323",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-29903",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-29903",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-29904",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-29904",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-29905",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-29905",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-29906",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-29906",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-29907",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-29907",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-34750",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-34750",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-34911",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-34911",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-34912",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-34912",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-39194",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-39194",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-41765",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-41765",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-41766",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-41766",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-41767",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-41767",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2022-47927",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2022-47927",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-22909",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-22909",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-22910",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-22910",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-22911",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-22911",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-22912",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-22912",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-22945",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-22945",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29137",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29137",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29139",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29139",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29140",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29140",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29141",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29141",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-29197",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-29197",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-3550",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-3550",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-36674",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-36674",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-36675",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-36675",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37251",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37251",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37254",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37254",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37255",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37255",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37256",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37256",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37300",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37300",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37301",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37301",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37302",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37302",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37303",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37303",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37304",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37304",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-37305",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-37305",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45359",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45359",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45360",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45360",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45361",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45361",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45362",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45362",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45363",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45363",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45364",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45364",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45367",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45367",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45369",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45369",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45370",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45370",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45371",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45371",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45372",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45372",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45373",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45373",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45374",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45374",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades mediawiki to version 1.40.1-alt2. \nSecurity Fix(es):\n\n * BDU:2022-03040: Уязвимость утилиты командной строки cURL, связанная с недостаточной защитой регистрационных данных, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07040: Уязвимость файла includes/page/Article.php программного средства для реализации гипертекстовой среды MediaWiki, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-07505: Уязвимость программного средства для реализации гипертекстовой среды MediaWiki, существующая из-за непринятия мер по защите структуры веб-страницы, позволяющая нарушителю провести атаку межсайтового скриптинга (XSS)\n\n * CVE-2022-27776: A insufficiently protected credentials vulnerability in fixed in curl 7.83.0 might leak authentication or cookie header data on HTTP redirects to the same host but another port number.\n\n * CVE-2022-28323: An issue was discovered in MediaWiki through 1.37.2. The SecurePoll extension allows a leak because sorting by timestamp is supported,\n\n * CVE-2022-29903: The Private Domains extension for MediaWiki through 1.37.2 (before 1ad65d4c1c199b375ea80988d99ab51ae068f766) allows CSRF for editing pages that store the extension's configuration. The attacker must trigger a POST request to Special:PrivateDomains.\n\n * CVE-2022-29904: The SemanticDrilldown extension for MediaWiki through 1.37.2 (before e688bdba6434591b5dff689a45e4d53459954773) allows SQL injection with certain '-' and '_' constraints.\n\n * CVE-2022-29905: The FanBoxes extension for MediaWiki through 1.37.2 (before 027ffb0b9d6fe0d823810cf03f5b562a212162d4) allows Special:UserBoxes CSRF.\n\n * CVE-2022-29906: The admin API module in the QuizGame extension for MediaWiki through 1.37.2 (before 665e33a68f6fa1167df99c0aa18ed0157cdf9f66) omits a check for the quizadmin user.\n\n * CVE-2022-29907: The Nimbus skin for MediaWiki through 1.37.2 (before 6f9c8fb868345701d9544a54d9752515aace39df) allows XSS in Advertise link messages.\n\n * CVE-2022-34750: An issue was discovered in MediaWiki through 1.38.1. The lemma length of a Wikibase lexeme is currently capped at a thousand characters. Unfortunately, this length is not validated, allowing much larger lexemes to be created, which introduces various denial-of-service attack vectors within the Wikibase and WikibaseLexeme extensions. This is related to Special:NewLexeme and Special:NewProperty.\n\n * CVE-2022-34911: An issue was discovered in MediaWiki before 1.35.7, 1.36.x and 1.37.x before 1.37.3, and 1.38.x before 1.38.1. XSS can occur in configurations that allow a JavaScript payload in a username. After account creation, when it sets the page title to \"Welcome\" followed by the username, the username is not escaped: SpecialCreateAccount::successfulAction() calls ::showSuccessPage() with a message as second parameter, and OutputPage::setPageTitle() uses text().\n\n * CVE-2022-34912: An issue was discovered in MediaWiki before 1.37.3 and 1.38.x before 1.38.1. The contributions-title, used on Special:Contributions, is used as page title without escaping. Hence, in a non-default configuration where a username contains HTML entities, it won't be escaped.\n\n * CVE-2022-39194: An issue was discovered in the MediaWiki through 1.38.2. The community configuration pages for the GrowthExperiments extension could cause a site to become unavailable due to insufficient validation when certain actions (including page moves) were performed.\n\n * CVE-2022-41765: An issue was discovered in MediaWiki before 1.35.8, 1.36.x and 1.37.x before 1.37.5, and 1.38.x before 1.38.3. HTMLUserTextField exposes the existence of hidden users.\n\n * CVE-2022-41766: An issue was discovered in MediaWiki before 1.35.8, 1.36.x and 1.37.x before 1.37.5, and 1.38.x before 1.38.3. Upon an action=rollback operation, the alreadyrolled message can leak a user name (when the user has been revision deleted/suppressed).\n\n * CVE-2022-41767: An issue was discovered in MediaWiki before 1.35.8, 1.36.x and 1.37.x before 1.37.5, and 1.38.x before 1.38.3. When changes made by an IP address are reassigned to a user (using reassignEdits.php), the changes will still be attributed to the IP address on Special:Contributions when doing a range lookup.\n\n * CVE-2022-47927: An issue was discovered in MediaWiki before 1.35.9, 1.36.x through 1.38.x before 1.38.5, and 1.39.x before 1.39.1. When installing with a pre-existing data directory that has weak permissions, the SQLite files are created with file mode 0644, i.e., world readable to local users. These files include credentials data.\n\n * CVE-2023-22909: An issue was discovered in MediaWiki before 1.35.9, 1.36.x through 1.38.x before 1.38.5, and 1.39.x before 1.39.1. SpecialMobileHistory allows remote attackers to cause a denial of service because database queries are slow.\n\n * CVE-2023-22910: An issue was discovered in MediaWiki before 1.35.9, 1.36.x through 1.38.x before 1.38.5, and 1.39.x before 1.39.1. There is XSS in Wikibase date formatting via wikibase-time-precision-* fields. This allows JavaScript execution by staff/admin users who do not intentionally have the editsitejs capability.\n\n * CVE-2023-22911: An issue was discovered in MediaWiki before 1.35.9, 1.36.x through 1.38.x before 1.38.5, and 1.39.x before 1.39.1. E-Widgets does widget replacement in HTML attributes, which can lead to XSS, because widget authors often do not expect that their widget is executed in an HTML attribute context.\n\n * CVE-2023-22912: An issue was discovered in MediaWiki before 1.35.9, 1.36.x through 1.38.x before 1.38.5, and 1.39.x before 1.39.1. CheckUser TokenManager insecurely uses AES-CTR encryption with a repeated (aka re-used) nonce, allowing an adversary to decrypt.\n\n * CVE-2023-22945: In the GrowthExperiments extension for MediaWiki through 1.39, the growthmanagementorlist API allows blocked users (blocked in ApiManageMentorList) to enroll as mentors or edit any of their mentorship-related properties.\n\n * CVE-2023-29137: An issue was discovered in the GrowthExperiments extension for MediaWiki through 1.39.3. The UserImpactHandler for GrowthExperiments inadvertently returns the timezone preference for arbitrary users, which can be used to de-anonymize users.\n\n * CVE-2023-29139: An issue was discovered in the CheckUser extension for MediaWiki through 1.39.3. When a user with checkuserlog permissions makes many CheckUserLog API requests in some configurations, denial of service can occur (RequestTimeoutException or upstream request timeout).\n\n * CVE-2023-29140: An issue was discovered in the GrowthExperiments extension for MediaWiki through 1.39.3. Attackers might be able to see edits for which the username has been hidden, because there is no check for rev_deleted.\n\n * CVE-2023-29141: An issue was discovered in MediaWiki before 1.35.10, 1.36.x through 1.38.x before 1.38.6, and 1.39.x before 1.39.3. An auto-block can occur for an untrusted X-Forwarded-For header.\n\n * CVE-2023-29197: guzzlehttp/psr7 is a PSR-7 HTTP message library implementation in PHP. Affected versions are subject to improper header parsing. An attacker could sneak in a newline (\\n) into both the header names and values. While the specification states that \\r\\n\\r\\n is used to terminate the header list, many servers in the wild will also accept \\n\\n. This is a follow-up to CVE-2022-24775 where the fix was incomplete. The issue has been patched in versions 1.9.1 and 2.4.5. There are no known workarounds for this vulnerability. Users are advised to upgrade.\n\n * CVE-2023-3550: Mediawiki v1.40.0 does not validate namespaces used in XML files.\n\nTherefore, if the instance administrator allows XML file uploads,\n\na remote attacker with a low-privileged user account can use this\n\nexploit to become an administrator by sending a malicious link to\n\nthe instance administrator.\n\n\n\n\n\n * CVE-2023-36674: An issue was discovered in MediaWiki before 1.35.11, 1.36.x through 1.38.x before 1.38.7, 1.39.x before 1.39.4, and 1.40.x before 1.40.1. It is possible to bypass the Bad image list (aka badFile) by using the thumb parameter (aka Manualthumb) of the File syntax.\n\n * CVE-2023-36675: An issue was discovered in MediaWiki before 1.35.11, 1.36.x through 1.38.x before 1.38.7, and 1.39.x before 1.39.4. BlockLogFormatter.php in BlockLogFormatter allows XSS in the partial blocks feature.\n\n * CVE-2023-37251: An issue was discovered in the GoogleAnalyticsMetrics extension for MediaWiki through 1.39.3. The googleanalyticstrackurl parser function does not properly escape JavaScript in the onclick handler and does not prevent use of javascript: URLs.\n\n * CVE-2023-37254: An issue was discovered in the Cargo extension for MediaWiki through 1.39.3. XSS can occur in Special:CargoQuery via a crafted page item when using the default format.\n\n * CVE-2023-37255: An issue was discovered in the CheckUser extension for MediaWiki through 1.39.3. In Special:CheckUser, a check of the \"get edits\" type is vulnerable to HTML injection through the User-Agent HTTP request header.\n\n * CVE-2023-37256: An issue was discovered in the Cargo extension for MediaWiki through 1.39.3. It allows one to store javascript: URLs in URL fields, and automatically links these URLs.\n\n * CVE-2023-37300: An issue was discovered in the CheckUserLog API in the CheckUser extension for MediaWiki through 1.39.3. There is incorrect access control for visibility of hidden users.\n\n * CVE-2023-37301: An issue was discovered in SubmitEntityAction in Wikibase in MediaWiki through 1.39.3. Because it doesn't use EditEntity for undo and restore, the intended interaction with AbuseFilter does not occur.\n\n * CVE-2023-37302: An issue was discovered in SiteLinksView.php in Wikibase in MediaWiki through 1.39.3. There is XSS via a crafted badge title attribute. This is also related to lack of escaping in wbTemplate (from resources/wikibase/templates.js) for quotes (which can be in a title attribute).\n\n * CVE-2023-37303: An issue was discovered in the CheckUser extension for MediaWiki through 1.39.3. In certain situations, an attempt to block a user fails after a temporary browser hang and a DBQueryDisconnectedError error message.\n\n * CVE-2023-37304: An issue was discovered in the DoubleWiki extension for MediaWiki through 1.39.3. includes/DoubleWiki.php allows XSS via the column alignment feature.\n\n * CVE-2023-37305: An issue was discovered in the ProofreadPage (aka Proofread Page) extension for MediaWiki through 1.39.3. In includes/Page/PageContentHandler.php and includes/Page/PageDisplayHandler.php, hidden users can be exposed via public interfaces.\n\n * CVE-2023-45359: description unavailable\n\n * CVE-2023-45360: An issue was discovered in MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. There is XSS in youhavenewmessagesmanyusers and youhavenewmessages i18n messages. This is related to MediaWiki:Youhavenewmessagesfromusers.\n\n * CVE-2023-45361: description unavailable\n\n * CVE-2023-45362: An issue was discovered in DifferenceEngine.php in MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. diff-multi-sameuser (aka \"X intermediate revisions by the same user not shown\") ignores username suppression. This is an information leak.\n\n * CVE-2023-45363: An issue was discovered in ApiPageSet.php in MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. It allows attackers to cause a denial of service (unbounded loop and RequestTimeoutException) when querying pages redirected to other variants with redirects and converttitles set.\n\n * CVE-2023-45364: An issue was discovered in includes/page/Article.php in MediaWiki 1.36.x through 1.39.x before 1.39.5 and 1.40.x before 1.40.1. Deleted revision existence is leaked due to incorrect permissions being checked. This reveals that a given revision ID belonged to the given page title, and its timestamp, both of which are not supposed to be public information.\n\n * CVE-2023-45367: An issue was discovered in the CheckUser extension for MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. A user can use a rest.php/checkuser/v0/useragent-clienthints/revision/ URL to store an arbitrary number of rows in cu_useragent_clienthints, leading to a denial of service.\n\n * CVE-2023-45369: An issue was discovered in the PageTriage extension for MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. Usernames of hidden users are exposed.\n\n * CVE-2023-45370: An issue was discovered in the SportsTeams extension for MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. SportsTeams: Special:SportsManagerLogo and Special:SportsTeamsManagerLogo do not check for the sportsteamsmanager user right, and thus an attacker may be able to affect pages that are concerned with sports teams.\n\n * CVE-2023-45371: An issue was discovered in the Wikibase extension for MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. There is no rate limit for merging items.\n\n * CVE-2023-45372: An issue was discovered in the Wikibase extension for MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. During item merging, ItemMergeInteractor does not have an edit filter running (e.g., AbuseFilter).\n\n * CVE-2023-45373: An issue was discovered in the ProofreadPage extension for MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. XSS can occur via formatNumNoSeparators.\n\n * CVE-2023-45374: An issue was discovered in the SportsTeams extension for MediaWiki before 1.35.12, 1.36.x through 1.39.x before 1.39.5, and 1.40.x before 1.40.1. It does not check for the anti-CSRF edit token in Special:SportsTeamsManager and Special:UpdateFavoriteTeams.\n\n * #44708: Непрописанный файловый конфликт между mediawiki-common и mediawiki-extensions-Math\n\n * #48033: Прошу собрать с PHP 8.2",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-200, CWE-522",
+              "Href": "https://bdu.fstec.ru/vul/2022-03040",
+              "Impact": "Low",
+              "Public": "20220421",
+              "CveID": "BDU:2022-03040"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-732",
+              "Href": "https://bdu.fstec.ru/vul/2023-07040",
+              "Impact": "Low",
+              "Public": "20231006",
+              "CveID": "BDU:2023-07040"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H",
+              "Cwe": "CWE-79",
+              "Href": "https://bdu.fstec.ru/vul/2023-07505",
+              "Impact": "Critical",
+              "Public": "20231010",
+              "CveID": "BDU:2023-07505"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-522",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-27776",
+              "Impact": "Low",
+              "Public": "20220602",
+              "CveID": "CVE-2022-27776"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-28323",
+              "Impact": "High",
+              "Public": "20220430",
+              "CveID": "CVE-2022-28323"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-352",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-29903",
+              "Impact": "Low",
+              "Public": "20220429",
+              "CveID": "CVE-2022-29903"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-89",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-29904",
+              "Impact": "Critical",
+              "Public": "20220429",
+              "CveID": "CVE-2022-29904"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-352",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-29905",
+              "Impact": "Low",
+              "Public": "20220429",
+              "CveID": "CVE-2022-29905"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:P/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-862",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-29906",
+              "Impact": "Critical",
+              "Public": "20220429",
+              "CveID": "CVE-2022-29906"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-29907",
+              "Impact": "Low",
+              "Public": "20220429",
+              "CveID": "CVE-2022-29907"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:N/I:N/A:P",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-34750",
+              "Impact": "High",
+              "Public": "20220628",
+              "CveID": "CVE-2022-34750"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-34911",
+              "Impact": "Low",
+              "Public": "20220702",
+              "CveID": "CVE-2022-34911"
+            },
+            {
+              "Cvss": "AV:N/AC:M/Au:N/C:N/I:P/A:N",
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-34912",
+              "Impact": "Low",
+              "Public": "20220702",
+              "CveID": "CVE-2022-34912"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-400",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-39194",
+              "Impact": "Low",
+              "Public": "20220902",
+              "CveID": "CVE-2022-39194"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-203",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-41765",
+              "Impact": "Low",
+              "Public": "20221226",
+              "CveID": "CVE-2022-41765"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-732",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-41766",
+              "Impact": "Low",
+              "Public": "20230529",
+              "CveID": "CVE-2022-41766"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-41767",
+              "Impact": "Low",
+              "Public": "20221226",
+              "CveID": "CVE-2022-41767"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-732",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2022-47927",
+              "Impact": "Low",
+              "Public": "20230112",
+              "CveID": "CVE-2022-47927"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-22909",
+              "Impact": "Low",
+              "Public": "20230110",
+              "CveID": "CVE-2023-22909"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-22910",
+              "Impact": "Low",
+              "Public": "20230120",
+              "CveID": "CVE-2023-22910"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-22911",
+              "Impact": "Low",
+              "Public": "20230110",
+              "CveID": "CVE-2023-22911"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-330",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-22912",
+              "Impact": "Low",
+              "Public": "20230120",
+              "CveID": "CVE-2023-22912"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-863",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-22945",
+              "Impact": "Low",
+              "Public": "20230111",
+              "CveID": "CVE-2023-22945"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29137",
+              "Impact": "Low",
+              "Public": "20230331",
+              "CveID": "CVE-2023-29137"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29139",
+              "Impact": "Low",
+              "Public": "20230331",
+              "CveID": "CVE-2023-29139"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29140",
+              "Impact": "Low",
+              "Public": "20230331",
+              "CveID": "CVE-2023-29140"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29141",
+              "Impact": "Critical",
+              "Public": "20230331",
+              "CveID": "CVE-2023-29141"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+              "Cwe": "CWE-436",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-29197",
+              "Impact": "High",
+              "Public": "20230417",
+              "CveID": "CVE-2023-29197"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-3550",
+              "Impact": "High",
+              "Public": "20230925",
+              "CveID": "CVE-2023-3550"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-36674",
+              "Impact": "Low",
+              "Public": "20230820",
+              "CveID": "CVE-2023-36674"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-36675",
+              "Impact": "Low",
+              "Public": "20230626",
+              "CveID": "CVE-2023-36675"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37251",
+              "Impact": "Low",
+              "Public": "20230629",
+              "CveID": "CVE-2023-37251"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37254",
+              "Impact": "Low",
+              "Public": "20230629",
+              "CveID": "CVE-2023-37254"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37255",
+              "Impact": "Low",
+              "Public": "20230629",
+              "CveID": "CVE-2023-37255"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37256",
+              "Impact": "Low",
+              "Public": "20230629",
+              "CveID": "CVE-2023-37256"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37300",
+              "Impact": "Low",
+              "Public": "20230630",
+              "CveID": "CVE-2023-37300"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37301",
+              "Impact": "Low",
+              "Public": "20230630",
+              "CveID": "CVE-2023-37301"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37302",
+              "Impact": "Low",
+              "Public": "20230630",
+              "CveID": "CVE-2023-37302"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37303",
+              "Impact": "Critical",
+              "Public": "20230630",
+              "CveID": "CVE-2023-37303"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37304",
+              "Impact": "Low",
+              "Public": "20230630",
+              "CveID": "CVE-2023-37304"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-37305",
+              "Impact": "Low",
+              "Public": "20230630",
+              "CveID": "CVE-2023-37305"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45360",
+              "Impact": "Low",
+              "Public": "20231103",
+              "CveID": "CVE-2023-45360"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45362",
+              "Impact": "Low",
+              "Public": "20231103",
+              "CveID": "CVE-2023-45362"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-835",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45363",
+              "Impact": "High",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45363"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-732",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45364",
+              "Impact": "Low",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45364"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45367",
+              "Impact": "Low",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45367"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-732",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45369",
+              "Impact": "Low",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45369"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45370",
+              "Impact": "Low",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45370"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+              "Cwe": "CWE-770",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45371",
+              "Impact": "High",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45371"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45372",
+              "Impact": "Low",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45372"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45373",
+              "Impact": "Low",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45373"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45374",
+              "Impact": "Low",
+              "Public": "20231009",
+              "CveID": "CVE-2023-45374"
+            }
+          ],
+          "Bugzilla": [
+            {
+              "Id": "44708",
+              "Href": "https://bugzilla.altlinux.org/44708",
+              "Data": "Непрописанный файловый конфликт между mediawiki-common и mediawiki-extensions-Math"
+            },
+            {
+              "Id": "48033",
+              "Href": "https://bugzilla.altlinux.org/48033",
+              "Data": "Прошу собрать с PHP 8.2"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192001",
+                "Comment": "mediawiki is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192002",
+                "Comment": "mediawiki-apache2 is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192003",
+                "Comment": "mediawiki-common is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192004",
+                "Comment": "mediawiki-extensions-PdfHandler is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192005",
+                "Comment": "mediawiki-extensions-Scribunto is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192006",
+                "Comment": "mediawiki-extensions-SyntaxHighlight_GeSHi is earlier than 1:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192007",
+                "Comment": "mediawiki-mysql is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192008",
+                "Comment": "mediawiki-php8.1 is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192009",
+                "Comment": "mediawiki-php8.2 is earlier than 0:1.40.1-alt2"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241192010",
+                "Comment": "mediawiki-postgresql is earlier than 0:1.40.1-alt2"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

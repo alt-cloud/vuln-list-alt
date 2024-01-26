@@ -1,0 +1,529 @@
+{
+  "Definition": [
+    {
+      "ID": "oval:org.altlinux.errata:def:20241196",
+      "Version": "oval:org.altlinux.errata:def:20241196",
+      "Class": "patch",
+      "Metadata": {
+        "Title": "ALT-PU-2024-1196: package `nextcloud` update to version 27.1.4-alt1",
+        "AffectedList": [
+          {
+            "Family": "unix",
+            "Platforms": [
+              "ALT Linux branch c10f2"
+            ]
+          }
+        ],
+        "References": [
+          {
+            "RefID": "ALT-PU-2024-1196",
+            "RefURL": "https://errata.altlinux.org/ALT-PU-2024-1196",
+            "Source": "ALTPU"
+          },
+          {
+            "RefID": "BDU:2023-03598",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03598",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-03776",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-03776",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05873",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05873",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05874",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05874",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05875",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05875",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05876",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05876",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-05877",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-05877",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-06928",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-06928",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07158",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07158",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "BDU:2023-07159",
+            "RefURL": "https://bdu.fstec.ru/vul/2023-07159",
+            "Source": "BDU"
+          },
+          {
+            "RefID": "CVE-2023-32318",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-32318",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-32320",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-32320",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-35171",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-35171",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-35172",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-35172",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-35927",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-35927",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-35928",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-35928",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39952",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39952",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39958",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39958",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39959",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39959",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39960",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39960",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39961",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39961",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39962",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39962",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-39963",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-39963",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45148",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45148",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-45151",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-45151",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48239",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48239",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48301",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48301",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48302",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48302",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48303",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48303",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48304",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48304",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48305",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48305",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-48306",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-48306",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-49791",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-49791",
+            "Source": "CVE"
+          },
+          {
+            "RefID": "CVE-2023-49792",
+            "RefURL": "https://nvd.nist.gov/vuln/detail/CVE-2023-49792",
+            "Source": "CVE"
+          }
+        ],
+        "Description": "This update upgrades nextcloud to version 27.1.4-alt1. \nSecurity Fix(es):\n\n * BDU:2023-03598: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная с неправильным ограничением чрезмерных попыток аутентификации, позволяющая нарушителю скомпрометировать целевую систему\n\n * BDU:2023-03776: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная с неправильным обращением с недостаточными привилегиями, позволяющая нарушителю получить доступ к учетным данным других пользователей.\n\n * BDU:2023-05873: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная с неправильным контролем доступа, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-05874: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная с неправильным контролем доступа, позволяющая нарушителю изменить пароль пользователя\n\n * BDU:2023-05875: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная с неправильным контролем доступа, позволяющая нарушителю удалить любое личное или глобальное внешнее хранилище, сделав его недоступным для всех остальных\n\n * BDU:2023-05876: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная с неправильным контролем доступа, позволяющая нарушителю получить несанкционированный доступ к защищаемой информации\n\n * BDU:2023-05877: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная с неправильным ограничением чрезмерных попыток аутентификации, позволяющая нарушителю перебрать секретные данные настроенных клиентов OAuth2\n\n * BDU:2023-06928: Уязвимость интерфейса API WebDAV облачного программного обеспечения для создания и использования хранилища данных Nextcloud, позволяющая нарушителю получить доступ к конфиденциальной информации\n\n * BDU:2023-07158: Уязвимость облачного программного обеспечения для создания и использования хранилища данных Nextcloud, связанная хранением токенов OAuth2 в открытом виде, позволяющая нарушителю получить доступ к серверу и повысить свои привилегии\n\n * BDU:2023-07159: Уязвимость компонента Memcached облачного программного обеспечения для создания и использования хранилища данных Nextcloud, позволяющая нарушителю вызвать отказ в обслуживании\n\n * CVE-2023-32318: Nextcloud server provides a home for data. A regression in the session handling between Nextcloud Server and the Nextcloud Text app prevented a correct destruction of the session on logout if cookies were not cleared manually. After successfully authenticating with any other account the previous session would be continued and the attacker would be authenticated as the previously logged in user. It is recommended that the Nextcloud Server is upgraded to 25.0.6 or 26.0.1.\n\n * CVE-2023-32320: Nextcloud Server is a data storage system for Nextcloud, a self-hosted productivity platform. When multiple requests are sent in parallel, all of them were executed even if the amount of faulty requests succeeded the limit by the time the response was sent to the client. This allowed someone to send as many requests the server could handle in parallel to bruteforce protected details instead of the configured limit, default 8. Nextcloud Server versions 25.0.7 and 26.0.2 and Nextcloud Enterprise Server versions 21.0.9.12, 22.2.10.12, 23.0.12.7, 24.0.12.2, 25.0.7 and 26.0.2 contain patches for this issue.\n\n\n * CVE-2023-35171: NextCloud Server and NextCloud Enterprise Server provide file storage for Nextcloud, a self-hosted productivity platform. Starting in version 26.0.0 and prior to version 26.0.2, an attacker could supply a URL that redirects an unsuspecting victim from a legitimate domain to an attacker's site. Nextcloud Server and Nextcloud Enterprise Server 26.0.2 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-35172: NextCloud Server and NextCloud Enterprise Server provide file storage for Nextcloud, a self-hosted productivity platform. In NextCloud Server versions 25.0.0 until 25.0.7 and 26.0.0 until 26.0.2 and Nextcloud Enterprise Server versions 21.0.0 until 21.0.9.12, 22.0.0 until 22.2.10.12, 23.0.0 until 23.0.12.7, 24.0.0 until 24.0.12.2, 25.0.0 until 25.0.7, and 26.0.0 until 26.0.2, an attacker can bruteforce the password reset links. Nextcloud Server n 25.0.7 and 26.0.2 and Nextcloud Enterprise Server 21.0.9.12, 22.2.10.12, 23.0.12.7, 24.0.12.2, 25.0.7, and 26.0.2 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-35927: NextCloud Server and NextCloud Enterprise Server provide file storage for Nextcloud, a self-hosted productivity platform. In NextCloud Server versions 25.0.0 until 25.0.7 and 26.0.0 until 26.0.2 and Nextcloud Enterprise Server versions 21.0.0 until 21.0.9.12, 22.0.0 until 22.2.10.12, 23.0.0 until 23.0.12.7, 24.0.0 until 24.0.12.2, 25.0.0 until 25.0.7, and 26.0.0 until 26.0.2, when two server are registered as trusted servers for each other and successfully exchanged the share secrets, the malicious server could modify or delete VCards in the system addressbook on the origin server. This would impact the available and shown information in certain places, such as the user search and avatar menu. If a manipulated user modifies their own data in the personal settings the entry is fixed again.\n\nNextcloud Server n 25.0.7 and 26.0.2 and Nextcloud Enterprise Server 21.0.9.12, 22.2.10.12, 23.0.12.7, 24.0.12.2, 25.0.7, and 26.0.2 contain a patch for this issue. A workaround is available. Remove all trusted servers in the \"Administration\" \u003e \"Sharing\" settings `…/index.php/settings/admin/sharing`. Afterwards, trigger a recreation of the local system addressbook with the following `occ dav:sync-system-addressbook`.\n\n * CVE-2023-35928: Nextcloud Server is a space for data storage on Nextcloud, a self-hosted productivity playform. In NextCloud Server versions 25.0.0 until 25.0.7 and 26.0.0 until 26.0.2 and Nextcloud Enterprise Server versions 19.0.0 until 19.0.13.9, 20.0.0 until 20.0.14.14, 21.0.0 until 21.0.9.12, 22.0.0 until 22.2.10.12, 23.0.0 until 23.0.12.7, 24.0.0 until 24.0.12.2, 25.0.0 until 25.0.7, and 26.0.0 until 26.0.2, a user could use this functionality to get access to the login credentials of another user and take over their account. This issue has been patched in Nextcloud Server versions 25.0.7 and 26.0.2 and NextCloud Enterprise Server versions 19.0.13.9, 20.0.14.14, 21.0.9.12, 22.2.10.12, 23.0.12.7, 24.0.12.2, 25.0.7, and 26.0.2.\n\nThree workarounds are available. Disable app files_external. Change config setting \"Allow users to mount external storage\" to disabled in \"Administration\" \u003e \"External storage\" settings `…/index.php/settings/admin/externalstorages`. Change config setting to disallow users to create external storages in \"Administration\" \u003e \"External storage\" settings `…/index.php/settings/admin/externalstorages` with the types FTP, Nextcloud, SFTP, and/or WebDAV.\n\n * CVE-2023-39952: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 22.0.0 and prior to versions 22.2.10.13, 23.0.12.8, 24.0.12.4, 25.0.8, 26.0.3, and 27.0.1, a user can access files inside a subfolder of a groupfolder accessible to them, even if advanced permissions would block access to the subfolder. Nextcloud Server versions 25.0.8, 26.0.3, and 27.0.1 and Nextcloud Enterprise Server versions 22.2.10.13, 23.0.12.8, 24.0.12.4, 25.0.8, 26.0.3, and 27.0.1 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-39958: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 22.0.0 and prior to versions 22.2.10.13, 23.0.12.8, 24.0.12.5, 25.0.9, 26.0.4, and 27.0.1, missing protection allows an attacker to brute force the client secrets of configured OAuth2 clients. Nextcloud Server versions 25.0.9, 26.0.4, and 27.0.1 and Nextcloud Enterprise Server versions 22.2.10.13, 23.0.12.8, 24.0.12.5, 25.0.9, 26.0.4, and 27.0.1 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-39959: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.9, 26.0.4, and 27.0.1, unauthenticated users could send a DAV request which reveals whether a calendar or an address book with the given identifier exists for the victim. Nextcloud Server versions 25.0.9, 26.0.4, and 27.0.1 and Nextcloud Enterprise Server versions 25.0.9, 26.0.4, and 27.0.1 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-39960: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. In Nextcloud Server starting with 25.0.0 and prior to 25.09 and 26.04; as well as Nextcloud Enterprise Server starting with 22.0.0 and prior to 22.2.10.14, 23.0.12.9, 24.0.12.5, 25.0.9, and 26.0.4; missing protection allows an attacker to brute force passwords on the WebDAV API. Nextcloud Server 25.0.9 and 26.0.4 and Nextcloud Enterprise Server 22.2.10.14, 23.0.12.9, 24.0.12.5, 25.0.9, and 26.0.4 contain patches for this issue. No known workarounds are available.\n\n * CVE-2023-39961: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 24.0.4 and prior to versions 25.0.9, 26.0.4, and 27.0.1, when a folder with images or an image was shared without download permissions, the user could add the image inline into a text file and download it. Nextcloud Server versions 25.0.9, 26.0.4, and 27.0.1 and Nextcloud Enterprise Server versions 24.0.12.5, 25.0.9, 26.0.4, and 27.0.1 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-39962: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 19.0.0 and prior to versions 19.0.13.10, 20.0.14.15, 21.0.9.13, 22.2.10.14, 23.0.12.8, 24.0.12.5, 25.0.9, 26.0.4, and 27.0.1, a malicious user could delete any personal or global external storage, making them inaccessible for everyone else as well. Nextcloud server versions 25.0.9, 26.0.4, and 27.0.1 and Nextcloud Enterprise Server versions 19.0.13.10, 20.0.14.15, 21.0.9.13, 22.2.10.14, 23.0.12.9, 24.0.12.5, 25.0.9, 26.0.4, and 27.0.1 contain a patch for this issue. As a workaround, disable app files_external. This also makes the external storage inaccessible but retains the configurations until a patched version has been deployed.\n\n * CVE-2023-39963: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 20.0.0 and prior to versions 20.0.14.15, 21.0.9.13, 22.2.10.14, 23.0.12.8, 24.0.12.5, 25.0.9, 26.0.4, and 27.0.1, a missing password confirmation allowed an attacker, after successfully stealing a session from a logged in user, to create app passwords for the victim. Nextcloud server versions 25.0.9, 26.0.4, and 27.0.1 and Nextcloud Enterprise Server versions 20.0.14.15, 21.0.9.13, 22.2.10.14, 23.0.12.9, 24.0.12.5, 25.0.9, 26.0.4, and 27.0.1 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-45148: Nextcloud is an open source home cloud server. When Memcached is used as `memcache.distributed` the rate limiting in Nextcloud Server could be reset unexpectedly resetting the rate count earlier than intended. Users are advised to upgrade to versions 25.0.11, 26.0.6 or 27.1.0. Users unable to upgrade should change their config setting `memcache.distributed` to `\\OC\\Memcache\\Redis` and install Redis instead of Memcached.\n\n * CVE-2023-45151: Nextcloud server is an open source home cloud platform. Affected versions of Nextcloud stored OAuth2 tokens in plaintext which allows an attacker who has gained access to the server to potentially elevate their privilege. This issue has been addressed and users are recommended to upgrade their Nextcloud Server to version 25.0.8, 26.0.3 or 27.0.1. There are no known workarounds for this vulnerability.\n\n * CVE-2023-48239: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.13, 26.0.8, and 27.1.3 of Nextcloud Server and starting in version 20.0.0 and prior to versions 20.0.14.16, 21.0.9.13, 22.2.10.15, 23.0.12.12, 24.0.12.8, 25.0.13, 26.0.8, and 27.1.3 of Nextcloud Enterprise Server, a malicious user could update any personal or global external storage, making them inaccessible for everyone else as well. Nextcloud Server 25.0.13, 26.0.8, and 27.1.3 and Nextcloud Enterprise Server is upgraded to 20.0.14.16, 21.0.9.13, 22.2.10.15, 23.0.12.12, 24.0.12.8, 25.0.13, 26.0.8, and 27.1.3 contain a patch for this issue. As a workaround, disable app files_external. This workaround also makes the external storage inaccessible but retains the configurations until a patched version has been deployed.\n\n * CVE-2023-48301: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.13, 26.0.8, and 27.1.3 of Nextcloud Server and Nextcloud Enterprise Server, an attacker could insert links into circles name that would be opened when clicking the circle name in a search filter. Nextcloud Server and Nextcloud Enterprise Server versions 25.0.13, 26.0.8, and 27.1.3 contain a fix for this issue. As a workaround, disable app circles.\n\n * CVE-2023-48302: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.13, 26.0.8, and 27.1.3 of Nextcloud Server and Nextcloud Enterprise Server, when a user is tricked into copy pasting HTML code without markup (Ctrl+Shift+V) the markup will actually render. Nextcloud Server and Nextcloud Enterprise Server versions 25.0.13, 26.0.8, and 27.1.3 contain a fix for this issue. As a workaround, disable app text.\n\n * CVE-2023-48303: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.11, 26.0.6, and 27.1.0 of Nextcloud Server and Nextcloud Enterprise Server, admins can change authentication details of user configured external storage. Nextcloud Server and Nextcloud Enterprise Server versions 25.0.11, 26.0.6, and 27.1.0 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-48304: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.11, 26.0.6, and 27.1.0 of Nextcloud Server and starting in version 22.0.0 and prior to versions 22.2.10.16, 23.0.12.11, 24.0.12.7, 25.0.11, 26.0.6, and 27.1.0 of Nextcloud Enterprise Server, an attacker could enable and disable the birthday calendar for any user on the same server. Nextcloud Server 25.0.11, 26.0.6, and 27.1.0 and Nextcloud Enterprise Server 22.2.10.16, 23.0.12.11, 24.0.12.7, 25.0.11, 26.0.6, and 27.1.0 contain patches for this issue. No known workarounds are available.\n\n * CVE-2023-48305: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.11, 26.0.6, and 27.1.0 of Nextcloud Server and Nextcloud Enterprise Server, when the log level was set to debug, the user_ldap app logged user passwords in plaintext into the log file. If the log file was then leaked or shared in any way the users' passwords would be leaked. Nextcloud Server and Nextcloud Enterprise Server versions 25.0.11, 26.0.6, and 27.1.0 contain a patch for this issue. As a workaround, change config setting `loglevel` to `1` or higher (should always be higher than 1 in production environments).\n\n * CVE-2023-48306: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. Starting in version 25.0.0 and prior to versions 25.0.11, 26.0.6, and 27.1.0 of Nextcloud Server and starting in version 22.0.0 and prior to versions 22.2.10.16, 23.0.12.11, 24.0.12.7, 25.0.11, 26.0.6, and 27.1.0 of Nextcloud Enterprise Server, the DNS pin middleware was vulnerable to DNS rebinding allowing an attacker to perform SSRF as a final result. Nextcloud Server 25.0.11, 26.0.6, and 27.1.0 and Nextcloud Enterprise Server 22.2.10.16, 23.0.12.11, 24.0.12.7, 25.0.11, 26.0.6, and 27.1.0 contain patches for this issue. No known workarounds are available.\n\n * CVE-2023-49791: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. In Nextcloud Server prior to versions 26.0.9 and 27.1.4; as well as Nextcloud Enterprise Server prior to versions 23.0.12.13, 24.0.12.9, 25.0.13.4, 26.0.9, and 27.1.4; when an attacker manages to get access to an active session of another user via another way, they could delete and modify workflows by sending calls directly to the API bypassing the password confirmation shown in the UI. Nextcloud Server versions 26.0.9 and 27.1.4 and Nextcloud Enterprise Server versions 23.0.12.13, 24.0.12.9, 25.0.13.4, 26.0.9, and 27.1.4 contain a patch for this issue. No known workarounds are available.\n\n * CVE-2023-49792: Nextcloud Server provides data storage for Nextcloud, an open source cloud platform. In Nextcloud Server prior to versions 26.0.9 and 27.1.4; as well as Nextcloud Enterprise Server prior to versions 23.0.12.13, 24.0.12.9, 25.0.13.4, 26.0.9, and 27.1.4; when a (reverse) proxy is configured as trusted proxy the server could be tricked into reading a wrong remote address for an attacker, allowing them executing authentication attempts than intended. Nextcloud Server versions 26.0.9 and 27.1.4 and Nextcloud Enterprise Server versions 23.0.12.13, 24.0.12.9, 25.0.13.4, 26.0.9, and 27.1.4 contain a patch for this issue. No known workarounds are available.",
+        "Advisory": {
+          "From": "errata.altlinux.org",
+          "Severity": "Critical",
+          "Rights": "Copyright 2023 BaseALT Ltd.",
+          "Issued": {
+            "Date": "2024-01-26"
+          },
+          "Updated": {
+            "Date": "2024-01-26"
+          },
+          "bdu": [
+            {
+              "Cvss": "AV:N/AC:H/Au:N/C:C/I:C/A:N",
+              "Cvss3": "AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:N",
+              "Cwe": "CWE-307",
+              "Href": "https://bdu.fstec.ru/vul/2023-03598",
+              "Impact": "High",
+              "Public": "20230623",
+              "CveID": "BDU:2023-03598"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:M/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:H/UI:R/S:C/C:H/I:H/A:H",
+              "Cwe": "CWE-274",
+              "Href": "https://bdu.fstec.ru/vul/2023-03776",
+              "Impact": "High",
+              "Public": "20230623",
+              "CveID": "BDU:2023-03776"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-284",
+              "Href": "https://bdu.fstec.ru/vul/2023-05873",
+              "Impact": "Low",
+              "Public": "20230810",
+              "CveID": "BDU:2023-05873"
+            },
+            {
+              "Cvss": "AV:L/AC:L/Au:N/C:C/I:C/A:C",
+              "Cvss3": "AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-284",
+              "Href": "https://bdu.fstec.ru/vul/2023-05874",
+              "Impact": "High",
+              "Public": "20230810",
+              "CveID": "BDU:2023-05874"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:N/I:N/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+              "Cwe": "CWE-284",
+              "Href": "https://bdu.fstec.ru/vul/2023-05875",
+              "Impact": "High",
+              "Public": "20230810",
+              "CveID": "BDU:2023-05875"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-284",
+              "Href": "https://bdu.fstec.ru/vul/2023-05876",
+              "Impact": "Low",
+              "Public": "20230810",
+              "CveID": "BDU:2023-05876"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:P/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-307",
+              "Href": "https://bdu.fstec.ru/vul/2023-05877",
+              "Impact": "Low",
+              "Public": "20230810",
+              "CveID": "BDU:2023-05877"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:N/C:C/I:N/A:N",
+              "Cvss3": "AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-307",
+              "Href": "https://bdu.fstec.ru/vul/2023-06928",
+              "Impact": "High",
+              "Public": "20231013",
+              "CveID": "BDU:2023-06928"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:C/I:C/A:C",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-312",
+              "Href": "https://bdu.fstec.ru/vul/2023-07158",
+              "Impact": "High",
+              "Public": "20231016",
+              "CveID": "BDU:2023-07158"
+            },
+            {
+              "Cvss": "AV:N/AC:L/Au:S/C:N/I:N/A:P",
+              "Cvss3": "AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-307",
+              "Href": "https://bdu.fstec.ru/vul/2023-07159",
+              "Impact": "Low",
+              "Public": "20231016",
+              "CveID": "BDU:2023-07159"
+            }
+          ],
+          "Cves": [
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-613",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-32318",
+              "Impact": "Low",
+              "Public": "20230526",
+              "CveID": "CVE-2023-32318"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-307",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-32320",
+              "Impact": "High",
+              "Public": "20230622",
+              "CveID": "CVE-2023-32320"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-601",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-35171",
+              "Impact": "Low",
+              "Public": "20230623",
+              "CveID": "CVE-2023-35171"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N",
+              "Cwe": "CWE-307",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-35172",
+              "Impact": "Critical",
+              "Public": "20230623",
+              "CveID": "CVE-2023-35172"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-35927",
+              "Impact": "High",
+              "Public": "20230623",
+              "CveID": "CVE-2023-35927"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-35928",
+              "Impact": "High",
+              "Public": "20230623",
+              "CveID": "CVE-2023-35928"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-284",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39952",
+              "Impact": "Low",
+              "Public": "20230810",
+              "CveID": "CVE-2023-39952"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-307",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39958",
+              "Impact": "Low",
+              "Public": "20230810",
+              "CveID": "CVE-2023-39958"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-284",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39959",
+              "Impact": "Low",
+              "Public": "20230810",
+              "CveID": "CVE-2023-39959"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-307",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39960",
+              "Impact": "High",
+              "Public": "20231013",
+              "CveID": "CVE-2023-39960"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+              "Cwe": "CWE-284",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39961",
+              "Impact": "Low",
+              "Public": "20230810",
+              "CveID": "CVE-2023-39961"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:N/I:N/A:H",
+              "Cwe": "CWE-284",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39962",
+              "Impact": "High",
+              "Public": "20230810",
+              "CveID": "CVE-2023-39962"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+              "Cwe": "NVD-CWE-noinfo",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-39963",
+              "Impact": "High",
+              "Public": "20230810",
+              "CveID": "CVE-2023-39963"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L",
+              "Cwe": "CWE-307",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45148",
+              "Impact": "Low",
+              "Public": "20231016",
+              "CveID": "CVE-2023-45148"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-312",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-45151",
+              "Impact": "High",
+              "Public": "20231016",
+              "CveID": "CVE-2023-45151"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:H",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48239",
+              "Impact": "High",
+              "Public": "20231121",
+              "CveID": "CVE-2023-48239"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48301",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-48301"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N",
+              "Cwe": "CWE-79",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48302",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-48302"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "NVD-CWE-Other",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48303",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-48303"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N",
+              "Cwe": "CWE-639",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48304",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-48304"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+              "Cwe": "CWE-312",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48305",
+              "Impact": "Low",
+              "Public": "20231121",
+              "CveID": "CVE-2023-48305"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-918",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-48306",
+              "Impact": "Critical",
+              "Public": "20231121",
+              "CveID": "CVE-2023-48306"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:L",
+              "Cwe": "CWE-287",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-49791",
+              "Impact": "Low",
+              "Public": "20231222",
+              "CveID": "CVE-2023-49791"
+            },
+            {
+              "Cvss3": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+              "Cwe": "CWE-307",
+              "Href": "https://nvd.nist.gov/vuln/detail/CVE-2023-49792",
+              "Impact": "Critical",
+              "Public": "20231222",
+              "CveID": "CVE-2023-49792"
+            }
+          ],
+          "AffectedCpeList": {
+            "Cpe": [
+              "cpe:/o:alt:spworkstation:10",
+              "cpe:/o:alt:spserver:10"
+            ]
+          }
+        }
+      },
+      "Criteria": {
+        "Operator": "AND",
+        "Criterions": [
+          {
+            "TestRef": "oval:org.altlinux.errata:tst:5001",
+            "Comment": "ALT Linux must be installed"
+          }
+        ],
+        "Criterias": [
+          {
+            "Operator": "OR",
+            "Criterions": [
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241196001",
+                "Comment": "nextcloud is earlier than 0:27.1.4-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241196002",
+                "Comment": "nextcloud-apache2 is earlier than 0:27.1.4-alt1"
+              },
+              {
+                "TestRef": "oval:org.altlinux.errata:tst:20241196003",
+                "Comment": "nextcloud-nginx is earlier than 0:27.1.4-alt1"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

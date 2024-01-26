@@ -1,0 +1,162 @@
+{
+  "TextFileContent54Tests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:5001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "ALT Linux based on branch 'c10f2' must be installed",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:5001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:5001"
+      }
+    }
+  ],
+  "RPMInfoTests": [
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329001",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sogo is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329001"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329002",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sogo-activesync is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329002"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329003",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sogo-apache2 is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329003"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329004",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sogo-devel is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329004"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329005",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sogo-ealarms-notify is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329005"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329006",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sogo-slapd-sockd is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329006"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329007",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sogo-tool is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329007"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329008",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sope-cards is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329008"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329009",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sope-cards-devel is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329009"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329010",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sope-gdl1-contentstore is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329010"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329011",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "sope-gdl1-contentstore-devel is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329011"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    },
+    {
+      "ID": "oval:org.altlinux.errata:tst:20241329012",
+      "Version": "1",
+      "Check": "all",
+      "Comment": "task-sogo is earlier than 0:5.9.1-alt1",
+      "Object": {
+        "ObjectRef": "oval:org.altlinux.errata:obj:20241329012"
+      },
+      "State": {
+        "StateRef": "oval:org.altlinux.errata:ste:20241329001"
+      }
+    }
+  ]
+}
