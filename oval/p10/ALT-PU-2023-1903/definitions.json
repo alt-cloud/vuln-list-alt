@@ -41000,7 +41000,7 @@
             },
             {
               "Cvss": "AV:L/AC:L/Au:N/C:N/I:N/A:P",
-              "Cwe": "CWE-399",
+              "Cwe": "CWE-401",
               "Href": "https://nvd.nist.gov/vuln/detail/CVE-2005-3181",
               "Impact": "Low",
               "Public": "20051012",
